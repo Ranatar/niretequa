@@ -1,0 +1,5466 @@
+[
+ {
+  "num": 1,
+  "file": "001_amp_lift__lift_amplifier.stl",
+  "bom": "amp_lift",
+  "qty": 1,
+  "dims": [
+   53.7,
+   53.8,
+   6.0
+  ],
+  "fits": true,
+  "vol": 694.0,
+  "mass": 0.9,
+  "first": "lift amplifier",
+  "names": [
+   "lift amplifier"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 2,
+  "file": "002_amp_rotate__rotate_amplifier.stl",
+  "bom": "amp_rotate",
+  "qty": 1,
+  "dims": [
+   55.7,
+   56.0,
+   6.0
+  ],
+  "fits": true,
+  "vol": 727.0,
+  "mass": 0.9,
+  "first": "rotate amplifier",
+  "names": [
+   "rotate amplifier"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 3,
+  "file": "003_bail_plate_N__bail_N_plate_-1_x2.stl",
+  "bom": "bail_plate_N",
+  "qty": 2,
+  "dims": [
+   114.6,
+   114.6,
+   6.0
+  ],
+  "fits": true,
+  "vol": 3470.0,
+  "mass": 4.4,
+  "first": "bail N plate -1",
+  "names": [
+   "bail N plate -1",
+   "bail N plate +1"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 4,
+  "file": "004_bail_plate_O__bail_O_plate_-1_x2.stl",
+  "bom": "bail_plate_O",
+  "qty": 2,
+  "dims": [
+   114.6,
+   114.6,
+   6.0
+  ],
+  "fits": true,
+  "vol": 3470.0,
+  "mass": 4.4,
+  "first": "bail O plate -1",
+  "names": [
+   "bail O plate -1",
+   "bail O plate +1"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 5,
+  "file": "005_bail_plate_R__bail_R_plate_-1_x2.stl",
+  "bom": "bail_plate_R",
+  "qty": 2,
+  "dims": [
+   116.3,
+   117.9,
+   6.0
+  ],
+  "fits": true,
+  "vol": 3470.0,
+  "mass": 4.4,
+  "first": "bail R plate -1",
+  "names": [
+   "bail R plate -1",
+   "bail R plate +1"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 6,
+  "file": "006_bail_plate_W__bail_W_plate_-1_x2.stl",
+  "bom": "bail_plate_W",
+  "qty": 2,
+  "dims": [
+   114.6,
+   114.6,
+   6.0
+  ],
+  "fits": true,
+  "vol": 3470.0,
+  "mass": 4.4,
+  "first": "bail W plate -1",
+  "names": [
+   "bail W plate -1",
+   "bail W plate +1"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 7,
+  "file": "007_ball_race__ball_race.stl",
+  "bom": "ball_race",
+  "qty": 1,
+  "dims": [
+   191.1,
+   191.1,
+   8.0
+  ],
+  "fits": true,
+  "vol": 10763.0,
+  "mass": 13.7,
+  "first": "ball race",
+  "names": [
+   "ball race"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 8,
+  "file": "008_barrel__spring_barrel.stl",
+  "bom": "barrel",
+  "qty": 1,
+  "dims": [
+   119.9,
+   119.9,
+   35.5
+  ],
+  "fits": true,
+  "vol": 58483.0,
+  "mass": 74.3,
+  "first": "spring barrel",
+  "names": [
+   "spring barrel"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 9,
+  "file": "009_barrel_lid__spring_barrel_lid.stl",
+  "bom": "barrel_lid",
+  "qty": 1,
+  "dims": [
+   119.9,
+   119.9,
+   2.5
+  ],
+  "fits": true,
+  "vol": 28051.0,
+  "mass": 35.6,
+  "first": "spring barrel lid",
+  "names": [
+   "spring barrel lid"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 10,
+  "file": "010_bellcrank_bracket__lift_bellcrank_bracket.stl",
+  "bom": "bellcrank_bracket",
+  "qty": 1,
+  "dims": [
+   18.0,
+   8.0,
+   4.0
+  ],
+  "fits": true,
+  "vol": 563.0,
+  "mass": 0.7,
+  "first": "lift bellcrank bracket",
+  "names": [
+   "lift bellcrank bracket"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 11,
+  "file": "011_bellcrank_lift__lift_drive_bellcrank.stl",
+  "bom": "bellcrank_lift",
+  "qty": 1,
+  "dims": [
+   20.6,
+   20.6,
+   11.0
+  ],
+  "fits": true,
+  "vol": 614.0,
+  "mass": 0.8,
+  "first": "lift drive bellcrank",
+  "names": [
+   "lift drive bellcrank"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 12,
+  "file": "012_bellcrank_lift_out__lift_bellcrank.stl",
+  "bom": "bellcrank_lift_out",
+  "qty": 1,
+  "dims": [
+   34.1,
+   34.1,
+   8.0
+  ],
+  "fits": true,
+  "vol": 825.0,
+  "mass": 1.0,
+  "first": "lift bellcrank",
+  "names": [
+   "lift bellcrank"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 13,
+  "file": "013_bellcrank_rotate__rotate_drive_bellcrank.stl",
+  "bom": "bellcrank_rotate",
+  "qty": 1,
+  "dims": [
+   20.6,
+   20.6,
+   11.0
+  ],
+  "fits": true,
+  "vol": 614.0,
+  "mass": 0.8,
+  "first": "rotate drive bellcrank",
+  "names": [
+   "rotate drive bellcrank"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 14,
+  "file": "014_bevel12__bevel_pinion_12.stl",
+  "bom": "bevel12",
+  "qty": 1,
+  "dims": [
+   12.0,
+   12.0,
+   6.0
+  ],
+  "fits": true,
+  "vol": 395.0,
+  "mass": 0.5,
+  "first": "bevel pinion 12",
+  "names": [
+   "bevel pinion 12"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 15,
+  "file": "015_bevel20__bevel_cycle_1_1.stl",
+  "bom": "bevel20",
+  "qty": 1,
+  "dims": [
+   20.0,
+   20.0,
+   6.0
+  ],
+  "fits": true,
+  "vol": 1228.0,
+  "mass": 1.6,
+  "first": "bevel cycle 1:1",
+  "names": [
+   "bevel cycle 1:1"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 16,
+  "file": "016_bevel20__bevel_lay_1_1.stl",
+  "bom": "bevel20",
+  "qty": 1,
+  "dims": [
+   20.0,
+   20.0,
+   6.0
+  ],
+  "fits": true,
+  "vol": 1228.0,
+  "mass": 1.6,
+  "first": "bevel lay 1:1",
+  "names": [
+   "bevel lay 1:1"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 17,
+  "file": "017_bevel24__bevel_gear_24.stl",
+  "bom": "bevel24",
+  "qty": 1,
+  "dims": [
+   24.0,
+   24.0,
+   6.0
+  ],
+  "fits": true,
+  "vol": 1579.0,
+  "mass": 2.0,
+  "first": "bevel gear 24",
+  "names": [
+   "bevel gear 24"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 18,
+  "file": "018_cam_detent__cam_detent.stl",
+  "bom": "cam_detent",
+  "qty": 1,
+  "dims": [
+   20.8,
+   20.8,
+   5.0
+  ],
+  "fits": true,
+  "vol": 1464.0,
+  "mass": 1.9,
+  "first": "cam detent",
+  "names": [
+   "cam detent"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 19,
+  "file": "019_cam_hammer__cam_hammer.stl",
+  "bom": "cam_hammer",
+  "qty": 1,
+  "dims": [
+   22.4,
+   22.4,
+   5.0
+  ],
+  "fits": true,
+  "vol": 1634.0,
+  "mass": 2.1,
+  "first": "cam hammer",
+  "names": [
+   "cam hammer"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 20,
+  "file": "020_cam_lift__cam_lift.stl",
+  "bom": "cam_lift",
+  "qty": 1,
+  "dims": [
+   32.0,
+   32.0,
+   5.0
+  ],
+  "fits": true,
+  "vol": 3987.0,
+  "mass": 5.1,
+  "first": "cam lift",
+  "names": [
+   "cam lift"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 21,
+  "file": "021_cam_read__cam_read.stl",
+  "bom": "cam_read",
+  "qty": 1,
+  "dims": [
+   27.0,
+   27.0,
+   5.0
+  ],
+  "fits": true,
+  "vol": 2561.0,
+  "mass": 3.3,
+  "first": "cam read",
+  "names": [
+   "cam read"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 22,
+  "file": "022_cam_ribbon__cam_ribbon.stl",
+  "bom": "cam_ribbon",
+  "qty": 1,
+  "dims": [
+   26.4,
+   26.4,
+   5.0
+  ],
+  "fits": true,
+  "vol": 2297.0,
+  "mass": 2.9,
+  "first": "cam ribbon",
+  "names": [
+   "cam ribbon"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 23,
+  "file": "023_cam_rotate__cam_rotate.stl",
+  "bom": "cam_rotate",
+  "qty": 1,
+  "dims": [
+   32.0,
+   32.0,
+   5.0
+  ],
+  "fits": true,
+  "vol": 3987.0,
+  "mass": 5.1,
+  "first": "cam rotate",
+  "names": [
+   "cam rotate"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 24,
+  "file": "024_car_end__carriage_end_plate_-1_x2.stl",
+  "bom": "car_end",
+  "qty": 2,
+  "dims": [
+   186.0,
+   186.0,
+   116.0
+  ],
+  "fits": true,
+  "vol": 141435.0,
+  "mass": 179.6,
+  "first": "carriage end plate -1",
+  "names": [
+   "carriage end plate -1",
+   "carriage end plate +1"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 25,
+  "file": "025_cock_lever__hammer_cocking_lever.stl",
+  "bom": "cock_lever",
+  "qty": 1,
+  "dims": [
+   22.4,
+   22.4,
+   3.3
+  ],
+  "fits": true,
+  "vol": 342.0,
+  "mass": 0.4,
+  "first": "hammer cocking lever",
+  "names": [
+   "hammer cocking lever"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 26,
+  "file": "026_code_comb_00__code_comb_0.stl",
+  "bom": "code_comb_00",
+  "qty": 1,
+  "dims": [
+   72.6,
+   71.6,
+   6.0
+  ],
+  "fits": true,
+  "vol": 2445.0,
+  "mass": 3.1,
+  "first": "code comb 0",
+  "names": [
+   "code comb 0"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 27,
+  "file": "027_code_comb_01__code_comb_1.stl",
+  "bom": "code_comb_01",
+  "qty": 1,
+  "dims": [
+   72.6,
+   73.0,
+   6.0
+  ],
+  "fits": true,
+  "vol": 2490.0,
+  "mass": 3.2,
+  "first": "code comb 1",
+  "names": [
+   "code comb 1"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 28,
+  "file": "028_code_comb_02__code_comb_2.stl",
+  "bom": "code_comb_02",
+  "qty": 1,
+  "dims": [
+   72.6,
+   73.0,
+   6.0
+  ],
+  "fits": true,
+  "vol": 2393.0,
+  "mass": 3.0,
+  "first": "code comb 2",
+  "names": [
+   "code comb 2"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 29,
+  "file": "029_code_comb_03__code_comb_3.stl",
+  "bom": "code_comb_03",
+  "qty": 1,
+  "dims": [
+   71.7,
+   71.3,
+   6.0
+  ],
+  "fits": true,
+  "vol": 2432.0,
+  "mass": 3.1,
+  "first": "code comb 3",
+  "names": [
+   "code comb 3"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 30,
+  "file": "030_code_comb_04__code_comb_4.stl",
+  "bom": "code_comb_04",
+  "qty": 1,
+  "dims": [
+   70.6,
+   71.6,
+   6.0
+  ],
+  "fits": true,
+  "vol": 2108.0,
+  "mass": 2.7,
+  "first": "code comb 4",
+  "names": [
+   "code comb 4"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 31,
+  "file": "031_code_comb_05__code_comb_5.stl",
+  "bom": "code_comb_05",
+  "qty": 1,
+  "dims": [
+   71.7,
+   71.3,
+   6.0
+  ],
+  "fits": true,
+  "vol": 2299.0,
+  "mass": 2.9,
+  "first": "code comb 5",
+  "names": [
+   "code comb 5"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 32,
+  "file": "032_code_comb_06__code_comb_6.stl",
+  "bom": "code_comb_06",
+  "qty": 1,
+  "dims": [
+   71.7,
+   72.0,
+   6.0
+  ],
+  "fits": true,
+  "vol": 2244.0,
+  "mass": 2.9,
+  "first": "code comb 6",
+  "names": [
+   "code comb 6"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 33,
+  "file": "033_code_comb_07__code_comb_7.stl",
+  "bom": "code_comb_07",
+  "qty": 1,
+  "dims": [
+   71.7,
+   72.0,
+   6.0
+  ],
+  "fits": true,
+  "vol": 2222.0,
+  "mass": 2.8,
+  "first": "code comb 7",
+  "names": [
+   "code comb 7"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 34,
+  "file": "034_code_comb_08__code_comb_8.stl",
+  "bom": "code_comb_08",
+  "qty": 1,
+  "dims": [
+   69.5,
+   69.4,
+   6.0
+  ],
+  "fits": true,
+  "vol": 1843.0,
+  "mass": 2.3,
+  "first": "code comb 8",
+  "names": [
+   "code comb 8"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 35,
+  "file": "035_code_comb_09__code_comb_9.stl",
+  "bom": "code_comb_09",
+  "qty": 1,
+  "dims": [
+   69.5,
+   69.4,
+   6.0
+  ],
+  "fits": true,
+  "vol": 1900.0,
+  "mass": 2.4,
+  "first": "code comb 9",
+  "names": [
+   "code comb 9"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 36,
+  "file": "036_code_comb_10__code_comb_10.stl",
+  "bom": "code_comb_10",
+  "qty": 1,
+  "dims": [
+   69.5,
+   69.4,
+   6.0
+  ],
+  "fits": true,
+  "vol": 1488.0,
+  "mass": 1.9,
+  "first": "code comb 10",
+  "names": [
+   "code comb 10"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 37,
+  "file": "037_code_plate__plate_k00_x8.stl",
+  "bom": "code_plate",
+  "qty": 8,
+  "dims": [
+   50.9,
+   50.9,
+   6.0
+  ],
+  "fits": true,
+  "vol": 2989.0,
+  "mass": 3.8,
+  "first": "plate k00",
+  "names": [
+   "plate k00",
+   "plate k01",
+   "plate k02",
+   "plate k03",
+   "plate k04",
+   "plate k05",
+   "plate k06",
+   "plate k07"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 38,
+  "file": "038_code_plate__plate_k08.stl",
+  "bom": "code_plate",
+  "qty": 1,
+  "dims": [
+   50.9,
+   50.9,
+   6.0
+  ],
+  "fits": true,
+  "vol": 2952.0,
+  "mass": 3.7,
+  "first": "plate k08",
+  "names": [
+   "plate k08"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 39,
+  "file": "039_code_plate__plate_k09_x2.stl",
+  "bom": "code_plate",
+  "qty": 2,
+  "dims": [
+   50.9,
+   50.9,
+   6.0
+  ],
+  "fits": true,
+  "vol": 3027.0,
+  "mass": 3.8,
+  "first": "plate k09",
+  "names": [
+   "plate k09",
+   "plate k010"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 40,
+  "file": "040_code_plate__plate_k10_x11.stl",
+  "bom": "code_plate",
+  "qty": 11,
+  "dims": [
+   81.2,
+   82.2,
+   6.0
+  ],
+  "fits": true,
+  "vol": 3405.0,
+  "mass": 4.3,
+  "first": "plate k10",
+  "names": [
+   "plate k10",
+   "plate k11",
+   "plate k12",
+   "plate k13",
+   "plate k14",
+   "plate k15",
+   "plate k16",
+   "plate k17",
+   "plate k18",
+   "plate k19",
+   "plate k110"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 41,
+  "file": "041_code_plate__plate_k20_x5.stl",
+  "bom": "code_plate",
+  "qty": 5,
+  "dims": [
+   50.9,
+   50.9,
+   6.0
+  ],
+  "fits": true,
+  "vol": 2989.0,
+  "mass": 3.8,
+  "first": "plate k20",
+  "names": [
+   "plate k20",
+   "plate k21",
+   "plate k22",
+   "plate k23",
+   "plate k24"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 42,
+  "file": "042_code_plate__plate_k210.stl",
+  "bom": "code_plate",
+  "qty": 1,
+  "dims": [
+   50.9,
+   50.9,
+   6.0
+  ],
+  "fits": true,
+  "vol": 2914.0,
+  "mass": 3.7,
+  "first": "plate k210",
+  "names": [
+   "plate k210"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 43,
+  "file": "043_code_plate__plate_k25_x5.stl",
+  "bom": "code_plate",
+  "qty": 5,
+  "dims": [
+   50.9,
+   50.9,
+   6.0
+  ],
+  "fits": true,
+  "vol": 2989.0,
+  "mass": 3.8,
+  "first": "plate k25",
+  "names": [
+   "plate k25",
+   "plate k26",
+   "plate k27",
+   "plate k28",
+   "plate k29"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 44,
+  "file": "044_code_plate__plate_k30_x7.stl",
+  "bom": "code_plate",
+  "qty": 7,
+  "dims": [
+   54.7,
+   55.0,
+   6.0
+  ],
+  "fits": true,
+  "vol": 3063.0,
+  "mass": 3.9,
+  "first": "plate k30",
+  "names": [
+   "plate k30",
+   "plate k31",
+   "plate k32",
+   "plate k33",
+   "plate k34",
+   "plate k35",
+   "plate k36"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 45,
+  "file": "045_code_plate__plate_k310.stl",
+  "bom": "code_plate",
+  "qty": 1,
+  "dims": [
+   54.7,
+   55.0,
+   6.0
+  ],
+  "fits": true,
+  "vol": 3063.0,
+  "mass": 3.9,
+  "first": "plate k310",
+  "names": [
+   "plate k310"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 46,
+  "file": "046_code_plate__plate_k37.stl",
+  "bom": "code_plate",
+  "qty": 1,
+  "dims": [
+   54.7,
+   55.0,
+   6.0
+  ],
+  "fits": true,
+  "vol": 3063.0,
+  "mass": 3.9,
+  "first": "plate k37",
+  "names": [
+   "plate k37"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 47,
+  "file": "047_code_plate__plate_k38.stl",
+  "bom": "code_plate",
+  "qty": 1,
+  "dims": [
+   54.7,
+   55.0,
+   6.0
+  ],
+  "fits": true,
+  "vol": 3026.0,
+  "mass": 3.8,
+  "first": "plate k38",
+  "names": [
+   "plate k38"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 48,
+  "file": "048_code_plate__plate_k39.stl",
+  "bom": "code_plate",
+  "qty": 1,
+  "dims": [
+   54.7,
+   55.0,
+   6.0
+  ],
+  "fits": true,
+  "vol": 2988.0,
+  "mass": 3.8,
+  "first": "plate k39",
+  "names": [
+   "plate k39"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 49,
+  "file": "049_code_plate__plate_space4.stl",
+  "bom": "code_plate",
+  "qty": 1,
+  "dims": [
+   50.9,
+   50.9,
+   6.0
+  ],
+  "fits": true,
+  "vol": 2914.0,
+  "mass": 3.7,
+  "first": "plate space4",
+  "names": [
+   "plate space4"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 50,
+  "file": "050_code_plate__plate_space6.stl",
+  "bom": "code_plate",
+  "qty": 1,
+  "dims": [
+   66.5,
+   67.1,
+   6.0
+  ],
+  "fits": true,
+  "vol": 3141.0,
+  "mass": 4.0,
+  "first": "plate space6",
+  "names": [
+   "plate space6"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 51,
+  "file": "051_col_pusher__column_pusher_0.stl",
+  "bom": "col_pusher",
+  "qty": 1,
+  "dims": [
+   18.2,
+   20.0,
+   5.0
+  ],
+  "fits": true,
+  "vol": 656.0,
+  "mass": 0.8,
+  "first": "column pusher 0",
+  "names": [
+   "column pusher 0"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 52,
+  "file": "052_col_pusher__column_pusher_1.stl",
+  "bom": "col_pusher",
+  "qty": 1,
+  "dims": [
+   18.2,
+   20.7,
+   7.0
+  ],
+  "fits": true,
+  "vol": 725.0,
+  "mass": 0.9,
+  "first": "column pusher 1",
+  "names": [
+   "column pusher 1"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 53,
+  "file": "053_col_pusher__column_pusher_10.stl",
+  "bom": "col_pusher",
+  "qty": 1,
+  "dims": [
+   18.2,
+   20.0,
+   7.0
+  ],
+  "fits": true,
+  "vol": 793.0,
+  "mass": 1.0,
+  "first": "column pusher 10",
+  "names": [
+   "column pusher 10"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 54,
+  "file": "054_col_pusher__column_pusher_2.stl",
+  "bom": "col_pusher",
+  "qty": 1,
+  "dims": [
+   18.2,
+   20.0,
+   7.0
+  ],
+  "fits": true,
+  "vol": 725.0,
+  "mass": 0.9,
+  "first": "column pusher 2",
+  "names": [
+   "column pusher 2"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 55,
+  "file": "055_col_pusher__column_pusher_3.stl",
+  "bom": "col_pusher",
+  "qty": 1,
+  "dims": [
+   18.2,
+   20.7,
+   7.0
+  ],
+  "fits": true,
+  "vol": 793.0,
+  "mass": 1.0,
+  "first": "column pusher 3",
+  "names": [
+   "column pusher 3"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 56,
+  "file": "056_col_pusher__column_pusher_4.stl",
+  "bom": "col_pusher",
+  "qty": 1,
+  "dims": [
+   18.2,
+   20.0,
+   7.0
+  ],
+  "fits": true,
+  "vol": 725.0,
+  "mass": 0.9,
+  "first": "column pusher 4",
+  "names": [
+   "column pusher 4"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 57,
+  "file": "057_col_pusher__column_pusher_5.stl",
+  "bom": "col_pusher",
+  "qty": 1,
+  "dims": [
+   18.2,
+   20.7,
+   7.0
+  ],
+  "fits": true,
+  "vol": 793.0,
+  "mass": 1.0,
+  "first": "column pusher 5",
+  "names": [
+   "column pusher 5"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 58,
+  "file": "058_col_pusher__column_pusher_6.stl",
+  "bom": "col_pusher",
+  "qty": 1,
+  "dims": [
+   18.2,
+   20.0,
+   7.0
+  ],
+  "fits": true,
+  "vol": 793.0,
+  "mass": 1.0,
+  "first": "column pusher 6",
+  "names": [
+   "column pusher 6"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 59,
+  "file": "059_col_pusher__column_pusher_7.stl",
+  "bom": "col_pusher",
+  "qty": 1,
+  "dims": [
+   18.2,
+   20.7,
+   7.0
+  ],
+  "fits": true,
+  "vol": 862.0,
+  "mass": 1.1,
+  "first": "column pusher 7",
+  "names": [
+   "column pusher 7"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 60,
+  "file": "060_col_pusher__column_pusher_8.stl",
+  "bom": "col_pusher",
+  "qty": 1,
+  "dims": [
+   18.2,
+   20.0,
+   7.0
+  ],
+  "fits": true,
+  "vol": 725.0,
+  "mass": 0.9,
+  "first": "column pusher 8",
+  "names": [
+   "column pusher 8"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 61,
+  "file": "061_col_pusher__column_pusher_9.stl",
+  "bom": "col_pusher",
+  "qty": 1,
+  "dims": [
+   18.2,
+   20.7,
+   7.0
+  ],
+  "fits": true,
+  "vol": 793.0,
+  "mass": 1.0,
+  "first": "column pusher 9",
+  "names": [
+   "column pusher 9"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 62,
+  "file": "062_col_pusher_sp__column_pusher_space4_x2.stl",
+  "bom": "col_pusher_sp",
+  "qty": 2,
+  "dims": [
+   17.6,
+   17.5,
+   4.0
+  ],
+  "fits": true,
+  "vol": 201.0,
+  "mass": 0.3,
+  "first": "column pusher space4",
+  "names": [
+   "column pusher space4",
+   "column pusher space6"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 63,
+  "file": "063_comb__key_comb_p1.stl",
+  "bom": "comb",
+  "qty": 1,
+  "dims": [
+   138.0,
+   76.0,
+   3.0
+  ],
+  "fits": true,
+  "vol": 29924.0,
+  "mass": 38.0,
+  "first": "key comb",
+  "names": [
+   "key comb"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 64,
+  "file": "064_comb__key_comb_p2.stl",
+  "bom": "comb",
+  "qty": 1,
+  "dims": [
+   140.0,
+   76.0,
+   3.0
+  ],
+  "fits": true,
+  "vol": 30313.0,
+  "mass": 38.5,
+  "first": "key comb",
+  "names": [
+   "key comb"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 65,
+  "file": "065_comb_space__space_comb_p1.stl",
+  "bom": "comb_space",
+  "qty": 1,
+  "dims": [
+   97.6,
+   97.6,
+   3.0
+  ],
+  "fits": true,
+  "vol": 6413.0,
+  "mass": 8.1,
+  "first": "space comb",
+  "names": [
+   "space comb"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 66,
+  "file": "066_comb_space__space_comb_p2.stl",
+  "bom": "comb_space",
+  "qty": 1,
+  "dims": [
+   97.6,
+   97.6,
+   3.0
+  ],
+  "fits": true,
+  "vol": 6413.0,
+  "mass": 8.1,
+  "first": "space comb",
+  "names": [
+   "space comb"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 67,
+  "file": "067_crank__winding_crank.stl",
+  "bom": "crank",
+  "qty": 1,
+  "dims": [
+   86.1,
+   85.8,
+   12.0
+  ],
+  "fits": true,
+  "vol": 7713.0,
+  "mass": 9.8,
+  "first": "winding crank",
+  "names": [
+   "winding crank"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 68,
+  "file": "068_cycle_bearing__cycle_bearing_block_-153_x3.stl",
+  "bom": "cycle_bearing",
+  "qty": 3,
+  "dims": [
+   30.5,
+   16.0,
+   6.0
+  ],
+  "fits": true,
+  "vol": 2615.0,
+  "mass": 3.3,
+  "first": "cycle bearing block -153",
+  "names": [
+   "cycle bearing block -153",
+   "cycle bearing block 120",
+   "cycle bearing block 171"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 69,
+  "file": "069_detent_link__detent_link.stl",
+  "bom": "detent_link",
+  "qty": 1,
+  "dims": [
+   70.5,
+   70.3,
+   21.5
+  ],
+  "fits": true,
+  "vol": 2455.0,
+  "mass": 3.1,
+  "first": "detent link",
+  "names": [
+   "detent link"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 70,
+  "file": "070_detent_pawl__detent_pawl.stl",
+  "bom": "detent_pawl",
+  "qty": 1,
+  "dims": [
+   43.9,
+   44.4,
+   12.0
+  ],
+  "fits": true,
+  "vol": 2767.0,
+  "mass": 3.5,
+  "first": "detent pawl",
+  "names": [
+   "detent pawl"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 71,
+  "file": "071_esc_back_lever__back_lever_B.stl",
+  "bom": "esc_back_lever",
+  "qty": 1,
+  "dims": [
+   30.6,
+   30.6,
+   15.8
+  ],
+  "fits": true,
+  "vol": 1207.0,
+  "mass": 1.5,
+  "first": "back lever B",
+  "names": [
+   "back lever B"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 72,
+  "file": "072_esc_back_pawl__back_pawl.stl",
+  "bom": "esc_back_pawl",
+  "qty": 1,
+  "dims": [
+   9.2,
+   9.2,
+   4.0
+  ],
+  "fits": true,
+  "vol": 126.0,
+  "mass": 0.2,
+  "first": "back pawl",
+  "names": [
+   "back pawl"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 73,
+  "file": "073_esc_bellcrank__escapement_bellcrank.stl",
+  "bom": "esc_bellcrank",
+  "qty": 1,
+  "dims": [
+   22.1,
+   24.0,
+   22.1
+  ],
+  "fits": true,
+  "vol": 645.0,
+  "mass": 0.8,
+  "first": "escapement bellcrank",
+  "names": [
+   "escapement bellcrank"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 74,
+  "file": "074_esc_bksp_arm__backspace_arm_K.stl",
+  "bom": "esc_bksp_arm",
+  "qty": 1,
+  "dims": [
+   28.0,
+   28.0,
+   7.4
+  ],
+  "fits": true,
+  "vol": 996.0,
+  "mass": 1.3,
+  "first": "backspace arm K",
+  "names": [
+   "backspace arm K"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 75,
+  "file": "075_esc_bracket__escapement_bracket.stl",
+  "bom": "esc_bracket",
+  "qty": 1,
+  "dims": [
+   66.1,
+   82.0,
+   46.0
+  ],
+  "fits": true,
+  "vol": 38892.0,
+  "mass": 49.4,
+  "first": "escapement bracket",
+  "names": [
+   "escapement bracket"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 76,
+  "file": "076_esc_dog__escapement_dog.stl",
+  "bom": "esc_dog",
+  "qty": 1,
+  "dims": [
+   9.0,
+   9.3,
+   4.0
+  ],
+  "fits": true,
+  "vol": 207.0,
+  "mass": 0.3,
+  "first": "escapement dog",
+  "names": [
+   "escapement dog"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 77,
+  "file": "077_esc_finger__escapement_stop_finger.stl",
+  "bom": "esc_finger",
+  "qty": 1,
+  "dims": [
+   10.3,
+   10.3,
+   3.2
+  ],
+  "fits": true,
+  "vol": 72.0,
+  "mass": 0.1,
+  "first": "escapement stop finger",
+  "names": [
+   "escapement stop finger"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 78,
+  "file": "078_esc_guard__back_pawl_guard.stl",
+  "bom": "esc_guard",
+  "qty": 1,
+  "dims": [
+   12.8,
+   12.8,
+   1.6
+  ],
+  "fits": true,
+  "vol": 32.0,
+  "mass": 0.0,
+  "first": "back pawl guard",
+  "names": [
+   "back pawl guard"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 79,
+  "file": "079_esc_memory__memory_lever_M.stl",
+  "bom": "esc_memory",
+  "qty": 1,
+  "dims": [
+   29.6,
+   29.6,
+   5.3
+  ],
+  "fits": true,
+  "vol": 589.0,
+  "mass": 0.7,
+  "first": "memory lever M",
+  "names": [
+   "memory lever M"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 80,
+  "file": "080_esc_mpawl__memory_holding_pawl.stl",
+  "bom": "esc_mpawl",
+  "qty": 1,
+  "dims": [
+   3.5,
+   3.5,
+   2.2
+  ],
+  "fits": true,
+  "vol": 8.0,
+  "mass": 0.0,
+  "first": "memory holding pawl",
+  "names": [
+   "memory holding pawl"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 81,
+  "file": "081_esc_msector__memory_ratchet_sector.stl",
+  "bom": "esc_msector",
+  "qty": 1,
+  "dims": [
+   44.3,
+   43.8,
+   18.2
+  ],
+  "fits": true,
+  "vol": 468.0,
+  "mass": 0.6,
+  "first": "memory ratchet sector",
+  "names": [
+   "memory ratchet sector"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 82,
+  "file": "082_esc_stop__escapement_stop.stl",
+  "bom": "esc_stop",
+  "qty": 1,
+  "dims": [
+   35.4,
+   35.4,
+   4.4
+  ],
+  "fits": true,
+  "vol": 883.0,
+  "mass": 1.1,
+  "first": "escapement stop",
+  "names": [
+   "escapement stop"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 83,
+  "file": "083_esc_wedge__memory_coupling_wedge.stl",
+  "bom": "esc_wedge",
+  "qty": 1,
+  "dims": [
+   12.2,
+   12.2,
+   2.8
+  ],
+  "fits": true,
+  "vol": 56.0,
+  "mass": 0.1,
+  "first": "memory coupling wedge",
+  "names": [
+   "memory coupling wedge"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 84,
+  "file": "084_esc_wheel__escapement_wheel_and_pinion.stl",
+  "bom": "esc_wheel",
+  "qty": 1,
+  "dims": [
+   40.9,
+   40.9,
+   30.0
+  ],
+  "fits": true,
+  "vol": 13216.0,
+  "mass": 16.8,
+  "first": "escapement wheel and pinion",
+  "names": [
+   "escapement wheel and pinion"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 85,
+  "file": "085_fork_bracket__lift_fork_bracket.stl",
+  "bom": "fork_bracket",
+  "qty": 1,
+  "dims": [
+   31.3,
+   20.0,
+   12.0
+  ],
+  "fits": true,
+  "vol": 3651.0,
+  "mass": 4.6,
+  "first": "lift fork bracket",
+  "names": [
+   "lift fork bracket"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 86,
+  "file": "086_gear_barrel__barrel_gear.stl",
+  "bom": "gear_barrel",
+  "qty": 1,
+  "dims": [
+   123.0,
+   123.0,
+   8.0
+  ],
+  "fits": true,
+  "vol": 89796.0,
+  "mass": 114.0,
+  "first": "barrel gear",
+  "names": [
+   "barrel gear"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 87,
+  "file": "087_gear_gov__governor_gear.stl",
+  "bom": "gear_gov",
+  "qty": 1,
+  "dims": [
+   33.9,
+   33.9,
+   4.0
+  ],
+  "fits": true,
+  "vol": 3162.0,
+  "mass": 4.0,
+  "first": "governor gear",
+  "names": [
+   "governor gear"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 88,
+  "file": "088_gear_int1__int1_gear.stl",
+  "bom": "gear_int1",
+  "qty": 1,
+  "dims": [
+   50.0,
+   50.0,
+   5.0
+  ],
+  "fits": true,
+  "vol": 8939.0,
+  "mass": 11.4,
+  "first": "int1 gear",
+  "names": [
+   "int1 gear"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 89,
+  "file": "089_governor__governor_fan.stl",
+  "bom": "governor",
+  "qty": 1,
+  "dims": [
+   22.6,
+   22.6,
+   4.0
+  ],
+  "fits": true,
+  "vol": 329.0,
+  "mass": 0.4,
+  "first": "governor fan",
+  "names": [
+   "governor fan"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 90,
+  "file": "090_guide_lift__lift_guide_plate.stl",
+  "bom": "guide_lift",
+  "qty": 1,
+  "dims": [
+   88.9,
+   88.9,
+   1.5
+  ],
+  "fits": true,
+  "vol": 3303.0,
+  "mass": 4.2,
+  "first": "lift guide plate",
+  "names": [
+   "lift guide plate"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 91,
+  "file": "091_guide_rotate__rotate_guide_plate.stl",
+  "bom": "guide_rotate",
+  "qty": 1,
+  "dims": [
+   77.5,
+   76.9,
+   1.5
+  ],
+  "fits": true,
+  "vol": 2425.0,
+  "mass": 3.1,
+  "first": "rotate guide plate",
+  "names": [
+   "rotate guide plate"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 92,
+  "file": "092_hammer__hammer.stl",
+  "bom": "hammer",
+  "qty": 1,
+  "dims": [
+   66.1,
+   66.0,
+   12.9
+  ],
+  "fits": true,
+  "vol": 3579.0,
+  "mass": 4.5,
+  "first": "hammer",
+  "names": [
+   "hammer"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 93,
+  "file": "093_hammer_link__hammer_trip_link.stl",
+  "bom": "hammer_link",
+  "qty": 1,
+  "dims": [
+   141.8,
+   141.5,
+   3.0
+  ],
+  "fits": true,
+  "vol": 5020.0,
+  "mass": 6.4,
+  "first": "hammer trip link",
+  "names": [
+   "hammer trip link"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 94,
+  "file": "094_hammer_lock_guide__hammer_lock_guide.stl",
+  "bom": "hammer_lock_guide",
+  "qty": 1,
+  "dims": [
+   19.9,
+   19.6,
+   16.5
+  ],
+  "fits": true,
+  "vol": 1016.0,
+  "mass": 1.3,
+  "first": "hammer lock guide",
+  "names": [
+   "hammer lock guide"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 95,
+  "file": "095_keycap__cap_back.stl",
+  "bom": "keycap",
+  "qty": 1,
+  "dims": [
+   17.0,
+   17.0,
+   8.0
+  ],
+  "fits": true,
+  "vol": 2296.0,
+  "mass": 2.9,
+  "first": "cap back",
+  "names": [
+   "cap back"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 96,
+  "file": "096_keycap__cap_bksp.stl",
+  "bom": "keycap",
+  "qty": 1,
+  "dims": [
+   17.0,
+   17.0,
+   8.0
+  ],
+  "fits": true,
+  "vol": 2284.0,
+  "mass": 2.9,
+  "first": "cap bksp",
+  "names": [
+   "cap bksp"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 97,
+  "file": "097_keycap__cap_k00.stl",
+  "bom": "keycap",
+  "qty": 1,
+  "dims": [
+   17.0,
+   17.0,
+   8.0
+  ],
+  "fits": true,
+  "vol": 2302.0,
+  "mass": 2.9,
+  "first": "cap k00",
+  "names": [
+   "cap k00"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 98,
+  "file": "098_keycap__cap_k01.stl",
+  "bom": "keycap",
+  "qty": 1,
+  "dims": [
+   17.0,
+   17.0,
+   8.0
+  ],
+  "fits": true,
+  "vol": 2303.0,
+  "mass": 2.9,
+  "first": "cap k01",
+  "names": [
+   "cap k01"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 99,
+  "file": "099_keycap__cap_k010.stl",
+  "bom": "keycap",
+  "qty": 1,
+  "dims": [
+   17.0,
+   17.0,
+   8.0
+  ],
+  "fits": true,
+  "vol": 2306.0,
+  "mass": 2.9,
+  "first": "cap k010",
+  "names": [
+   "cap k010"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 100,
+  "file": "100_keycap__cap_k02.stl",
+  "bom": "keycap",
+  "qty": 1,
+  "dims": [
+   17.0,
+   17.0,
+   8.0
+  ],
+  "fits": true,
+  "vol": 2300.0,
+  "mass": 2.9,
+  "first": "cap k02",
+  "names": [
+   "cap k02"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 101,
+  "file": "101_keycap__cap_k03.stl",
+  "bom": "keycap",
+  "qty": 1,
+  "dims": [
+   17.0,
+   17.0,
+   8.0
+  ],
+  "fits": true,
+  "vol": 2305.0,
+  "mass": 2.9,
+  "first": "cap k03",
+  "names": [
+   "cap k03"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 102,
+  "file": "102_keycap__cap_k04.stl",
+  "bom": "keycap",
+  "qty": 1,
+  "dims": [
+   17.0,
+   17.0,
+   8.0
+  ],
+  "fits": true,
+  "vol": 2297.0,
+  "mass": 2.9,
+  "first": "cap k04",
+  "names": [
+   "cap k04"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 103,
+  "file": "103_keycap__cap_k05.stl",
+  "bom": "keycap",
+  "qty": 1,
+  "dims": [
+   17.0,
+   17.0,
+   8.0
+  ],
+  "fits": true,
+  "vol": 2293.0,
+  "mass": 2.9,
+  "first": "cap k05",
+  "names": [
+   "cap k05"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 104,
+  "file": "104_keycap__cap_k06.stl",
+  "bom": "keycap",
+  "qty": 1,
+  "dims": [
+   17.0,
+   17.0,
+   8.0
+  ],
+  "fits": true,
+  "vol": 2305.0,
+  "mass": 2.9,
+  "first": "cap k06",
+  "names": [
+   "cap k06"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 105,
+  "file": "105_keycap__cap_k07.stl",
+  "bom": "keycap",
+  "qty": 1,
+  "dims": [
+   17.0,
+   17.0,
+   8.0
+  ],
+  "fits": true,
+  "vol": 2301.0,
+  "mass": 2.9,
+  "first": "cap k07",
+  "names": [
+   "cap k07"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 106,
+  "file": "106_keycap__cap_k08.stl",
+  "bom": "keycap",
+  "qty": 1,
+  "dims": [
+   17.0,
+   17.0,
+   8.0
+  ],
+  "fits": true,
+  "vol": 2295.0,
+  "mass": 2.9,
+  "first": "cap k08",
+  "names": [
+   "cap k08"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 107,
+  "file": "107_keycap__cap_k09.stl",
+  "bom": "keycap",
+  "qty": 1,
+  "dims": [
+   17.0,
+   17.0,
+   8.0
+  ],
+  "fits": true,
+  "vol": 2308.0,
+  "mass": 2.9,
+  "first": "cap k09",
+  "names": [
+   "cap k09"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 108,
+  "file": "108_keycap__cap_k10.stl",
+  "bom": "keycap",
+  "qty": 1,
+  "dims": [
+   17.0,
+   17.0,
+   8.0
+  ],
+  "fits": true,
+  "vol": 2300.0,
+  "mass": 2.9,
+  "first": "cap k10",
+  "names": [
+   "cap k10"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 109,
+  "file": "109_keycap__cap_k11.stl",
+  "bom": "keycap",
+  "qty": 1,
+  "dims": [
+   17.0,
+   17.0,
+   8.0
+  ],
+  "fits": true,
+  "vol": 2299.0,
+  "mass": 2.9,
+  "first": "cap k11",
+  "names": [
+   "cap k11"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 110,
+  "file": "110_keycap__cap_k110.stl",
+  "bom": "keycap",
+  "qty": 1,
+  "dims": [
+   17.0,
+   17.0,
+   8.0
+  ],
+  "fits": true,
+  "vol": 2299.0,
+  "mass": 2.9,
+  "first": "cap k110",
+  "names": [
+   "cap k110"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 111,
+  "file": "111_keycap__cap_k12.stl",
+  "bom": "keycap",
+  "qty": 1,
+  "dims": [
+   17.0,
+   17.0,
+   8.0
+  ],
+  "fits": true,
+  "vol": 2300.0,
+  "mass": 2.9,
+  "first": "cap k12",
+  "names": [
+   "cap k12"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 112,
+  "file": "112_keycap__cap_k13.stl",
+  "bom": "keycap",
+  "qty": 1,
+  "dims": [
+   17.0,
+   17.0,
+   8.0
+  ],
+  "fits": true,
+  "vol": 2299.0,
+  "mass": 2.9,
+  "first": "cap k13",
+  "names": [
+   "cap k13"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 113,
+  "file": "113_keycap__cap_k14.stl",
+  "bom": "keycap",
+  "qty": 1,
+  "dims": [
+   17.0,
+   17.0,
+   8.0
+  ],
+  "fits": true,
+  "vol": 2295.0,
+  "mass": 2.9,
+  "first": "cap k14",
+  "names": [
+   "cap k14"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 114,
+  "file": "114_keycap__cap_k15.stl",
+  "bom": "keycap",
+  "qty": 1,
+  "dims": [
+   17.0,
+   17.0,
+   8.0
+  ],
+  "fits": true,
+  "vol": 2293.0,
+  "mass": 2.9,
+  "first": "cap k15",
+  "names": [
+   "cap k15"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 115,
+  "file": "115_keycap__cap_k16.stl",
+  "bom": "keycap",
+  "qty": 1,
+  "dims": [
+   17.0,
+   17.0,
+   8.0
+  ],
+  "fits": true,
+  "vol": 2294.0,
+  "mass": 2.9,
+  "first": "cap k16",
+  "names": [
+   "cap k16"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 116,
+  "file": "116_keycap__cap_k17.stl",
+  "bom": "keycap",
+  "qty": 1,
+  "dims": [
+   17.0,
+   17.0,
+   8.0
+  ],
+  "fits": true,
+  "vol": 2295.0,
+  "mass": 2.9,
+  "first": "cap k17",
+  "names": [
+   "cap k17"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 117,
+  "file": "117_keycap__cap_k18.stl",
+  "bom": "keycap",
+  "qty": 1,
+  "dims": [
+   17.0,
+   17.0,
+   8.0
+  ],
+  "fits": true,
+  "vol": 2293.0,
+  "mass": 2.9,
+  "first": "cap k18",
+  "names": [
+   "cap k18"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 118,
+  "file": "118_keycap__cap_k19.stl",
+  "bom": "keycap",
+  "qty": 1,
+  "dims": [
+   17.0,
+   17.0,
+   8.0
+  ],
+  "fits": true,
+  "vol": 2301.0,
+  "mass": 2.9,
+  "first": "cap k19",
+  "names": [
+   "cap k19"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 119,
+  "file": "119_keycap__cap_k20.stl",
+  "bom": "keycap",
+  "qty": 1,
+  "dims": [
+   17.0,
+   17.0,
+   8.0
+  ],
+  "fits": true,
+  "vol": 2300.0,
+  "mass": 2.9,
+  "first": "cap k20",
+  "names": [
+   "cap k20"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 120,
+  "file": "120_keycap__cap_k21.stl",
+  "bom": "keycap",
+  "qty": 1,
+  "dims": [
+   17.0,
+   17.0,
+   8.0
+  ],
+  "fits": true,
+  "vol": 2299.0,
+  "mass": 2.9,
+  "first": "cap k21",
+  "names": [
+   "cap k21"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 121,
+  "file": "121_keycap__cap_k210.stl",
+  "bom": "keycap",
+  "qty": 1,
+  "dims": [
+   17.0,
+   17.0,
+   8.0
+  ],
+  "fits": true,
+  "vol": 2308.0,
+  "mass": 2.9,
+  "first": "cap k210",
+  "names": [
+   "cap k210"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 122,
+  "file": "122_keycap__cap_k22.stl",
+  "bom": "keycap",
+  "qty": 1,
+  "dims": [
+   17.0,
+   17.0,
+   8.0
+  ],
+  "fits": true,
+  "vol": 2300.0,
+  "mass": 2.9,
+  "first": "cap k22",
+  "names": [
+   "cap k22"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 123,
+  "file": "123_keycap__cap_k23.stl",
+  "bom": "keycap",
+  "qty": 1,
+  "dims": [
+   17.0,
+   17.0,
+   8.0
+  ],
+  "fits": true,
+  "vol": 2297.0,
+  "mass": 2.9,
+  "first": "cap k23",
+  "names": [
+   "cap k23"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 124,
+  "file": "124_keycap__cap_k24.stl",
+  "bom": "keycap",
+  "qty": 1,
+  "dims": [
+   17.0,
+   17.0,
+   8.0
+  ],
+  "fits": true,
+  "vol": 2294.0,
+  "mass": 2.9,
+  "first": "cap k24",
+  "names": [
+   "cap k24"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 125,
+  "file": "125_keycap__cap_k25.stl",
+  "bom": "keycap",
+  "qty": 1,
+  "dims": [
+   17.0,
+   17.0,
+   8.0
+  ],
+  "fits": true,
+  "vol": 2308.0,
+  "mass": 2.9,
+  "first": "cap k25",
+  "names": [
+   "cap k25"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 126,
+  "file": "126_keycap__cap_k26.stl",
+  "bom": "keycap",
+  "qty": 1,
+  "dims": [
+   17.0,
+   17.0,
+   8.0
+  ],
+  "fits": true,
+  "vol": 2306.0,
+  "mass": 2.9,
+  "first": "cap k26",
+  "names": [
+   "cap k26"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 127,
+  "file": "127_keycap__cap_k27.stl",
+  "bom": "keycap",
+  "qty": 1,
+  "dims": [
+   17.0,
+   17.0,
+   8.0
+  ],
+  "fits": true,
+  "vol": 2305.0,
+  "mass": 2.9,
+  "first": "cap k27",
+  "names": [
+   "cap k27"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 128,
+  "file": "128_keycap__cap_k28.stl",
+  "bom": "keycap",
+  "qty": 1,
+  "dims": [
+   17.0,
+   17.0,
+   8.0
+  ],
+  "fits": true,
+  "vol": 2303.0,
+  "mass": 2.9,
+  "first": "cap k28",
+  "names": [
+   "cap k28"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 129,
+  "file": "129_keycap__cap_k29.stl",
+  "bom": "keycap",
+  "qty": 1,
+  "dims": [
+   17.0,
+   17.0,
+   8.0
+  ],
+  "fits": true,
+  "vol": 2302.0,
+  "mass": 2.9,
+  "first": "cap k29",
+  "names": [
+   "cap k29"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 130,
+  "file": "130_keycap__cap_k30.stl",
+  "bom": "keycap",
+  "qty": 1,
+  "dims": [
+   17.0,
+   17.0,
+   8.0
+  ],
+  "fits": true,
+  "vol": 2299.0,
+  "mass": 2.9,
+  "first": "cap k30",
+  "names": [
+   "cap k30"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 131,
+  "file": "131_keycap__cap_k31.stl",
+  "bom": "keycap",
+  "qty": 1,
+  "dims": [
+   17.0,
+   17.0,
+   8.0
+  ],
+  "fits": true,
+  "vol": 2301.0,
+  "mass": 2.9,
+  "first": "cap k31",
+  "names": [
+   "cap k31"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 132,
+  "file": "132_keycap__cap_k32.stl",
+  "bom": "keycap",
+  "qty": 1,
+  "dims": [
+   17.0,
+   17.0,
+   8.0
+  ],
+  "fits": true,
+  "vol": 2303.0,
+  "mass": 2.9,
+  "first": "cap k32",
+  "names": [
+   "cap k32"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 133,
+  "file": "133_keycap__cap_k33.stl",
+  "bom": "keycap",
+  "qty": 1,
+  "dims": [
+   17.0,
+   17.0,
+   8.0
+  ],
+  "fits": true,
+  "vol": 2304.0,
+  "mass": 2.9,
+  "first": "cap k33",
+  "names": [
+   "cap k33"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 134,
+  "file": "134_keycap__cap_k34.stl",
+  "bom": "keycap",
+  "qty": 1,
+  "dims": [
+   17.0,
+   17.0,
+   8.0
+  ],
+  "fits": true,
+  "vol": 2302.0,
+  "mass": 2.9,
+  "first": "cap k34",
+  "names": [
+   "cap k34"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 135,
+  "file": "135_keycap__cap_k35.stl",
+  "bom": "keycap",
+  "qty": 1,
+  "dims": [
+   17.0,
+   17.0,
+   8.0
+  ],
+  "fits": true,
+  "vol": 2304.0,
+  "mass": 2.9,
+  "first": "cap k35",
+  "names": [
+   "cap k35"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 136,
+  "file": "136_keycap__cap_k36.stl",
+  "bom": "keycap",
+  "qty": 1,
+  "dims": [
+   17.0,
+   17.0,
+   8.0
+  ],
+  "fits": true,
+  "vol": 2301.0,
+  "mass": 2.9,
+  "first": "cap k36",
+  "names": [
+   "cap k36"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 137,
+  "file": "137_keycap__cap_k37.stl",
+  "bom": "keycap",
+  "qty": 1,
+  "dims": [
+   17.0,
+   17.0,
+   8.0
+  ],
+  "fits": true,
+  "vol": 2305.0,
+  "mass": 2.9,
+  "first": "cap k37",
+  "names": [
+   "cap k37"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 138,
+  "file": "138_keycap__cap_k38.stl",
+  "bom": "keycap",
+  "qty": 1,
+  "dims": [
+   17.0,
+   17.0,
+   8.0
+  ],
+  "fits": true,
+  "vol": 2305.0,
+  "mass": 2.9,
+  "first": "cap k38",
+  "names": [
+   "cap k38"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 139,
+  "file": "139_keycap__cap_k39_x2.stl",
+  "bom": "keycap",
+  "qty": 2,
+  "dims": [
+   17.0,
+   17.0,
+   8.0
+  ],
+  "fits": true,
+  "vol": 2303.0,
+  "mass": 2.9,
+  "first": "cap k39",
+  "names": [
+   "cap k39",
+   "cap k310"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 140,
+  "file": "140_keycap__cap_shift.stl",
+  "bom": "keycap",
+  "qty": 1,
+  "dims": [
+   17.0,
+   17.0,
+   8.0
+  ],
+  "fits": true,
+  "vol": 2303.0,
+  "mass": 2.9,
+  "first": "cap shift",
+  "names": [
+   "cap shift"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 141,
+  "file": "141_keystem__stem_back.stl",
+  "bom": "keystem",
+  "qty": 1,
+  "dims": [
+   14.4,
+   14.4,
+   4.0
+  ],
+  "fits": true,
+  "vol": 234.0,
+  "mass": 0.3,
+  "first": "stem back",
+  "names": [
+   "stem back"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 142,
+  "file": "142_keystem__stem_bksp.stl",
+  "bom": "keystem",
+  "qty": 1,
+  "dims": [
+   15.8,
+   15.8,
+   4.0
+  ],
+  "fits": true,
+  "vol": 259.0,
+  "mass": 0.3,
+  "first": "stem bksp",
+  "names": [
+   "stem bksp"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 143,
+  "file": "143_keystem__stem_k00_x11.stl",
+  "bom": "keystem",
+  "qty": 11,
+  "dims": [
+   14.7,
+   14.7,
+   4.0
+  ],
+  "fits": true,
+  "vol": 211.0,
+  "mass": 0.3,
+  "first": "stem k00",
+  "names": [
+   "stem k00",
+   "stem k01",
+   "stem k02",
+   "stem k03",
+   "stem k04",
+   "stem k05",
+   "stem k06",
+   "stem k07",
+   "stem k08",
+   "stem k09",
+   "stem k010"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 144,
+  "file": "144_keystem__stem_k10_x11.stl",
+  "bom": "keystem",
+  "qty": 11,
+  "dims": [
+   13.3,
+   13.3,
+   4.0
+  ],
+  "fits": true,
+  "vol": 187.0,
+  "mass": 0.2,
+  "first": "stem k10",
+  "names": [
+   "stem k10",
+   "stem k11",
+   "stem k12",
+   "stem k13",
+   "stem k14",
+   "stem k15",
+   "stem k16",
+   "stem k17",
+   "stem k18",
+   "stem k19",
+   "stem k110"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 145,
+  "file": "145_keystem__stem_k20_x11.stl",
+  "bom": "keystem",
+  "qty": 11,
+  "dims": [
+   11.9,
+   11.9,
+   4.0
+  ],
+  "fits": true,
+  "vol": 162.0,
+  "mass": 0.2,
+  "first": "stem k20",
+  "names": [
+   "stem k20",
+   "stem k21",
+   "stem k22",
+   "stem k23",
+   "stem k24",
+   "stem k25",
+   "stem k26",
+   "stem k27",
+   "stem k28",
+   "stem k29",
+   "stem k210"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 146,
+  "file": "146_keystem__stem_k30_x12.stl",
+  "bom": "keystem",
+  "qty": 12,
+  "dims": [
+   10.5,
+   10.5,
+   4.0
+  ],
+  "fits": true,
+  "vol": 138.0,
+  "mass": 0.2,
+  "first": "stem k30",
+  "names": [
+   "stem k30",
+   "stem k31",
+   "stem k32",
+   "stem k33",
+   "stem k34",
+   "stem k35",
+   "stem k36",
+   "stem k37",
+   "stem k38",
+   "stem k39",
+   "stem k310",
+   "stem shift"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 147,
+  "file": "147_keystem__stem_space4.stl",
+  "bom": "keystem",
+  "qty": 1,
+  "dims": [
+   49.1,
+   49.2,
+   4.0
+  ],
+  "fits": true,
+  "vol": 868.0,
+  "mass": 1.1,
+  "first": "stem space4",
+  "names": [
+   "stem space4"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 148,
+  "file": "148_keystem__stem_space6.stl",
+  "bom": "keystem",
+  "qty": 1,
+  "dims": [
+   49.2,
+   49.1,
+   4.0
+  ],
+  "fits": true,
+  "vol": 868.0,
+  "mass": 1.1,
+  "first": "stem space6",
+  "names": [
+   "stem space6"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 149,
+  "file": "149_lay_bearing__lay_shaft_bearing.stl",
+  "bom": "lay_bearing",
+  "qty": 1,
+  "dims": [
+   27.2,
+   27.2,
+   10.0
+  ],
+  "fits": true,
+  "vol": 2715.0,
+  "mass": 3.4,
+  "first": "lay shaft bearing",
+  "names": [
+   "lay shaft bearing"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 150,
+  "file": "150_lever__lever_back_p1.stl",
+  "bom": "lever",
+  "qty": 1,
+  "dims": [
+   112.3,
+   112.8,
+   3.0
+  ],
+  "fits": true,
+  "vol": 4908.0,
+  "mass": 6.2,
+  "first": "lever back",
+  "names": [
+   "lever back"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 151,
+  "file": "151_lever__lever_bksp_p1.stl",
+  "bom": "lever",
+  "qty": 1,
+  "dims": [
+   99.3,
+   98.9,
+   3.0
+  ],
+  "fits": true,
+  "vol": 4224.0,
+  "mass": 5.4,
+  "first": "lever bksp",
+  "names": [
+   "lever bksp"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 152,
+  "file": "152_lever__lever_bksp_p2_x2.stl",
+  "bom": "lever",
+  "qty": 2,
+  "dims": [
+   129.5,
+   128.6,
+   3.0
+  ],
+  "fits": true,
+  "vol": 5148.0,
+  "mass": 6.5,
+  "first": "lever bksp",
+  "names": [
+   "lever bksp",
+   "lever back"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 153,
+  "file": "153_lever__lever_k00_p1_x11.stl",
+  "bom": "lever",
+  "qty": 11,
+  "dims": [
+   99.3,
+   98.9,
+   3.0
+  ],
+  "fits": true,
+  "vol": 4180.0,
+  "mass": 5.3,
+  "first": "lever k00",
+  "names": [
+   "lever k00",
+   "lever k01",
+   "lever k02",
+   "lever k03",
+   "lever k04",
+   "lever k05",
+   "lever k06",
+   "lever k07",
+   "lever k08",
+   "lever k09",
+   "lever k010"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 154,
+  "file": "154_lever__lever_k00_p2_x11.stl",
+  "bom": "lever",
+  "qty": 11,
+  "dims": [
+   129.5,
+   130.0,
+   3.0
+  ],
+  "fits": true,
+  "vol": 5298.0,
+  "mass": 6.7,
+  "first": "lever k00",
+  "names": [
+   "lever k00",
+   "lever k01",
+   "lever k02",
+   "lever k03",
+   "lever k04",
+   "lever k05",
+   "lever k06",
+   "lever k07",
+   "lever k08",
+   "lever k09",
+   "lever k010"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 155,
+  "file": "155_lever__lever_k10_p1_x11.stl",
+  "bom": "lever",
+  "qty": 11,
+  "dims": [
+   112.3,
+   112.8,
+   3.0
+  ],
+  "fits": true,
+  "vol": 4864.0,
+  "mass": 6.2,
+  "first": "lever k10",
+  "names": [
+   "lever k10",
+   "lever k11",
+   "lever k12",
+   "lever k13",
+   "lever k14",
+   "lever k15",
+   "lever k16",
+   "lever k17",
+   "lever k18",
+   "lever k19",
+   "lever k110"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 156,
+  "file": "156_lever__lever_k10_p2_x11.stl",
+  "bom": "lever",
+  "qty": 11,
+  "dims": [
+   129.5,
+   130.6,
+   3.0
+  ],
+  "fits": true,
+  "vol": 5256.0,
+  "mass": 6.7,
+  "first": "lever k10",
+  "names": [
+   "lever k10",
+   "lever k11",
+   "lever k12",
+   "lever k13",
+   "lever k14",
+   "lever k15",
+   "lever k16",
+   "lever k17",
+   "lever k18",
+   "lever k19",
+   "lever k110"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 157,
+  "file": "157_lever__lever_k20_p1_x11.stl",
+  "bom": "lever",
+  "qty": 11,
+  "dims": [
+   125.2,
+   126.7,
+   3.0
+  ],
+  "fits": true,
+  "vol": 5548.0,
+  "mass": 7.0,
+  "first": "lever k20",
+  "names": [
+   "lever k20",
+   "lever k21",
+   "lever k22",
+   "lever k23",
+   "lever k24",
+   "lever k25",
+   "lever k26",
+   "lever k27",
+   "lever k28",
+   "lever k29",
+   "lever k210"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 158,
+  "file": "158_lever__lever_k20_p2_x11.stl",
+  "bom": "lever",
+  "qty": 11,
+  "dims": [
+   129.5,
+   131.0,
+   3.0
+  ],
+  "fits": true,
+  "vol": 5201.0,
+  "mass": 6.6,
+  "first": "lever k20",
+  "names": [
+   "lever k20",
+   "lever k21",
+   "lever k22",
+   "lever k23",
+   "lever k24",
+   "lever k25",
+   "lever k26",
+   "lever k27",
+   "lever k28",
+   "lever k29",
+   "lever k210"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 159,
+  "file": "159_lever__lever_k30_p1_x12.stl",
+  "bom": "lever",
+  "qty": 12,
+  "dims": [
+   140.2,
+   138.5,
+   3.0
+  ],
+  "fits": true,
+  "vol": 6232.0,
+  "mass": 7.9,
+  "first": "lever k30",
+  "names": [
+   "lever k30",
+   "lever k31",
+   "lever k32",
+   "lever k33",
+   "lever k34",
+   "lever k35",
+   "lever k36",
+   "lever k37",
+   "lever k38",
+   "lever k39",
+   "lever k310",
+   "lever shift"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 160,
+  "file": "160_lever__lever_k30_p2_x11.stl",
+  "bom": "lever",
+  "qty": 11,
+  "dims": [
+   129.5,
+   131.4,
+   3.0
+  ],
+  "fits": true,
+  "vol": 5274.0,
+  "mass": 6.7,
+  "first": "lever k30",
+  "names": [
+   "lever k30",
+   "lever k31",
+   "lever k32",
+   "lever k33",
+   "lever k34",
+   "lever k35",
+   "lever k36",
+   "lever k37",
+   "lever k38",
+   "lever k39",
+   "lever k310"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 161,
+  "file": "161_lever__lever_shift_p2.stl",
+  "bom": "lever",
+  "qty": 1,
+  "dims": [
+   129.5,
+   128.6,
+   3.0
+  ],
+  "fits": true,
+  "vol": 5212.0,
+  "mass": 6.6,
+  "first": "lever shift",
+  "names": [
+   "lever shift"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 162,
+  "file": "162_lever__lever_space4_p1_x2.stl",
+  "bom": "lever",
+  "qty": 2,
+  "dims": [
+   156.1,
+   155.1,
+   3.0
+  ],
+  "fits": true,
+  "vol": 7060.0,
+  "mass": 9.0,
+  "first": "lever space4",
+  "names": [
+   "lever space4",
+   "lever space6"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 163,
+  "file": "163_lever__lever_space4_p2_x2.stl",
+  "bom": "lever",
+  "qty": 2,
+  "dims": [
+   131.5,
+   129.8,
+   3.0
+  ],
+  "fits": true,
+  "vol": 5214.0,
+  "mass": 6.6,
+  "first": "lever space4",
+  "names": [
+   "lever space4",
+   "lever space6"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 164,
+  "file": "164_lift_collar__lift_collar.stl",
+  "bom": "lift_collar",
+  "qty": 1,
+  "dims": [
+   26.2,
+   26.2,
+   5.0
+  ],
+  "fits": true,
+  "vol": 1616.0,
+  "mass": 2.1,
+  "first": "lift collar",
+  "names": [
+   "lift collar"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 165,
+  "file": "165_lift_fork__lift_fork.stl",
+  "bom": "lift_fork",
+  "qty": 1,
+  "dims": [
+   135.8,
+   135.8,
+   39.5
+  ],
+  "fits": true,
+  "vol": 10351.0,
+  "mass": 13.1,
+  "first": "lift fork",
+  "names": [
+   "lift fork"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 166,
+  "file": "166_lock_guide__lock_bail_guide_-1_x2.stl",
+  "bom": "lock_guide",
+  "qty": 2,
+  "dims": [
+   40.0,
+   40.0,
+   4.0
+  ],
+  "fits": true,
+  "vol": 2067.0,
+  "mass": 2.6,
+  "first": "lock bail guide -1",
+  "names": [
+   "lock bail guide -1",
+   "lock bail guide +1"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 167,
+  "file": "167_lock_lever__hammer_lock_lever.stl",
+  "bom": "lock_lever",
+  "qty": 1,
+  "dims": [
+   15.8,
+   15.8,
+   3.6
+  ],
+  "fits": true,
+  "vol": 189.0,
+  "mass": 0.2,
+  "first": "hammer lock lever",
+  "names": [
+   "hammer lock lever"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 168,
+  "file": "168_lock_lever__read_lock_lever.stl",
+  "bom": "lock_lever",
+  "qty": 1,
+  "dims": [
+   15.8,
+   15.8,
+   5.0
+  ],
+  "fits": true,
+  "vol": 179.0,
+  "mass": 0.2,
+  "first": "read lock lever",
+  "names": [
+   "read lock lever"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 169,
+  "file": "169_margin_ab__margin_abutment.stl",
+  "bom": "margin_ab",
+  "qty": 1,
+  "dims": [
+   6.5,
+   7.5,
+   5.0
+  ],
+  "fits": true,
+  "vol": 242.0,
+  "mass": 0.3,
+  "first": "margin abutment",
+  "names": [
+   "margin abutment"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 170,
+  "file": "170_margin_stop__margin_stop_L_x2.stl",
+  "bom": "margin_stop",
+  "qty": 2,
+  "dims": [
+   6.0,
+   7.5,
+   5.5
+  ],
+  "fits": true,
+  "vol": 163.0,
+  "mass": 0.2,
+  "first": "margin stop L",
+  "names": [
+   "margin stop L",
+   "margin stop R"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 171,
+  "file": "171_margin_strip__margin_strip.stl",
+  "bom": "margin_strip",
+  "qty": 1,
+  "dims": [
+   161.2,
+   161.2,
+   3.5
+  ],
+  "fits": true,
+  "vol": 3136.0,
+  "mass": 4.0,
+  "first": "margin strip",
+  "names": [
+   "margin strip"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 172,
+  "file": "172_memory_pawl__memory_pawl_C_x2.stl",
+  "bom": "memory_pawl",
+  "qty": 2,
+  "dims": [
+   11.6,
+   11.7,
+   3.0
+  ],
+  "fits": true,
+  "vol": 119.0,
+  "mass": 0.2,
+  "first": "memory pawl C",
+  "names": [
+   "memory pawl C",
+   "memory pawl B"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 173,
+  "file": "173_motor_cheek__motor_cheek_175_p1_x2.stl",
+  "bom": "motor_cheek",
+  "qty": 2,
+  "dims": [
+   68.6,
+   68.6,
+   129.0
+  ],
+  "fits": true,
+  "vol": 47665.0,
+  "mass": 60.5,
+  "first": "motor cheek 175",
+  "names": [
+   "motor cheek 175",
+   "motor cheek 228"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 174,
+  "file": "174_motor_cheek__motor_cheek_175_p2_x2.stl",
+  "bom": "motor_cheek",
+  "qty": 2,
+  "dims": [
+   50.2,
+   50.2,
+   129.0
+  ],
+  "fits": true,
+  "vol": 34375.0,
+  "mass": 43.7,
+  "first": "motor cheek 175",
+  "names": [
+   "motor cheek 175",
+   "motor cheek 228"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 175,
+  "file": "175_nsel_br__stop_selector_bracket.stl",
+  "bom": "nsel_br",
+  "qty": 1,
+  "dims": [
+   12.0,
+   16.0,
+   10.0
+  ],
+  "fits": true,
+  "vol": 805.0,
+  "mass": 1.0,
+  "first": "stop selector bracket",
+  "names": [
+   "stop selector bracket"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 176,
+  "file": "176_nsel_lever__stop_selector_lever.stl",
+  "bom": "nsel_lever",
+  "qty": 1,
+  "dims": [
+   56.5,
+   57.2,
+   19.5
+  ],
+  "fits": true,
+  "vol": 555.0,
+  "mass": 0.7,
+  "first": "stop selector lever",
+  "names": [
+   "stop selector lever"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 177,
+  "file": "177_o_bc__O_bellcrank.stl",
+  "bom": "o_bc",
+  "qty": 1,
+  "dims": [
+   16.4,
+   16.9,
+   4.0
+  ],
+  "fits": true,
+  "vol": 342.0,
+  "mass": 0.4,
+  "first": "O bellcrank",
+  "names": [
+   "O bellcrank"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 178,
+  "file": "178_o_bc_br__O_bellcrank_bracket.stl",
+  "bom": "o_bc_br",
+  "qty": 1,
+  "dims": [
+   8.0,
+   10.0,
+   5.8
+  ],
+  "fits": true,
+  "vol": 370.0,
+  "mass": 0.5,
+  "first": "O bellcrank bracket",
+  "names": [
+   "O bellcrank bracket"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 179,
+  "file": "179_o_follower__O_follower.stl",
+  "bom": "o_follower",
+  "qty": 1,
+  "dims": [
+   20.1,
+   20.1,
+   15.0
+  ],
+  "fits": true,
+  "vol": 499.0,
+  "mass": 0.6,
+  "first": "O follower",
+  "names": [
+   "O follower"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 180,
+  "file": "180_o_post__O_post.stl",
+  "bom": "o_post",
+  "qty": 1,
+  "dims": [
+   17.0,
+   16.0,
+   11.0
+  ],
+  "fits": true,
+  "vol": 1466.0,
+  "mass": 1.9,
+  "first": "O post",
+  "names": [
+   "O post"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 181,
+  "file": "181_o_rocker__O_rocker.stl",
+  "bom": "o_rocker",
+  "qty": 1,
+  "dims": [
+   49.7,
+   49.7,
+   4.8
+  ],
+  "fits": true,
+  "vol": 701.0,
+  "mass": 0.9,
+  "first": "O rocker",
+  "names": [
+   "O rocker"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 182,
+  "file": "182_paper_rest__paper_rest.stl",
+  "bom": "paper_rest",
+  "qty": 1,
+  "dims": [
+   193.7,
+   193.7,
+   2.0
+  ],
+  "fits": true,
+  "vol": 29600.0,
+  "mass": 37.6,
+  "first": "paper rest",
+  "names": [
+   "paper rest"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 183,
+  "file": "183_pawl_lifter__memory_pawl_lifter.stl",
+  "bom": "pawl_lifter",
+  "qty": 1,
+  "dims": [
+   16.3,
+   16.1,
+   8.5
+  ],
+  "fits": true,
+  "vol": 191.0,
+  "mass": 0.2,
+  "first": "memory pawl lifter",
+  "names": [
+   "memory pawl lifter"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 184,
+  "file": "184_pinion12__int2_pinion.stl",
+  "bom": "pinion12",
+  "qty": 1,
+  "dims": [
+   13.8,
+   13.8,
+   5.0
+  ],
+  "fits": true,
+  "vol": 547.0,
+  "mass": 0.7,
+  "first": "int2 pinion",
+  "names": [
+   "int2 pinion"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 185,
+  "file": "185_pinion12_m15__int1_pinion.stl",
+  "bom": "pinion12_m15",
+  "qty": 1,
+  "dims": [
+   20.7,
+   20.7,
+   8.0
+  ],
+  "fits": true,
+  "vol": 1970.0,
+  "mass": 2.5,
+  "first": "int1 pinion",
+  "names": [
+   "int1 pinion"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 186,
+  "file": "186_pinion8__governor_pinion.stl",
+  "bom": "pinion8",
+  "qty": 1,
+  "dims": [
+   9.6,
+   9.6,
+   4.0
+  ],
+  "fits": true,
+  "vol": 195.0,
+  "mass": 0.2,
+  "first": "governor pinion",
+  "names": [
+   "governor pinion"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 187,
+  "file": "187_pivot_bracket__pivot_bracket_-148_x2.stl",
+  "bom": "pivot_bracket",
+  "qty": 2,
+  "dims": [
+   39.6,
+   39.6,
+   12.0
+  ],
+  "fits": true,
+  "vol": 7526.0,
+  "mass": 9.6,
+  "first": "pivot bracket -148",
+  "names": [
+   "pivot bracket -148",
+   "pivot bracket +148"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 188,
+  "file": "188_pmu_detent__pm-u_detent.stl",
+  "bom": "pmu_detent",
+  "qty": 1,
+  "dims": [
+   19.1,
+   19.1,
+   2.9
+  ],
+  "fits": true,
+  "vol": 371.0,
+  "mass": 0.5,
+  "first": "pm-u detent",
+  "names": [
+   "pm-u detent"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 189,
+  "file": "189_pmu_eccentric__pm-u_eccentric.stl",
+  "bom": "pmu_eccentric",
+  "qty": 1,
+  "dims": [
+   18.4,
+   18.4,
+   7.2
+  ],
+  "fits": true,
+  "vol": 254.0,
+  "mass": 0.3,
+  "first": "pm-u eccentric",
+  "names": [
+   "pm-u eccentric"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 190,
+  "file": "190_pusher_guide__pusher_guide.stl",
+  "bom": "pusher_guide",
+  "qty": 1,
+  "dims": [
+   167.4,
+   167.4,
+   4.7
+  ],
+  "fits": true,
+  "vol": 14155.0,
+  "mass": 18.0,
+  "first": "pusher guide",
+  "names": [
+   "pusher guide"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 191,
+  "file": "191_rack__carriage_rack.stl",
+  "bom": "rack",
+  "qty": 1,
+  "dims": [
+   174.5,
+   174.5,
+   6.0
+  ],
+  "fits": true,
+  "vol": 9488.0,
+  "mass": 12.0,
+  "first": "carriage rack",
+  "names": [
+   "carriage rack"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 192,
+  "file": "192_read_head__reading_head.stl",
+  "bom": "read_head",
+  "qty": 1,
+  "dims": [
+   17.4,
+   21.5,
+   12.5
+  ],
+  "fits": true,
+  "vol": 1371.0,
+  "mass": 1.7,
+  "first": "reading head",
+  "names": [
+   "reading head"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 193,
+  "file": "193_read_lock_guide__read_lock_guide.stl",
+  "bom": "read_lock_guide",
+  "qty": 1,
+  "dims": [
+   16.2,
+   14.2,
+   14.0
+  ],
+  "fits": true,
+  "vol": 861.0,
+  "mass": 1.1,
+  "first": "read lock guide",
+  "names": [
+   "read lock guide"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 194,
+  "file": "194_read_post__reading_post.stl",
+  "bom": "read_post",
+  "qty": 1,
+  "dims": [
+   166.9,
+   166.9,
+   19.0
+  ],
+  "fits": true,
+  "vol": 8188.0,
+  "mass": 10.4,
+  "first": "reading post",
+  "names": [
+   "reading post"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 195,
+  "file": "195_read_rocker__read_rocker.stl",
+  "bom": "read_rocker",
+  "qty": 1,
+  "dims": [
+   31.1,
+   30.9,
+   10.4
+  ],
+  "fits": true,
+  "vol": 473.0,
+  "mass": 0.6,
+  "first": "read rocker",
+  "names": [
+   "read rocker"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 196,
+  "file": "196_read_rocker_bracket__read_rocker_bracket.stl",
+  "bom": "read_rocker_bracket",
+  "qty": 1,
+  "dims": [
+   39.8,
+   40.0,
+   8.5
+  ],
+  "fits": true,
+  "vol": 1761.0,
+  "mass": 2.2,
+  "first": "read rocker bracket",
+  "names": [
+   "read rocker bracket"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 197,
+  "file": "197_read_slide_B__read_slide_B.stl",
+  "bom": "read_slide_B",
+  "qty": 1,
+  "dims": [
+   29.0,
+   29.0,
+   4.0
+  ],
+  "fits": true,
+  "vol": 1237.0,
+  "mass": 1.6,
+  "first": "read slide B",
+  "names": [
+   "read slide B"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 198,
+  "file": "198_read_slide_C__read_slide_C.stl",
+  "bom": "read_slide_C",
+  "qty": 1,
+  "dims": [
+   29.0,
+   29.0,
+   4.0
+  ],
+  "fits": true,
+  "vol": 1237.0,
+  "mass": 1.6,
+  "first": "read slide C",
+  "names": [
+   "read slide C"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 199,
+  "file": "199_read_slide_stop__read_slide_B_stop_x2.stl",
+  "bom": "read_slide_stop",
+  "qty": 2,
+  "dims": [
+   13.4,
+   13.4,
+   3.0
+  ],
+  "fits": true,
+  "vol": 210.0,
+  "mass": 0.3,
+  "first": "read slide B stop",
+  "names": [
+   "read slide B stop",
+   "read slide C stop"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 200,
+  "file": "200_read_stem__reading_stem_and_arm.stl",
+  "bom": "read_stem",
+  "qty": 1,
+  "dims": [
+   91.3,
+   92.2,
+   7.0
+  ],
+  "fits": true,
+  "vol": 4151.0,
+  "mass": 5.3,
+  "first": "reading stem and arm",
+  "names": [
+   "reading stem and arm"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 201,
+  "file": "201_release_bracket__carriage_release_bracket.stl",
+  "bom": "release_bracket",
+  "qty": 1,
+  "dims": [
+   18.0,
+   31.5,
+   16.4
+  ],
+  "fits": true,
+  "vol": 2880.0,
+  "mass": 3.7,
+  "first": "carriage release bracket",
+  "names": [
+   "carriage release bracket"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 202,
+  "file": "202_release_key__carriage_release_key.stl",
+  "bom": "release_key",
+  "qty": 1,
+  "dims": [
+   27.4,
+   27.3,
+   15.0
+  ],
+  "fits": true,
+  "vol": 1504.0,
+  "mass": 1.9,
+  "first": "carriage release key",
+  "names": [
+   "carriage release key"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 203,
+  "file": "203_release_stop__dog_release_sheath_stop.stl",
+  "bom": "release_stop",
+  "qty": 1,
+  "dims": [
+   15.0,
+   8.0,
+   2.0
+  ],
+  "fits": true,
+  "vol": 236.0,
+  "mass": 0.3,
+  "first": "dog release sheath stop",
+  "names": [
+   "dog release sheath stop"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 204,
+  "file": "204_ribbon_guide__ribbon_guide_-1_x2.stl",
+  "bom": "ribbon_guide",
+  "qty": 2,
+  "dims": [
+   18.0,
+   19.5,
+   4.0
+  ],
+  "fits": true,
+  "vol": 284.0,
+  "mass": 0.4,
+  "first": "ribbon guide -1",
+  "names": [
+   "ribbon guide -1",
+   "ribbon guide +1"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 205,
+  "file": "205_ribbon_post__ribbon_post_+1.stl",
+  "bom": "ribbon_post",
+  "qty": 1,
+  "dims": [
+   98.2,
+   99.2,
+   8.0
+  ],
+  "fits": true,
+  "vol": 8416.0,
+  "mass": 10.7,
+  "first": "ribbon post +1",
+  "names": [
+   "ribbon post +1"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 206,
+  "file": "206_ribbon_post__ribbon_post_-1.stl",
+  "bom": "ribbon_post",
+  "qty": 1,
+  "dims": [
+   99.2,
+   98.2,
+   8.0
+  ],
+  "fits": true,
+  "vol": 8416.0,
+  "mass": 10.7,
+  "first": "ribbon post -1",
+  "names": [
+   "ribbon post -1"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 207,
+  "file": "207_rocker_back__back_rocker.stl",
+  "bom": "rocker_back",
+  "qty": 1,
+  "dims": [
+   30.6,
+   30.4,
+   9.1
+  ],
+  "fits": true,
+  "vol": 407.0,
+  "mass": 0.5,
+  "first": "back rocker",
+  "names": [
+   "back rocker"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 208,
+  "file": "208_rocker_bksp__bksp_rocker.stl",
+  "bom": "rocker_bksp",
+  "qty": 1,
+  "dims": [
+   16.2,
+   14.0,
+   8.0
+  ],
+  "fits": true,
+  "vol": 324.0,
+  "mass": 0.4,
+  "first": "bksp rocker",
+  "names": [
+   "bksp rocker"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 209,
+  "file": "209_rocker_bracket__rocker_bracket.stl",
+  "bom": "rocker_bracket",
+  "qty": 1,
+  "dims": [
+   34.0,
+   54.0,
+   3.0
+  ],
+  "fits": true,
+  "vol": 5011.0,
+  "mass": 6.4,
+  "first": "rocker bracket",
+  "names": [
+   "rocker bracket"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 210,
+  "file": "210_row_link__row_detent_link.stl",
+  "bom": "row_link",
+  "qty": 1,
+  "dims": [
+   144.8,
+   145.9,
+   63.9
+  ],
+  "fits": true,
+  "vol": 3865.0,
+  "mass": 4.9,
+  "first": "row detent link",
+  "names": [
+   "row detent link"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 211,
+  "file": "211_row_post__row_detent_post.stl",
+  "bom": "row_post",
+  "qty": 1,
+  "dims": [
+   58.1,
+   58.1,
+   9.0
+  ],
+  "fits": true,
+  "vol": 2583.0,
+  "mass": 3.3,
+  "first": "row detent post",
+  "names": [
+   "row detent post"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 212,
+  "file": "212_sector_bracket__sector_bracket.stl",
+  "bom": "sector_bracket",
+  "qty": 1,
+  "dims": [
+   51.6,
+   51.6,
+   2.0
+  ],
+  "fits": true,
+  "vol": 1940.0,
+  "mass": 2.5,
+  "first": "sector bracket",
+  "names": [
+   "sector bracket"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 213,
+  "file": "213_sel_bar_l__selector_bar_l1_p1_x3.stl",
+  "bom": "sel_bar_l",
+  "qty": 3,
+  "dims": [
+   101.0,
+   101.0,
+   3.0
+  ],
+  "fits": true,
+  "vol": 1176.0,
+  "mass": 1.5,
+  "first": "selector bar l1",
+  "names": [
+   "selector bar l1",
+   "selector bar l2",
+   "selector bar l4"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 214,
+  "file": "214_sel_bar_l__selector_bar_l1_p2_x3.stl",
+  "bom": "sel_bar_l",
+  "qty": 3,
+  "dims": [
+   90.4,
+   90.4,
+   3.0
+  ],
+  "fits": true,
+  "vol": 1050.0,
+  "mass": 1.3,
+  "first": "selector bar l1",
+  "names": [
+   "selector bar l1",
+   "selector bar l2",
+   "selector bar l4"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 215,
+  "file": "215_sel_bar_r__selector_bar_r1_p1_x4.stl",
+  "bom": "sel_bar_r",
+  "qty": 4,
+  "dims": [
+   79.7,
+   79.7,
+   3.0
+  ],
+  "fits": true,
+  "vol": 923.0,
+  "mass": 1.2,
+  "first": "selector bar r1",
+  "names": [
+   "selector bar r1",
+   "selector bar r2",
+   "selector bar r4",
+   "selector bar r8"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 216,
+  "file": "216_sel_bar_r__selector_bar_r1_p2_x4.stl",
+  "bom": "sel_bar_r",
+  "qty": 4,
+  "dims": [
+   99.6,
+   99.6,
+   3.0
+  ],
+  "fits": true,
+  "vol": 1159.0,
+  "mass": 1.5,
+  "first": "selector bar r1",
+  "names": [
+   "selector bar r1",
+   "selector bar r2",
+   "selector bar r4",
+   "selector bar r8"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 217,
+  "file": "217_sel_comb__selector_comb_p1.stl",
+  "bom": "sel_comb",
+  "qty": 1,
+  "dims": [
+   138.4,
+   138.8,
+   3.0
+  ],
+  "fits": true,
+  "vol": 15549.0,
+  "mass": 19.7,
+  "first": "selector comb",
+  "names": [
+   "selector comb"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 218,
+  "file": "218_sel_comb__selector_comb_p2.stl",
+  "bom": "sel_comb",
+  "qty": 1,
+  "dims": [
+   141.0,
+   140.5,
+   3.0
+  ],
+  "fits": true,
+  "vol": 14804.0,
+  "mass": 18.8,
+  "first": "selector comb",
+  "names": [
+   "selector comb"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 219,
+  "file": "219_sel_post__selector_post_+1.stl",
+  "bom": "sel_post",
+  "qty": 1,
+  "dims": [
+   71.4,
+   71.4,
+   4.5
+  ],
+  "fits": true,
+  "vol": 6426.0,
+  "mass": 8.2,
+  "first": "selector post +1",
+  "names": [
+   "selector post +1"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 220,
+  "file": "220_sel_post__selector_post_-1.stl",
+  "bom": "sel_post",
+  "qty": 1,
+  "dims": [
+   71.4,
+   71.4,
+   6.0
+  ],
+  "fits": true,
+  "vol": 8568.0,
+  "mass": 10.9,
+  "first": "selector post -1",
+  "names": [
+   "selector post -1"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 221,
+  "file": "221_shaft_hub__pulley_and_detent_wheel.stl",
+  "bom": "shaft_hub",
+  "qty": 1,
+  "dims": [
+   80.0,
+   79.9,
+   15.5
+  ],
+  "fits": true,
+  "vol": 36413.0,
+  "mass": 46.2,
+  "first": "pulley and detent wheel",
+  "names": [
+   "pulley and detent wheel"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 222,
+  "file": "222_shuttle__shuttle.stl",
+  "bom": "shuttle",
+  "qty": 1,
+  "dims": [
+   94.8,
+   92.0,
+   99.4
+  ],
+  "fits": true,
+  "vol": 43443.0,
+  "mass": 55.2,
+  "first": "shuttle",
+  "names": [
+   "shuttle"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 223,
+  "file": "223_sleeve_B__memory_sleeve_B.stl",
+  "bom": "sleeve_B",
+  "qty": 1,
+  "dims": [
+   44.6,
+   50.7,
+   23.0
+  ],
+  "fits": true,
+  "vol": 2911.0,
+  "mass": 3.7,
+  "first": "memory sleeve B",
+  "names": [
+   "memory sleeve B"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 224,
+  "file": "224_sleeve_C__memory_sleeve_C.stl",
+  "bom": "sleeve_C",
+  "qty": 1,
+  "dims": [
+   43.9,
+   51.4,
+   13.0
+  ],
+  "fits": true,
+  "vol": 3112.0,
+  "mass": 4.0,
+  "first": "memory sleeve C",
+  "names": [
+   "memory sleeve C"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 225,
+  "file": "225_sleeve_R__memory_sleeve_R.stl",
+  "bom": "sleeve_R",
+  "qty": 1,
+  "dims": [
+   57.5,
+   57.2,
+   21.7
+  ],
+  "fits": true,
+  "vol": 1065.0,
+  "mass": 1.4,
+  "first": "memory sleeve R",
+  "names": [
+   "memory sleeve R"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 226,
+  "file": "226_spacebar__cap_space4.stl",
+  "bom": "spacebar",
+  "qty": 1,
+  "dims": [
+   73.5,
+   73.5,
+   8.0
+  ],
+  "fits": true,
+  "vol": 10067.0,
+  "mass": 12.8,
+  "first": "cap space4",
+  "names": [
+   "cap space4"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 227,
+  "file": "227_spacebar__cap_space6.stl",
+  "bom": "spacebar",
+  "qty": 1,
+  "dims": [
+   73.5,
+   73.5,
+   8.0
+  ],
+  "fits": true,
+  "vol": 10066.0,
+  "mass": 12.8,
+  "first": "cap space6",
+  "names": [
+   "cap space6"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 228,
+  "file": "228_stop_arm__cycle_stop_arm.stl",
+  "bom": "stop_arm",
+  "qty": 1,
+  "dims": [
+   14.0,
+   6.0,
+   4.0
+  ],
+  "fits": true,
+  "vol": 336.0,
+  "mass": 0.4,
+  "first": "cycle stop arm",
+  "names": [
+   "cycle stop arm"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 229,
+  "file": "229_stop_bc__stop_bellcrank.stl",
+  "bom": "stop_bc",
+  "qty": 1,
+  "dims": [
+   20.4,
+   20.4,
+   11.0
+  ],
+  "fits": true,
+  "vol": 578.0,
+  "mass": 0.7,
+  "first": "stop bellcrank",
+  "names": [
+   "stop bellcrank"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 230,
+  "file": "230_stop_bc_br__stop_bellcrank_bracket.stl",
+  "bom": "stop_bc_br",
+  "qty": 1,
+  "dims": [
+   22.2,
+   22.3,
+   7.5
+  ],
+  "fits": true,
+  "vol": 470.0,
+  "mass": 0.6,
+  "first": "stop bellcrank bracket",
+  "names": [
+   "stop bellcrank bracket"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 231,
+  "file": "231_stop_carrier__stop_carrier.stl",
+  "bom": "stop_carrier",
+  "qty": 1,
+  "dims": [
+   19.5,
+   28.0,
+   7.5
+  ],
+  "fits": true,
+  "vol": 1357.0,
+  "mass": 1.7,
+  "first": "stop carrier",
+  "names": [
+   "stop carrier"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 232,
+  "file": "232_stop_finger__stop_finger.stl",
+  "bom": "stop_finger",
+  "qty": 1,
+  "dims": [
+   49.6,
+   49.7,
+   6.0
+  ],
+  "fits": true,
+  "vol": 526.0,
+  "mass": 0.7,
+  "first": "stop finger",
+  "names": [
+   "stop finger"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 233,
+  "file": "233_stop_latch__cycle_stop_latch.stl",
+  "bom": "stop_latch",
+  "qty": 1,
+  "dims": [
+   12.0,
+   8.0,
+   6.0
+  ],
+  "fits": true,
+  "vol": 576.0,
+  "mass": 0.7,
+  "first": "cycle stop latch",
+  "names": [
+   "cycle stop latch"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 234,
+  "file": "234_stop_rod_br__stop_carrier_rod_bracket.stl",
+  "bom": "stop_rod_br",
+  "qty": 1,
+  "dims": [
+   5.5,
+   12.0,
+   5.0
+  ],
+  "fits": true,
+  "vol": 294.0,
+  "mass": 0.4,
+  "first": "stop carrier rod bracket",
+  "names": [
+   "stop carrier rod bracket"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 235,
+  "file": "235_tape_clamp__tape_clamp.stl",
+  "bom": "tape_clamp",
+  "qty": 1,
+  "dims": [
+   15.6,
+   15.6,
+   0.7
+  ],
+  "fits": true,
+  "vol": 67.0,
+  "mass": 0.1,
+  "first": "tape clamp",
+  "names": [
+   "tape clamp"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 236,
+  "file": "236_tier_carriage__tier_carriage_+1.stl",
+  "bom": "tier_carriage",
+  "qty": 1,
+  "dims": [
+   127.3,
+   127.8,
+   53.0
+  ],
+  "fits": true,
+  "vol": 8250.0,
+  "mass": 10.5,
+  "first": "tier carriage +1",
+  "names": [
+   "tier carriage +1"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 237,
+  "file": "237_tier_carriage__tier_carriage_-1.stl",
+  "bom": "tier_carriage",
+  "qty": 1,
+  "dims": [
+   127.3,
+   127.8,
+   53.0
+  ],
+  "fits": true,
+  "vol": 8250.0,
+  "mass": 10.5,
+  "first": "tier carriage -1",
+  "names": [
+   "tier carriage -1"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 238,
+  "file": "238_tower__shaft_tower.stl",
+  "bom": "tower",
+  "qty": 1,
+  "dims": [
+   31.9,
+   31.9,
+   27.0
+  ],
+  "fits": true,
+  "vol": 12317.0,
+  "mass": 15.6,
+  "first": "shaft tower",
+  "names": [
+   "shaft tower"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 239,
+  "file": "239_trip_lever__cycle_trip_lever.stl",
+  "bom": "trip_lever",
+  "qty": 1,
+  "dims": [
+   12.7,
+   12.6,
+   6.0
+  ],
+  "fits": true,
+  "vol": 204.0,
+  "mass": 0.3,
+  "first": "cycle trip lever",
+  "names": [
+   "cycle trip lever"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 240,
+  "file": "240_type_block_00__type_block_0.stl",
+  "bom": "type_block_00",
+  "qty": 1,
+  "dims": [
+   71.2,
+   71.2,
+   5.2
+  ],
+  "fits": true,
+  "vol": 3190.0,
+  "mass": 4.1,
+  "first": "type block 0",
+  "names": [
+   "type block 0"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 241,
+  "file": "241_type_block_01__type_block_1.stl",
+  "bom": "type_block_01",
+  "qty": 1,
+  "dims": [
+   71.2,
+   71.2,
+   5.2
+  ],
+  "fits": true,
+  "vol": 3185.0,
+  "mass": 4.0,
+  "first": "type block 1",
+  "names": [
+   "type block 1"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 242,
+  "file": "242_type_block_02__type_block_2.stl",
+  "bom": "type_block_02",
+  "qty": 1,
+  "dims": [
+   71.2,
+   71.2,
+   5.2
+  ],
+  "fits": true,
+  "vol": 3183.0,
+  "mass": 4.0,
+  "first": "type block 2",
+  "names": [
+   "type block 2"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 243,
+  "file": "243_type_block_03__type_block_3.stl",
+  "bom": "type_block_03",
+  "qty": 1,
+  "dims": [
+   71.2,
+   71.2,
+   5.2
+  ],
+  "fits": true,
+  "vol": 3181.0,
+  "mass": 4.0,
+  "first": "type block 3",
+  "names": [
+   "type block 3"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 244,
+  "file": "244_type_block_04__type_block_4.stl",
+  "bom": "type_block_04",
+  "qty": 1,
+  "dims": [
+   71.2,
+   71.2,
+   5.2
+  ],
+  "fits": true,
+  "vol": 3209.0,
+  "mass": 4.1,
+  "first": "type block 4",
+  "names": [
+   "type block 4"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 245,
+  "file": "245_type_block_05__type_block_5.stl",
+  "bom": "type_block_05",
+  "qty": 1,
+  "dims": [
+   71.2,
+   71.2,
+   5.2
+  ],
+  "fits": true,
+  "vol": 3193.0,
+  "mass": 4.1,
+  "first": "type block 5",
+  "names": [
+   "type block 5"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 246,
+  "file": "246_type_block_06__type_block_6.stl",
+  "bom": "type_block_06",
+  "qty": 1,
+  "dims": [
+   71.2,
+   71.2,
+   5.2
+  ],
+  "fits": true,
+  "vol": 3179.0,
+  "mass": 4.0,
+  "first": "type block 6",
+  "names": [
+   "type block 6"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 247,
+  "file": "247_type_block_07__type_block_7.stl",
+  "bom": "type_block_07",
+  "qty": 1,
+  "dims": [
+   71.2,
+   71.2,
+   5.2
+  ],
+  "fits": true,
+  "vol": 3167.0,
+  "mass": 4.0,
+  "first": "type block 7",
+  "names": [
+   "type block 7"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 248,
+  "file": "248_type_block_08__type_block_8.stl",
+  "bom": "type_block_08",
+  "qty": 1,
+  "dims": [
+   71.2,
+   71.2,
+   5.2
+  ],
+  "fits": true,
+  "vol": 3179.0,
+  "mass": 4.0,
+  "first": "type block 8",
+  "names": [
+   "type block 8"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 249,
+  "file": "249_type_block_09__type_block_9.stl",
+  "bom": "type_block_09",
+  "qty": 1,
+  "dims": [
+   71.2,
+   71.2,
+   5.2
+  ],
+  "fits": true,
+  "vol": 3145.0,
+  "mass": 4.0,
+  "first": "type block 9",
+  "names": [
+   "type block 9"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 250,
+  "file": "250_type_block_10__type_block_10.stl",
+  "bom": "type_block_10",
+  "qty": 1,
+  "dims": [
+   71.2,
+   71.2,
+   5.2
+  ],
+  "fits": true,
+  "vol": 3141.0,
+  "mass": 4.0,
+  "first": "type block 10",
+  "names": [
+   "type block 10"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 251,
+  "file": "251_uframe_arm__U-frame_arm_and_hammer_post.stl",
+  "bom": "uframe_arm",
+  "qty": 1,
+  "dims": [
+   128.7,
+   127.9,
+   24.0
+  ],
+  "fits": true,
+  "vol": 38048.0,
+  "mass": 48.3,
+  "first": "U-frame arm and hammer post",
+  "names": [
+   "U-frame arm and hammer post"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 252,
+  "file": "252_w_follower__W_follower.stl",
+  "bom": "w_follower",
+  "qty": 1,
+  "dims": [
+   40.9,
+   41.1,
+   20.7
+  ],
+  "fits": true,
+  "vol": 1005.0,
+  "mass": 1.3,
+  "first": "W follower",
+  "names": [
+   "W follower"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 253,
+  "file": "253_w_latch_pawl__W_latch_pawl.stl",
+  "bom": "w_latch_pawl",
+  "qty": 1,
+  "dims": [
+   15.9,
+   15.9,
+   5.0
+  ],
+  "fits": true,
+  "vol": 212.0,
+  "mass": 0.3,
+  "first": "W latch pawl",
+  "names": [
+   "W latch pawl"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 254,
+  "file": "254_w_latch_rack__W_latch_rack.stl",
+  "bom": "w_latch_rack",
+  "qty": 1,
+  "dims": [
+   12.7,
+   12.7,
+   2.0
+  ],
+  "fits": true,
+  "vol": 112.0,
+  "mass": 0.1,
+  "first": "W latch rack",
+  "names": [
+   "W latch rack"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 255,
+  "file": "255_w_wire_bracket__W_wire_bracket.stl",
+  "bom": "w_wire_bracket",
+  "qty": 1,
+  "dims": [
+   28.9,
+   28.8,
+   13.0
+  ],
+  "fits": true,
+  "vol": 1515.0,
+  "mass": 1.9,
+  "first": "W wire bracket",
+  "names": [
+   "W wire bracket"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 256,
+  "file": "256_wfol_bracket__W_follower_bracket.stl",
+  "bom": "wfol_bracket",
+  "qty": 1,
+  "dims": [
+   50.4,
+   51.0,
+   10.0
+  ],
+  "fits": true,
+  "vol": 3229.0,
+  "mass": 4.1,
+  "first": "W follower bracket",
+  "names": [
+   "W follower bracket"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 257,
+  "file": "257_wind_gear__winding_gear.stl",
+  "bom": "wind_gear",
+  "qty": 1,
+  "dims": [
+   83.9,
+   84.0,
+   6.0
+  ],
+  "fits": true,
+  "vol": 30583.0,
+  "mass": 38.8,
+  "first": "winding gear",
+  "names": [
+   "winding gear"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 258,
+  "file": "258_wind_pinion__winding_pinion.stl",
+  "bom": "wind_pinion",
+  "qty": 1,
+  "dims": [
+   29.8,
+   30.0,
+   6.0
+  ],
+  "fits": true,
+  "vol": 3345.0,
+  "mass": 4.2,
+  "first": "winding pinion",
+  "names": [
+   "winding pinion"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ },
+ {
+  "num": 259,
+  "file": "259_wlever_lift_1__lift_summing_lever_1.stl",
+  "bom": "wlever_lift_1",
+  "qty": 1,
+  "dims": [
+   41.7,
+   41.7,
+   3.1
+  ],
+  "fits": true,
+  "vol": 419.0,
+  "mass": 0.5,
+  "first": "lift summing lever 1",
+  "names": [
+   "lift summing lever 1"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 260,
+  "file": "260_wlever_lift_2__lift_summing_lever_2.stl",
+  "bom": "wlever_lift_2",
+  "qty": 1,
+  "dims": [
+   45.6,
+   45.6,
+   5.0
+  ],
+  "fits": true,
+  "vol": 497.0,
+  "mass": 0.6,
+  "first": "lift summing lever 2",
+  "names": [
+   "lift summing lever 2"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 261,
+  "file": "261_wlever_rotate_1__rotate_summing_lever_1.stl",
+  "bom": "wlever_rotate_1",
+  "qty": 1,
+  "dims": [
+   29.0,
+   29.0,
+   3.1
+  ],
+  "fits": true,
+  "vol": 284.0,
+  "mass": 0.4,
+  "first": "rotate summing lever 1",
+  "names": [
+   "rotate summing lever 1"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 262,
+  "file": "262_wlever_rotate_2__rotate_summing_lever_2.stl",
+  "bom": "wlever_rotate_2",
+  "qty": 1,
+  "dims": [
+   31.5,
+   31.5,
+   5.0
+  ],
+  "fits": true,
+  "vol": 347.0,
+  "mass": 0.4,
+  "first": "rotate summing lever 2",
+  "names": [
+   "rotate summing lever 2"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 263,
+  "file": "263_wlever_rotate_3__rotate_summing_lever_3.stl",
+  "bom": "wlever_rotate_3",
+  "qty": 1,
+  "dims": [
+   48.1,
+   48.1,
+   5.0
+  ],
+  "fits": true,
+  "vol": 526.0,
+  "mass": 0.7,
+  "first": "rotate summing lever 3",
+  "names": [
+   "rotate summing lever 3"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 264,
+  "file": "264_zero_stop__zero_stop.stl",
+  "bom": "zero_stop",
+  "qty": 1,
+  "dims": [
+   22.0,
+   16.0,
+   9.0
+  ],
+  "fits": true,
+  "vol": 2978.0,
+  "mass": 3.8,
+  "first": "zero stop",
+  "names": [
+   "zero stop"
+  ],
+  "number_on": "top",
+  "bodies": 1
+ }
+]

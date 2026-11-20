@@ -1,0 +1,56 @@
+[
+ {
+  "file": "tpm2_em13_nozzle04_sample.stl",
+  "em_mm": 8.467,
+  "pmin": 0.45,
+  "W": 102.8,
+  "H": 31.2,
+  "watertight": true,
+  "polygons": 51
+ },
+ {
+  "file": "tpm2_em13_nozzle04_control.stl",
+  "em_mm": 8.467,
+  "pmin": 0.45,
+  "W": 38.0,
+  "H": 45.6,
+  "watertight": true,
+  "polygons": 34
+ },
+ {
+  "file": "tpm2_em13_nozzle04_sheet.stl",
+  "em_mm": 8.467,
+  "pmin": 0.45,
+  "W": 116.0,
+  "H": 96.1,
+  "watertight": true,
+  "polygons": 99
+ },
+ {
+  "file": "tpm2_em14_nozzle025_sample.stl",
+  "em_mm": 6.35,
+  "pmin": 0.3,
+  "W": 79.1,
+  "H": 25.4,
+  "watertight": true,
+  "polygons": 51
+ },
+ {
+  "file": "tpm2_em14_nozzle025_control.stl",
+  "em_mm": 6.35,
+  "pmin": 0.3,
+  "W": 30.5,
+  "H": 36.2,
+  "watertight": true,
+  "polygons": 34
+ },
+ {
+  "file": "tpm2_em14_nozzle025_sheet.stl",
+  "em_mm": 6.35,
+  "pmin": 0.3,
+  "W": 89.0,
+  "H": 74.1,
+  "watertight": true,
+  "polygons": 99
+ }
+]

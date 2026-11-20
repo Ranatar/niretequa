@@ -1,0 +1,986 @@
+{
+ "id": "comixanesse",
+ "name": "Tengwar Comixanesse",
+ "author": "Shankar Sivarajan",
+ "lic": "—",
+ "file": "fonts/sets/TengwarComixanesse.ttf",
+ "profile": {
+  "scale": 0.97,
+  "k": 0.7048324514991182,
+  "issues": [],
+  "pad": [
+   [
+    "halla",
+    3
+   ],
+   [
+    "пуста",
+    2
+   ],
+   [
+    "двойная пуста",
+    2
+   ]
+  ],
+  "shift": [
+   [
+    "7",
+    1
+   ],
+   [
+    "8",
+    1
+   ],
+   [
+    "9",
+    2
+   ]
+  ],
+  "missing": [],
+  "shrunk": [],
+  "warn": [],
+  "name": "Tengwar Comixanesse"
+ },
+ "cells": [
+  {
+   "row": 1,
+   "pos": 0,
+   "key": "57352",
+   "label": "thúle",
+   "kind": "T",
+   "missing": false,
+   "w": 7,
+   "b": 3,
+   "c": 4
+  },
+  {
+   "row": 1,
+   "pos": 1,
+   "key": "57353",
+   "label": "formen",
+   "kind": "T",
+   "missing": false,
+   "w": 7,
+   "b": 3,
+   "c": 4
+  },
+  {
+   "row": 1,
+   "pos": 2,
+   "key": "57354",
+   "label": "harma",
+   "kind": "T",
+   "missing": false,
+   "w": 7,
+   "b": 5,
+   "c": 4
+  },
+  {
+   "row": 1,
+   "pos": 3,
+   "key": "57360",
+   "label": "númen",
+   "kind": "T",
+   "missing": false,
+   "w": 11,
+   "b": 6,
+   "c": 6
+  },
+  {
+   "row": 1,
+   "pos": 4,
+   "key": "57361",
+   "label": "malta",
+   "kind": "T",
+   "missing": false,
+   "w": 10,
+   "b": 6,
+   "c": 5
+  },
+  {
+   "row": 1,
+   "pos": 5,
+   "key": "mark:i",
+   "label": "точка — i",
+   "kind": "DA",
+   "missing": false
+  },
+  {
+   "row": 1,
+   "pos": 6,
+   "key": "mark:a",
+   "label": "три точки — a",
+   "kind": "DA",
+   "missing": false
+  },
+  {
+   "row": 1,
+   "pos": 7,
+   "key": "mark:e",
+   "label": "акут — e",
+   "kind": "DA",
+   "missing": false
+  },
+  {
+   "row": 1,
+   "pos": 8,
+   "key": "mark:o",
+   "label": "правый завиток — o*",
+   "kind": "DA",
+   "missing": false
+  },
+  {
+   "row": 1,
+   "pos": 9,
+   "key": "mark:u",
+   "label": "левый завиток — u*",
+   "kind": "DA",
+   "missing": false
+  },
+  {
+   "row": 1,
+   "pos": 10,
+   "key": "mark:ddotb",
+   "label": "две точки снизу — y",
+   "kind": "DB",
+   "missing": false
+  },
+  {
+   "row": 2,
+   "pos": 0,
+   "key": "57344",
+   "label": "tinco",
+   "kind": "T",
+   "missing": false,
+   "w": 6,
+   "b": 3,
+   "c": 2
+  },
+  {
+   "row": 2,
+   "pos": 1,
+   "key": "57345",
+   "label": "parma",
+   "kind": "T",
+   "missing": false,
+   "w": 6,
+   "b": 3,
+   "c": 2
+  },
+  {
+   "row": 2,
+   "pos": 2,
+   "key": "57346",
+   "label": "calma",
+   "kind": "T",
+   "missing": false,
+   "w": 6,
+   "b": 3,
+   "c": 4
+  },
+  {
+   "row": 2,
+   "pos": 3,
+   "key": "57347",
+   "label": "quesse",
+   "kind": "T",
+   "missing": false,
+   "w": 7,
+   "b": 4,
+   "c": 6
+  },
+  {
+   "row": 2,
+   "pos": 4,
+   "key": "57348",
+   "label": "ando",
+   "kind": "T",
+   "missing": false,
+   "w": 11,
+   "b": 6,
+   "c": 6
+  },
+  {
+   "row": 2,
+   "pos": 5,
+   "key": "57349",
+   "label": "umbar",
+   "kind": "T",
+   "missing": false,
+   "w": 10,
+   "b": 5,
+   "c": 5
+  },
+  {
+   "row": 2,
+   "pos": 6,
+   "key": "57358",
+   "label": "anca",
+   "kind": "T",
+   "missing": false,
+   "w": 11,
+   "b": 6,
+   "c": 6
+  },
+  {
+   "row": 2,
+   "pos": 7,
+   "key": "57356",
+   "label": "anto",
+   "kind": "T",
+   "missing": false,
+   "w": 10,
+   "b": 5,
+   "c": 6
+  },
+  {
+   "row": 2,
+   "pos": 8,
+   "key": "57357",
+   "label": "ampa",
+   "kind": "T",
+   "missing": false,
+   "w": 10,
+   "b": 6,
+   "c": 6
+  },
+  {
+   "row": 2,
+   "pos": 9,
+   "key": "57376",
+   "label": "rómen",
+   "kind": "T",
+   "missing": false,
+   "w": 7,
+   "b": 4,
+   "c": 3
+  },
+  {
+   "row": 2,
+   "pos": 10,
+   "key": "57378",
+   "label": "lambe",
+   "kind": "T",
+   "missing": false,
+   "w": 7,
+   "b": 3,
+   "c": 4
+  },
+  {
+   "row": 3,
+   "pos": 0,
+   "key": "57364",
+   "label": "óre",
+   "kind": "T",
+   "missing": false,
+   "w": 6,
+   "b": 3,
+   "c": 4
+  },
+  {
+   "row": 3,
+   "pos": 1,
+   "key": "57365",
+   "label": "vala",
+   "kind": "T",
+   "missing": false,
+   "w": 7,
+   "b": 4,
+   "c": 4
+  },
+  {
+   "row": 3,
+   "pos": 2,
+   "key": "57366",
+   "label": "anna",
+   "kind": "T",
+   "missing": false,
+   "w": 6,
+   "b": 3,
+   "c": 3
+  },
+  {
+   "row": 3,
+   "pos": 3,
+   "key": "57380",
+   "label": "silme",
+   "kind": "T",
+   "missing": false,
+   "w": 6,
+   "b": 4,
+   "c": 4
+  },
+  {
+   "row": 3,
+   "pos": 4,
+   "key": "57381",
+   "label": "silme nuquerna",
+   "kind": "T",
+   "missing": false,
+   "w": 6,
+   "b": 3,
+   "c": 2
+  },
+  {
+   "row": 3,
+   "pos": 5,
+   "key": "57384",
+   "label": "hyarmen",
+   "kind": "T",
+   "missing": false,
+   "w": 6,
+   "b": 1,
+   "c": 3
+  },
+  {
+   "row": 3,
+   "pos": 6,
+   "key": "57386",
+   "label": "yanta",
+   "kind": "T",
+   "missing": false,
+   "w": 6,
+   "b": 3,
+   "c": 3
+  },
+  {
+   "row": 3,
+   "pos": 7,
+   "key": "57390",
+   "label": "telco (короткий носитель)",
+   "kind": "T",
+   "missing": false,
+   "w": 4,
+   "b": 2,
+   "c": 2
+  },
+  {
+   "row": 3,
+   "pos": 8,
+   "key": "57388",
+   "label": "ára (длинный носитель)",
+   "kind": "T",
+   "missing": false,
+   "w": 4,
+   "b": 2,
+   "c": 2
+  },
+  {
+   "row": 3,
+   "pos": 9,
+   "key": "mark:dbl",
+   "label": "черта удвоения, узкая",
+   "kind": "DL",
+   "missing": false
+  },
+  {
+   "row": 3,
+   "pos": 10,
+   "key": "mark:nas",
+   "label": "носовая черта, узкая",
+   "kind": "DL",
+   "missing": false
+  },
+  {
+   "row": 4,
+   "pos": 0,
+   "key": "57457",
+   "label": "1",
+   "kind": "N",
+   "missing": false,
+   "w": 8,
+   "b": 4,
+   "c": 4
+  },
+  {
+   "row": 4,
+   "pos": 1,
+   "key": "57458",
+   "label": "2",
+   "kind": "N",
+   "missing": false,
+   "w": 9,
+   "b": 5,
+   "c": 5
+  },
+  {
+   "row": 4,
+   "pos": 2,
+   "key": "57459",
+   "label": "3",
+   "kind": "N",
+   "missing": false,
+   "w": 12,
+   "b": 7,
+   "c": 7
+  },
+  {
+   "row": 4,
+   "pos": 3,
+   "key": "57460",
+   "label": "4",
+   "kind": "N",
+   "missing": false,
+   "w": 5,
+   "b": 1,
+   "c": 1
+  },
+  {
+   "row": 4,
+   "pos": 4,
+   "key": "57461",
+   "label": "5",
+   "kind": "N",
+   "missing": false,
+   "w": 9,
+   "b": 5,
+   "c": 5
+  },
+  {
+   "row": 4,
+   "pos": 5,
+   "key": "57462",
+   "label": "6",
+   "kind": "N",
+   "missing": false,
+   "w": 11,
+   "b": 6,
+   "c": 6
+  },
+  {
+   "row": 4,
+   "pos": 6,
+   "key": "57463",
+   "label": "7",
+   "kind": "N",
+   "missing": false,
+   "w": 6,
+   "b": 4,
+   "c": 4
+  },
+  {
+   "row": 4,
+   "pos": 7,
+   "key": "57464",
+   "label": "8",
+   "kind": "N",
+   "missing": false,
+   "w": 9,
+   "b": 3,
+   "c": 3
+  },
+  {
+   "row": 4,
+   "pos": 8,
+   "key": "57465",
+   "label": "9",
+   "kind": "N",
+   "missing": false,
+   "w": 13,
+   "b": 5,
+   "c": 5
+  },
+  {
+   "row": 4,
+   "pos": 9,
+   "key": "57456",
+   "label": "0",
+   "kind": "N",
+   "missing": false,
+   "w": 6,
+   "b": 3,
+   "c": 3
+  },
+  {
+   "row": 4,
+   "pos": 10,
+   "key": "57466",
+   "label": "10",
+   "kind": "N",
+   "missing": false,
+   "w": 6,
+   "b": 2,
+   "c": 2
+  },
+  {
+   "row": 5,
+   "pos": 0,
+   "key": "57382",
+   "label": "esse",
+   "kind": "T",
+   "missing": false,
+   "w": 5,
+   "b": 4,
+   "c": 3
+  },
+  {
+   "row": 5,
+   "pos": 1,
+   "key": "57385",
+   "label": "hwesta sindarinwa",
+   "kind": "T",
+   "missing": false,
+   "w": 10,
+   "b": 8,
+   "c": 7
+  },
+  {
+   "row": 5,
+   "pos": 2,
+   "key": "57355",
+   "label": "hwesta",
+   "kind": "T",
+   "missing": false,
+   "w": 7,
+   "b": 5,
+   "c": 5
+  },
+  {
+   "row": 5,
+   "pos": 3,
+   "key": "57362",
+   "label": "noldo",
+   "kind": "T",
+   "missing": false,
+   "w": 10,
+   "b": 5,
+   "c": 5
+  },
+  {
+   "row": 5,
+   "pos": 4,
+   "key": "57363",
+   "label": "nwalme",
+   "kind": "T",
+   "missing": false,
+   "w": 11,
+   "b": 6,
+   "c": 6
+  },
+  {
+   "row": 5,
+   "pos": 5,
+   "key": "combo:ára+i",
+   "label": "ára+i",
+   "kind": "C",
+   "missing": false,
+   "w": 4,
+   "b": 2,
+   "c": 2
+  },
+  {
+   "row": 5,
+   "pos": 6,
+   "key": "combo:ára+a",
+   "label": "ára+a",
+   "kind": "C",
+   "missing": false,
+   "w": 4,
+   "b": 2,
+   "c": 2
+  },
+  {
+   "row": 5,
+   "pos": 7,
+   "key": "combo:ára+e",
+   "label": "ára+e",
+   "kind": "C",
+   "missing": false,
+   "w": 4,
+   "b": 2,
+   "c": 2
+  },
+  {
+   "row": 5,
+   "pos": 8,
+   "key": "combo:ára+o",
+   "label": "ára+o",
+   "kind": "C",
+   "missing": false,
+   "w": 4,
+   "b": 2,
+   "c": 2
+  },
+  {
+   "row": 5,
+   "pos": 9,
+   "key": "combo:ára+u",
+   "label": "ára+u",
+   "kind": "C",
+   "missing": false,
+   "w": 4,
+   "b": 2,
+   "c": 2
+  },
+  {
+   "row": 5,
+   "pos": 10,
+   "key": "mark:dotb",
+   "label": "точка снизу",
+   "kind": "DB",
+   "missing": false
+  },
+  {
+   "row": 6,
+   "pos": 0,
+   "key": "57368",
+   "label": "ext. tinco",
+   "kind": "T",
+   "missing": false,
+   "w": 7,
+   "b": 3,
+   "c": 4
+  },
+  {
+   "row": 6,
+   "pos": 1,
+   "key": "57369",
+   "label": "ext. parma",
+   "kind": "T",
+   "missing": false,
+   "w": 6,
+   "b": 2,
+   "c": 2
+  },
+  {
+   "row": 6,
+   "pos": 2,
+   "key": "57370",
+   "label": "ext. calma",
+   "kind": "T",
+   "missing": false,
+   "w": 6,
+   "b": 4,
+   "c": 4
+  },
+  {
+   "row": 6,
+   "pos": 3,
+   "key": "57371",
+   "label": "ext. quesse",
+   "kind": "T",
+   "missing": false,
+   "w": 7,
+   "b": 4,
+   "c": 5
+  },
+  {
+   "row": 6,
+   "pos": 4,
+   "key": "57372",
+   "label": "ext. ando",
+   "kind": "T",
+   "missing": false,
+   "w": 11,
+   "b": 5,
+   "c": 5
+  },
+  {
+   "row": 6,
+   "pos": 5,
+   "key": "57373",
+   "label": "ext. umbar",
+   "kind": "T",
+   "missing": false,
+   "w": 10,
+   "b": 6,
+   "c": 6
+  },
+  {
+   "row": 6,
+   "pos": 6,
+   "key": "57350",
+   "label": "anga",
+   "kind": "T",
+   "missing": false,
+   "w": 9,
+   "b": 5,
+   "c": 6
+  },
+  {
+   "row": 6,
+   "pos": 7,
+   "key": "57374",
+   "label": "ext. anga",
+   "kind": "T",
+   "missing": false,
+   "w": 9,
+   "b": 5,
+   "c": 6
+  },
+  {
+   "row": 6,
+   "pos": 8,
+   "key": "57375",
+   "label": "ext. ungwe",
+   "kind": "T",
+   "missing": false,
+   "w": 11,
+   "b": 6,
+   "c": 6
+  },
+  {
+   "row": 6,
+   "pos": 9,
+   "key": "57377",
+   "label": "arda",
+   "kind": "T",
+   "missing": false,
+   "w": 9,
+   "b": 5,
+   "c": 3
+  },
+  {
+   "row": 6,
+   "pos": 10,
+   "key": "57379",
+   "label": "alda",
+   "kind": "T",
+   "missing": false,
+   "w": 7,
+   "b": 4,
+   "c": 4
+  },
+  {
+   "row": 7,
+   "pos": 0,
+   "key": "57351",
+   "label": "ungwe",
+   "kind": "T",
+   "missing": false,
+   "w": 11,
+   "b": 6,
+   "c": 6
+  },
+  {
+   "row": 7,
+   "pos": 1,
+   "key": "57367",
+   "label": "vilya",
+   "kind": "T",
+   "missing": false,
+   "w": 7,
+   "b": 4,
+   "c": 4
+  },
+  {
+   "row": 7,
+   "pos": 2,
+   "key": "57387",
+   "label": "úre",
+   "kind": "T",
+   "missing": false,
+   "w": 6,
+   "b": 3,
+   "c": 3
+  },
+  {
+   "row": 7,
+   "pos": 3,
+   "key": "57432",
+   "label": "sa-rincë (концевой крюк)",
+   "kind": "T",
+   "missing": false,
+   "w": 5,
+   "b": 3,
+   "c": 3
+  },
+  {
+   "row": 7,
+   "pos": 4,
+   "key": "57383",
+   "label": "esse nuquerna",
+   "kind": "T",
+   "missing": false,
+   "w": 6,
+   "b": 3,
+   "c": 1
+  },
+  {
+   "row": 7,
+   "pos": 5,
+   "key": "57389",
+   "label": "halla",
+   "kind": "T",
+   "missing": false,
+   "w": 4,
+   "b": 3,
+   "c": 3
+  },
+  {
+   "row": 7,
+   "pos": 6,
+   "key": "57359",
+   "label": "unque",
+   "kind": "T",
+   "missing": false,
+   "w": 10,
+   "b": 6,
+   "c": 5
+  },
+  {
+   "row": 7,
+   "pos": 7,
+   "key": "mark:tilde",
+   "label": "тильда сверху",
+   "kind": "DA",
+   "missing": false
+  },
+  {
+   "row": 7,
+   "pos": 8,
+   "key": "mark:dblL",
+   "label": "черта удвоения для lambe/alda",
+   "kind": "DX",
+   "missing": false
+  },
+  {
+   "row": 7,
+   "pos": 9,
+   "key": "mark:dblW",
+   "label": "черта удвоения, широкая",
+   "kind": "DL",
+   "missing": false
+  },
+  {
+   "row": 7,
+   "pos": 10,
+   "key": "mark:nasW",
+   "label": "носовая черта, широкая",
+   "kind": "DL",
+   "missing": false
+  },
+  {
+   "row": 8,
+   "pos": 0,
+   "key": "57467",
+   "label": "11",
+   "kind": "N",
+   "missing": false,
+   "w": 6,
+   "b": 2,
+   "c": 2
+  },
+  {
+   "row": 8,
+   "pos": 1,
+   "key": "57440",
+   "label": "пуста",
+   "kind": "P",
+   "missing": false,
+   "w": 4,
+   "b": 3,
+   "c": 3
+  },
+  {
+   "row": 8,
+   "pos": 2,
+   "key": "57441",
+   "label": "двойная пуста",
+   "kind": "P",
+   "missing": false,
+   "w": 4,
+   "b": 3,
+   "c": 3
+  },
+  {
+   "row": 8,
+   "pos": 3,
+   "key": "57445",
+   "label": "восклицательный",
+   "kind": "P",
+   "missing": false,
+   "w": 4,
+   "b": 2,
+   "c": 2
+  },
+  {
+   "row": 8,
+   "pos": 4,
+   "key": "57446",
+   "label": "вопросительный",
+   "kind": "P",
+   "missing": false,
+   "w": 6,
+   "b": 3,
+   "c": 3
+  },
+  {
+   "row": 8,
+   "pos": 5,
+   "key": "57447",
+   "label": "скобка",
+   "kind": "P",
+   "missing": false,
+   "w": 6,
+   "b": 3,
+   "c": 3
+  },
+  {
+   "row": 8,
+   "pos": 6,
+   "key": "57450",
+   "label": "кавычка открыв.",
+   "kind": "P",
+   "missing": false,
+   "w": 6,
+   "b": 3,
+   "c": 3
+  },
+  {
+   "row": 8,
+   "pos": 7,
+   "key": "57451",
+   "label": "кавычка закрыв.",
+   "kind": "P",
+   "missing": false,
+   "w": 6,
+   "b": 3,
+   "c": 3
+  },
+  {
+   "row": 8,
+   "pos": 8,
+   "key": "mark:lsd",
+   "label": "метка младшего разряда",
+   "kind": "DB",
+   "missing": false
+  }
+ ],
+ "code_bad": [],
+ "window": [],
+ "window_margin": 0.176,
+ "read": {
+  "n": 72,
+  "bad": 0,
+  "fails": []
+ },
+ "strike": {
+  "n": 86,
+  "bad": 0,
+  "fails": []
+ },
+ "combs": {
+  "mass_g": 34.0,
+  "I_kgmm2": 74.2
+ },
+ "blocks": {
+  "mass_g": 44.1,
+  "I_kgmm2": 143.1
+ },
+ "ranges": {
+  "w": [
+   4,
+   13
+  ],
+  "b": [
+   1,
+   8
+  ],
+  "c": [
+   1,
+   7
+  ]
+ },
+ "ok": true
+}

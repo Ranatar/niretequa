@@ -1,0 +1,12 @@
+\fill[cellfill] (0,-330) rectangle (625.0,740);
+\node[anchor=base west,inner sep=0pt,outer sep=0pt] at (9.5,0.0) {\TG{54}};
+\node[anchor=base west,inner sep=0pt,outer sep=0pt] at (199.5,0.0) {\TG{317}};
+\node[anchor=base west,inner sep=0pt,outer sep=0pt] at (223.0,0.0) {\TG{314}};
+\draw[base] (-200,0) -- (825.0,0);
+\draw[ppoint] (0,-420) -- (0,880); \node[lbl,anchor=south,text=axisred] at (0,890) {1};
+\draw[ppoint] (625.0,-420) -- (625.0,880); \node[lbl,anchor=south,text=axisred] at (625.0,890) {2};
+\draw[sledA,thick,dash pattern=on 4pt off 2pt] (312.5,300) -- (312.5,880); \node[lbl,anchor=south,text=sledA] at (312.5,890) {3};
+\draw[sledB,thick,dash pattern=on 4pt off 2pt] (375.0,-420) -- (375.0,60); \node[lbl,anchor=north,text=sledB] at (375.0,-430) {4};
+\draw[dim] (0,-680) -- (625.0,-680); \node[lbl,anchor=west] at (665.0,-680) {подача: $w{=}10$};
+\draw[dim,draw=sledA] (312.5,800) -- (625.0,800); \node[lbl,anchor=west,text=sledA] at (665.0,800) {отвод узла для надстрочного: $b{=}5$};
+\draw[dim,draw=sledB] (375.0,-500) -- (625.0,-500); \node[lbl,anchor=west,text=sledB] at (665.0,-500) {отвод узла для подстрочного: $c{=}4$};
