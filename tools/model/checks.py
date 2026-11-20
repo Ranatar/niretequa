@@ -4,6 +4,8 @@ from manifold3d import Manifold
 
 # designed contacts: (substring a, substring b)
 ALLOW = [
+    # rev. 0.12: the case: its panels, inlays and pillars are bonded or screwed to each other
+    ('case ', 'case '),
     # rev. 0.11: carriage release (axle in its bores, the sheath stop on the escapement's back post)
     ('carriage release axle', 'carriage release key'), ('carriage release axle', 'carriage release bracket'),
     ('dog release sheath stop', 'escapement bracket'),

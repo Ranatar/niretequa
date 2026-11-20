@@ -65,7 +65,8 @@ GR = [('литерные блоки', ('type_block',)), ('челнок, шкив
       ('рамки, сектора памяти, связь со спуском', ('sector', 'latch', 'bail_plate_', 'tier_carriage', 'sleeve_', 'memory_pawls', 'wfol', 'w_follower')), ('выбор: толкатели, планки, коромысла, усилители', ('col_pusher', 'pusher_guide', 'sel_', 'guide_lift', 'guide_rotate', 'wlever', 'amp_', 'bellcrank')),
       ('печатающий узел: башня, коромысла, фиксатор, вилка, молоток', ('tower', 'uframe_arm', 'fork', 'hammer', 'lift_fork', 'whiffletree', 'wt_', 'detent', 'tape_clamp', 'lift_collar', 'row_', 'cock_lever', 'hammer_link')),
       ('пружинный двигатель и цикл', ('barrel', 'gear', 'pinion', 'bevel', 'governor', 'crank', 'wind', 'cam_', 'stop_', 'cycle_', 'motor_', 'lay_')),
-      ('упоры и отвод печатающего узла', ('zero_stop', 'stop_', 'nsel', 'o_')), ('каретка', ('car_end', 'rack', 'paper_rest')), ('спуск', ('esc',)), ('прочее', ('pivot', 'ribbon', 'pusher_post'))]
+      ('упоры и отвод печатающего узла', ('zero_stop', 'stop_', 'nsel', 'o_')), ('каретка', ('car_end', 'rack', 'paper_rest')), ('спуск', ('esc',)), ('корпус (ред. 0.12)', ('case_',)),
+      ('прочее', ('pivot', 'ribbon', 'pusher_post'))]
 agg = defaultdict(lambda: dict(q=0, files=0, mass=0.0, mx=0.0))
 for r in PR:
     g = next((n for n, pre in GR if any(r['bom'].startswith(p) for p in pre)), 'прочее')
@@ -207,6 +208,14 @@ num = dict(parts=N['parts'], printfiles=len(PR), printpieces=tot_q, printmass=f(
            rockbk=f(LK['back']['detail']['back']['rock_deg'], 0), rockbs=f(LK['back']['detail']['bksp']['rock_deg'], 0),
            ncont=str(N['contacts']), ncontbad=str(N['contacts_failed']), nstrike=str(N['strike']), nstrikebad=str(N['strike_failed']), nprint=str(N['unique_print']), nnum=str(N['numbered']),
            nnumtop=str(N['numbered_top']), nnumbot=str(N['numbered'] - N['numbered_top']), nnonum=str(N['unique_print'] - N['numbered']),
-           nescst=str(N['nstates']['escape']))
+           nescst=str(N['nstates']['escape']),
+           # rev. 0.12: the case
+           casepieces=str(N['case_parts']), caseinlays=str(N['case_inlays']), casemass=f(N['case_mass_g'] / 1000, 1),
+           devcol=str(N['device_colours']), insw=f(N['inscription']['width'], 0), insk=f(N['inscription']['scale'], 2),
+           extw=f(N['extent'][1][0] - N['extent'][0][0], 0), extd=f(N['extent'][1][1] - N['extent'][0][1], 0),
+           casew=f(N['case_extent'][1][0] - N['case_extent'][0][0], 0), cased=f(N['case_extent'][1][1] - N['case_extent'][0][1], 0),
+           caseh=f(N['case_extent'][1][2], 0),
+           mechmass=f((tot_m - agg['корпус (ред. 0.12)']['mass']) / 1000, 1) if 'корпус (ред. 0.12)' in agg else f(tot_m / 1000, 1),
+           casepmass=f(agg['корпус (ред. 0.12)']['mass'] / 1000, 1) if 'корпус (ред. 0.12)' in agg else '0')
 w('model_num.tex', ''.join(f'\\newcommand\\m{k}{{{v}}}\n' for k, v in num.items()))
 print(num)

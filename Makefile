@@ -26,7 +26,13 @@ stl/stamps.json: gen/stats.json tools/stamps.py tools/thicken.py tools/glyphgeom
 gen/tab_stamps.tex: gen/fdmsim.json stl/stamps.json tools/tables_fdm.py
 	$(PY) tools/tables_fdm.py gen stl
 
-MODEL_DEPS=gen/stats.json tools/model/*.py tools/items.py tools/fontprof.py tools/fontsets.py tools/layout.py
+MODEL_DEPS=gen/stats.json tools/model/*.py tools/items.py tools/fontprof.py tools/fontsets.py tools/layout.py \
+  data/inscription.json data/device/device_regions.json
+# rev. 0.12: the case's inscription (transcribed by the page's transcriber) and the device's colour regions
+data/inscription.json: tools/inscription.py tools/web/transcribe.js
+	$(PY) tools/inscription.py data/inscription.json
+data/device/device_regions.json: tools/device.py data/device/nyankonyan_elvish_device_v12_rope.svg
+	$(PY) tools/device.py data/device/nyankonyan_elvish_device_v12_rope.svg data/device/device_regions.json
 gen/model/model.json: $(MODEL_DEPS)
 	$(PY) tools/model/build.py gen/model gen
 # rev. 0.11: font sets of the shuttle (tools/fontsets.py): blocks, combs, checks, page data for every font

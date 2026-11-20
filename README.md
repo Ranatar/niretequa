@@ -1,4 +1,4 @@
-# ТПМ-2 — тенгварская пишущая машинка на челноке Хаммонда, редакция 0.11
+# ТПМ-2 — тенгварская пишущая машинка на челноке Хаммонда, редакция 0.12
 
 Полный комплект проекта: исходники документа и модели, собранная модель (STL, рендеры, сборочные листы), интерактивная страница и проектный документ.
 
@@ -6,14 +6,15 @@
 
 | Путь | Что это |
 |---|---|
-| `tpm2-design-0.11.pdf` | проектный документ (собранный `main.pdf`) |
+| `tpm2-design-0.12.pdf` | проектный документ (собранный `main.pdf`) |
 | `main.tex`, `preamble.tex` | исходник документа (XeLaTeX) |
 | `Makefile` | сборка всего: модель → таблицы → страница → PDF |
 | `data/` | раскладка, клавиатура, исходные таблицы |
 | `fonts/` | Alcarin Tengwar (знаки литер), DejaVu Sans Bold (номера и служебные знаки на клавишах) с лицензиями; `fonts/sets/` — шрифты сменных наборов (Shankar Sivarajan) |
 | `tools/fontprof.py`, `tools/fontsets.py`, `tools/items.py` | с 0.11: замер любого шрифта CSUR под механизм, перечень наборов, литеры из кодов |
 | `tools/` | скрипты литер и FDM-проб (`stamps.py`, `fdmsim.py`, …) |
-| `tools/model/` | компоновочная модель на python/manifold3d: детали (`parts.py`), спуск (`escape.py`), литерные блоки (`typeblocks.py`), проверки (`checks.py`, `scenarios.py`, `contacts.py`, `strike.py`), сборка (`build.py`), выгрузка для страницы (`webexport.py`); с 0.10 — чтение кода с челнока (`reader.py`: гребёнки, головка, приёмники, проверка чтения; `readtab.py` — таблицы, `readrender.py` — рисунки); с 0.11 — наборы шрифтов (`fontset.py`, `fonttab.py`), частоты по книгам (`freq.py`, `freqtab.py`) |
+| `docs/physics_checks_spec.md` | с 0.12: спецификация физических проверок — соединения и статика под тяжестью (ступень 1), динамика узлов (ступень 2) |
+| `tools/model/` | компоновочная модель на python/manifold3d: детали (`parts.py`), спуск (`escape.py`), литерные блоки (`typeblocks.py`), проверки (`checks.py`, `scenarios.py`, `contacts.py`, `strike.py`), сборка (`build.py`), выгрузка для страницы (`webexport.py`); с 0.10 — чтение кода с челнока (`reader.py`: гребёнки, головка, приёмники, проверка чтения; `readtab.py` — таблицы, `readrender.py` — рисунки); с 0.11 — наборы шрифтов (`fontset.py`, `fonttab.py`), частоты по книгам (`freq.py`, `freqtab.py`); с 0.12 — корпус (`case.py`) |
 | `tools/web/` | исходники страницы (`page.html`, `viewer.js`, `transcribe.js`, `viewer.css`, `build_page.py`) и сверка страницы с моделью (`compare_model.py`) |
 | `gen/model/stl/` | детали для печати: `NNN_bom__name.stl`, номер выдавлен на детали |
 | `gen/model/renders/` | рендеры, сечения удара, сборочные листы `asm_*.png` |
@@ -27,7 +28,7 @@
 
 ## Сборка
 
-Нужны python 3 с `manifold3d`, `shapely`, `numpy`, `scipy`, `trimesh`, `python-fcl`, `fonttools`, `matplotlib`, `pillow`, `scikit-image`, `numba`, `rtree` (лучи проверки чтения, с 0.10), `uharfbuzz` (оси шрифтов без якорей, с 0.11) и XeLaTeX.
+Нужны python 3 с `manifold3d`, `shapely`, `numpy`, `scipy`, `trimesh`, `python-fcl`, `fonttools`, `matplotlib`, `pillow`, `scikit-image`, `numba`, `rtree` (лучи проверки чтения, с 0.10), `uharfbuzz` (оси шрифтов без якорей, с 0.11) и XeLaTeX. Только чтобы заново снять надпись и герб корпуса (с 0.12; готовые `data/inscription.json` и `data/device/device_regions.json` лежат в архиве): node, `rsvg-convert`, `opencv-python`.
 
 ```
 python3 -I tools/model/build.py gen/model gen   # модель, STL, проверки (около 30 минут)
@@ -42,6 +43,13 @@ make web-plain                                   # страница с неуп�
 ```
 python3 tools/web/compare_model.py gen/web-plain/tpm2-model.html THREE_MIN_JS ORBIT_CONTROLS_JS
 ```
+
+## Состояние на 0.12
+
+- нолдорский корпус (`tools/model/case.py`): стенки с аркадой ниш, колодец клавиш между башнями, верхняя дека вокруг открытого двора над челноком и проёма каретки, эркер над спуском, пилястры над стойками каретки; корпус входит в модель (группа `case`) и проходит все её проверки;
+- надпись на лице за клавишами (`data/inscription.json`, `tools/inscription.py` — транскрипция страницей, положения — машинкой);
+- щит с гербом автора (`data/device/`, `tools/device.py` — SVG в цветные области, нужны `rsvg-convert` и OpenCV), многоцветная печать: `gen/model/stl/device/` по файлу на цвет;
+- на странице модели корпус показан, стеклянный или скрыт; в разнесённом виде он поднимается над машинкой.
 
 ## Состояние на 0.11
 

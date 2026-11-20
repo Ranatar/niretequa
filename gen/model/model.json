@@ -1,14 +1,14 @@
 {
  "numbers": {
-  "parts": 681,
-  "unique_print": 264,
+  "parts": 813,
+  "unique_print": 316,
   "rest_interferences": 0,
   "contacts": 77,
   "contacts_failed": 0,
   "strike": 86,
   "strike_failed": 0,
-  "numbered": 151,
-  "numbered_top": 138,
+  "numbered": 192,
+  "numbered_top": 132,
   "scen": {
    "shuttle": 0,
    "slide": 0,
@@ -36,7 +36,42 @@
    525.0
   ],
   "height": 374.1,
-  "print_mass_g": 2734.0,
+  "extent": [
+   [
+    -265.8,
+    -412.0,
+    0.0
+   ],
+   [
+    299.0,
+    159.3,
+    374.1
+   ]
+  ],
+  "case_parts": 72,
+  "case_inlays": 60,
+  "case_mass_g": 2406.0,
+  "case_extent": [
+   [
+    -265.8,
+    -401.8,
+    0.0
+   ],
+   [
+    265.8,
+    159.3,
+    342.0
+   ]
+  ],
+  "device_colours": 33,
+  "inscription": {
+   "text": "si na níretequa: tecuvalye, málonya, aima i níralye!",
+   "translation": "Это силовая кисть: пиши, друг мой, что угодно, что пожелаешь!",
+   "width": 234.5,
+   "height": 13.0,
+   "scale": 1.55
+  },
+  "print_mass_g": 5068.0,
   "not_fit": []
  },
  "bom": [
@@ -3423,6 +3458,298 @@
    "vol": 2714.989285061596,
    "names": [
     "lay shaft bearing"
+   ]
+  },
+  {
+   "id": "case_front",
+   "kind": "print",
+   "group": "case",
+   "mat": "PETG",
+   "note": "стенка корпуса; орнамент — серебром, сменой прутка на высоте лица",
+   "qty": 3,
+   "vol": 147005.56106827638,
+   "names": [
+    "case front wall 1",
+    "case front wall 2",
+    "case front wall 3"
+   ]
+  },
+  {
+   "id": "case_side",
+   "kind": "print",
+   "group": "case",
+   "mat": "PETG",
+   "note": "стенка корпуса; орнамент — серебром, сменой прутка на высоте лица",
+   "qty": 6,
+   "vol": 506636.29649895884,
+   "names": [
+    "case right wall 1",
+    "case right wall 2",
+    "case right wall 3",
+    "case left wall 1",
+    "case left wall 2",
+    "case left wall 3"
+   ]
+  },
+  {
+   "id": "case_back",
+   "kind": "print",
+   "group": "case",
+   "mat": "PETG",
+   "note": "стенка корпуса; орнамент — серебром, сменой прутка на высоте лица",
+   "qty": 4,
+   "vol": 215103.68549312552,
+   "names": [
+    "case back wall 1",
+    "case back wall 2",
+    "case back wall 4",
+    "case back wall 5"
+   ]
+  },
+  {
+   "id": "case_bay",
+   "kind": "print",
+   "group": "case",
+   "mat": "PETG",
+   "note": "ниша над спуском: спуск выходит за раму назад до 151 мм",
+   "qty": 1,
+   "vol": 51520.000000000015,
+   "names": [
+    "case bay back"
+   ]
+  },
+  {
+   "id": "case_bay_cheek",
+   "kind": "print",
+   "group": "case",
+   "mat": "PETG",
+   "note": "",
+   "qty": 2,
+   "vol": 21840.0,
+   "names": [
+    "case bay cheek -1",
+    "case bay cheek +1"
+   ]
+  },
+  {
+   "id": "case_bay_roof",
+   "kind": "print",
+   "group": "case",
+   "mat": "PETG",
+   "note": "",
+   "qty": 1,
+   "vol": 7590.0,
+   "names": [
+    "case bay roof"
+   ]
+  },
+  {
+   "id": "case_standoff",
+   "kind": "print",
+   "group": "case",
+   "mat": "PETG",
+   "note": "упор стенки на раму: винт М5 в паз профиля",
+   "qty": 13,
+   "vol": 17616.00000000003,
+   "names": [
+    "case standoff side -1 -330",
+    "case standoff side +1 -330",
+    "case standoff side -1 -150",
+    "case standoff side +1 -150",
+    "case standoff side -1 40",
+    "case standoff side +1 40",
+    "case standoff front -160",
+    "case standoff front 0",
+    "case standoff front 160",
+    "case standoff back -200",
+    "case standoff back -100",
+    "case standoff back 100",
+    "case standoff back 200"
+   ]
+  },
+  {
+   "id": "case_kbd_strip",
+   "kind": "print",
+   "group": "case",
+   "mat": "PETG",
+   "note": "",
+   "qty": 3,
+   "vol": 50112.0,
+   "names": [
+    "case keyboard strip 1",
+    "case keyboard strip 2",
+    "case keyboard strip 3"
+   ]
+  },
+  {
+   "id": "case_kbd_deck",
+   "kind": "print",
+   "group": "case",
+   "mat": "PETG",
+   "note": "",
+   "qty": 2,
+   "vol": 48371.099994188546,
+   "names": [
+    "case keyboard deck 1",
+    "case keyboard deck 2"
+   ]
+  },
+  {
+   "id": "case_tower_front",
+   "kind": "print",
+   "group": "case",
+   "mat": "PETG",
+   "note": "",
+   "qty": 2,
+   "vol": 57583.99999999981,
+   "names": [
+    "case tower front -1",
+    "case tower front +1"
+   ]
+  },
+  {
+   "id": "case_tower_wall",
+   "kind": "print",
+   "group": "case",
+   "mat": "PETG",
+   "note": "",
+   "qty": 2,
+   "vol": 45666.0,
+   "names": [
+    "case tower wall -1",
+    "case tower wall +1"
+   ]
+  },
+  {
+   "id": "case_fascia",
+   "kind": "print",
+   "group": "case",
+   "mat": "PETG",
+   "note": "лицо за клавишами: надпись «si na níretequa: tecuvalye, málonya, aima i níralye!»",
+   "qty": 2,
+   "vol": 65608.00000000013,
+   "names": [
+    "case fascia 1",
+    "case fascia 2"
+   ]
+  },
+  {
+   "id": "case_top",
+   "kind": "print",
+   "group": "case",
+   "mat": "PETG",
+   "note": "",
+   "qty": 13,
+   "vol": 297109.1064577282,
+   "names": [
+    "case top tower -1",
+    "case top tower +1",
+    "case top band -1",
+    "case top band +1",
+    "case top side -1 a",
+    "case top side +1 a",
+    "case top side -1 b",
+    "case top side +1 b",
+    "case top pit -1",
+    "case top pit +1",
+    "case top back -1",
+    "case top back 0",
+    "case top back +1"
+   ]
+  },
+  {
+   "id": "case_lip",
+   "kind": "print",
+   "group": "case",
+   "mat": "PETG",
+   "note": "ребро под свободным краем деки",
+   "qty": 8,
+   "vol": 25128.0,
+   "names": [
+    "case lip 1",
+    "case lip 2",
+    "case lip 3",
+    "case lip 4",
+    "case lip 5",
+    "case lip 6",
+    "case lip 7",
+    "case lip 8"
+   ]
+  },
+  {
+   "id": "case_grille",
+   "kind": "print",
+   "group": "case",
+   "mat": "PETG серебристый",
+   "note": "решётка-звезда над барабаном пружины, серебро",
+   "qty": 1,
+   "vol": 11702.896300699831,
+   "names": [
+    "case star grille"
+   ]
+  },
+  {
+   "id": "case_device",
+   "kind": "print",
+   "group": "case",
+   "mat": "PETG",
+   "note": "щит с гербом Mírë Nolmeo: многоцветная печать, файлы по цветам в stl/device/",
+   "qty": 1,
+   "vol": 15052.800000000065,
+   "names": [
+    "case device plaque"
+   ]
+  },
+  {
+   "id": "case_pillar",
+   "kind": "print",
+   "group": "case",
+   "mat": "PETG",
+   "note": "пилястра над стойкой каретки, пустотелая; печатается стоя",
+   "qty": 2,
+   "vol": 182726.11540973024,
+   "names": [
+    "case pillar -1",
+    "case pillar +1"
+   ]
+  },
+  {
+   "id": "case_pillar_base",
+   "kind": "print",
+   "group": "case",
+   "mat": "PETG серебристый",
+   "note": "",
+   "qty": 2,
+   "vol": 23760.0,
+   "names": [
+    "case pillar base -1",
+    "case pillar base +1"
+   ]
+  },
+  {
+   "id": "case_pillar_cap",
+   "kind": "print",
+   "group": "case",
+   "mat": "PETG серебристый",
+   "note": "",
+   "qty": 2,
+   "vol": 43144.0,
+   "names": [
+    "case pillar capital -1",
+    "case pillar capital +1"
+   ]
+  },
+  {
+   "id": "case_finial",
+   "kind": "print",
+   "group": "case",
+   "mat": "PETG серебристый",
+   "note": "навершие: шестнадцатилучевая звезда",
+   "qty": 2,
+   "vol": 4220.3765924066065,
+   "names": [
+    "case finial -1",
+    "case finial +1"
    ]
   }
  ],

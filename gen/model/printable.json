@@ -486,7 +486,1067 @@
  },
  {
   "num": 25,
-  "file": "025_cock_lever__hammer_cocking_lever.stl",
+  "file": "025_case_back__case_back_wall_1.stl",
+  "bom": "case_back",
+  "qty": 1,
+  "dims": [
+   110.0,
+   140.0,
+   4.8
+  ],
+  "fits": true,
+  "vol": 56559.0,
+  "mass": 71.8,
+  "first": "case back wall 1",
+  "names": [
+   "case back wall 1"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 26,
+  "file": "026_case_back__case_back_wall_2.stl",
+  "bom": "case_back",
+  "qty": 1,
+  "dims": [
+   109.0,
+   140.0,
+   4.8
+  ],
+  "fits": true,
+  "vol": 55985.0,
+  "mass": 71.1,
+  "first": "case back wall 2",
+  "names": [
+   "case back wall 2"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 27,
+  "file": "027_case_back__case_back_wall_4.stl",
+  "bom": "case_back",
+  "qty": 1,
+  "dims": [
+   109.0,
+   140.0,
+   4.8
+  ],
+  "fits": true,
+  "vol": 55985.0,
+  "mass": 71.1,
+  "first": "case back wall 4",
+  "names": [
+   "case back wall 4"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 28,
+  "file": "028_case_back__case_back_wall_5.stl",
+  "bom": "case_back",
+  "qty": 1,
+  "dims": [
+   110.0,
+   140.0,
+   4.8
+  ],
+  "fits": true,
+  "vol": 56559.0,
+  "mass": 71.8,
+  "first": "case back wall 5",
+  "names": [
+   "case back wall 5"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 29,
+  "file": "029_case_bay__case_bay_back.stl",
+  "bom": "case_bay",
+  "qty": 1,
+  "dims": [
+   92.0,
+   140.0,
+   4.8
+  ],
+  "fits": true,
+  "vol": 53568.0,
+  "mass": 68.0,
+  "first": "case bay back",
+  "names": [
+   "case bay back"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 30,
+  "file": "030_case_bay_cheek__case_bay_cheek_-1_x2.stl",
+  "bom": "case_bay_cheek",
+  "qty": 2,
+  "dims": [
+   112.8,
+   112.8,
+   4.0
+  ],
+  "fits": true,
+  "vol": 10920.0,
+  "mass": 13.9,
+  "first": "case bay cheek -1",
+  "names": [
+   "case bay cheek -1",
+   "case bay cheek +1"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 31,
+  "file": "031_case_bay_roof__case_bay_roof.stl",
+  "bom": "case_bay_roof",
+  "qty": 1,
+  "dims": [
+   84.5,
+   84.5,
+   3.0
+  ],
+  "fits": true,
+  "vol": 7590.0,
+  "mass": 9.6,
+  "first": "case bay roof",
+  "names": [
+   "case bay roof"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 32,
+  "file": "032_case_device__case_device_plaque.stl",
+  "bom": "case_device",
+  "qty": 1,
+  "dims": [
+   79.2,
+   79.2,
+   2.4
+  ],
+  "fits": true,
+  "vol": 15053.0,
+  "mass": 19.1,
+  "first": "case device plaque",
+  "names": [
+   "case device plaque"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 33,
+  "file": "033_case_fascia__case_fascia_1.stl",
+  "bom": "case_fascia",
+  "qty": 1,
+  "dims": [
+   139.0,
+   59.0,
+   4.8
+  ],
+  "fits": true,
+  "vol": 33292.0,
+  "mass": 42.3,
+  "first": "case fascia 1",
+  "names": [
+   "case fascia 1"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 34,
+  "file": "034_case_fascia__case_fascia_2.stl",
+  "bom": "case_fascia",
+  "qty": 1,
+  "dims": [
+   139.0,
+   59.0,
+   4.8
+  ],
+  "fits": true,
+  "vol": 33292.0,
+  "mass": 42.3,
+  "first": "case fascia 2",
+  "names": [
+   "case fascia 2"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 35,
+  "file": "035_case_finial__case_finial_-1_x2.stl",
+  "bom": "case_finial",
+  "qty": 2,
+  "dims": [
+   44.5,
+   46.3,
+   6.0
+  ],
+  "fits": true,
+  "vol": 2110.0,
+  "mass": 2.7,
+  "first": "case finial -1",
+  "names": [
+   "case finial -1",
+   "case finial +1"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 36,
+  "file": "036_case_front__case_front_wall_1.stl",
+  "bom": "case_front",
+  "qty": 1,
+  "dims": [
+   157.5,
+   78.0,
+   4.8
+  ],
+  "fits": true,
+  "vol": 45932.0,
+  "mass": 58.3,
+  "first": "case front wall 1",
+  "names": [
+   "case front wall 1"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 37,
+  "file": "037_case_front__case_front_wall_2.stl",
+  "bom": "case_front",
+  "qty": 1,
+  "dims": [
+   207.2,
+   207.2,
+   4.8
+  ],
+  "fits": true,
+  "vol": 64269.0,
+  "mass": 81.6,
+  "first": "case front wall 2",
+  "names": [
+   "case front wall 2"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 38,
+  "file": "038_case_front__case_front_wall_3.stl",
+  "bom": "case_front",
+  "qty": 1,
+  "dims": [
+   157.5,
+   78.0,
+   4.8
+  ],
+  "fits": true,
+  "vol": 47864.0,
+  "mass": 60.8,
+  "first": "case front wall 3",
+  "names": [
+   "case front wall 3"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 39,
+  "file": "039_case_grille__case_star_grille.stl",
+  "bom": "case_grille",
+  "qty": 1,
+  "dims": [
+   110.0,
+   110.0,
+   4.2
+  ],
+  "fits": true,
+  "vol": 11703.0,
+  "mass": 14.9,
+  "first": "case star grille",
+  "names": [
+   "case star grille"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 40,
+  "file": "040_case_kbd_deck__case_keyboard_deck_1.stl",
+  "bom": "case_kbd_deck",
+  "qty": 1,
+  "dims": [
+   139.0,
+   133.0,
+   3.8
+  ],
+  "fits": true,
+  "vol": 25059.0,
+  "mass": 31.8,
+  "first": "case keyboard deck 1",
+  "names": [
+   "case keyboard deck 1"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 41,
+  "file": "041_case_kbd_deck__case_keyboard_deck_2.stl",
+  "bom": "case_kbd_deck",
+  "qty": 1,
+  "dims": [
+   139.0,
+   133.0,
+   3.8
+  ],
+  "fits": true,
+  "vol": 23893.0,
+  "mass": 30.3,
+  "first": "case keyboard deck 2",
+  "names": [
+   "case keyboard deck 2"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 42,
+  "file": "042_case_kbd_strip__case_keyboard_strip_1.stl",
+  "bom": "case_kbd_strip",
+  "qty": 1,
+  "dims": [
+   145.0,
+   145.0,
+   3.8
+  ],
+  "fits": true,
+  "vol": 17233.0,
+  "mass": 21.9,
+  "first": "case keyboard strip 1",
+  "names": [
+   "case keyboard strip 1"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 43,
+  "file": "043_case_kbd_strip__case_keyboard_strip_2.stl",
+  "bom": "case_kbd_strip",
+  "qty": 1,
+  "dims": [
+   147.1,
+   147.1,
+   3.8
+  ],
+  "fits": true,
+  "vol": 17615.0,
+  "mass": 22.4,
+  "first": "case keyboard strip 2",
+  "names": [
+   "case keyboard strip 2"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 44,
+  "file": "044_case_kbd_strip__case_keyboard_strip_3.stl",
+  "bom": "case_kbd_strip",
+  "qty": 1,
+  "dims": [
+   145.0,
+   145.0,
+   3.8
+  ],
+  "fits": true,
+  "vol": 17233.0,
+  "mass": 21.9,
+  "first": "case keyboard strip 3",
+  "names": [
+   "case keyboard strip 3"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 45,
+  "file": "045_case_lip__case_lip_1_x2.stl",
+  "bom": "case_lip",
+  "qty": 2,
+  "dims": [
+   142.1,
+   142.1,
+   3.0
+  ],
+  "fits": true,
+  "vol": 3510.0,
+  "mass": 4.5,
+  "first": "case lip 1",
+  "names": [
+   "case lip 1",
+   "case lip 2"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 46,
+  "file": "046_case_lip__case_lip_3_x2.stl",
+  "bom": "case_lip",
+  "qty": 2,
+  "dims": [
+   117.4,
+   117.4,
+   3.0
+  ],
+  "fits": true,
+  "vol": 2880.0,
+  "mass": 3.7,
+  "first": "case lip 3",
+  "names": [
+   "case lip 3",
+   "case lip 5"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 47,
+  "file": "047_case_lip__case_lip_4_x2.stl",
+  "bom": "case_lip",
+  "qty": 2,
+  "dims": [
+   94.0,
+   94.0,
+   3.0
+  ],
+  "fits": true,
+  "vol": 2286.0,
+  "mass": 2.9,
+  "first": "case lip 4",
+  "names": [
+   "case lip 4",
+   "case lip 6"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 48,
+  "file": "048_case_lip__case_lip_7_x2.stl",
+  "bom": "case_lip",
+  "qty": 2,
+  "dims": [
+   157.0,
+   157.0,
+   3.0
+  ],
+  "fits": true,
+  "vol": 3888.0,
+  "mass": 4.9,
+  "first": "case lip 7",
+  "names": [
+   "case lip 7",
+   "case lip 8"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 49,
+  "file": "049_case_pillar__case_pillar_+1.stl",
+  "bom": "case_pillar",
+  "qty": 1,
+  "dims": [
+   36.0,
+   36.0,
+   132.0
+  ],
+  "fits": true,
+  "vol": 91363.0,
+  "mass": 116.0,
+  "first": "case pillar +1",
+  "names": [
+   "case pillar +1"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 50,
+  "file": "050_case_pillar__case_pillar_-1.stl",
+  "bom": "case_pillar",
+  "qty": 1,
+  "dims": [
+   36.0,
+   36.0,
+   132.0
+  ],
+  "fits": true,
+  "vol": 91363.0,
+  "mass": 116.0,
+  "first": "case pillar -1",
+  "names": [
+   "case pillar -1"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 51,
+  "file": "051_case_pillar_base__case_pillar_base_-1_x2.stl",
+  "bom": "case_pillar_base",
+  "qty": 2,
+  "dims": [
+   42.0,
+   42.0,
+   10.0
+  ],
+  "fits": true,
+  "vol": 11880.0,
+  "mass": 15.1,
+  "first": "case pillar base -1",
+  "names": [
+   "case pillar base -1",
+   "case pillar base +1"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 52,
+  "file": "052_case_pillar_cap__case_pillar_capital_-1_x2.stl",
+  "bom": "case_pillar_cap",
+  "qty": 2,
+  "dims": [
+   44.0,
+   44.0,
+   12.0
+  ],
+  "fits": true,
+  "vol": 21572.0,
+  "mass": 27.4,
+  "first": "case pillar capital -1",
+  "names": [
+   "case pillar capital -1",
+   "case pillar capital +1"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 53,
+  "file": "053_case_side__case_left_wall_1.stl",
+  "bom": "case_side",
+  "qty": 1,
+  "dims": [
+   171.0,
+   140.0,
+   4.8
+  ],
+  "fits": true,
+  "vol": 88285.0,
+  "mass": 112.1,
+  "first": "case left wall 1",
+  "names": [
+   "case left wall 1"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 54,
+  "file": "054_case_side__case_left_wall_2.stl",
+  "bom": "case_side",
+  "qty": 1,
+  "dims": [
+   200.0,
+   140.0,
+   4.8
+  ],
+  "fits": true,
+  "vol": 101630.0,
+  "mass": 129.1,
+  "first": "case left wall 2",
+  "names": [
+   "case left wall 2"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 55,
+  "file": "055_case_side__case_left_wall_3.stl",
+  "bom": "case_side",
+  "qty": 1,
+  "dims": [
+   157.0,
+   140.0,
+   4.8
+  ],
+  "fits": true,
+  "vol": 75677.0,
+  "mass": 96.1,
+  "first": "case left wall 3",
+  "names": [
+   "case left wall 3"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 56,
+  "file": "056_case_side__case_right_wall_1.stl",
+  "bom": "case_side",
+  "qty": 1,
+  "dims": [
+   157.0,
+   140.0,
+   4.8
+  ],
+  "fits": true,
+  "vol": 74638.0,
+  "mass": 94.8,
+  "first": "case right wall 1",
+  "names": [
+   "case right wall 1"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 57,
+  "file": "057_case_side__case_right_wall_2.stl",
+  "bom": "case_side",
+  "qty": 1,
+  "dims": [
+   200.0,
+   140.0,
+   4.8
+  ],
+  "fits": true,
+  "vol": 101630.0,
+  "mass": 129.1,
+  "first": "case right wall 2",
+  "names": [
+   "case right wall 2"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 58,
+  "file": "058_case_side__case_right_wall_3.stl",
+  "bom": "case_side",
+  "qty": 1,
+  "dims": [
+   171.0,
+   140.0,
+   4.8
+  ],
+  "fits": true,
+  "vol": 88285.0,
+  "mass": 112.1,
+  "first": "case right wall 3",
+  "names": [
+   "case right wall 3"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 59,
+  "file": "059_case_standoff__case_standoff_back_-200_x4.stl",
+  "bom": "case_standoff",
+  "qty": 4,
+  "dims": [
+   14.7,
+   14.7,
+   12.0
+  ],
+  "fits": true,
+  "vol": 192.0,
+  "mass": 0.2,
+  "first": "case standoff back -200",
+  "names": [
+   "case standoff back -200",
+   "case standoff back -100",
+   "case standoff back 100",
+   "case standoff back 200"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 60,
+  "file": "060_case_standoff__case_standoff_front_-160_x3.stl",
+  "bom": "case_standoff",
+  "qty": 3,
+  "dims": [
+   15.4,
+   15.4,
+   12.0
+  ],
+  "fits": true,
+  "vol": 432.0,
+  "mass": 0.5,
+  "first": "case standoff front -160",
+  "names": [
+   "case standoff front -160",
+   "case standoff front 0",
+   "case standoff front 160"
+  ],
+  "number_on": null,
+  "bodies": 1
+ },
+ {
+  "num": 61,
+  "file": "061_case_standoff__case_standoff_side_-1_-330_x6.stl",
+  "bom": "case_standoff",
+  "qty": 6,
+  "dims": [
+   10.8,
+   20.0,
+   12.0
+  ],
+  "fits": true,
+  "vol": 2592.0,
+  "mass": 3.3,
+  "first": "case standoff side -1 -330",
+  "names": [
+   "case standoff side -1 -330",
+   "case standoff side +1 -330",
+   "case standoff side -1 -150",
+   "case standoff side +1 -150",
+   "case standoff side -1 40",
+   "case standoff side +1 40"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 62,
+  "file": "062_case_top__case_top_back_+1.stl",
+  "bom": "case_top",
+  "qty": 1,
+  "dims": [
+   135.1,
+   135.1,
+   3.0
+  ],
+  "fits": true,
+  "vol": 8874.0,
+  "mass": 11.3,
+  "first": "case top back +1",
+  "names": [
+   "case top back +1"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 63,
+  "file": "063_case_top__case_top_back_-1.stl",
+  "bom": "case_top",
+  "qty": 1,
+  "dims": [
+   135.1,
+   135.1,
+   3.0
+  ],
+  "fits": true,
+  "vol": 8874.0,
+  "mass": 11.3,
+  "first": "case top back -1",
+  "names": [
+   "case top back -1"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 64,
+  "file": "064_case_top__case_top_back_0.stl",
+  "bom": "case_top",
+  "qty": 1,
+  "dims": [
+   135.1,
+   135.1,
+   3.0
+  ],
+  "fits": true,
+  "vol": 8874.0,
+  "mass": 11.3,
+  "first": "case top back 0",
+  "names": [
+   "case top back 0"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 65,
+  "file": "065_case_top__case_top_band_+1.stl",
+  "bom": "case_top",
+  "qty": 1,
+  "dims": [
+   182.4,
+   182.4,
+   3.8
+  ],
+  "fits": true,
+  "vol": 38593.0,
+  "mass": 49.0,
+  "first": "case top band +1",
+  "names": [
+   "case top band +1"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 66,
+  "file": "066_case_top__case_top_band_-1.stl",
+  "bom": "case_top",
+  "qty": 1,
+  "dims": [
+   182.4,
+   182.4,
+   3.8
+  ],
+  "fits": true,
+  "vol": 38593.0,
+  "mass": 49.0,
+  "first": "case top band -1",
+  "names": [
+   "case top band -1"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 67,
+  "file": "067_case_top__case_top_pit_+1.stl",
+  "bom": "case_top",
+  "qty": 1,
+  "dims": [
+   119.5,
+   119.5,
+   3.0
+  ],
+  "fits": true,
+  "vol": 15012.0,
+  "mass": 19.1,
+  "first": "case top pit +1",
+  "names": [
+   "case top pit +1"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 68,
+  "file": "068_case_top__case_top_pit_-1.stl",
+  "bom": "case_top",
+  "qty": 1,
+  "dims": [
+   119.5,
+   119.5,
+   3.0
+  ],
+  "fits": true,
+  "vol": 15012.0,
+  "mass": 19.1,
+  "first": "case top pit -1",
+  "names": [
+   "case top pit -1"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 69,
+  "file": "069_case_top__case_top_side_+1_a.stl",
+  "bom": "case_top",
+  "qty": 1,
+  "dims": [
+   69.0,
+   115.0,
+   3.0
+  ],
+  "fits": true,
+  "vol": 23805.0,
+  "mass": 30.2,
+  "first": "case top side +1 a",
+  "names": [
+   "case top side +1 a"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 70,
+  "file": "070_case_top__case_top_side_+1_b.stl",
+  "bom": "case_top",
+  "qty": 1,
+  "dims": [
+   69.0,
+   111.0,
+   3.0
+  ],
+  "fits": true,
+  "vol": 22977.0,
+  "mass": 29.2,
+  "first": "case top side +1 b",
+  "names": [
+   "case top side +1 b"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 71,
+  "file": "071_case_top__case_top_side_-1_a.stl",
+  "bom": "case_top",
+  "qty": 1,
+  "dims": [
+   69.0,
+   115.0,
+   3.0
+  ],
+  "fits": true,
+  "vol": 23805.0,
+  "mass": 30.2,
+  "first": "case top side -1 a",
+  "names": [
+   "case top side -1 a"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 72,
+  "file": "072_case_top__case_top_side_-1_b.stl",
+  "bom": "case_top",
+  "qty": 1,
+  "dims": [
+   69.0,
+   111.0,
+   3.0
+  ],
+  "fits": true,
+  "vol": 22977.0,
+  "mass": 29.2,
+  "first": "case top side -1 b",
+  "names": [
+   "case top side -1 b"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 73,
+  "file": "073_case_top__case_top_tower_+1.stl",
+  "bom": "case_top",
+  "qty": 1,
+  "dims": [
+   122.0,
+   129.0,
+   3.8
+  ],
+  "fits": true,
+  "vol": 24040.0,
+  "mass": 30.5,
+  "first": "case top tower +1",
+  "names": [
+   "case top tower +1"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 74,
+  "file": "074_case_top__case_top_tower_-1.stl",
+  "bom": "case_top",
+  "qty": 1,
+  "dims": [
+   122.0,
+   129.0,
+   3.8
+  ],
+  "fits": true,
+  "vol": 47534.0,
+  "mass": 60.4,
+  "first": "case top tower -1",
+  "names": [
+   "case top tower -1"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 75,
+  "file": "075_case_tower_front__case_tower_front_-1_x2.stl",
+  "bom": "case_tower_front",
+  "qty": 2,
+  "dims": [
+   122.0,
+   59.0,
+   4.8
+  ],
+  "fits": true,
+  "vol": 29653.0,
+  "mass": 37.7,
+  "first": "case tower front -1",
+  "names": [
+   "case tower front -1",
+   "case tower front +1"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 76,
+  "file": "076_case_tower_wall__case_tower_wall_-1_x2.stl",
+  "bom": "case_tower_wall",
+  "qty": 2,
+  "dims": [
+   59.0,
+   129.0,
+   3.0
+  ],
+  "fits": true,
+  "vol": 22833.0,
+  "mass": 29.0,
+  "first": "case tower wall -1",
+  "names": [
+   "case tower wall -1",
+   "case tower wall +1"
+  ],
+  "number_on": "bottom",
+  "bodies": 1
+ },
+ {
+  "num": 77,
+  "file": "077_cock_lever__hammer_cocking_lever.stl",
   "bom": "cock_lever",
   "qty": 1,
   "dims": [
@@ -505,8 +1565,8 @@
   "bodies": 1
  },
  {
-  "num": 26,
-  "file": "026_code_comb_00__code_comb_0.stl",
+  "num": 78,
+  "file": "078_code_comb_00__code_comb_0.stl",
   "bom": "code_comb_00",
   "qty": 1,
   "dims": [
@@ -525,8 +1585,8 @@
   "bodies": 1
  },
  {
-  "num": 27,
-  "file": "027_code_comb_01__code_comb_1.stl",
+  "num": 79,
+  "file": "079_code_comb_01__code_comb_1.stl",
   "bom": "code_comb_01",
   "qty": 1,
   "dims": [
@@ -545,8 +1605,8 @@
   "bodies": 1
  },
  {
-  "num": 28,
-  "file": "028_code_comb_02__code_comb_2.stl",
+  "num": 80,
+  "file": "080_code_comb_02__code_comb_2.stl",
   "bom": "code_comb_02",
   "qty": 1,
   "dims": [
@@ -565,8 +1625,8 @@
   "bodies": 1
  },
  {
-  "num": 29,
-  "file": "029_code_comb_03__code_comb_3.stl",
+  "num": 81,
+  "file": "081_code_comb_03__code_comb_3.stl",
   "bom": "code_comb_03",
   "qty": 1,
   "dims": [
@@ -585,8 +1645,8 @@
   "bodies": 1
  },
  {
-  "num": 30,
-  "file": "030_code_comb_04__code_comb_4.stl",
+  "num": 82,
+  "file": "082_code_comb_04__code_comb_4.stl",
   "bom": "code_comb_04",
   "qty": 1,
   "dims": [
@@ -605,8 +1665,8 @@
   "bodies": 1
  },
  {
-  "num": 31,
-  "file": "031_code_comb_05__code_comb_5.stl",
+  "num": 83,
+  "file": "083_code_comb_05__code_comb_5.stl",
   "bom": "code_comb_05",
   "qty": 1,
   "dims": [
@@ -625,8 +1685,8 @@
   "bodies": 1
  },
  {
-  "num": 32,
-  "file": "032_code_comb_06__code_comb_6.stl",
+  "num": 84,
+  "file": "084_code_comb_06__code_comb_6.stl",
   "bom": "code_comb_06",
   "qty": 1,
   "dims": [
@@ -645,8 +1705,8 @@
   "bodies": 1
  },
  {
-  "num": 33,
-  "file": "033_code_comb_07__code_comb_7.stl",
+  "num": 85,
+  "file": "085_code_comb_07__code_comb_7.stl",
   "bom": "code_comb_07",
   "qty": 1,
   "dims": [
@@ -665,8 +1725,8 @@
   "bodies": 1
  },
  {
-  "num": 34,
-  "file": "034_code_comb_08__code_comb_8.stl",
+  "num": 86,
+  "file": "086_code_comb_08__code_comb_8.stl",
   "bom": "code_comb_08",
   "qty": 1,
   "dims": [
@@ -685,8 +1745,8 @@
   "bodies": 1
  },
  {
-  "num": 35,
-  "file": "035_code_comb_09__code_comb_9.stl",
+  "num": 87,
+  "file": "087_code_comb_09__code_comb_9.stl",
   "bom": "code_comb_09",
   "qty": 1,
   "dims": [
@@ -705,8 +1765,8 @@
   "bodies": 1
  },
  {
-  "num": 36,
-  "file": "036_code_comb_10__code_comb_10.stl",
+  "num": 88,
+  "file": "088_code_comb_10__code_comb_10.stl",
   "bom": "code_comb_10",
   "qty": 1,
   "dims": [
@@ -725,8 +1785,8 @@
   "bodies": 1
  },
  {
-  "num": 37,
-  "file": "037_code_plate__plate_k00_x8.stl",
+  "num": 89,
+  "file": "089_code_plate__plate_k00_x8.stl",
   "bom": "code_plate",
   "qty": 8,
   "dims": [
@@ -752,8 +1812,8 @@
   "bodies": 1
  },
  {
-  "num": 38,
-  "file": "038_code_plate__plate_k08.stl",
+  "num": 90,
+  "file": "090_code_plate__plate_k08.stl",
   "bom": "code_plate",
   "qty": 1,
   "dims": [
@@ -772,8 +1832,8 @@
   "bodies": 1
  },
  {
-  "num": 39,
-  "file": "039_code_plate__plate_k09_x2.stl",
+  "num": 91,
+  "file": "091_code_plate__plate_k09_x2.stl",
   "bom": "code_plate",
   "qty": 2,
   "dims": [
@@ -793,8 +1853,8 @@
   "bodies": 1
  },
  {
-  "num": 40,
-  "file": "040_code_plate__plate_k10_x11.stl",
+  "num": 92,
+  "file": "092_code_plate__plate_k10_x11.stl",
   "bom": "code_plate",
   "qty": 11,
   "dims": [
@@ -823,8 +1883,8 @@
   "bodies": 1
  },
  {
-  "num": 41,
-  "file": "041_code_plate__plate_k20_x5.stl",
+  "num": 93,
+  "file": "093_code_plate__plate_k20_x5.stl",
   "bom": "code_plate",
   "qty": 5,
   "dims": [
@@ -847,8 +1907,8 @@
   "bodies": 1
  },
  {
-  "num": 42,
-  "file": "042_code_plate__plate_k210.stl",
+  "num": 94,
+  "file": "094_code_plate__plate_k210.stl",
   "bom": "code_plate",
   "qty": 1,
   "dims": [
@@ -867,8 +1927,8 @@
   "bodies": 1
  },
  {
-  "num": 43,
-  "file": "043_code_plate__plate_k25_x5.stl",
+  "num": 95,
+  "file": "095_code_plate__plate_k25_x5.stl",
   "bom": "code_plate",
   "qty": 5,
   "dims": [
@@ -891,8 +1951,8 @@
   "bodies": 1
  },
  {
-  "num": 44,
-  "file": "044_code_plate__plate_k30_x7.stl",
+  "num": 96,
+  "file": "096_code_plate__plate_k30_x7.stl",
   "bom": "code_plate",
   "qty": 7,
   "dims": [
@@ -917,8 +1977,8 @@
   "bodies": 1
  },
  {
-  "num": 45,
-  "file": "045_code_plate__plate_k310.stl",
+  "num": 97,
+  "file": "097_code_plate__plate_k310.stl",
   "bom": "code_plate",
   "qty": 1,
   "dims": [
@@ -937,8 +1997,8 @@
   "bodies": 1
  },
  {
-  "num": 46,
-  "file": "046_code_plate__plate_k37.stl",
+  "num": 98,
+  "file": "098_code_plate__plate_k37.stl",
   "bom": "code_plate",
   "qty": 1,
   "dims": [
@@ -957,8 +2017,8 @@
   "bodies": 1
  },
  {
-  "num": 47,
-  "file": "047_code_plate__plate_k38.stl",
+  "num": 99,
+  "file": "099_code_plate__plate_k38.stl",
   "bom": "code_plate",
   "qty": 1,
   "dims": [
@@ -977,8 +2037,8 @@
   "bodies": 1
  },
  {
-  "num": 48,
-  "file": "048_code_plate__plate_k39.stl",
+  "num": 100,
+  "file": "100_code_plate__plate_k39.stl",
   "bom": "code_plate",
   "qty": 1,
   "dims": [
@@ -993,12 +2053,12 @@
   "names": [
    "plate k39"
   ],
-  "number_on": "top",
+  "number_on": null,
   "bodies": 1
  },
  {
-  "num": 49,
-  "file": "049_code_plate__plate_space4.stl",
+  "num": 101,
+  "file": "101_code_plate__plate_space4.stl",
   "bom": "code_plate",
   "qty": 1,
   "dims": [
@@ -1013,12 +2073,12 @@
   "names": [
    "plate space4"
   ],
-  "number_on": "top",
+  "number_on": null,
   "bodies": 1
  },
  {
-  "num": 50,
-  "file": "050_code_plate__plate_space6.stl",
+  "num": 102,
+  "file": "102_code_plate__plate_space6.stl",
   "bom": "code_plate",
   "qty": 1,
   "dims": [
@@ -1033,12 +2093,12 @@
   "names": [
    "plate space6"
   ],
-  "number_on": "top",
+  "number_on": null,
   "bodies": 1
  },
  {
-  "num": 51,
-  "file": "051_col_pusher__column_pusher_0.stl",
+  "num": 103,
+  "file": "103_col_pusher__column_pusher_0.stl",
   "bom": "col_pusher",
   "qty": 1,
   "dims": [
@@ -1057,8 +2117,8 @@
   "bodies": 1
  },
  {
-  "num": 52,
-  "file": "052_col_pusher__column_pusher_1.stl",
+  "num": 104,
+  "file": "104_col_pusher__column_pusher_1.stl",
   "bom": "col_pusher",
   "qty": 1,
   "dims": [
@@ -1077,8 +2137,8 @@
   "bodies": 1
  },
  {
-  "num": 53,
-  "file": "053_col_pusher__column_pusher_10.stl",
+  "num": 105,
+  "file": "105_col_pusher__column_pusher_10.stl",
   "bom": "col_pusher",
   "qty": 1,
   "dims": [
@@ -1097,8 +2157,8 @@
   "bodies": 1
  },
  {
-  "num": 54,
-  "file": "054_col_pusher__column_pusher_2.stl",
+  "num": 106,
+  "file": "106_col_pusher__column_pusher_2.stl",
   "bom": "col_pusher",
   "qty": 1,
   "dims": [
@@ -1117,8 +2177,8 @@
   "bodies": 1
  },
  {
-  "num": 55,
-  "file": "055_col_pusher__column_pusher_3.stl",
+  "num": 107,
+  "file": "107_col_pusher__column_pusher_3.stl",
   "bom": "col_pusher",
   "qty": 1,
   "dims": [
@@ -1137,8 +2197,8 @@
   "bodies": 1
  },
  {
-  "num": 56,
-  "file": "056_col_pusher__column_pusher_4.stl",
+  "num": 108,
+  "file": "108_col_pusher__column_pusher_4.stl",
   "bom": "col_pusher",
   "qty": 1,
   "dims": [
@@ -1157,8 +2217,8 @@
   "bodies": 1
  },
  {
-  "num": 57,
-  "file": "057_col_pusher__column_pusher_5.stl",
+  "num": 109,
+  "file": "109_col_pusher__column_pusher_5.stl",
   "bom": "col_pusher",
   "qty": 1,
   "dims": [
@@ -1177,8 +2237,8 @@
   "bodies": 1
  },
  {
-  "num": 58,
-  "file": "058_col_pusher__column_pusher_6.stl",
+  "num": 110,
+  "file": "110_col_pusher__column_pusher_6.stl",
   "bom": "col_pusher",
   "qty": 1,
   "dims": [
@@ -1197,8 +2257,8 @@
   "bodies": 1
  },
  {
-  "num": 59,
-  "file": "059_col_pusher__column_pusher_7.stl",
+  "num": 111,
+  "file": "111_col_pusher__column_pusher_7.stl",
   "bom": "col_pusher",
   "qty": 1,
   "dims": [
@@ -1217,8 +2277,8 @@
   "bodies": 1
  },
  {
-  "num": 60,
-  "file": "060_col_pusher__column_pusher_8.stl",
+  "num": 112,
+  "file": "112_col_pusher__column_pusher_8.stl",
   "bom": "col_pusher",
   "qty": 1,
   "dims": [
@@ -1237,8 +2297,8 @@
   "bodies": 1
  },
  {
-  "num": 61,
-  "file": "061_col_pusher__column_pusher_9.stl",
+  "num": 113,
+  "file": "113_col_pusher__column_pusher_9.stl",
   "bom": "col_pusher",
   "qty": 1,
   "dims": [
@@ -1257,8 +2317,8 @@
   "bodies": 1
  },
  {
-  "num": 62,
-  "file": "062_col_pusher_sp__column_pusher_space4_x2.stl",
+  "num": 114,
+  "file": "114_col_pusher_sp__column_pusher_space4_x2.stl",
   "bom": "col_pusher_sp",
   "qty": 2,
   "dims": [
@@ -1278,8 +2338,8 @@
   "bodies": 1
  },
  {
-  "num": 63,
-  "file": "063_comb__key_comb_p1.stl",
+  "num": 115,
+  "file": "115_comb__key_comb_p1.stl",
   "bom": "comb",
   "qty": 1,
   "dims": [
@@ -1298,8 +2358,8 @@
   "bodies": 1
  },
  {
-  "num": 64,
-  "file": "064_comb__key_comb_p2.stl",
+  "num": 116,
+  "file": "116_comb__key_comb_p2.stl",
   "bom": "comb",
   "qty": 1,
   "dims": [
@@ -1318,8 +2378,8 @@
   "bodies": 1
  },
  {
-  "num": 65,
-  "file": "065_comb_space__space_comb_p1.stl",
+  "num": 117,
+  "file": "117_comb_space__space_comb_p1.stl",
   "bom": "comb_space",
   "qty": 1,
   "dims": [
@@ -1338,8 +2398,8 @@
   "bodies": 1
  },
  {
-  "num": 66,
-  "file": "066_comb_space__space_comb_p2.stl",
+  "num": 118,
+  "file": "118_comb_space__space_comb_p2.stl",
   "bom": "comb_space",
   "qty": 1,
   "dims": [
@@ -1358,8 +2418,8 @@
   "bodies": 1
  },
  {
-  "num": 67,
-  "file": "067_crank__winding_crank.stl",
+  "num": 119,
+  "file": "119_crank__winding_crank.stl",
   "bom": "crank",
   "qty": 1,
   "dims": [
@@ -1378,8 +2438,8 @@
   "bodies": 1
  },
  {
-  "num": 68,
-  "file": "068_cycle_bearing__cycle_bearing_block_-153_x3.stl",
+  "num": 120,
+  "file": "120_cycle_bearing__cycle_bearing_block_-153_x3.stl",
   "bom": "cycle_bearing",
   "qty": 3,
   "dims": [
@@ -1400,8 +2460,8 @@
   "bodies": 1
  },
  {
-  "num": 69,
-  "file": "069_detent_link__detent_link.stl",
+  "num": 121,
+  "file": "121_detent_link__detent_link.stl",
   "bom": "detent_link",
   "qty": 1,
   "dims": [
@@ -1420,8 +2480,8 @@
   "bodies": 1
  },
  {
-  "num": 70,
-  "file": "070_detent_pawl__detent_pawl.stl",
+  "num": 122,
+  "file": "122_detent_pawl__detent_pawl.stl",
   "bom": "detent_pawl",
   "qty": 1,
   "dims": [
@@ -1440,8 +2500,8 @@
   "bodies": 1
  },
  {
-  "num": 71,
-  "file": "071_esc_back_lever__back_lever_B.stl",
+  "num": 123,
+  "file": "123_esc_back_lever__back_lever_B.stl",
   "bom": "esc_back_lever",
   "qty": 1,
   "dims": [
@@ -1460,8 +2520,8 @@
   "bodies": 1
  },
  {
-  "num": 72,
-  "file": "072_esc_back_pawl__back_pawl.stl",
+  "num": 124,
+  "file": "124_esc_back_pawl__back_pawl.stl",
   "bom": "esc_back_pawl",
   "qty": 1,
   "dims": [
@@ -1480,8 +2540,8 @@
   "bodies": 1
  },
  {
-  "num": 73,
-  "file": "073_esc_bellcrank__escapement_bellcrank.stl",
+  "num": 125,
+  "file": "125_esc_bellcrank__escapement_bellcrank.stl",
   "bom": "esc_bellcrank",
   "qty": 1,
   "dims": [
@@ -1500,8 +2560,8 @@
   "bodies": 1
  },
  {
-  "num": 74,
-  "file": "074_esc_bksp_arm__backspace_arm_K.stl",
+  "num": 126,
+  "file": "126_esc_bksp_arm__backspace_arm_K.stl",
   "bom": "esc_bksp_arm",
   "qty": 1,
   "dims": [
@@ -1520,8 +2580,8 @@
   "bodies": 1
  },
  {
-  "num": 75,
-  "file": "075_esc_bracket__escapement_bracket.stl",
+  "num": 127,
+  "file": "127_esc_bracket__escapement_bracket.stl",
   "bom": "esc_bracket",
   "qty": 1,
   "dims": [
@@ -1540,8 +2600,8 @@
   "bodies": 1
  },
  {
-  "num": 76,
-  "file": "076_esc_dog__escapement_dog.stl",
+  "num": 128,
+  "file": "128_esc_dog__escapement_dog.stl",
   "bom": "esc_dog",
   "qty": 1,
   "dims": [
@@ -1560,8 +2620,8 @@
   "bodies": 1
  },
  {
-  "num": 77,
-  "file": "077_esc_finger__escapement_stop_finger.stl",
+  "num": 129,
+  "file": "129_esc_finger__escapement_stop_finger.stl",
   "bom": "esc_finger",
   "qty": 1,
   "dims": [
@@ -1580,8 +2640,8 @@
   "bodies": 1
  },
  {
-  "num": 78,
-  "file": "078_esc_guard__back_pawl_guard.stl",
+  "num": 130,
+  "file": "130_esc_guard__back_pawl_guard.stl",
   "bom": "esc_guard",
   "qty": 1,
   "dims": [
@@ -1600,8 +2660,8 @@
   "bodies": 1
  },
  {
-  "num": 79,
-  "file": "079_esc_memory__memory_lever_M.stl",
+  "num": 131,
+  "file": "131_esc_memory__memory_lever_M.stl",
   "bom": "esc_memory",
   "qty": 1,
   "dims": [
@@ -1620,8 +2680,8 @@
   "bodies": 1
  },
  {
-  "num": 80,
-  "file": "080_esc_mpawl__memory_holding_pawl.stl",
+  "num": 132,
+  "file": "132_esc_mpawl__memory_holding_pawl.stl",
   "bom": "esc_mpawl",
   "qty": 1,
   "dims": [
@@ -1640,8 +2700,8 @@
   "bodies": 1
  },
  {
-  "num": 81,
-  "file": "081_esc_msector__memory_ratchet_sector.stl",
+  "num": 133,
+  "file": "133_esc_msector__memory_ratchet_sector.stl",
   "bom": "esc_msector",
   "qty": 1,
   "dims": [
@@ -1660,8 +2720,8 @@
   "bodies": 1
  },
  {
-  "num": 82,
-  "file": "082_esc_stop__escapement_stop.stl",
+  "num": 134,
+  "file": "134_esc_stop__escapement_stop.stl",
   "bom": "esc_stop",
   "qty": 1,
   "dims": [
@@ -1680,8 +2740,8 @@
   "bodies": 1
  },
  {
-  "num": 83,
-  "file": "083_esc_wedge__memory_coupling_wedge.stl",
+  "num": 135,
+  "file": "135_esc_wedge__memory_coupling_wedge.stl",
   "bom": "esc_wedge",
   "qty": 1,
   "dims": [
@@ -1700,8 +2760,8 @@
   "bodies": 1
  },
  {
-  "num": 84,
-  "file": "084_esc_wheel__escapement_wheel_and_pinion.stl",
+  "num": 136,
+  "file": "136_esc_wheel__escapement_wheel_and_pinion.stl",
   "bom": "esc_wheel",
   "qty": 1,
   "dims": [
@@ -1720,8 +2780,8 @@
   "bodies": 1
  },
  {
-  "num": 85,
-  "file": "085_fork_bracket__lift_fork_bracket.stl",
+  "num": 137,
+  "file": "137_fork_bracket__lift_fork_bracket.stl",
   "bom": "fork_bracket",
   "qty": 1,
   "dims": [
@@ -1740,8 +2800,8 @@
   "bodies": 1
  },
  {
-  "num": 86,
-  "file": "086_gear_barrel__barrel_gear.stl",
+  "num": 138,
+  "file": "138_gear_barrel__barrel_gear.stl",
   "bom": "gear_barrel",
   "qty": 1,
   "dims": [
@@ -1760,8 +2820,8 @@
   "bodies": 1
  },
  {
-  "num": 87,
-  "file": "087_gear_gov__governor_gear.stl",
+  "num": 139,
+  "file": "139_gear_gov__governor_gear.stl",
   "bom": "gear_gov",
   "qty": 1,
   "dims": [
@@ -1780,8 +2840,8 @@
   "bodies": 1
  },
  {
-  "num": 88,
-  "file": "088_gear_int1__int1_gear.stl",
+  "num": 140,
+  "file": "140_gear_int1__int1_gear.stl",
   "bom": "gear_int1",
   "qty": 1,
   "dims": [
@@ -1800,8 +2860,8 @@
   "bodies": 1
  },
  {
-  "num": 89,
-  "file": "089_governor__governor_fan.stl",
+  "num": 141,
+  "file": "141_governor__governor_fan.stl",
   "bom": "governor",
   "qty": 1,
   "dims": [
@@ -1816,12 +2876,12 @@
   "names": [
    "governor fan"
   ],
-  "number_on": "top",
+  "number_on": null,
   "bodies": 1
  },
  {
-  "num": 90,
-  "file": "090_guide_lift__lift_guide_plate.stl",
+  "num": 142,
+  "file": "142_guide_lift__lift_guide_plate.stl",
   "bom": "guide_lift",
   "qty": 1,
   "dims": [
@@ -1840,8 +2900,8 @@
   "bodies": 1
  },
  {
-  "num": 91,
-  "file": "091_guide_rotate__rotate_guide_plate.stl",
+  "num": 143,
+  "file": "143_guide_rotate__rotate_guide_plate.stl",
   "bom": "guide_rotate",
   "qty": 1,
   "dims": [
@@ -1860,8 +2920,8 @@
   "bodies": 1
  },
  {
-  "num": 92,
-  "file": "092_hammer__hammer.stl",
+  "num": 144,
+  "file": "144_hammer__hammer.stl",
   "bom": "hammer",
   "qty": 1,
   "dims": [
@@ -1876,12 +2936,12 @@
   "names": [
    "hammer"
   ],
-  "number_on": "bottom",
+  "number_on": null,
   "bodies": 1
  },
  {
-  "num": 93,
-  "file": "093_hammer_link__hammer_trip_link.stl",
+  "num": 145,
+  "file": "145_hammer_link__hammer_trip_link.stl",
   "bom": "hammer_link",
   "qty": 1,
   "dims": [
@@ -1900,8 +2960,8 @@
   "bodies": 1
  },
  {
-  "num": 94,
-  "file": "094_hammer_lock_guide__hammer_lock_guide.stl",
+  "num": 146,
+  "file": "146_hammer_lock_guide__hammer_lock_guide.stl",
   "bom": "hammer_lock_guide",
   "qty": 1,
   "dims": [
@@ -1916,12 +2976,12 @@
   "names": [
    "hammer lock guide"
   ],
-  "number_on": "top",
+  "number_on": null,
   "bodies": 1
  },
  {
-  "num": 95,
-  "file": "095_keycap__cap_back.stl",
+  "num": 147,
+  "file": "147_keycap__cap_back.stl",
   "bom": "keycap",
   "qty": 1,
   "dims": [
@@ -1940,8 +3000,8 @@
   "bodies": 1
  },
  {
-  "num": 96,
-  "file": "096_keycap__cap_bksp.stl",
+  "num": 148,
+  "file": "148_keycap__cap_bksp.stl",
   "bom": "keycap",
   "qty": 1,
   "dims": [
@@ -1960,8 +3020,8 @@
   "bodies": 1
  },
  {
-  "num": 97,
-  "file": "097_keycap__cap_k00.stl",
+  "num": 149,
+  "file": "149_keycap__cap_k00.stl",
   "bom": "keycap",
   "qty": 1,
   "dims": [
@@ -1980,8 +3040,8 @@
   "bodies": 1
  },
  {
-  "num": 98,
-  "file": "098_keycap__cap_k01.stl",
+  "num": 150,
+  "file": "150_keycap__cap_k01.stl",
   "bom": "keycap",
   "qty": 1,
   "dims": [
@@ -2000,8 +3060,8 @@
   "bodies": 1
  },
  {
-  "num": 99,
-  "file": "099_keycap__cap_k010.stl",
+  "num": 151,
+  "file": "151_keycap__cap_k010.stl",
   "bom": "keycap",
   "qty": 1,
   "dims": [
@@ -2020,8 +3080,8 @@
   "bodies": 1
  },
  {
-  "num": 100,
-  "file": "100_keycap__cap_k02.stl",
+  "num": 152,
+  "file": "152_keycap__cap_k02.stl",
   "bom": "keycap",
   "qty": 1,
   "dims": [
@@ -2040,8 +3100,8 @@
   "bodies": 1
  },
  {
-  "num": 101,
-  "file": "101_keycap__cap_k03.stl",
+  "num": 153,
+  "file": "153_keycap__cap_k03.stl",
   "bom": "keycap",
   "qty": 1,
   "dims": [
@@ -2060,8 +3120,8 @@
   "bodies": 1
  },
  {
-  "num": 102,
-  "file": "102_keycap__cap_k04.stl",
+  "num": 154,
+  "file": "154_keycap__cap_k04.stl",
   "bom": "keycap",
   "qty": 1,
   "dims": [
@@ -2080,8 +3140,8 @@
   "bodies": 1
  },
  {
-  "num": 103,
-  "file": "103_keycap__cap_k05.stl",
+  "num": 155,
+  "file": "155_keycap__cap_k05.stl",
   "bom": "keycap",
   "qty": 1,
   "dims": [
@@ -2100,8 +3160,8 @@
   "bodies": 1
  },
  {
-  "num": 104,
-  "file": "104_keycap__cap_k06.stl",
+  "num": 156,
+  "file": "156_keycap__cap_k06.stl",
   "bom": "keycap",
   "qty": 1,
   "dims": [
@@ -2120,8 +3180,8 @@
   "bodies": 1
  },
  {
-  "num": 105,
-  "file": "105_keycap__cap_k07.stl",
+  "num": 157,
+  "file": "157_keycap__cap_k07.stl",
   "bom": "keycap",
   "qty": 1,
   "dims": [
@@ -2140,8 +3200,8 @@
   "bodies": 1
  },
  {
-  "num": 106,
-  "file": "106_keycap__cap_k08.stl",
+  "num": 158,
+  "file": "158_keycap__cap_k08.stl",
   "bom": "keycap",
   "qty": 1,
   "dims": [
@@ -2160,8 +3220,8 @@
   "bodies": 1
  },
  {
-  "num": 107,
-  "file": "107_keycap__cap_k09.stl",
+  "num": 159,
+  "file": "159_keycap__cap_k09.stl",
   "bom": "keycap",
   "qty": 1,
   "dims": [
@@ -2180,8 +3240,8 @@
   "bodies": 1
  },
  {
-  "num": 108,
-  "file": "108_keycap__cap_k10.stl",
+  "num": 160,
+  "file": "160_keycap__cap_k10.stl",
   "bom": "keycap",
   "qty": 1,
   "dims": [
@@ -2200,8 +3260,8 @@
   "bodies": 1
  },
  {
-  "num": 109,
-  "file": "109_keycap__cap_k11.stl",
+  "num": 161,
+  "file": "161_keycap__cap_k11.stl",
   "bom": "keycap",
   "qty": 1,
   "dims": [
@@ -2220,8 +3280,8 @@
   "bodies": 1
  },
  {
-  "num": 110,
-  "file": "110_keycap__cap_k110.stl",
+  "num": 162,
+  "file": "162_keycap__cap_k110.stl",
   "bom": "keycap",
   "qty": 1,
   "dims": [
@@ -2240,8 +3300,8 @@
   "bodies": 1
  },
  {
-  "num": 111,
-  "file": "111_keycap__cap_k12.stl",
+  "num": 163,
+  "file": "163_keycap__cap_k12.stl",
   "bom": "keycap",
   "qty": 1,
   "dims": [
@@ -2260,8 +3320,8 @@
   "bodies": 1
  },
  {
-  "num": 112,
-  "file": "112_keycap__cap_k13.stl",
+  "num": 164,
+  "file": "164_keycap__cap_k13.stl",
   "bom": "keycap",
   "qty": 1,
   "dims": [
@@ -2280,8 +3340,8 @@
   "bodies": 1
  },
  {
-  "num": 113,
-  "file": "113_keycap__cap_k14.stl",
+  "num": 165,
+  "file": "165_keycap__cap_k14.stl",
   "bom": "keycap",
   "qty": 1,
   "dims": [
@@ -2300,8 +3360,8 @@
   "bodies": 1
  },
  {
-  "num": 114,
-  "file": "114_keycap__cap_k15.stl",
+  "num": 166,
+  "file": "166_keycap__cap_k15.stl",
   "bom": "keycap",
   "qty": 1,
   "dims": [
@@ -2320,8 +3380,8 @@
   "bodies": 1
  },
  {
-  "num": 115,
-  "file": "115_keycap__cap_k16.stl",
+  "num": 167,
+  "file": "167_keycap__cap_k16.stl",
   "bom": "keycap",
   "qty": 1,
   "dims": [
@@ -2340,8 +3400,8 @@
   "bodies": 1
  },
  {
-  "num": 116,
-  "file": "116_keycap__cap_k17.stl",
+  "num": 168,
+  "file": "168_keycap__cap_k17.stl",
   "bom": "keycap",
   "qty": 1,
   "dims": [
@@ -2360,8 +3420,8 @@
   "bodies": 1
  },
  {
-  "num": 117,
-  "file": "117_keycap__cap_k18.stl",
+  "num": 169,
+  "file": "169_keycap__cap_k18.stl",
   "bom": "keycap",
   "qty": 1,
   "dims": [
@@ -2380,8 +3440,8 @@
   "bodies": 1
  },
  {
-  "num": 118,
-  "file": "118_keycap__cap_k19.stl",
+  "num": 170,
+  "file": "170_keycap__cap_k19.stl",
   "bom": "keycap",
   "qty": 1,
   "dims": [
@@ -2400,8 +3460,8 @@
   "bodies": 1
  },
  {
-  "num": 119,
-  "file": "119_keycap__cap_k20.stl",
+  "num": 171,
+  "file": "171_keycap__cap_k20.stl",
   "bom": "keycap",
   "qty": 1,
   "dims": [
@@ -2420,8 +3480,8 @@
   "bodies": 1
  },
  {
-  "num": 120,
-  "file": "120_keycap__cap_k21.stl",
+  "num": 172,
+  "file": "172_keycap__cap_k21.stl",
   "bom": "keycap",
   "qty": 1,
   "dims": [
@@ -2440,8 +3500,8 @@
   "bodies": 1
  },
  {
-  "num": 121,
-  "file": "121_keycap__cap_k210.stl",
+  "num": 173,
+  "file": "173_keycap__cap_k210.stl",
   "bom": "keycap",
   "qty": 1,
   "dims": [
@@ -2460,8 +3520,8 @@
   "bodies": 1
  },
  {
-  "num": 122,
-  "file": "122_keycap__cap_k22.stl",
+  "num": 174,
+  "file": "174_keycap__cap_k22.stl",
   "bom": "keycap",
   "qty": 1,
   "dims": [
@@ -2480,8 +3540,8 @@
   "bodies": 1
  },
  {
-  "num": 123,
-  "file": "123_keycap__cap_k23.stl",
+  "num": 175,
+  "file": "175_keycap__cap_k23.stl",
   "bom": "keycap",
   "qty": 1,
   "dims": [
@@ -2500,8 +3560,8 @@
   "bodies": 1
  },
  {
-  "num": 124,
-  "file": "124_keycap__cap_k24.stl",
+  "num": 176,
+  "file": "176_keycap__cap_k24.stl",
   "bom": "keycap",
   "qty": 1,
   "dims": [
@@ -2520,8 +3580,8 @@
   "bodies": 1
  },
  {
-  "num": 125,
-  "file": "125_keycap__cap_k25.stl",
+  "num": 177,
+  "file": "177_keycap__cap_k25.stl",
   "bom": "keycap",
   "qty": 1,
   "dims": [
@@ -2540,8 +3600,8 @@
   "bodies": 1
  },
  {
-  "num": 126,
-  "file": "126_keycap__cap_k26.stl",
+  "num": 178,
+  "file": "178_keycap__cap_k26.stl",
   "bom": "keycap",
   "qty": 1,
   "dims": [
@@ -2560,8 +3620,8 @@
   "bodies": 1
  },
  {
-  "num": 127,
-  "file": "127_keycap__cap_k27.stl",
+  "num": 179,
+  "file": "179_keycap__cap_k27.stl",
   "bom": "keycap",
   "qty": 1,
   "dims": [
@@ -2580,8 +3640,8 @@
   "bodies": 1
  },
  {
-  "num": 128,
-  "file": "128_keycap__cap_k28.stl",
+  "num": 180,
+  "file": "180_keycap__cap_k28.stl",
   "bom": "keycap",
   "qty": 1,
   "dims": [
@@ -2600,8 +3660,8 @@
   "bodies": 1
  },
  {
-  "num": 129,
-  "file": "129_keycap__cap_k29.stl",
+  "num": 181,
+  "file": "181_keycap__cap_k29.stl",
   "bom": "keycap",
   "qty": 1,
   "dims": [
@@ -2620,8 +3680,8 @@
   "bodies": 1
  },
  {
-  "num": 130,
-  "file": "130_keycap__cap_k30.stl",
+  "num": 182,
+  "file": "182_keycap__cap_k30.stl",
   "bom": "keycap",
   "qty": 1,
   "dims": [
@@ -2640,8 +3700,8 @@
   "bodies": 1
  },
  {
-  "num": 131,
-  "file": "131_keycap__cap_k31.stl",
+  "num": 183,
+  "file": "183_keycap__cap_k31.stl",
   "bom": "keycap",
   "qty": 1,
   "dims": [
@@ -2660,8 +3720,8 @@
   "bodies": 1
  },
  {
-  "num": 132,
-  "file": "132_keycap__cap_k32.stl",
+  "num": 184,
+  "file": "184_keycap__cap_k32.stl",
   "bom": "keycap",
   "qty": 1,
   "dims": [
@@ -2680,8 +3740,8 @@
   "bodies": 1
  },
  {
-  "num": 133,
-  "file": "133_keycap__cap_k33.stl",
+  "num": 185,
+  "file": "185_keycap__cap_k33.stl",
   "bom": "keycap",
   "qty": 1,
   "dims": [
@@ -2700,8 +3760,8 @@
   "bodies": 1
  },
  {
-  "num": 134,
-  "file": "134_keycap__cap_k34.stl",
+  "num": 186,
+  "file": "186_keycap__cap_k34.stl",
   "bom": "keycap",
   "qty": 1,
   "dims": [
@@ -2720,8 +3780,8 @@
   "bodies": 1
  },
  {
-  "num": 135,
-  "file": "135_keycap__cap_k35.stl",
+  "num": 187,
+  "file": "187_keycap__cap_k35.stl",
   "bom": "keycap",
   "qty": 1,
   "dims": [
@@ -2740,8 +3800,8 @@
   "bodies": 1
  },
  {
-  "num": 136,
-  "file": "136_keycap__cap_k36.stl",
+  "num": 188,
+  "file": "188_keycap__cap_k36.stl",
   "bom": "keycap",
   "qty": 1,
   "dims": [
@@ -2760,8 +3820,8 @@
   "bodies": 1
  },
  {
-  "num": 137,
-  "file": "137_keycap__cap_k37.stl",
+  "num": 189,
+  "file": "189_keycap__cap_k37.stl",
   "bom": "keycap",
   "qty": 1,
   "dims": [
@@ -2780,8 +3840,8 @@
   "bodies": 1
  },
  {
-  "num": 138,
-  "file": "138_keycap__cap_k38.stl",
+  "num": 190,
+  "file": "190_keycap__cap_k38.stl",
   "bom": "keycap",
   "qty": 1,
   "dims": [
@@ -2800,8 +3860,8 @@
   "bodies": 1
  },
  {
-  "num": 139,
-  "file": "139_keycap__cap_k39_x2.stl",
+  "num": 191,
+  "file": "191_keycap__cap_k39_x2.stl",
   "bom": "keycap",
   "qty": 2,
   "dims": [
@@ -2821,8 +3881,8 @@
   "bodies": 1
  },
  {
-  "num": 140,
-  "file": "140_keycap__cap_shift.stl",
+  "num": 192,
+  "file": "192_keycap__cap_shift.stl",
   "bom": "keycap",
   "qty": 1,
   "dims": [
@@ -2841,8 +3901,8 @@
   "bodies": 1
  },
  {
-  "num": 141,
-  "file": "141_keystem__stem_back.stl",
+  "num": 193,
+  "file": "193_keystem__stem_back.stl",
   "bom": "keystem",
   "qty": 1,
   "dims": [
@@ -2861,8 +3921,8 @@
   "bodies": 1
  },
  {
-  "num": 142,
-  "file": "142_keystem__stem_bksp.stl",
+  "num": 194,
+  "file": "194_keystem__stem_bksp.stl",
   "bom": "keystem",
   "qty": 1,
   "dims": [
@@ -2881,8 +3941,8 @@
   "bodies": 1
  },
  {
-  "num": 143,
-  "file": "143_keystem__stem_k00_x11.stl",
+  "num": 195,
+  "file": "195_keystem__stem_k00_x11.stl",
   "bom": "keystem",
   "qty": 11,
   "dims": [
@@ -2911,8 +3971,8 @@
   "bodies": 1
  },
  {
-  "num": 144,
-  "file": "144_keystem__stem_k10_x11.stl",
+  "num": 196,
+  "file": "196_keystem__stem_k10_x11.stl",
   "bom": "keystem",
   "qty": 11,
   "dims": [
@@ -2941,8 +4001,8 @@
   "bodies": 1
  },
  {
-  "num": 145,
-  "file": "145_keystem__stem_k20_x11.stl",
+  "num": 197,
+  "file": "197_keystem__stem_k20_x11.stl",
   "bom": "keystem",
   "qty": 11,
   "dims": [
@@ -2971,8 +4031,8 @@
   "bodies": 1
  },
  {
-  "num": 146,
-  "file": "146_keystem__stem_k30_x12.stl",
+  "num": 198,
+  "file": "198_keystem__stem_k30_x12.stl",
   "bom": "keystem",
   "qty": 12,
   "dims": [
@@ -3002,8 +4062,8 @@
   "bodies": 1
  },
  {
-  "num": 147,
-  "file": "147_keystem__stem_space4.stl",
+  "num": 199,
+  "file": "199_keystem__stem_space4.stl",
   "bom": "keystem",
   "qty": 1,
   "dims": [
@@ -3022,8 +4082,8 @@
   "bodies": 1
  },
  {
-  "num": 148,
-  "file": "148_keystem__stem_space6.stl",
+  "num": 200,
+  "file": "200_keystem__stem_space6.stl",
   "bom": "keystem",
   "qty": 1,
   "dims": [
@@ -3042,8 +4102,8 @@
   "bodies": 1
  },
  {
-  "num": 149,
-  "file": "149_lay_bearing__lay_shaft_bearing.stl",
+  "num": 201,
+  "file": "201_lay_bearing__lay_shaft_bearing.stl",
   "bom": "lay_bearing",
   "qty": 1,
   "dims": [
@@ -3062,8 +4122,8 @@
   "bodies": 1
  },
  {
-  "num": 150,
-  "file": "150_lever__lever_back_p1.stl",
+  "num": 202,
+  "file": "202_lever__lever_back_p1.stl",
   "bom": "lever",
   "qty": 1,
   "dims": [
@@ -3082,8 +4142,8 @@
   "bodies": 1
  },
  {
-  "num": 151,
-  "file": "151_lever__lever_bksp_p1.stl",
+  "num": 203,
+  "file": "203_lever__lever_bksp_p1.stl",
   "bom": "lever",
   "qty": 1,
   "dims": [
@@ -3102,8 +4162,8 @@
   "bodies": 1
  },
  {
-  "num": 152,
-  "file": "152_lever__lever_bksp_p2_x2.stl",
+  "num": 204,
+  "file": "204_lever__lever_bksp_p2_x2.stl",
   "bom": "lever",
   "qty": 2,
   "dims": [
@@ -3123,8 +4183,8 @@
   "bodies": 1
  },
  {
-  "num": 153,
-  "file": "153_lever__lever_k00_p1_x11.stl",
+  "num": 205,
+  "file": "205_lever__lever_k00_p1_x11.stl",
   "bom": "lever",
   "qty": 11,
   "dims": [
@@ -3153,8 +4213,8 @@
   "bodies": 1
  },
  {
-  "num": 154,
-  "file": "154_lever__lever_k00_p2_x11.stl",
+  "num": 206,
+  "file": "206_lever__lever_k00_p2_x11.stl",
   "bom": "lever",
   "qty": 11,
   "dims": [
@@ -3183,8 +4243,8 @@
   "bodies": 1
  },
  {
-  "num": 155,
-  "file": "155_lever__lever_k10_p1_x11.stl",
+  "num": 207,
+  "file": "207_lever__lever_k10_p1_x11.stl",
   "bom": "lever",
   "qty": 11,
   "dims": [
@@ -3213,8 +4273,8 @@
   "bodies": 1
  },
  {
-  "num": 156,
-  "file": "156_lever__lever_k10_p2_x11.stl",
+  "num": 208,
+  "file": "208_lever__lever_k10_p2_x11.stl",
   "bom": "lever",
   "qty": 11,
   "dims": [
@@ -3243,8 +4303,8 @@
   "bodies": 1
  },
  {
-  "num": 157,
-  "file": "157_lever__lever_k20_p1_x11.stl",
+  "num": 209,
+  "file": "209_lever__lever_k20_p1_x11.stl",
   "bom": "lever",
   "qty": 11,
   "dims": [
@@ -3273,8 +4333,8 @@
   "bodies": 1
  },
  {
-  "num": 158,
-  "file": "158_lever__lever_k20_p2_x11.stl",
+  "num": 210,
+  "file": "210_lever__lever_k20_p2_x11.stl",
   "bom": "lever",
   "qty": 11,
   "dims": [
@@ -3303,8 +4363,8 @@
   "bodies": 1
  },
  {
-  "num": 159,
-  "file": "159_lever__lever_k30_p1_x12.stl",
+  "num": 211,
+  "file": "211_lever__lever_k30_p1_x12.stl",
   "bom": "lever",
   "qty": 12,
   "dims": [
@@ -3334,8 +4394,8 @@
   "bodies": 1
  },
  {
-  "num": 160,
-  "file": "160_lever__lever_k30_p2_x11.stl",
+  "num": 212,
+  "file": "212_lever__lever_k30_p2_x11.stl",
   "bom": "lever",
   "qty": 11,
   "dims": [
@@ -3364,8 +4424,8 @@
   "bodies": 1
  },
  {
-  "num": 161,
-  "file": "161_lever__lever_shift_p2.stl",
+  "num": 213,
+  "file": "213_lever__lever_shift_p2.stl",
   "bom": "lever",
   "qty": 1,
   "dims": [
@@ -3384,8 +4444,8 @@
   "bodies": 1
  },
  {
-  "num": 162,
-  "file": "162_lever__lever_space4_p1_x2.stl",
+  "num": 214,
+  "file": "214_lever__lever_space4_p1_x2.stl",
   "bom": "lever",
   "qty": 2,
   "dims": [
@@ -3405,8 +4465,8 @@
   "bodies": 1
  },
  {
-  "num": 163,
-  "file": "163_lever__lever_space4_p2_x2.stl",
+  "num": 215,
+  "file": "215_lever__lever_space4_p2_x2.stl",
   "bom": "lever",
   "qty": 2,
   "dims": [
@@ -3426,8 +4486,8 @@
   "bodies": 1
  },
  {
-  "num": 164,
-  "file": "164_lift_collar__lift_collar.stl",
+  "num": 216,
+  "file": "216_lift_collar__lift_collar.stl",
   "bom": "lift_collar",
   "qty": 1,
   "dims": [
@@ -3446,8 +4506,8 @@
   "bodies": 1
  },
  {
-  "num": 165,
-  "file": "165_lift_fork__lift_fork.stl",
+  "num": 217,
+  "file": "217_lift_fork__lift_fork.stl",
   "bom": "lift_fork",
   "qty": 1,
   "dims": [
@@ -3466,8 +4526,8 @@
   "bodies": 1
  },
  {
-  "num": 166,
-  "file": "166_lock_guide__lock_bail_guide_-1_x2.stl",
+  "num": 218,
+  "file": "218_lock_guide__lock_bail_guide_-1_x2.stl",
   "bom": "lock_guide",
   "qty": 2,
   "dims": [
@@ -3487,8 +4547,8 @@
   "bodies": 1
  },
  {
-  "num": 167,
-  "file": "167_lock_lever__hammer_lock_lever.stl",
+  "num": 219,
+  "file": "219_lock_lever__hammer_lock_lever.stl",
   "bom": "lock_lever",
   "qty": 1,
   "dims": [
@@ -3507,8 +4567,8 @@
   "bodies": 1
  },
  {
-  "num": 168,
-  "file": "168_lock_lever__read_lock_lever.stl",
+  "num": 220,
+  "file": "220_lock_lever__read_lock_lever.stl",
   "bom": "lock_lever",
   "qty": 1,
   "dims": [
@@ -3527,8 +4587,8 @@
   "bodies": 1
  },
  {
-  "num": 169,
-  "file": "169_margin_ab__margin_abutment.stl",
+  "num": 221,
+  "file": "221_margin_ab__margin_abutment.stl",
   "bom": "margin_ab",
   "qty": 1,
   "dims": [
@@ -3547,8 +4607,8 @@
   "bodies": 1
  },
  {
-  "num": 170,
-  "file": "170_margin_stop__margin_stop_L_x2.stl",
+  "num": 222,
+  "file": "222_margin_stop__margin_stop_L_x2.stl",
   "bom": "margin_stop",
   "qty": 2,
   "dims": [
@@ -3568,8 +4628,8 @@
   "bodies": 1
  },
  {
-  "num": 171,
-  "file": "171_margin_strip__margin_strip.stl",
+  "num": 223,
+  "file": "223_margin_strip__margin_strip.stl",
   "bom": "margin_strip",
   "qty": 1,
   "dims": [
@@ -3588,8 +4648,8 @@
   "bodies": 1
  },
  {
-  "num": 172,
-  "file": "172_memory_pawl__memory_pawl_C_x2.stl",
+  "num": 224,
+  "file": "224_memory_pawl__memory_pawl_C_x2.stl",
   "bom": "memory_pawl",
   "qty": 2,
   "dims": [
@@ -3609,8 +4669,8 @@
   "bodies": 1
  },
  {
-  "num": 173,
-  "file": "173_motor_cheek__motor_cheek_175_p1_x2.stl",
+  "num": 225,
+  "file": "225_motor_cheek__motor_cheek_175_p1_x2.stl",
   "bom": "motor_cheek",
   "qty": 2,
   "dims": [
@@ -3630,8 +4690,8 @@
   "bodies": 1
  },
  {
-  "num": 174,
-  "file": "174_motor_cheek__motor_cheek_175_p2_x2.stl",
+  "num": 226,
+  "file": "226_motor_cheek__motor_cheek_175_p2_x2.stl",
   "bom": "motor_cheek",
   "qty": 2,
   "dims": [
@@ -3651,8 +4711,8 @@
   "bodies": 1
  },
  {
-  "num": 175,
-  "file": "175_nsel_br__stop_selector_bracket.stl",
+  "num": 227,
+  "file": "227_nsel_br__stop_selector_bracket.stl",
   "bom": "nsel_br",
   "qty": 1,
   "dims": [
@@ -3671,8 +4731,8 @@
   "bodies": 1
  },
  {
-  "num": 176,
-  "file": "176_nsel_lever__stop_selector_lever.stl",
+  "num": 228,
+  "file": "228_nsel_lever__stop_selector_lever.stl",
   "bom": "nsel_lever",
   "qty": 1,
   "dims": [
@@ -3691,8 +4751,8 @@
   "bodies": 1
  },
  {
-  "num": 177,
-  "file": "177_o_bc__O_bellcrank.stl",
+  "num": 229,
+  "file": "229_o_bc__O_bellcrank.stl",
   "bom": "o_bc",
   "qty": 1,
   "dims": [
@@ -3711,8 +4771,8 @@
   "bodies": 1
  },
  {
-  "num": 178,
-  "file": "178_o_bc_br__O_bellcrank_bracket.stl",
+  "num": 230,
+  "file": "230_o_bc_br__O_bellcrank_bracket.stl",
   "bom": "o_bc_br",
   "qty": 1,
   "dims": [
@@ -3731,8 +4791,8 @@
   "bodies": 1
  },
  {
-  "num": 179,
-  "file": "179_o_follower__O_follower.stl",
+  "num": 231,
+  "file": "231_o_follower__O_follower.stl",
   "bom": "o_follower",
   "qty": 1,
   "dims": [
@@ -3751,8 +4811,8 @@
   "bodies": 1
  },
  {
-  "num": 180,
-  "file": "180_o_post__O_post.stl",
+  "num": 232,
+  "file": "232_o_post__O_post.stl",
   "bom": "o_post",
   "qty": 1,
   "dims": [
@@ -3771,8 +4831,8 @@
   "bodies": 1
  },
  {
-  "num": 181,
-  "file": "181_o_rocker__O_rocker.stl",
+  "num": 233,
+  "file": "233_o_rocker__O_rocker.stl",
   "bom": "o_rocker",
   "qty": 1,
   "dims": [
@@ -3791,8 +4851,8 @@
   "bodies": 1
  },
  {
-  "num": 182,
-  "file": "182_paper_rest__paper_rest.stl",
+  "num": 234,
+  "file": "234_paper_rest__paper_rest.stl",
   "bom": "paper_rest",
   "qty": 1,
   "dims": [
@@ -3811,8 +4871,8 @@
   "bodies": 1
  },
  {
-  "num": 183,
-  "file": "183_pawl_lifter__memory_pawl_lifter.stl",
+  "num": 235,
+  "file": "235_pawl_lifter__memory_pawl_lifter.stl",
   "bom": "pawl_lifter",
   "qty": 1,
   "dims": [
@@ -3831,8 +4891,8 @@
   "bodies": 1
  },
  {
-  "num": 184,
-  "file": "184_pinion12__int2_pinion.stl",
+  "num": 236,
+  "file": "236_pinion12__int2_pinion.stl",
   "bom": "pinion12",
   "qty": 1,
   "dims": [
@@ -3851,8 +4911,8 @@
   "bodies": 1
  },
  {
-  "num": 185,
-  "file": "185_pinion12_m15__int1_pinion.stl",
+  "num": 237,
+  "file": "237_pinion12_m15__int1_pinion.stl",
   "bom": "pinion12_m15",
   "qty": 1,
   "dims": [
@@ -3871,8 +4931,8 @@
   "bodies": 1
  },
  {
-  "num": 186,
-  "file": "186_pinion8__governor_pinion.stl",
+  "num": 238,
+  "file": "238_pinion8__governor_pinion.stl",
   "bom": "pinion8",
   "qty": 1,
   "dims": [
@@ -3891,8 +4951,8 @@
   "bodies": 1
  },
  {
-  "num": 187,
-  "file": "187_pivot_bracket__pivot_bracket_-148_x2.stl",
+  "num": 239,
+  "file": "239_pivot_bracket__pivot_bracket_-148_x2.stl",
   "bom": "pivot_bracket",
   "qty": 2,
   "dims": [
@@ -3912,8 +4972,8 @@
   "bodies": 1
  },
  {
-  "num": 188,
-  "file": "188_pmu_detent__pm-u_detent.stl",
+  "num": 240,
+  "file": "240_pmu_detent__pm-u_detent.stl",
   "bom": "pmu_detent",
   "qty": 1,
   "dims": [
@@ -3932,8 +4992,8 @@
   "bodies": 1
  },
  {
-  "num": 189,
-  "file": "189_pmu_eccentric__pm-u_eccentric.stl",
+  "num": 241,
+  "file": "241_pmu_eccentric__pm-u_eccentric.stl",
   "bom": "pmu_eccentric",
   "qty": 1,
   "dims": [
@@ -3952,8 +5012,8 @@
   "bodies": 1
  },
  {
-  "num": 190,
-  "file": "190_pusher_guide__pusher_guide.stl",
+  "num": 242,
+  "file": "242_pusher_guide__pusher_guide.stl",
   "bom": "pusher_guide",
   "qty": 1,
   "dims": [
@@ -3972,8 +5032,8 @@
   "bodies": 1
  },
  {
-  "num": 191,
-  "file": "191_rack__carriage_rack.stl",
+  "num": 243,
+  "file": "243_rack__carriage_rack.stl",
   "bom": "rack",
   "qty": 1,
   "dims": [
@@ -3992,8 +5052,8 @@
   "bodies": 1
  },
  {
-  "num": 192,
-  "file": "192_read_head__reading_head.stl",
+  "num": 244,
+  "file": "244_read_head__reading_head.stl",
   "bom": "read_head",
   "qty": 1,
   "dims": [
@@ -4012,8 +5072,8 @@
   "bodies": 1
  },
  {
-  "num": 193,
-  "file": "193_read_lock_guide__read_lock_guide.stl",
+  "num": 245,
+  "file": "245_read_lock_guide__read_lock_guide.stl",
   "bom": "read_lock_guide",
   "qty": 1,
   "dims": [
@@ -4032,8 +5092,8 @@
   "bodies": 1
  },
  {
-  "num": 194,
-  "file": "194_read_post__reading_post.stl",
+  "num": 246,
+  "file": "246_read_post__reading_post.stl",
   "bom": "read_post",
   "qty": 1,
   "dims": [
@@ -4052,8 +5112,8 @@
   "bodies": 1
  },
  {
-  "num": 195,
-  "file": "195_read_rocker__read_rocker.stl",
+  "num": 247,
+  "file": "247_read_rocker__read_rocker.stl",
   "bom": "read_rocker",
   "qty": 1,
   "dims": [
@@ -4072,8 +5132,8 @@
   "bodies": 1
  },
  {
-  "num": 196,
-  "file": "196_read_rocker_bracket__read_rocker_bracket.stl",
+  "num": 248,
+  "file": "248_read_rocker_bracket__read_rocker_bracket.stl",
   "bom": "read_rocker_bracket",
   "qty": 1,
   "dims": [
@@ -4092,8 +5152,8 @@
   "bodies": 1
  },
  {
-  "num": 197,
-  "file": "197_read_slide_B__read_slide_B.stl",
+  "num": 249,
+  "file": "249_read_slide_B__read_slide_B.stl",
   "bom": "read_slide_B",
   "qty": 1,
   "dims": [
@@ -4112,8 +5172,8 @@
   "bodies": 1
  },
  {
-  "num": 198,
-  "file": "198_read_slide_C__read_slide_C.stl",
+  "num": 250,
+  "file": "250_read_slide_C__read_slide_C.stl",
   "bom": "read_slide_C",
   "qty": 1,
   "dims": [
@@ -4132,8 +5192,8 @@
   "bodies": 1
  },
  {
-  "num": 199,
-  "file": "199_read_slide_stop__read_slide_B_stop_x2.stl",
+  "num": 251,
+  "file": "251_read_slide_stop__read_slide_B_stop_x2.stl",
   "bom": "read_slide_stop",
   "qty": 2,
   "dims": [
@@ -4153,8 +5213,8 @@
   "bodies": 1
  },
  {
-  "num": 200,
-  "file": "200_read_stem__reading_stem_and_arm.stl",
+  "num": 252,
+  "file": "252_read_stem__reading_stem_and_arm.stl",
   "bom": "read_stem",
   "qty": 1,
   "dims": [
@@ -4173,8 +5233,8 @@
   "bodies": 1
  },
  {
-  "num": 201,
-  "file": "201_release_bracket__carriage_release_bracket.stl",
+  "num": 253,
+  "file": "253_release_bracket__carriage_release_bracket.stl",
   "bom": "release_bracket",
   "qty": 1,
   "dims": [
@@ -4193,8 +5253,8 @@
   "bodies": 1
  },
  {
-  "num": 202,
-  "file": "202_release_key__carriage_release_key.stl",
+  "num": 254,
+  "file": "254_release_key__carriage_release_key.stl",
   "bom": "release_key",
   "qty": 1,
   "dims": [
@@ -4213,8 +5273,8 @@
   "bodies": 1
  },
  {
-  "num": 203,
-  "file": "203_release_stop__dog_release_sheath_stop.stl",
+  "num": 255,
+  "file": "255_release_stop__dog_release_sheath_stop.stl",
   "bom": "release_stop",
   "qty": 1,
   "dims": [
@@ -4233,8 +5293,8 @@
   "bodies": 1
  },
  {
-  "num": 204,
-  "file": "204_ribbon_guide__ribbon_guide_-1_x2.stl",
+  "num": 256,
+  "file": "256_ribbon_guide__ribbon_guide_-1_x2.stl",
   "bom": "ribbon_guide",
   "qty": 2,
   "dims": [
@@ -4254,8 +5314,8 @@
   "bodies": 1
  },
  {
-  "num": 205,
-  "file": "205_ribbon_post__ribbon_post_+1.stl",
+  "num": 257,
+  "file": "257_ribbon_post__ribbon_post_+1.stl",
   "bom": "ribbon_post",
   "qty": 1,
   "dims": [
@@ -4270,12 +5330,12 @@
   "names": [
    "ribbon post +1"
   ],
-  "number_on": null,
+  "number_on": "bottom",
   "bodies": 1
  },
  {
-  "num": 206,
-  "file": "206_ribbon_post__ribbon_post_-1.stl",
+  "num": 258,
+  "file": "258_ribbon_post__ribbon_post_-1.stl",
   "bom": "ribbon_post",
   "qty": 1,
   "dims": [
@@ -4294,8 +5354,8 @@
   "bodies": 1
  },
  {
-  "num": 207,
-  "file": "207_rocker_back__back_rocker.stl",
+  "num": 259,
+  "file": "259_rocker_back__back_rocker.stl",
   "bom": "rocker_back",
   "qty": 1,
   "dims": [
@@ -4314,8 +5374,8 @@
   "bodies": 1
  },
  {
-  "num": 208,
-  "file": "208_rocker_bksp__bksp_rocker.stl",
+  "num": 260,
+  "file": "260_rocker_bksp__bksp_rocker.stl",
   "bom": "rocker_bksp",
   "qty": 1,
   "dims": [
@@ -4334,8 +5394,8 @@
   "bodies": 1
  },
  {
-  "num": 209,
-  "file": "209_rocker_bracket__rocker_bracket.stl",
+  "num": 261,
+  "file": "261_rocker_bracket__rocker_bracket.stl",
   "bom": "rocker_bracket",
   "qty": 1,
   "dims": [
@@ -4354,8 +5414,8 @@
   "bodies": 1
  },
  {
-  "num": 210,
-  "file": "210_row_link__row_detent_link.stl",
+  "num": 262,
+  "file": "262_row_link__row_detent_link.stl",
   "bom": "row_link",
   "qty": 1,
   "dims": [
@@ -4374,8 +5434,8 @@
   "bodies": 1
  },
  {
-  "num": 211,
-  "file": "211_row_post__row_detent_post.stl",
+  "num": 263,
+  "file": "263_row_post__row_detent_post.stl",
   "bom": "row_post",
   "qty": 1,
   "dims": [
@@ -4394,8 +5454,8 @@
   "bodies": 1
  },
  {
-  "num": 212,
-  "file": "212_sector_bracket__sector_bracket.stl",
+  "num": 264,
+  "file": "264_sector_bracket__sector_bracket.stl",
   "bom": "sector_bracket",
   "qty": 1,
   "dims": [
@@ -4414,8 +5474,8 @@
   "bodies": 1
  },
  {
-  "num": 213,
-  "file": "213_sel_bar_l__selector_bar_l1_p1_x3.stl",
+  "num": 265,
+  "file": "265_sel_bar_l__selector_bar_l1_p1_x3.stl",
   "bom": "sel_bar_l",
   "qty": 3,
   "dims": [
@@ -4436,8 +5496,8 @@
   "bodies": 1
  },
  {
-  "num": 214,
-  "file": "214_sel_bar_l__selector_bar_l1_p2_x3.stl",
+  "num": 266,
+  "file": "266_sel_bar_l__selector_bar_l1_p2_x3.stl",
   "bom": "sel_bar_l",
   "qty": 3,
   "dims": [
@@ -4458,8 +5518,8 @@
   "bodies": 1
  },
  {
-  "num": 215,
-  "file": "215_sel_bar_r__selector_bar_r1_p1_x4.stl",
+  "num": 267,
+  "file": "267_sel_bar_r__selector_bar_r1_p1_x4.stl",
   "bom": "sel_bar_r",
   "qty": 4,
   "dims": [
@@ -4481,8 +5541,8 @@
   "bodies": 1
  },
  {
-  "num": 216,
-  "file": "216_sel_bar_r__selector_bar_r1_p2_x4.stl",
+  "num": 268,
+  "file": "268_sel_bar_r__selector_bar_r1_p2_x4.stl",
   "bom": "sel_bar_r",
   "qty": 4,
   "dims": [
@@ -4504,8 +5564,8 @@
   "bodies": 1
  },
  {
-  "num": 217,
-  "file": "217_sel_comb__selector_comb_p1.stl",
+  "num": 269,
+  "file": "269_sel_comb__selector_comb_p1.stl",
   "bom": "sel_comb",
   "qty": 1,
   "dims": [
@@ -4524,8 +5584,8 @@
   "bodies": 1
  },
  {
-  "num": 218,
-  "file": "218_sel_comb__selector_comb_p2.stl",
+  "num": 270,
+  "file": "270_sel_comb__selector_comb_p2.stl",
   "bom": "sel_comb",
   "qty": 1,
   "dims": [
@@ -4544,8 +5604,8 @@
   "bodies": 1
  },
  {
-  "num": 219,
-  "file": "219_sel_post__selector_post_+1.stl",
+  "num": 271,
+  "file": "271_sel_post__selector_post_+1.stl",
   "bom": "sel_post",
   "qty": 1,
   "dims": [
@@ -4564,8 +5624,8 @@
   "bodies": 1
  },
  {
-  "num": 220,
-  "file": "220_sel_post__selector_post_-1.stl",
+  "num": 272,
+  "file": "272_sel_post__selector_post_-1.stl",
   "bom": "sel_post",
   "qty": 1,
   "dims": [
@@ -4584,8 +5644,8 @@
   "bodies": 1
  },
  {
-  "num": 221,
-  "file": "221_shaft_hub__pulley_and_detent_wheel.stl",
+  "num": 273,
+  "file": "273_shaft_hub__pulley_and_detent_wheel.stl",
   "bom": "shaft_hub",
   "qty": 1,
   "dims": [
@@ -4604,8 +5664,8 @@
   "bodies": 1
  },
  {
-  "num": 222,
-  "file": "222_shuttle__shuttle.stl",
+  "num": 274,
+  "file": "274_shuttle__shuttle.stl",
   "bom": "shuttle",
   "qty": 1,
   "dims": [
@@ -4624,8 +5684,8 @@
   "bodies": 1
  },
  {
-  "num": 223,
-  "file": "223_sleeve_B__memory_sleeve_B.stl",
+  "num": 275,
+  "file": "275_sleeve_B__memory_sleeve_B.stl",
   "bom": "sleeve_B",
   "qty": 1,
   "dims": [
@@ -4644,8 +5704,8 @@
   "bodies": 1
  },
  {
-  "num": 224,
-  "file": "224_sleeve_C__memory_sleeve_C.stl",
+  "num": 276,
+  "file": "276_sleeve_C__memory_sleeve_C.stl",
   "bom": "sleeve_C",
   "qty": 1,
   "dims": [
@@ -4664,8 +5724,8 @@
   "bodies": 1
  },
  {
-  "num": 225,
-  "file": "225_sleeve_R__memory_sleeve_R.stl",
+  "num": 277,
+  "file": "277_sleeve_R__memory_sleeve_R.stl",
   "bom": "sleeve_R",
   "qty": 1,
   "dims": [
@@ -4684,8 +5744,8 @@
   "bodies": 1
  },
  {
-  "num": 226,
-  "file": "226_spacebar__cap_space4.stl",
+  "num": 278,
+  "file": "278_spacebar__cap_space4.stl",
   "bom": "spacebar",
   "qty": 1,
   "dims": [
@@ -4704,8 +5764,8 @@
   "bodies": 1
  },
  {
-  "num": 227,
-  "file": "227_spacebar__cap_space6.stl",
+  "num": 279,
+  "file": "279_spacebar__cap_space6.stl",
   "bom": "spacebar",
   "qty": 1,
   "dims": [
@@ -4724,8 +5784,8 @@
   "bodies": 1
  },
  {
-  "num": 228,
-  "file": "228_stop_arm__cycle_stop_arm.stl",
+  "num": 280,
+  "file": "280_stop_arm__cycle_stop_arm.stl",
   "bom": "stop_arm",
   "qty": 1,
   "dims": [
@@ -4744,8 +5804,8 @@
   "bodies": 1
  },
  {
-  "num": 229,
-  "file": "229_stop_bc__stop_bellcrank.stl",
+  "num": 281,
+  "file": "281_stop_bc__stop_bellcrank.stl",
   "bom": "stop_bc",
   "qty": 1,
   "dims": [
@@ -4764,8 +5824,8 @@
   "bodies": 1
  },
  {
-  "num": 230,
-  "file": "230_stop_bc_br__stop_bellcrank_bracket.stl",
+  "num": 282,
+  "file": "282_stop_bc_br__stop_bellcrank_bracket.stl",
   "bom": "stop_bc_br",
   "qty": 1,
   "dims": [
@@ -4784,8 +5844,8 @@
   "bodies": 1
  },
  {
-  "num": 231,
-  "file": "231_stop_carrier__stop_carrier.stl",
+  "num": 283,
+  "file": "283_stop_carrier__stop_carrier.stl",
   "bom": "stop_carrier",
   "qty": 1,
   "dims": [
@@ -4804,8 +5864,8 @@
   "bodies": 1
  },
  {
-  "num": 232,
-  "file": "232_stop_finger__stop_finger.stl",
+  "num": 284,
+  "file": "284_stop_finger__stop_finger.stl",
   "bom": "stop_finger",
   "qty": 1,
   "dims": [
@@ -4824,8 +5884,8 @@
   "bodies": 1
  },
  {
-  "num": 233,
-  "file": "233_stop_latch__cycle_stop_latch.stl",
+  "num": 285,
+  "file": "285_stop_latch__cycle_stop_latch.stl",
   "bom": "stop_latch",
   "qty": 1,
   "dims": [
@@ -4844,8 +5904,8 @@
   "bodies": 1
  },
  {
-  "num": 234,
-  "file": "234_stop_rod_br__stop_carrier_rod_bracket.stl",
+  "num": 286,
+  "file": "286_stop_rod_br__stop_carrier_rod_bracket.stl",
   "bom": "stop_rod_br",
   "qty": 1,
   "dims": [
@@ -4864,8 +5924,8 @@
   "bodies": 1
  },
  {
-  "num": 235,
-  "file": "235_tape_clamp__tape_clamp.stl",
+  "num": 287,
+  "file": "287_tape_clamp__tape_clamp.stl",
   "bom": "tape_clamp",
   "qty": 1,
   "dims": [
@@ -4884,8 +5944,8 @@
   "bodies": 1
  },
  {
-  "num": 236,
-  "file": "236_tier_carriage__tier_carriage_+1.stl",
+  "num": 288,
+  "file": "288_tier_carriage__tier_carriage_+1.stl",
   "bom": "tier_carriage",
   "qty": 1,
   "dims": [
@@ -4904,8 +5964,8 @@
   "bodies": 1
  },
  {
-  "num": 237,
-  "file": "237_tier_carriage__tier_carriage_-1.stl",
+  "num": 289,
+  "file": "289_tier_carriage__tier_carriage_-1.stl",
   "bom": "tier_carriage",
   "qty": 1,
   "dims": [
@@ -4924,8 +5984,8 @@
   "bodies": 1
  },
  {
-  "num": 238,
-  "file": "238_tower__shaft_tower.stl",
+  "num": 290,
+  "file": "290_tower__shaft_tower.stl",
   "bom": "tower",
   "qty": 1,
   "dims": [
@@ -4944,8 +6004,8 @@
   "bodies": 1
  },
  {
-  "num": 239,
-  "file": "239_trip_lever__cycle_trip_lever.stl",
+  "num": 291,
+  "file": "291_trip_lever__cycle_trip_lever.stl",
   "bom": "trip_lever",
   "qty": 1,
   "dims": [
@@ -4964,8 +6024,8 @@
   "bodies": 1
  },
  {
-  "num": 240,
-  "file": "240_type_block_00__type_block_0.stl",
+  "num": 292,
+  "file": "292_type_block_00__type_block_0.stl",
   "bom": "type_block_00",
   "qty": 1,
   "dims": [
@@ -4984,8 +6044,8 @@
   "bodies": 1
  },
  {
-  "num": 241,
-  "file": "241_type_block_01__type_block_1.stl",
+  "num": 293,
+  "file": "293_type_block_01__type_block_1.stl",
   "bom": "type_block_01",
   "qty": 1,
   "dims": [
@@ -5004,8 +6064,8 @@
   "bodies": 1
  },
  {
-  "num": 242,
-  "file": "242_type_block_02__type_block_2.stl",
+  "num": 294,
+  "file": "294_type_block_02__type_block_2.stl",
   "bom": "type_block_02",
   "qty": 1,
   "dims": [
@@ -5020,12 +6080,12 @@
   "names": [
    "type block 2"
   ],
-  "number_on": "top",
+  "number_on": null,
   "bodies": 1
  },
  {
-  "num": 243,
-  "file": "243_type_block_03__type_block_3.stl",
+  "num": 295,
+  "file": "295_type_block_03__type_block_3.stl",
   "bom": "type_block_03",
   "qty": 1,
   "dims": [
@@ -5044,8 +6104,8 @@
   "bodies": 1
  },
  {
-  "num": 244,
-  "file": "244_type_block_04__type_block_4.stl",
+  "num": 296,
+  "file": "296_type_block_04__type_block_4.stl",
   "bom": "type_block_04",
   "qty": 1,
   "dims": [
@@ -5064,8 +6124,8 @@
   "bodies": 1
  },
  {
-  "num": 245,
-  "file": "245_type_block_05__type_block_5.stl",
+  "num": 297,
+  "file": "297_type_block_05__type_block_5.stl",
   "bom": "type_block_05",
   "qty": 1,
   "dims": [
@@ -5084,8 +6144,8 @@
   "bodies": 1
  },
  {
-  "num": 246,
-  "file": "246_type_block_06__type_block_6.stl",
+  "num": 298,
+  "file": "298_type_block_06__type_block_6.stl",
   "bom": "type_block_06",
   "qty": 1,
   "dims": [
@@ -5104,8 +6164,8 @@
   "bodies": 1
  },
  {
-  "num": 247,
-  "file": "247_type_block_07__type_block_7.stl",
+  "num": 299,
+  "file": "299_type_block_07__type_block_7.stl",
   "bom": "type_block_07",
   "qty": 1,
   "dims": [
@@ -5124,8 +6184,8 @@
   "bodies": 1
  },
  {
-  "num": 248,
-  "file": "248_type_block_08__type_block_8.stl",
+  "num": 300,
+  "file": "300_type_block_08__type_block_8.stl",
   "bom": "type_block_08",
   "qty": 1,
   "dims": [
@@ -5144,8 +6204,8 @@
   "bodies": 1
  },
  {
-  "num": 249,
-  "file": "249_type_block_09__type_block_9.stl",
+  "num": 301,
+  "file": "301_type_block_09__type_block_9.stl",
   "bom": "type_block_09",
   "qty": 1,
   "dims": [
@@ -5164,8 +6224,8 @@
   "bodies": 1
  },
  {
-  "num": 250,
-  "file": "250_type_block_10__type_block_10.stl",
+  "num": 302,
+  "file": "302_type_block_10__type_block_10.stl",
   "bom": "type_block_10",
   "qty": 1,
   "dims": [
@@ -5184,8 +6244,8 @@
   "bodies": 1
  },
  {
-  "num": 251,
-  "file": "251_uframe_arm__U-frame_arm_and_hammer_post.stl",
+  "num": 303,
+  "file": "303_uframe_arm__U-frame_arm_and_hammer_post.stl",
   "bom": "uframe_arm",
   "qty": 1,
   "dims": [
@@ -5204,8 +6264,8 @@
   "bodies": 1
  },
  {
-  "num": 252,
-  "file": "252_w_follower__W_follower.stl",
+  "num": 304,
+  "file": "304_w_follower__W_follower.stl",
   "bom": "w_follower",
   "qty": 1,
   "dims": [
@@ -5224,8 +6284,8 @@
   "bodies": 1
  },
  {
-  "num": 253,
-  "file": "253_w_latch_pawl__W_latch_pawl.stl",
+  "num": 305,
+  "file": "305_w_latch_pawl__W_latch_pawl.stl",
   "bom": "w_latch_pawl",
   "qty": 1,
   "dims": [
@@ -5244,8 +6304,8 @@
   "bodies": 1
  },
  {
-  "num": 254,
-  "file": "254_w_latch_rack__W_latch_rack.stl",
+  "num": 306,
+  "file": "306_w_latch_rack__W_latch_rack.stl",
   "bom": "w_latch_rack",
   "qty": 1,
   "dims": [
@@ -5264,8 +6324,8 @@
   "bodies": 1
  },
  {
-  "num": 255,
-  "file": "255_w_wire_bracket__W_wire_bracket.stl",
+  "num": 307,
+  "file": "307_w_wire_bracket__W_wire_bracket.stl",
   "bom": "w_wire_bracket",
   "qty": 1,
   "dims": [
@@ -5284,8 +6344,8 @@
   "bodies": 1
  },
  {
-  "num": 256,
-  "file": "256_wfol_bracket__W_follower_bracket.stl",
+  "num": 308,
+  "file": "308_wfol_bracket__W_follower_bracket.stl",
   "bom": "wfol_bracket",
   "qty": 1,
   "dims": [
@@ -5304,8 +6364,8 @@
   "bodies": 1
  },
  {
-  "num": 257,
-  "file": "257_wind_gear__winding_gear.stl",
+  "num": 309,
+  "file": "309_wind_gear__winding_gear.stl",
   "bom": "wind_gear",
   "qty": 1,
   "dims": [
@@ -5324,8 +6384,8 @@
   "bodies": 1
  },
  {
-  "num": 258,
-  "file": "258_wind_pinion__winding_pinion.stl",
+  "num": 310,
+  "file": "310_wind_pinion__winding_pinion.stl",
   "bom": "wind_pinion",
   "qty": 1,
   "dims": [
@@ -5344,8 +6404,8 @@
   "bodies": 1
  },
  {
-  "num": 259,
-  "file": "259_wlever_lift_1__lift_summing_lever_1.stl",
+  "num": 311,
+  "file": "311_wlever_lift_1__lift_summing_lever_1.stl",
   "bom": "wlever_lift_1",
   "qty": 1,
   "dims": [
@@ -5364,8 +6424,8 @@
   "bodies": 1
  },
  {
-  "num": 260,
-  "file": "260_wlever_lift_2__lift_summing_lever_2.stl",
+  "num": 312,
+  "file": "312_wlever_lift_2__lift_summing_lever_2.stl",
   "bom": "wlever_lift_2",
   "qty": 1,
   "dims": [
@@ -5384,8 +6444,8 @@
   "bodies": 1
  },
  {
-  "num": 261,
-  "file": "261_wlever_rotate_1__rotate_summing_lever_1.stl",
+  "num": 313,
+  "file": "313_wlever_rotate_1__rotate_summing_lever_1.stl",
   "bom": "wlever_rotate_1",
   "qty": 1,
   "dims": [
@@ -5404,8 +6464,8 @@
   "bodies": 1
  },
  {
-  "num": 262,
-  "file": "262_wlever_rotate_2__rotate_summing_lever_2.stl",
+  "num": 314,
+  "file": "314_wlever_rotate_2__rotate_summing_lever_2.stl",
   "bom": "wlever_rotate_2",
   "qty": 1,
   "dims": [
@@ -5424,8 +6484,8 @@
   "bodies": 1
  },
  {
-  "num": 263,
-  "file": "263_wlever_rotate_3__rotate_summing_lever_3.stl",
+  "num": 315,
+  "file": "315_wlever_rotate_3__rotate_summing_lever_3.stl",
   "bom": "wlever_rotate_3",
   "qty": 1,
   "dims": [
@@ -5444,8 +6504,8 @@
   "bodies": 1
  },
  {
-  "num": 264,
-  "file": "264_zero_stop__zero_stop.stl",
+  "num": 316,
+  "file": "316_zero_stop__zero_stop.stl",
   "bom": "zero_stop",
   "qty": 1,
   "dims": [

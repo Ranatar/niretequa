@@ -148,15 +148,15 @@ def _place(region, text_by_h):
     return None
 
 
-def number_part(mesh, n):
+def number_part(mesh, n, bottom_only=False):
     """As _number_part, but a number that would split the part (a thin bridge cut through) is dropped."""
-    m2, where = _number_part(mesh, n)
+    m2, where = _number_part(mesh, n, bottom_only)
     if where is not None and len(m2.decompose()) != len(mesh.decompose()):
         return mesh, None
     return m2, where
 
 
-def _number_part(mesh, n):
+def _number_part(mesh, n, bottom_only=False):
     """Deboss the number n into a part already in print orientation (on the bed, z >= 0).
     Returns (mesh, where) with where in ('top', 'bottom', None)."""
     label = str(n)
@@ -171,8 +171,8 @@ def _number_part(mesh, n):
         r = a.intersection(b).buffer(-MARGIN)
         return None if r.is_empty else r
     # top face
-    r = region(ztop - 0.05, ztop - DEPTH - FLOOR)
-    pl = _place(r, lambda h: text_geom(label, SANS, h))
+    r = None if bottom_only else region(ztop - 0.05, ztop - DEPTH - FLOOR)
+    pl = _place(r, lambda h: text_geom(label, SANS, h)) if r is not None else None
     if pl is not None:
         return cut_top(mesh, pl, ztop), 'top'
     # the face on the bed: the text is mirrored so it reads from below

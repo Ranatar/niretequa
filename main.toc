@@ -1,0 +1,155 @@
+\xpginauxfiletrue 
+\selectlanguage *{russian}
+\contentsline {section}{\numberline {1}Выбор конструкции}{4}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Критерии}{4}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Решения}{4}{subsection.1.2}%
+\contentsline {paragraph}{Единица и кегль.}{5}{section*.2}%
+\contentsline {section}{\numberline {2}Предшественники}{5}{section.2}%
+\contentsline {section}{\numberline {3}Принцип}{5}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Геометрия}{5}{subsection.3.1}%
+\contentsline {paragraph}{Сдвиг мёртвых знаков на блоке.}{5}{section*.3}%
+\contentsline {subsection}{\numberline {3.2}Код литеры}{6}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Проверка на модели}{6}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Кегль и геометрия челнока}{6}{section.4}%
+\contentsline {paragraph}{Редакции 0.4--0.5: em = 1/3'', 4 ряда по 22.}{7}{section*.5}%
+\contentsline {paragraph}{Редакция 0.6: 8 рядов по 11.}{7}{section*.6}%
+\contentsline {section}{\numberline {5}Рисунок литер}{7}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Что может FDM}{7}{subsection.5.1}%
+\contentsline {paragraph}{Главная трудность — контраст.}{8}{section*.7}%
+\contentsline {subsection}{\numberline {5.2}Наращивание тонких мест}{8}{subsection.5.2}%
+\contentsline {paragraph}{Тонкие концы.}{9}{section*.10}%
+\contentsline {paragraph}{Лицензия.}{9}{section*.11}%
+\contentsline {section}{\numberline {6}Общая схема}{9}{section.6}%
+\contentsline {paragraph}{Из чего состоит.}{9}{section*.13}%
+\contentsline {section}{\numberline {7}Видимость строки}{9}{section.7}%
+\contentsline {paragraph}{Что было не так.}{9}{section*.14}%
+\contentsline {paragraph}{Что сделано.}{10}{section*.15}%
+\contentsline {paragraph}{Чего это стоит.}{11}{section*.16}%
+\contentsline {section}{\numberline {8}Узлы}{11}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Выбор позиции и ряда}{11}{subsection.8.1}%
+\contentsline {paragraph}{Коромысла.}{11}{section*.18}%
+\contentsline {paragraph}{Фиксаторы.}{12}{section*.19}%
+\contentsline {paragraph}{Расчёт коромысел.}{12}{section*.20}%
+\contentsline {paragraph}{Развёртка челнока.}{13}{section*.22}%
+\contentsline {subsection}{\numberline {8.2}Молоток}{13}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Рама и ползун}{13}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Пластины признаков и рамки}{14}{subsection.8.4}%
+\contentsline {paragraph}{Два поля пластин.}{14}{section*.24}%
+\contentsline {paragraph}{Выступы.}{15}{section*.25}%
+\contentsline {paragraph}{Два яруса.}{15}{section*.27}%
+\contentsline {subsection}{\numberline {8.5}Чтение кода с челнока}{15}{subsection.8.5}%
+\contentsline {paragraph}{Гребёнка.}{15}{section*.28}%
+\contentsline {paragraph}{Головка чтения.}{16}{section*.29}%
+\contentsline {paragraph}{Порядок в цикле.}{16}{section*.30}%
+\contentsline {paragraph}{Куда идут тросы.}{16}{section*.31}%
+\contentsline {paragraph}{Мёртвые знаки и пробелы.}{16}{section*.32}%
+\contentsline {paragraph}{Что пришлось переставить.}{16}{section*.33}%
+\contentsline {paragraph}{Смена шрифта.}{17}{section*.34}%
+\contentsline {paragraph}{Проверка на модели.}{18}{section*.37}%
+\contentsline {paragraph}{Цена.}{18}{section*.38}%
+\contentsline {paragraph}{Что не построено.}{18}{section*.39}%
+\contentsline {subsection}{\numberline {8.6}Спуск}{18}{subsection.8.6}%
+\contentsline {subsection}{\numberline {8.7}Холостой цикл}{19}{subsection.8.7}%
+\contentsline {paragraph}{Цена.}{20}{section*.42}%
+\contentsline {paragraph}{Толкатели пробелов.}{20}{section*.43}%
+\contentsline {subsection}{\numberline {8.8}Наборы шрифтов}{20}{subsection.8.8}%
+\contentsline {paragraph}{Шрифты в раскладке Дэна Смита.}{21}{section*.44}%
+\contentsline {paragraph}{Шрифты CSUR без якорей.}{22}{section*.46}%
+\contentsline {paragraph}{Какие шрифты не легли.}{23}{section*.48}%
+\contentsline {paragraph}{Если знака в шрифте нет.}{23}{section*.49}%
+\contentsline {paragraph}{На странице модели}{24}{section*.50}%
+\contentsline {subsection}{\numberline {8.9}Память: два сектора}{24}{subsection.8.9}%
+\contentsline {subsection}{\numberline {8.10}Отвод печатающего узла}{24}{subsection.8.10}%
+\contentsline {subsection}{\numberline {8.11}Служебные клавиши}{24}{subsection.8.11}%
+\contentsline {subsection}{\numberline {8.12}Блокировки}{25}{subsection.8.12}%
+\contentsline {section}{\numberline {9}Проработка звеньев}{25}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Коромысла выбора}{25}{subsection.9.1}%
+\contentsline {paragraph}{Кулисы вместо шарниров.}{25}{section*.52}%
+\contentsline {paragraph}{Защёлки.}{25}{section*.53}%
+\contentsline {subsection}{\numberline {9.2}Мерные рамки}{26}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Сектора памяти}{26}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}Связь с упором спуска}{27}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}Молоток и взвод}{27}{subsection.9.5}%
+\contentsline {subsection}{\numberline {9.6}Фиксатор ряда}{28}{subsection.9.6}%
+\contentsline {subsection}{\numberline {9.7}Вибратор ленты}{28}{subsection.9.7}%
+\contentsline {subsection}{\numberline {9.8}Блокировка клавиатуры}{28}{subsection.9.8}%
+\contentsline {subsection}{\numberline {9.9}Ошибки редакции 0.7, найденные моделью}{29}{subsection.9.9}%
+\contentsline {subsection}{\numberline {9.10}Упоры печатающего узла}{29}{subsection.9.10}%
+\contentsline {paragraph}{Нулевой упор и возврат.}{29}{section*.58}%
+\contentsline {paragraph}{Упоры $b$ и $c$ — ступени на секторах.}{29}{section*.59}%
+\contentsline {paragraph}{Передача от узла к щупу.}{30}{section*.60}%
+\contentsline {paragraph}{Выбор B или C.}{30}{section*.61}%
+\contentsline {paragraph}{Тяга от рамки О.}{30}{section*.62}%
+\contentsline {subsection}{\numberline {9.11}Пружины рамок}{31}{subsection.9.11}%
+\contentsline {subsection}{\numberline {9.12}Спуск, забой и «назад на литеру»}{31}{subsection.9.12}%
+\contentsline {paragraph}{Что не построено.}{33}{section*.65}%
+\contentsline {section}{\numberline {10}Ход клавиши}{33}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Поля и указатель точки печати}{33}{subsection.10.1}%
+\contentsline {paragraph}{Поля.}{33}{section*.66}%
+\contentsline {paragraph}{Освобождение каретки.}{33}{section*.67}%
+\contentsline {paragraph}{Чего нет.}{34}{section*.68}%
+\contentsline {paragraph}{Указатель точки печати.}{34}{section*.69}%
+\contentsline {subsection}{\numberline {10.2}Бюджет хода}{34}{subsection.10.2}%
+\contentsline {paragraph}{С редакции 0.10.}{34}{section*.70}%
+\contentsline {subsection}{\numberline {10.3}Порядок действий}{34}{subsection.10.3}%
+\contentsline {subsection}{\numberline {10.4}Допуск на код}{34}{subsection.10.4}%
+\contentsline {paragraph}{Требование.}{35}{section*.72}%
+\contentsline {paragraph}{Для гребёнок (ред. 0.10).}{35}{section*.73}%
+\contentsline {section}{\numberline {11}Силы и энергия}{36}{section.11}%
+\contentsline {paragraph}{Чего не хватает.}{36}{section*.74}%
+\contentsline {section}{\numberline {12}Литеры}{36}{section.12}%
+\contentsline {section}{\numberline {13}Раскладка}{37}{section.13}%
+\contentsline {subsection}{\numberline {13.1}Частоты по книгам}{37}{subsection.13.1}%
+\contentsline {paragraph}{Что это говорит о раскладке.}{38}{section*.78}%
+\contentsline {section}{\numberline {14}Набор: два примера}{38}{section.14}%
+\contentsline {subsection}{\numberline {14.1}Квенья: \emph {Elen síla lúmenn' omentielvo}}{39}{subsection.14.1}%
+\contentsline {subsection}{\numberline {14.2}Синдарин: \emph {pedo mellon a minno}}{40}{subsection.14.2}%
+\contentsline {section}{\numberline {15}Точность}{40}{section.15}%
+\contentsline {subsection}{\numberline {15.1}Квантование}{40}{subsection.15.1}%
+\contentsline {subsection}{\numberline {15.2}Механика: Монте-Карло с допусками FDM}{40}{subsection.15.2}%
+\contentsline {paragraph}{Вывод.}{41}{section*.81}%
+\contentsline {section}{\numberline {16}Регулировка}{41}{section.16}%
+\contentsline {section}{\numberline {17}Испытания}{42}{section.17}%
+\contentsline {subsection}{\numberline {17.1}Контрольный текст}{42}{subsection.17.1}%
+\contentsline {subsection}{\numberline {17.2}Программа}{43}{subsection.17.2}%
+\contentsline {section}{\numberline {18}Изготовление на FDM}{43}{section.18}%
+\contentsline {subsection}{\numberline {18.1}Что печатается и что покупается}{43}{subsection.18.1}%
+\contentsline {subsection}{\numberline {18.2}Литерные блоки и челнок}{43}{subsection.18.2}%
+\contentsline {paragraph}{Кодовые гребёнки (ред. 0.10).}{43}{section*.83}%
+\contentsline {subsection}{\numberline {18.3}Калибровка принтера}{44}{subsection.18.3}%
+\contentsline {section}{\numberline {19}Компоновочная модель}{44}{section.19}%
+\contentsline {subsection}{\numberline {19.1}Что изменила модель}{46}{subsection.19.1}%
+\contentsline {subsection}{\numberline {19.2}Проверка на пересечения}{47}{subsection.19.2}%
+\contentsline {subsection}{\numberline {19.3}Проверка касаний}{47}{subsection.19.3}%
+\contentsline {subsection}{\numberline {19.4}Удар: молоток, лист, лента, литера}{49}{subsection.19.4}%
+\contentsline {subsection}{\numberline {19.5}Номера, целостность и знаки на клавишах}{52}{subsection.19.5}%
+\contentsline {paragraph}{Номера.}{52}{section*.87}%
+\contentsline {paragraph}{Целостность.}{52}{section*.88}%
+\contentsline {paragraph}{Знаки на клавишах.}{52}{section*.89}%
+\contentsline {subsection}{\numberline {19.6}Печать}{53}{subsection.19.6}%
+\contentsline {subsection}{\numberline {19.7}Покупное и нарезаемое}{53}{subsection.19.7}%
+\contentsline {paragraph}{Бумага.}{55}{section*.91}%
+\contentsline {section}{\numberline {20}Пружинный двигатель и цикл}{55}{section.20}%
+\contentsline {subsection}{\numberline {20.1}Почему пружина}{55}{subsection.20.1}%
+\contentsline {subsection}{\numberline {20.2}Цикл}{56}{subsection.20.2}%
+\contentsline {paragraph}{Регулятор.}{56}{section*.93}%
+\contentsline {paragraph}{Энергия на знак.}{56}{section*.94}%
+\contentsline {subsection}{\numberline {20.3}Пружина и передача}{57}{subsection.20.3}%
+\contentsline {paragraph}{Итог.}{57}{section*.95}%
+\contentsline {paragraph}{Чего не хватает.}{57}{section*.97}%
+\contentsline {subsection}{\numberline {20.4}Прочность}{58}{subsection.20.4}%
+\contentsline {section}{\numberline {21}Корпус}{58}{section.21}%
+\contentsline {paragraph}{Из чего состоит.}{59}{section*.99}%
+\contentsline {paragraph}{Орнамент.}{59}{section*.100}%
+\contentsline {paragraph}{Надпись.}{60}{section*.101}%
+\contentsline {paragraph}{Герб.}{60}{section*.103}%
+\contentsline {paragraph}{Печать и сборка.}{61}{section*.105}%
+\contentsline {section}{\numberline {22}Спецификация узлов}{65}{section.22}%
+\contentsline {section}{\numberline {23}Этапы макетирования}{66}{section.23}%
+\contentsline {subsection}{\numberline {23.1}Э1: пробные штампы}{66}{subsection.23.1}%
+\contentsline {section}{\numberline {24}Риски и открытые вопросы}{67}{section.24}%
+\contentsline {section}{\numberline {A}Сборочные листы}{68}{appendix.A}%
+\contentsline {section}{\numberline {B}Коды литер}{87}{appendix.B}%
+\contentsline {section}{\numberline {C}Кодовые гребёнки}{89}{appendix.C}%
+\contentsline {section}{\numberline {D}Отклонённые варианты}{90}{appendix.D}%
+\xpginauxfilefalse 

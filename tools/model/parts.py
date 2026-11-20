@@ -50,6 +50,7 @@ class State:
     car_release: float = 0.0     # rev. 0.11: carriage release key pressed (0..1): the holding dog drawn out of the wheel
     margin_l: float = P.CAR_X_START   # rev. 0.11: carriage x where the line starts (left margin stop on the abutment)
     margin_r: float = P.CAR_X_END     # rev. 0.11: carriage x where the line ends (right margin stop on the abutment)
+    case: bool = True            # rev. 0.12: the Noldorin case (tools/model/case.py), fixed, built once
 
     def th(self):
         if self.theta is not None:
@@ -2075,6 +2076,9 @@ def build(st):
     for fn in (frame, keyboard, levers, plates, bails, frame_springs, sectors, mark_stops, selectors, uframe, shuttle, reading, carriage,
                escapement, carriage_release, ribbon, drive):
         out += fn(st)
+    if st.case:
+        import case as CASE
+        out += CASE.parts()
     return press_all(out, st)
 
 

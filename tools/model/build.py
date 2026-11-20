@@ -78,7 +78,7 @@ for i, (sig, u) in enumerate(sorted(uniq.items(), key=lambda kv: (kv[0][0], kv[1
     mm = m.rotate((rot[0], rot[1], 0)).rotate((0, 0, rot[2]))
     b = mm.bounding_box(); mm = mm.translate((-b[0], -b[1], -b[2]))
     # rev. 0.9c: the running number debossed into the top face (or the face on the bed), and the one-body check
-    mm, where = relief.number_part(mm, num_)
+    mm, where = relief.number_part(mm, num_, bottom_only=u['bom'].startswith('case'))   # rev. 0.12: the case's faces stay clean
     bodies = len(mm.decompose())
     assert bodies == 1, f'{u["names"][0]}: {bodies} bodies'
     base = SAFE(u['names'][0].replace(' ', '_'))
@@ -90,6 +90,17 @@ for i, (sig, u) in enumerate(sorted(uniq.items(), key=lambda kv: (kv[0][0], kv[1
                          vol=round(float(u['vol']), 0), mass=round(float(u['vol']) * DENS, 1), first=u['names'][0], names=u['names'],
                          number_on=where, bodies=bodies))
 json.dump(fit_rows, open(os.path.join(out, 'printable.json'), 'w'), ensure_ascii=False, indent=1)
+# rev. 0.12: the device plaque in colours: one STL per colour, all in the plaque's frame (load them as parts of one object)
+os.makedirs(os.path.join(out, 'stl', 'device'), exist_ok=True)
+for _f in os.listdir(os.path.join(out, 'stl', 'device')):
+    os.remove(os.path.join(out, 'stl', 'device', _f))
+_pl = [p for p in parts if p.name == 'case device plaque'][0]
+_b = np.array(_pl.mesh.bounding_box())
+_dev = [_pl] + [p for p in parts if p.name.startswith('case device ') and p.kind == 'inlay']
+for i, p in enumerate(_dev):
+    V, F = geo.to_arrays(p.mesh.translate((-_b[0], -_b[1], -_b[2])))
+    hexc = '%02x%02x%02x' % tuple(p.color)
+    trimesh.Trimesh(V, F, process=False).export(os.path.join(out, 'stl', 'device', f'device_{i:02d}_{hexc}.stl'))
 # rev. 0.9c: assembly sheets and the table of part numbers
 import assembly
 FONT_B = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'fonts', 'PT_Sans-Web-Bold.ttf')
@@ -117,10 +128,12 @@ for p in parts:
 scene.export(os.path.join(out, 'tpm2_assembly.glb'))
 
 # ------------------------------------------------------------------ pictures
-def objs(ps, clip=None, hide=()):
+def objs(ps, clip=None, hide=(), case=False):
     res = []
     for i, p in enumerate(ps):
         if any(h == p.group or p.name.startswith(h) for h in hide):
+            continue
+        if p.group == 'case' and not case:          # rev. 0.12: the mechanism's pictures are drawn without the case
             continue
         m = p.mesh
         if clip is not None:
@@ -215,6 +228,16 @@ for name, st in (('view_before', PT.State(row=P.HOME_ROW, ribbon=1.0, car=P.CAR_
     img, _ = render.render(objs(PT.build(st)) + line, EYE, W=2800, H=2000, persp=18)
     w, h = img.size
     save(img.crop((int(w * 0.28), int(h * 0.08), int(w * 0.74), int(h * 0.47))), name)
+# rev. 0.12: the case
+img, _ = render.render(objs(parts, case=True), ((-560, -760, 640), (0, -140, 120)), W=2000, H=1500); save(img, 'case_iso_front')
+img, _ = render.render(objs(parts, case=True), ((640, 680, 600), (0, -80, 130)), W=2000, H=1500); save(img, 'case_iso_back')
+img, _ = render.render(objs(parts, case=True), ((0.0, -720.0, 460.0), (0, -150, 140)), W=2000, H=1400, persp=30); save(img, 'case_typist')
+_cp = [p for p in parts if p.group == 'case' and (p.name.startswith(('case fascia', 'case keyboard deck', 'case tower', 'case top tower', 'case device', 'case star grille'))
+                                                    or p.name.startswith('cap ') or p.name.startswith('stem '))]
+img, _ = render.render(objs([p for p in parts if p.group == 'case' and p.name.startswith('case fascia')], case=True),
+                       ((0, -420, 160), (0, -236, 107)), W=2400, H=700, light=(-0.2, -0.8, 0.5)); save(img, 'case_fascia', crop=True)
+img, _ = render.render(objs([p for p in parts if p.name.startswith('case device')], case=True), ((-201, -300.5, 600), (-201, -300.5, 140), (0, 1, 0)),
+                       W=1400, H=1400, light=(-0.3, 0.3, 0.9)); save(img, 'case_device', crop=True)
 print('renders', round(time.time() - t0))
 
 # ------------------------------------------------------------------ numbers for the document
@@ -225,6 +248,14 @@ num = dict(parts=len(parts), unique_print=len(uniq), rest_interferences=len(rest
            scen={k: len(v) for k, v in scen.items()}, nstates=nstates,
            footprint=[2 * P.FRAME_X, P.FRAME_Y1 - P.FRAME_Y0],
            height=round(max(p.mesh.bounding_box()[5] for p in parts), 1),
+           extent=[[round(float(min(p.mesh.bounding_box()[i] for p in parts)), 1) for i in range(3)],
+                   [round(float(max(p.mesh.bounding_box()[i + 3] for p in parts)), 1) for i in range(3)]],
+           case_parts=sum(1 for p in parts if p.group == 'case' and p.kind == 'print'),
+           case_inlays=sum(1 for p in parts if p.group == 'case' and p.kind == 'inlay'),
+           case_mass_g=round(sum(p.mesh.volume() for p in parts if p.group == 'case') * DENS, 0),
+           case_extent=[[round(float(min(p.mesh.bounding_box()[i] for p in parts if p.group == 'case')), 1) for i in range(3)],
+                        [round(float(max(p.mesh.bounding_box()[i + 3] for p in parts if p.group == 'case')), 1) for i in range(3)]],
+           device_colours=len(_dev) - 1, inscription=__import__('case').info(),
            print_mass_g=round(sum(b['vol'] for b in bom.values() if b['kind'] == 'print') * DENS, 0),
            not_fit=[r['file'] for r in fit_rows if not r['fits']])
 json.dump(dict(numbers=num, bom=list(bom.values()), rest=rest_int, scen=scen), open(os.path.join(out, 'model.json'), 'w'),

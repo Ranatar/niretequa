@@ -1,0 +1,2164 @@
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2026.11.16)  20 NOV 2026 07:16
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**main.tex
+(./main.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+(./preamble.tex (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count183
+\c@section=\count184
+\c@subsection=\count185
+\c@subsubsection=\count186
+\c@paragraph=\count187
+\c@subparagraph=\count188
+\c@figure=\count189
+\c@table=\count190
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 107.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2022/09/22 v5.0n Graphics/color driver for xetex
+))
+\Gin@req@height=\dimen141
+\Gin@req@width=\dimen142
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2024-01-22 L3 programming layer (loader) 
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+File: l3backend-xetex.def 2024-01-04 L3 backend support: XeTeX
+\g__graphics_track_int=\count191
+\l__pdf_internal_box=\box51
+\g__pdf_backend_object_int=\count192
+\g__pdf_backend_annotation_int=\count193
+\g__pdf_backend_link_int=\count194
+))
+Package: xparse 2023-10-10 L3 Experimental document command parser
+)
+Package: fontspec 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+Package: fontspec-xetex 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTe
+X
+\l__fontspec_script_int=\count195
+\l__fontspec_language_int=\count196
+\l__fontspec_strnum_int=\count197
+\l__fontspec_tmp_int=\count198
+\l__fontspec_tmpa_int=\count199
+\l__fontspec_tmpb_int=\count266
+\l__fontspec_tmpc_int=\count267
+\l__fontspec_em_int=\count268
+\l__fontspec_emdef_int=\count269
+\l__fontspec_strong_int=\count270
+\l__fontspec_strongdef_int=\count271
+\l__fontspec_tmpa_dim=\dimen143
+\l__fontspec_tmpb_dim=\dimen144
+\l__fontspec_tmpc_dim=\dimen145
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
+(/usr/share/texlive/texmf-dist/tex/latex/polyglossia/polyglossia.sty
+Package: polyglossia 2023/12/11 v1.66 Modern multilingual typesetting with XeLa
+TeX and LuaLaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count272
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks18
+\XKV@tempa@toks=\toks19
+)
+\XKV@depth=\count273
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+)
+\xpg@normalclass=\XeTeXcharclass1
+
+(/usr/share/texlive/texmf-dist/tex/latex/polyglossia/gloss-latex.lde
+Package: gloss-latex 2023/12/11 v1.66 polyglossia: module for default language
+)
+Package polyglossia Info: Default language is latex.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/polyglossia/gloss-russian.ldf
+File: gloss-russian.ldf polyglossia: module for Russian
+
+(/usr/share/texlive/texmf-dist/tex/latex/polyglossia/xpg-cyrillicnumbers.sty
+Package: xpg-cyrillicnumbers 2019/11/15 v0.2 Formatting of Cyrillic alphabetic 
+numbers
+)
+
+Package polyglossia Warning: No hyphenation patterns were loaded for `russian'
+(polyglossia)                I will use \language=\l@nohyphenation instead on i
+nput line 22.
+
+\l@russian = a dialect from \language\l@nohyphenation 
+Package polyglossia Info: Option: Russian, numerals=arabic.
+(/usr/share/texlive/texmf-dist/tex/latex/polyglossia/babelsh.def
+File: babelsh.def 2022/06/21 Babel common definitions for shorthands
+ Taken verbatim from babel files (2022/06/06 v3.76)
+)
+Package babel Info: Making " an active character on input line 106.
+)
+Package polyglossia Info: Default language is russian.
+
+(/usr/share/texlive/texmf-dist/tex/latex/polyglossia/gloss-english.ldf
+File: gloss-english.ldf polyglossia: module for English
+Package polyglossia Info: Option: English, variant=american.
+)
+
+Package fontspec Info: Font family 'PT_Serif-Web-Regular.ttf(0)' created for
+(fontspec)             font 'PT_Serif-Web-Regular.ttf' with options
+(fontspec)             [Ligatures=TeX,Path=fonts/,BoldFont=PT_Serif-Web-Bold.tt
+f,ItalicFont=PT_Serif-Web-Italic.ttf,BoldItalicFont=PT_Serif-Web-BoldItalic.ttf
+].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[fonts/PT_Serif-Web-Regular.ttf]/OT:script=latn;lang
+uage=dflt;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[fonts/PT_Serif-Web-Bold.ttf]/OT:script=latn;languag
+e=dflt;mapping=tex-text;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"[fonts/PT_Serif-Web-Italic.ttf]/OT:script=latn;langu
+age=dflt;mapping=tex-text;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->"[fonts/PT_Serif-Web-BoldItalic.ttf]/OT:script=latn;l
+anguage=dflt;mapping=tex-text;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
+
+
+Package fontspec Info: Font family 'PT_Sans-Web-Regular.ttf(0)' created for
+(fontspec)             font 'PT_Sans-Web-Regular.ttf' with options
+(fontspec)             [Ligatures=TeX,Path=fonts/,BoldFont=PT_Sans-Web-Bold.ttf
+].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[fonts/PT_Sans-Web-Regular.ttf]/OT:script=latn;langu
+age=dflt;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[fonts/PT_Sans-Web-Bold.ttf]/OT:script=latn;language
+=dflt;mapping=tex-text;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+
+
+Package fontspec Info: Font family 'PT_Sans-Web-Regular.ttf(1)' created for
+(fontspec)             font 'PT_Sans-Web-Regular.ttf' with options
+(fontspec)             [Path=fonts/,Ligatures=TeX,BoldFont=PT_Sans-Web-Bold.ttf
+].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[fonts/PT_Sans-Web-Regular.ttf]/OT:script=latn;langu
+age=dflt;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[fonts/PT_Sans-Web-Bold.ttf]/OT:script=latn;language
+=dflt;mapping=tex-text;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+
+
+Package fontspec Info: Font family 'PT_Sans-Narrow-Web-Regular.ttf(0)' created
+(fontspec)             for font 'PT_Sans-Narrow-Web-Regular.ttf' with options
+(fontspec)             [Path=fonts/,BoldFont=PT_Sans-Narrow-Web-Bold.ttf].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[fonts/PT_Sans-Narrow-Web-Regular.ttf]/OT:script=lat
+n;language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[fonts/PT_Sans-Narrow-Web-Bold.ttf]/OT:script=latn;l
+anguage=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+
+
+Package fontspec Info: Font family 'PTMono.ttf(0)' created for font
+(fontspec)             'PTMono.ttf' with options
+(fontspec)             [WordSpace={1,0,0},HyphenChar=None,PunctuationSpace=Word
+Space,Path=fonts/,Scale=0.92].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[0.92]"[fonts/PTMono.ttf]/OT:script=latn;language=d
+flt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font
+(fontspec)             =0\fontdimen 3\font \fontdimen 4\font =0\fontdimen
+(fontspec)             4\font \fontdimen 7\font =0\fontdimen 2\font
+(fontspec)             \tex_hyphenchar:D \font =-1\scan_stop: 
+
+
+Package fontspec Info: Font family 'DejaVuSans-Bold.ttf(0)' created for font
+(fontspec)             'DejaVuSans-Bold.ttf' with options [Path=fonts/].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[fonts/DejaVuSans-Bold.ttf]/OT:script=latn;language=
+dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+
+
+
+Package fontspec Warning: Ignored LuaTeX-only feature:
+(fontspec)                'Renderer=Full/Basic/Node/Base/HarfBuzz'.
+
+
+Package fontspec Info: Font family 'AlcarinTengwar-Regular.otf(0)' created for
+(fontspec)             font 'AlcarinTengwar-Regular.otf' with options
+(fontspec)             [Path=fonts/,Renderer=HarfBuzz].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[fonts/AlcarinTengwar-Regular.otf]/OT:script=DFLT;la
+nguage=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count274
+\Gm@cntv=\count275
+\c@Gm@tempcnt=\count276
+\Gm@bindingoffset=\dimen146
+\Gm@wd@mp=\dimen147
+\Gm@odd@mp=\dimen148
+\Gm@even@mp=\dimen149
+\Gm@layoutwidth=\dimen150
+\Gm@layoutheight=\dimen151
+\Gm@layouthoffset=\dimen152
+\Gm@layoutvoffset=\dimen153
+\Gm@dimlist=\toks20
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: xetex.def on input line 274.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
+Package xcolor Info: Model `RGB' extended on input line 1366.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks21
+\pgfutil@tempdima=\dimen154
+\pgfutil@tempdimb=\dimen155
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box52
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks22
+\pgfkeys@temptoks=\toks23
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered
+.code.tex
+\pgfkeys@tmptoks=\toks24
+))
+\pgf@x=\dimen156
+\pgf@y=\dimen157
+\pgf@xa=\dimen158
+\pgf@ya=\dimen159
+\pgf@xb=\dimen160
+\pgf@yb=\dimen161
+\pgf@xc=\dimen162
+\pgf@yc=\dimen163
+\pgf@xd=\dimen164
+\pgf@yd=\dimen165
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count277
+\c@pgf@countb=\count278
+\c@pgf@countc=\count279
+\c@pgf@countd=\count280
+\t@pgf@toka=\toks25
+\t@pgf@tokb=\toks26
+\t@pgf@tokc=\toks27
+\pgf@sys@id@count=\count281
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+)
+Driver file for pgf: pgfsys-xetex.def
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-xetex.def
+File: pgfsys-xetex.def 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx.def
+File: pgfsys-dvipdfmx.def 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+f
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+)
+\pgfsys@objnum=\count282
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count283
+\pgfsyssoftpath@bigbuffer@items=\count284
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen166
+\pgfmath@count=\count285
+\pgfmath@box=\box53
+\pgfmath@toks=\toks28
+\pgfmath@stack@operand=\toks29
+\pgfmath@stack@operation=\toks30
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+thmetics.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count286
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+x
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen167
+\pgf@picmaxx=\dimen168
+\pgf@picminy=\dimen169
+\pgf@picmaxy=\dimen170
+\pgf@pathminx=\dimen171
+\pgf@pathmaxx=\dimen172
+\pgf@pathminy=\dimen173
+\pgf@pathmaxy=\dimen174
+\pgf@xx=\dimen175
+\pgf@xy=\dimen176
+\pgf@yx=\dimen177
+\pgf@yy=\dimen178
+\pgf@zx=\dimen179
+\pgf@zy=\dimen180
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+code.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen181
+\pgf@path@lasty=\dimen182
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen183
+\pgf@shorten@start@additional=\dimen184
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+x
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box54
+\pgf@hbox=\box55
+\pgf@layerbox@main=\box56
+\pgf@picture@serial@count=\count287
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+ode.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen185
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+s.code.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen186
+\pgf@pt@y=\dimen187
+\pgf@pt@temp=\dimen188
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+ex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+.code.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+x
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen189
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen190
+\pgf@sys@shading@range@num=\count288
+\pgf@shadingcount=\count289
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box57
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+x
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+ode.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box58
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen191
+\pgf@nodesepend=\dimen192
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen193
+\pgffor@skip=\dimen194
+\pgffor@stack=\toks31
+\pgffor@toks=\toks32
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+.code.tex
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@plot@mark@count=\count290
+\pgfplotmarksize=\dimen195
+)
+\tikz@lastx=\dimen196
+\tikz@lasty=\dimen197
+\tikz@lastxsaved=\dimen198
+\tikz@lastysaved=\dimen199
+\tikz@lastmovetox=\dimen256
+\tikz@lastmovetoy=\dimen257
+\tikzleveldistance=\dimen258
+\tikzsiblingdistance=\dimen259
+\tikz@figbox=\box59
+\tikz@figbox@bg=\box60
+\tikz@tempbox=\box61
+\tikz@tempbox@bg=\box62
+\tikztreelevel=\count291
+\tikznumberofchildren=\count292
+\tikznumberofcurrentchild=\count293
+\tikz@fig@count=\count294
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count295
+\pgfmatrixcurrentcolumn=\count296
+\pgf@matrix@numberofcolumns=\count297
+)
+\tikz@expandcount=\count298
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.
+code.tex
+File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowinset=\dimen260
+\pgfarrowlength=\dimen261
+\pgfarrowwidth=\dimen262
+\pgfarrowlinewidth=\dimen263
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryfit.code.tex
+File: tikzlibraryfit.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarybackgrounds.code.tex
+File: tikzlibrarybackgrounds.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@layerbox@background=\box63
+\pgf@layerboxsaved@background=\box64
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarypatterns.code.tex
+File: tikzlibrarypatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibrarypatterns.cod
+e.tex
+File: pgflibrarypatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.pathreplacing.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.cod
+e.tex
+\pgfdecoratedcompleteddistance=\dimen264
+\pgfdecoratedremainingdistance=\dimen265
+\pgfdecoratedinputsegmentcompleteddistance=\dimen266
+\pgfdecoratedinputsegmentremainingdistance=\dimen267
+\pgf@decorate@distancetomove=\dimen268
+\pgf@decorate@repeatstate=\count299
+\pgfdecorationsegmentamplitude=\dimen269
+\pgfdecorationsegmentlength=\dimen270
+)
+\tikz@lib@dec@box=\box65
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
+decorations.pathreplacing.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryautomata.code.tex
+File: tikzlibraryautomata.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodepartlowerbox=\box66
+\pgfnodeparttwobox=\box67
+\pgfnodepartthreebox=\box68
+\pgfnodepartfourbox=\box69
+\pgfnodeparttwentybox=\box70
+\pgfnodepartnineteenbox=\box71
+\pgfnodeparteighteenbox=\box72
+\pgfnodepartseventeenbox=\box73
+\pgfnodepartsixteenbox=\box74
+\pgfnodepartfifteenbox=\box75
+\pgfnodepartfourteenbox=\box76
+\pgfnodepartthirteenbox=\box77
+\pgfnodeparttwelvebox=\box78
+\pgfnodepartelevenbox=\box79
+\pgfnodeparttenbox=\box80
+\pgfnodepartninebox=\box81
+\pgfnodeparteightbox=\box82
+\pgfnodepartsevenbox=\box83
+\pgfnodepartsixbox=\box84
+\pgfnodepartfivebox=\box85
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen271
+\lightrulewidth=\dimen272
+\cmidrulewidth=\dimen273
+\belowrulesep=\dimen274
+\belowbottomsep=\dimen275
+\aboverulesep=\dimen276
+\abovetopsep=\dimen277
+\cmidrulesep=\dimen278
+\cmidrulekern=\dimen279
+\defaultaddspace=\dimen280
+\@cmidla=\count300
+\@cmidlb=\count301
+\@aboverulesep=\dimen281
+\@belowrulesep=\dimen282
+\@thisruleclass=\count302
+\@lastruleclass=\count303
+\@thisrulewidth=\dimen283
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2023-11-01 v4.19 Multi-page Table package (DPC)
+\LTleft=\skip50
+\LTright=\skip51
+\LTpre=\skip52
+\LTpost=\skip53
+\LTchunksize=\count304
+\LTcapwidth=\dimen284
+\LT@head=\box86
+\LT@firsthead=\box87
+\LT@foot=\box88
+\LT@lastfoot=\box89
+\LT@gbox=\box90
+\LT@cols=\count305
+\LT@rows=\count306
+\c@LT@tables=\count307
+\c@LT@chunks=\count308
+\LT@p@ftn=\toks33
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen285
+\ar@mcellbox=\box91
+\extrarowheight=\dimen286
+\NC@list=\toks34
+\extratabsurround=\skip54
+\backup@length=\skip55
+\ar@cellbox=\box92
+)
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip56
+\multirow@cntb=\count309
+\multirow@dima=\skip57
+\bigstrutjot=\dimen287
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2023/07/08 v2.11c `tabularx' package (DPC)
+\TX@col@width=\dimen288
+\TX@old@table=\dimen289
+\TX@old@col=\dimen290
+\TX@target=\dimen291
+\TX@delta=\dimen292
+\TX@cols=\count310
+\TX@ftn=\toks35
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen293
+\captionmargin=\dimen294
+\caption@leftmargin=\dimen295
+\caption@rightmargin=\dimen296
+\caption@width=\dimen297
+\caption@indent=\dimen298
+\caption@parindent=\dimen299
+\caption@hangindent=\dimen300
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count311
+\c@continuedfloat=\count312
+Package caption Info: longtable package is loaded.
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count313
+\float@exts=\toks36
+\float@box=\box93
+\@float@everytoks=\toks37
+\@floatcapt=\box94
+)
+(/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip58
+\enit@outerparindent=\dimen301
+\enit@toks=\toks38
+\enit@inbox=\box95
+\enit@count@id=\count314
+\enitdp@description=\count315
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip59
+\f@nch@O@elh=\skip60
+\f@nch@O@erh=\skip61
+\f@nch@O@olh=\skip62
+\f@nch@O@orh=\skip63
+\f@nch@O@elf=\skip64
+\f@nch@O@erf=\skip65
+\f@nch@O@olf=\skip66
+\f@nch@O@orf=\skip67
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xurl/xurl.sty
+Package: xurl 2022/01/09 v 0.10 modify URL breaks
+
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2024-01-20 v7.01h Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count316
+)
+\@linkdim=\dimen302
+\Hy@linkcounter=\count317
+\Hy@pagecounter=\count318
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2024-01-20 v7.01h Hyperref: PDFDocEncoding definition (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count319
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2024-01-20 v7.01h Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Hyper figures OFF on input line 4179.
+Package hyperref Info: Link nesting OFF on input line 4184.
+Package hyperref Info: Hyper index ON on input line 4187.
+Package hyperref Info: Plain pages OFF on input line 4194.
+Package hyperref Info: Backreferencing OFF on input line 4199.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4446.
+\c@Hy@tempcnt=\count320
+LaTeX Info: Redefining \url on input line 4784.
+\XeTeXLinkMargin=\dimen303
+
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count321
+\Field@Width=\dimen304
+\Fld@charsize=\dimen305
+Package hyperref Info: Hyper figures OFF on input line 6063.
+Package hyperref Info: Link nesting OFF on input line 6068.
+Package hyperref Info: Hyper index ON on input line 6071.
+Package hyperref Info: backreferencing OFF on input line 6078.
+Package hyperref Info: Link coloring OFF on input line 6083.
+Package hyperref Info: Link coloring with OCG OFF on input line 6088.
+Package hyperref Info: PDF/A mode OFF on input line 6093.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count322
+\c@Item=\count323
+\c@Hfootnote=\count324
+)
+Package hyperref Info: Driver (autodetected): hxetex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hxetex.def
+File: hxetex.def 2024-01-20 v7.01h Hyperref driver for XeTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\pdfm@box=\box96
+\c@Hy@AnnotLevel=\count325
+\HyField@AnnotCount=\count326
+\Fld@listcount=\count327
+\c@bookmark@seq@number=\count328
+
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+85.
+)
+\Hy@SectionHShift=\skip68
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2023/05/13 v2.17o AMS math features
+\@mathmargin=\skip69
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks39
+\ex@=\dimen306
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen307
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count329
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count330
+\leftroot@=\count331
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count332
+\DOTSCASE@=\count333
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box97
+\strutbox@=\box98
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen308
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count334
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count335
+\dotsspace@=\muskip17
+\c@parentequation=\count336
+\dspbrk@lvl=\count337
+\tag@help=\toks40
+\row@=\count338
+\column@=\count339
+\maxfields@=\count340
+\andhelp@=\toks41
+\eqnshift@=\dimen309
+\alignsep@=\dimen310
+\tagshift@=\dimen311
+\tagwidth@=\dimen312
+\totwidth@=\dimen313
+\lineht@=\dimen314
+\@envbody=\toks42
+\multlinegap=\skip70
+\multlinetaggap=\skip71
+\mathdisplay@stack=\toks43
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)
+\tgem=\skip72
+
+(./gen/model_num.tex) (./gen/read_num.tex) (./gen/freq_num.tex)
+(./gen/fonts_num.tex)) (./main.aux)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 2.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 2
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+
+Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
+(fontspec)             this).
+
+\symlegacymaths=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 2.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 2.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 2.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 2.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 2.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 2.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 2.
+LaTeX Font Info:    Redeclaring math accent \check on input line 2.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 2.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 2.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 2.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 2.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 2.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 2.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 2.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 2.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 2.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 2.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 2.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 2.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 2.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 2.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 2.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 2.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 2.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/PT_Serif-Web-Regular.ttf(0)/m/n on i
+nput line 2.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 2.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/PT_Serif-Web-Regular.ttf(0)/m/n on 
+input line 2.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  TU/PT_Serif-Web-Regular.ttf(0)/m/n --> TU/PT_Serif-Web-
+Regular.ttf(0)/m/n on input line 2.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/PT_Serif-Web-Regular.ttf(0)/m/it on
+ input line 2.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/PT_Serif-Web-Regular.ttf(0)/b/n on 
+input line 2.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/PT_Sans-Web-Regular.ttf(0)/m/n on i
+nput line 2.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/PTMono.ttf(0)/m/n on input line 2.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  TU/PT_Serif-Web-Regular.ttf(0)/m/n --> TU/PT_Serif-Web-
+Regular.ttf(0)/b/n on input line 2.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> TU/PT_Serif-Web-Regular.ttf(0)/b/it o
+n input line 2.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/PT_Sans-Web-Regular.ttf(0)/b/n on 
+input line 2.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/PTMono.ttf(0)/b/n on input line 2.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(62.59605pt, 472.31577pt, 62.59605pt)
+* v-part:(T,H,B)=(68.2866pt, 702.78308pt, 73.97716pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=472.31577pt
+* \textheight=702.78308pt
+* \oddsidemargin=-9.67393pt
+* \evensidemargin=-9.67393pt
+* \topmargin=-40.98338pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=50.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
+Package hyperref Info: Link coloring OFF on input line 2.
+(./main.out) (./main.out)
+\@outlinefile=\write4
+\openout4 = `main.out'.
+
+
+Package fontspec Info: Font family 'PT_Serif-Web-Regular.ttf(1)' created for
+(fontspec)             font 'PT_Serif-Web-Regular.ttf' with options
+(fontspec)             [Ligatures=TeX,Path=fonts/,BoldFont=PT_Serif-Web-Bold.tt
+f,ItalicFont=PT_Serif-Web-Italic.ttf,BoldItalicFont=PT_Serif-Web-BoldItalic.ttf
+,Script=Cyrillic].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[fonts/PT_Serif-Web-Regular.ttf]/OT:script=cyrl;lang
+uage=dflt;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[fonts/PT_Serif-Web-Bold.ttf]/OT:script=cyrl;languag
+e=dflt;mapping=tex-text;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"[fonts/PT_Serif-Web-Italic.ttf]/OT:script=cyrl;langu
+age=dflt;mapping=tex-text;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->"[fonts/PT_Serif-Web-BoldItalic.ttf]/OT:script=cyrl;l
+anguage=dflt;mapping=tex-text;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
+
+ (./gen/fig_trace_q.tex)
+Underfull \hbox (badness 1158) in paragraph at lines 20--21
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10 работу челнока даёт заводная пружина, ка
+к у граммофона. Все знаки и их коды
+ []
+
+[1
+
+]
+Overfull \hbox (1.33147pt too wide) in paragraph at lines 32--33
+[]\TU/PT_Serif-Web-Regular.ttf(1)/b/n/10 Что нового в редакции 0.11. \TU/PT_Ser
+if-Web-Regular.ttf(1)/m/n/10 Холостой цикл построен: запоры чтения и удара для 
+мёртвых знаков
+ []
+
+LaTeX Font Info:    Font shape `TU/PTMono.ttf(0)/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 34.
+LaTeX Font Info:    Font shape `TU/PTMono.ttf(0)/m/n' will be
+(Font)              scaled to size 10.07397pt on input line 34.
+
+Package fontspec Info: Font family 'PTMono.ttf(1)' created for font
+(fontspec)             'PTMono.ttf' with options
+(fontspec)             [WordSpace={1,0,0},HyphenChar=None,PunctuationSpace=Word
+Space,Path=fonts/,Scale=0.92,Script=Cyrillic].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[0.92]"[fonts/PTMono.ttf]/OT:script=cyrl;language=d
+flt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font
+(fontspec)             =0\fontdimen 3\font \fontdimen 4\font =0\fontdimen
+(fontspec)             4\font \fontdimen 7\font =0\fontdimen 2\font
+(fontspec)             \tex_hyphenchar:D \font =-1\scan_stop: 
+
+LaTeX Font Info:    Font shape `TU/PTMono.ttf(1)/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 34.
+
+Overfull \hbox (6.29068pt too wide) in paragraph at lines 34--35
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10 детали, STL и проверки модели те же, что
+ в 0.9.2. Страница выгружает челнок в позе покоя, а поднимала
+ []
+
+
+Overfull \hbox (5.58714pt too wide) in paragraph at lines 34--35
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10 Сверка страницы с моделью (\TU/PTMono.tt
+f(1)/m/n/10 tools/web/compare_model.py\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10 : 
+одни и те же положения, точные габариты
+ []
+
+
+Overfull \hbox (1.20741pt too wide) in paragraph at lines 34--35
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10 всех деталей) нашла ещё три: цикловой ва
+л с кулачками вращался в обратную сторону, лента поворота
+ []
+
+
+Overfull \hbox (25.5975pt too wide) in paragraph at lines 42--42
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10 втулках, тяга от сектора W к спуску, взв
+од молотка, фиксатор ряда, вибратор ленты, блокировка клавиатуры
+ []
+
+(./main.toc [1] [2])
+\tf@toc=\write5
+\openout5 = `main.toc'.
+
+ [3]
+
+Package enumitem Warning: Negative labelwidth. This does not make much
+(enumitem)                sense, on input line 53.
+
+
+Overfull \hbox (8.17278pt too wide) in paragraph at lines 54--55
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 ударов, исправление одним нажатием, р
+овный оттиск при любой силе нажатия, смена шрифта
+ []
+
+
+Overfull \hbox (23.16241pt too wide) in paragraph at lines 55--56
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 Положение каждого знака задаётся как 
+можно меньшим числом звеньев; каждое звено доводится
+ []
+
+
+Overfull \hbox (7.39534pt too wide) in paragraph at lines 55--56
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 жёстким упором или фиксатором до цело
+й единицы; регулировка, от которой зависит посадка
+ []
+
+[4]
+
+Package enumitem Warning: Negative labelwidth. This does not make much
+(enumitem)                sense, on input line 88.
+
+
+Overfull \hbox (30.65399pt too wide) in paragraph at lines 89--90
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 с полукругом вертикальных штифтов: на
+жатая клавиша поднимает штифт, челнок поворачивается
+ []
+
+
+Overfull \hbox (23.65697pt too wide) in paragraph at lines 89--90
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 и останавливается на нём; затем сраба
+тывает молоток, штифт опускается, и челнок возвращается
+ []
+
+
+Overfull \hbox (2.11739pt too wide) in paragraph at lines 90--91
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 четыре единицы в зависимости от нажат
+ой клавиши; спуск связан с молотком, чтобы каретка
+ []
+
+
+Overfull \hbox (11.18398pt too wide) in paragraph at lines 91--92
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 Механизм работает от пальца: клавиша 
+задаёт точку останова сектора и сама его поворачивает.
+ []
+
+(./gen/fig_geometry.tex)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[5]
+LaTeX Font Info:    Font shape `TU/PTMono.ttf(1)/m/n' will be
+(Font)              scaled to size 10.07397pt on input line 138.
+
+Overfull \hbox (1.879pt too wide) in paragraph at lines 138--139
+[]\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 Модель ТПМ-2 (\TU/PTMono.ttf(1)/m/n
+/10.95 simulate_mech \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 в \TU/PTMono.ttf
+(1)/m/n/10.95 tools/gen_shuttle.py\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 ) п
+рогоняется на обоих примерах
+ []
+
+
+Overfull \hbox (7.25665pt too wide) in paragraph at lines 144--145
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 соседние задевались бы. Поэтому шаг —
+ 19u (самая широкая клетка 16u плюс 3u промежутка).
+ []
+
+(./gen/tab_trade.tex) [6]
+Overfull \hbox (1.63368pt too wide) in paragraph at lines 156--157
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10 (высота лувы), «точка» (высота точки-тех
+ты), «отвод» (наибольший ход ползуна, 9u) — в миллиметрах.
+ []
+
+
+Overfull \hbox (28.53798pt too wide) in paragraph at lines 160--161
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 пропорциональна массе литер и квадрат
+у пути, который проходит литера от исходного положения
+ []
+
+
+Overfull \hbox (6.65332pt too wide) in paragraph at lines 160--161
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 до точки удара. При 4 рядах по 22 лит
+ера в среднем проходит по дуге почти четверть развёртки
+ []
+
+
+Overfull \hbox (3.90578pt too wide) in paragraph at lines 160--161
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 для энергии радиус безразличен, а мен
+ьший челнок легче и компактнее. Исходное положение
+ []
+
+
+Overfull \hbox (41.26364pt too wide) in paragraph at lines 168--169
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 два морфологических действия над конт
+уром литеры: размыкание (пропадает всё уже минимальной
+ []
+
+(./gen/tab_fdmsim.tex) [7]
+Overfull \hbox (21.64pt too wide) in paragraph at lines 180--181
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10 процентах площади; $\OML/cmm/m/it/10 n$ 
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10 — сколько литер теряют или заплывают бол
+ьше чем на 5%. Сопло — в миллиметрах. 
+ []
+
+
+Overfull \hbox (25.419pt too wide) in paragraph at lines 182--183
+ []\TU/PT_Serif-Web-Regular.ttf(1)/b/n/10.95 Главная трудность — контраст.[] \T
+U/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 Alcarin — книжный шрифт: дуга примыкает
+ к ножке волосяной
+ []
+
+File: gen/fdm_panel.png Graphic file (type bmp)
+<gen/fdm_panel.png>
+(./gen/tab_fdmsim_thick.tex)
+File: gen/fdm_panel2.png Graphic file (type bmp)
+<gen/fdm_panel2.png>
+ [8]
+Overfull \hbox (21.17299pt too wide) in paragraph at lines 214--215
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 давало наплыв (в редакции 0.4 — на ко
+нце акута). Теперь каждая ветвь скелета перед утолщением
+ []
+
+
+Overfull \hbox (16.36421pt too wide) in paragraph at lines 214--215
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 укорачивается на радиус утолщения: ра
+звилки короче этого радиуса исчезают, а круг утолщения
+ []
+
+
+Overfull \hbox (6.4352pt too wide) in paragraph at lines 214--215
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 на новом конце доходит ровно туда, гд
+е кончалась ветвь. Точки-техты при этом не пропадают:
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (4.66791pt too wide) in paragraph at lines 266--267
+ []\TU/PT_Serif-Web-Regular.ttf(1)/b/n/10.95 Из чего состоит.[] \TU/PT_Serif-We
+b-Regular.ttf(1)/m/n/10.95 Остов по схеме Хаммонда (челнок на вертикальном валу
+, молоток, каретка
+ []
+
+
+Overfull \hbox (11.89575pt too wide) in paragraph at lines 266--267
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 с пружинным двигателем, колесо спуска
+), пружинный двигатель с цикловым валом, коромысла
+ []
+
+
+Overfull \hbox (12.50804pt too wide) in paragraph at lines 266--267
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 тремя щупами и тросами, пластины приз
+наков, четыре мерные рамки (R, W, О, N), два ползунка
+ []
+
+(./gen/tab_visibility.tex) [9]
+Underfull \hbox (badness 5592) in paragraph at lines 295--296
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 к строке стоят частые ряды. Частоты о
+ценены транскрипцией в режиме тэхт
+ []
+
+
+Underfull \hbox (badness 1231) in paragraph at lines 295--296
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 (\TU/PTMono.ttf(1)/m/n/10.95 tools/mo
+del/freq.py\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 ) на 164 именах и коротких
+ фразах квенья и синдарина —
+ []
+
+
+Underfull \hbox (badness 1152) in paragraph at lines 295--296
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 нижний — 19,5%, верхний регистр — око
+ло 4%, цифровой ряд — почти ничего.
+ []
+
+[10]
+File: gen/model/renders/view_before.png Graphic file (type bmp)
+<gen/model/renders/view_before.png>
+File: gen/model/renders/view_after.png Graphic file (type bmp)
+<gen/model/renders/view_after.png>
+
+Overfull \hbox (11.0561pt too wide) in paragraph at lines 317--318
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 второго рядов клавиатуры), l2 (первог
+о и четвёртого) и l4 (клавиша регистра). Ряды клавиатуры
+ []
+
+
+Overfull \hbox (1.90277pt too wide) in paragraph at lines 319--320
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 машинках с шаровой головкой): поворот
+а (четыре разряда) и подъёма (три разряда). В начале
+ []
+
+
+Overfull \hbox (36.18286pt too wide) in paragraph at lines 321--322
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 клиновыми вырезами; в конце хода кула
+чок вводит в вырез стальной клин, и колесо доворачивается
+ []
+
+[11]
+Overfull \hbox (14.38577pt too wide) in paragraph at lines 325--326
+ []\TU/PT_Serif-Web-Regular.ttf(1)/b/n/10.95 Расчёт коромысел.[] \TU/PT_Serif-W
+eb-Regular.ttf(1)/m/n/10.95 Разряд с поставленной защёлкой проходит $\OML/cmm/m
+/it/10.95 S \OT1/cmr/m/n/10.95 = 12$ \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 
+мм. Каждое коромысло
+ []
+
+
+Overfull \hbox (25.26004pt too wide) in paragraph at lines 325--326
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 на ряд; рычаг 1,33 и вилка 1:5). Пост
+оянное смещение задаёт опора выходного рычага, сдвигаемая
+ []
+
+(./gen/tab_whiffle.tex) (./gen/tab_whiffle.tex) (./gen/tab_whiffle.tex)
+Underfull \hbox (badness 3058) in paragraph at lines 341--342
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10 «После настройки» — передаточное число и
+ нуль выставлены регулировочными винтами по
+ []
+
+File: gen/model/renders/print_unit.png Graphic file (type bmp)
+<gen/model/renders/print_unit.png>
+[12] (./gen/fig_shuttle.tex)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[13]
+Underfull \hbox (badness 1127) in paragraph at lines 376--377
+ []\TU/PT_Serif-Web-Regular.ttf(1)/b/n/10.95 Два поля пластин.[] \TU/PT_Serif-W
+eb-Regular.ttf(1)/m/n/10.95 Рычаги идут с шагом 4,75 мм, а винту выступа нужна 
+бобышка
+ []
+
+
+Underfull \hbox (badness 2409) in paragraph at lines 378--379
+ []\TU/PT_Serif-Web-Regular.ttf(1)/b/n/10.95 Выступы.[] \TU/PT_Serif-Web-Regula
+r.ttf(1)/m/n/10.95 Выступ — установочный винт М3 с плоским концом, ввёрнутый сн
+изу в
+ []
+
+[14] (./gen/tab_read.tex) (./gen/tab_read.tex) (./gen/tab_read.tex) [15]
+Underfull \hbox (badness 4819) in paragraph at lines 436--438
+ []\TU/PT_Serif-Web-Regular.ttf(1)/b/n/10.95 Куда идут тросы.[] \TU/PT_Serif-We
+b-Regular.ttf(1)/m/n/10.95 Каждый щуп после свободного хода $\OML/cmm/m/it/10.9
+5 c[]$ \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 тянет внутренний трос
+ []
+
+[16]
+File: gen/model/renders/read_head.png Graphic file (type bmp)
+<gen/model/renders/read_head.png>
+File: gen/model/renders/read_cut.png Graphic file (type bmp)
+<gen/model/renders/read_cut.png>
+File: gen/model/renders/read_slides.png Graphic file (type bmp)
+<gen/model/renders/read_slides.png>
+File: gen/model/renders/read_comb.png Graphic file (type bmp)
+<gen/model/renders/read_comb.png>
+ [17]
+Underfull \hbox (badness 1590) in paragraph at lines 464--465
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 на ось удара и пускает из конца каждо
+го щупа девять лучей вдоль оси: все должны
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[18]
+File: gen/model/renders/idle_locks.png Graphic file (type bmp)
+<gen/model/renders/idle_locks.png>
+
+Underfull \hbox (badness 2932) in paragraph at lines 522--522
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10 стоит на штыре (под ним рычажок на верти
+кальной оси). Справа — запор удара: штырь в
+ []
+
+[19]
+Underfull \hbox (badness 3417) in paragraph at lines 533--534
+[]\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 Шрифт задаёт только литерные блоки 
+и кодовые гребёнки, поэтому для другого
+ []
+
+[20] (./gen/tab_fonts.tex) (./gen/tab_fonts.tex) (./gen/tab_fonts.tex)
+Underfull \hbox (badness 1152) in paragraph at lines 555--556
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 тяжелее: у узких шрифтов (Miriel) код
+ы меньше, зубцы длиннее; самая тяжёлая — на
+ []
+
+[21]
+File: gen/fonts/annatar/axes.png Graphic file (type bmp)
+<gen/fonts/annatar/axes.png>
+ [22]
+File: gen/fonts/eldamar-old/axes.png Graphic file (type bmp)
+<gen/fonts/eldamar-old/axes.png>
+ [23] [24]
+Underfull \hbox (badness 3323) in paragraph at lines 621--622
+[]\TU/PT_Serif-Web-Regular.ttf(1)/b/n/10.95 Назад на литеру \TU/PT_Serif-Web-Re
+gular.ttf(1)/m/n/10.95 — храповой толкатель поворачивает колесо спуска назад до
+
+ []
+
+
+Underfull \hbox (badness 2351) in paragraph at lines 621--622
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 упора сектора W и сбрасывает память. 
+Если затем ударить ту же литеру через
+ []
+
+
+Underfull \hbox (badness 1735) in paragraph at lines 637--638
+[]\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 В редакции 0.7 часть звеньев была д
+ана в модели схематично — габаритами, без
+ []
+
+(./gen/tab_links_sel.tex) (./gen/tab_links_sel.tex) (./gen/tab_links_sel.tex)
+Underfull \hbox (badness 1043) in paragraph at lines 656--657
+ []\TU/PT_Serif-Web-Regular.ttf(1)/b/n/10.95 Защёлки.[] \TU/PT_Serif-Web-Regula
+r.ttf(1)/m/n/10.95 Над каждым ползуном разряда — палец 3 мм с пружиной вниз. Ст
+ержень
+ []
+
+
+Underfull \hbox (badness 1253) in paragraph at lines 656--657
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 приводной планки; планка уводит ползу
+н на 12 мм. Площадка пальца длиной 18 мм
+ []
+
+File: gen/model/renders/select_unit.png Graphic file (type bmp)
+<gen/model/renders/select_unit.png>
+[25] (./gen/tab_links_frames.tex) [26]
+File: gen/model/renders/frames.png Graphic file (type bmp)
+<gen/model/renders/frames.png>
+File: gen/model/renders/hammer_cock.png Graphic file (type bmp)
+<gen/model/renders/hammer_cock.png>
+File: gen/model/renders/row_detent.png Graphic file (type bmp)
+<gen/model/renders/row_detent.png>
+ [27]
+Underfull \hbox (badness 5607) in paragraph at lines 710--711
+[]\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 Пятого кулачка нет: клин фиксатора 
+ряда ведёт тяга фиксатора позиции через
+ []
+
+File: gen/model/renders/lock.png Graphic file (type bmp)
+<gen/model/renders/lock.png>
+[28]
+Underfull \hbox (badness 10000) in paragraph at lines 731--732
+[]\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 каретка ленты поворота задевала фла
+нец шкива на крайних позициях —
+ []
+
+
+Underfull \hbox (badness 1400) in paragraph at lines 732--733
+[]\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 вилка подъёма была построена с неве
+рной кинематикой: угол не соответствовал
+ []
+
+(./gen/tab_stops.tex) [29]
+File: gen/model/renders/stops.png Graphic file (type bmp)
+<gen/model/renders/stops.png>
+File: gen/model/renders/olink.png Graphic file (type bmp)
+<gen/model/renders/olink.png>
+ [30]
+Underfull \hbox (badness 1983) in paragraph at lines 775--776
+[]\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 Каждая рамка стоит на двух пружинах
+ сжатия 5,2$\OMS/cmsy/m/n/10.95 ^^B$\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 0
+,5 мм, надетых на её задние
+ []
+
+File: gen/model/renders/escapement.png Graphic file (type bmp)
+<gen/model/renders/escapement.png>
+File: gen/model/renders/escapement_back.png Graphic file (type bmp)
+<gen/model/renders/escapement_back.png>
+[31]
+Underfull \hbox (badness 1776) in paragraph at lines 794--795
+[]\TU/PT_Serif-Web-Regular.ttf(1)/b/n/10.95 Рычажок $\OMS/cmsy/m/n/10.95 ^^F\OM
+L/cmm/m/it/10.95 u$ \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 стоит под осью уг
+лового рычага тяги W: эксцентрик 1 мм в трёх
+ []
+
+[32] [33]
+Underfull \hbox (badness 2237) in paragraph at lines 815--816
+ []\TU/PT_Serif-Web-Regular.ttf(1)/b/n/10.95 Указатель точки печати.[] \TU/PT_S
+erif-Web-Regular.ttf(1)/m/n/10.95 У обычной машинки точку печати показывают мет
+ки на
+ []
+
+(./gen/tab_budget_fdm.tex)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 2096) in paragraph at lines 864--865
+[]\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 С редакции 0.10 кодом служит не заз
+ор выступа, а ход щупа до зубца гребёнки;
+ []
+
+
+Underfull \hbox (badness 7362) in paragraph at lines 864--865
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 рассуждение то же. Фиксатор доводит з
+начение до ближайшей единицы, поэтому
+ []
+
+
+Underfull \hbox (badness 4168) in paragraph at lines 864--865
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 ошибка зазора меньше половины ступени
+ (0,5 мм) не вредит. Если ошибку зазора
+ []
+
+[34] (./gen/tab_gap_fdm.tex)
+Underfull \hbox (badness 4341) in paragraph at lines 878--879
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 при $\OML/cmm/m/it/10.95 ^^[ \OT1/cmr
+/m/n/10.95 = 0[]1$ \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 мм промах бывает п
+римерно раз на 400 страниц, при 0,15 мм —
+ []
+
+[35] (./gen/fig_slugs_adv.tex) (./gen/fig_slugs_dead.tex) [36]
+(./gen/keyboard.tex
+LaTeX Font Info:    Font shape `TU/PTMono.ttf(1)/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 2.
+LaTeX Font Info:    Font shape `TU/PTMono.ttf(0)/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 2.
+) (./gen/tab_freq_rows.tex) [37] (./gen/tab_freq_top.tex)
+Underfull \hbox (badness 1776) in paragraph at lines 977--978
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 а под ними в нижнем ряду стоят носите
+ли telco и ára рядом с чертами удвоения и
+ []
+
+
+Underfull \hbox (badness 2512) in paragraph at lines 977--978
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 носовыми чертами; в верхнем регистре 
+над техтами — литеры «ára + гласная». Это
+ []
+
+(./gen/fig_trace_q.tex) [38] (./gen/tab_trace_q.tex) [39]
+(./gen/fig_trace_s.tex) (./gen/tab_trace_s.tex)
+Underfull \hbox (badness 1668) in paragraph at lines 1036--1037
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 Систематические ошибки фиксированы дл
+я данной машинки (у каждой позиции или
+ []
+
+(./gen/tab_assume_fdm.tex) (./gen/tab_assume_fdm.tex) (./gen/tab_assume_fdm.tex
+) [40
+
+] (./gen/tab_mc_fdm_var.tex)
+Underfull \hbox (badness 1062) in paragraph at lines 1060--1061
+ []\TU/PT_Serif-Web-Regular.ttf(1)/b/n/10.95 Вывод.[] \TU/PT_Serif-Web-Regular.
+ttf(1)/m/n/10.95 Как напечатано, машинка держится на грани ориентира: 95-й проц
+ентиль —
+ []
+
+
+Underfull \hbox (badness 2343) in paragraph at lines 1060--1061
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 на челноке, фиксатор колеса челнока и
+ люфт подачи. Две меры снимают проблему:
+ []
+
+
+Underfull \hbox (badness 1253) in paragraph at lines 1072--1073
+[]\TU/PT_Serif-Web-Regular.ttf(1)/b/n/10.95 Нулевой упор ползуна. \TU/PT_Serif-
+Web-Regular.ttf(1)/m/n/10.95 Набрать «telco + точка сверху» и «ando + точка све
+рху»
+ []
+
+[41] (./gen/fig_test.tex) (./gen/tab_test.tex) [42]
+Underfull \hbox (badness 2951) in paragraph at lines 1147--1148
+[]\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 Блоки ставятся в печатное кольцо че
+лнока (дуга 106°, $\OML/cmm/m/it/10.95 R \OT1/cmr/m/n/10.95 = 60$ \TU/PT_Serif-
+Web-Regular.ttf(1)/m/n/10.95 мм) в гнёзда с
+ []
+
+
+Underfull \hbox (badness 4217) in paragraph at lines 1149--1150
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 стола; слой 0,1 мм, сплошное заполнен
+ие. Отверстия под штифты Ø2 прогоняются
+ []
+
+
+Underfull \hbox (badness 1215) in paragraph at lines 1153--1154
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 просвет (пробные штампы этапа Э1, см.
+ ниже), усадку материала (отверстия и пазы).
+ []
+
+[43]
+Underfull \hbox (badness 1226) in paragraph at lines 1159--1160
+[]\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 Модель (\TU/PTMono.ttf(1)/m/n/10.95
+ tools/model/\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 ) собирает машинку из па
+раметров: кегль, шаг позиций, ход
+ []
+
+
+Underfull \hbox (badness 2326) in paragraph at lines 1159--1160
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 уложенных на стол, сборку в формате G
+LB, рисунки этого раздела и интерактивную
+ []
+
+
+Underfull \hbox (badness 1194) in paragraph at lines 1159--1160
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 Måns Björkman, «Amanyë Tenceli»), пок
+азывает тенгвар и клавиши, которые нажмёт, и
+ []
+
+File: gen/model/renders/iso_front.png Graphic file (type bmp)
+<gen/model/renders/iso_front.png>
+[44]
+File: gen/model/renders/section_x0.png Graphic file (type bmp)
+<gen/model/renders/section_x0.png>
+ [45] [46]
+Underfull \hbox (badness 6625) in paragraph at lines 1193--1194
+[]\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 Детали проверяются попарно: пересеч
+ение объёмом больше 0,05 мм$[]$ считается
+ []
+
+
+Underfull \hbox (badness 1558) in paragraph at lines 1193--1194
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 ошибкой, кроме оговорённых посадок (в
+ал в подшипнике, винт в бобышке, штифт в
+ []
+
+(./gen/tab_model_checks.tex) (./gen/tab_model_checks.tex)
+(./gen/tab_model_checks.tex)
+Underfull \hbox (badness 1194) in paragraph at lines 1210--1211
+[]\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 Отсутствие пересечений ещё не значи
+т, что механизм работает: если толкатель не
+ []
+
+
+Underfull \hbox (badness 2460) in paragraph at lines 1214--1215
+[]\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 кулачки отставали от роликов на пов
+оротах профиля: профиль теперь строится
+ []
+
+[47]
+Overfull \hbox (0.54727pt too wide) in alignment at lines 1223--1227
+ [] [] [] [] [] 
+ []
+
+(./gen/tab_contacts.tex
+LaTeX Font Info:    Font shape `TU/PTMono.ttf(0)/m/n' will be
+(Font)              scaled to size 8.27998pt on input line 2.
+LaTeX Font Info:    Font shape `TU/PTMono.ttf(1)/m/n' will be
+(Font)              scaled to size 8.27998pt on input line 2.
+)
+Overfull \hbox (0.54727pt too wide) in alignment at lines 1227--1230
+ [] [] [] [] [] 
+ []
+
+[48] [49]
+Underfull \hbox (badness 2253) in paragraph at lines 1239--1240
+[]\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 ничто другое — ни соседние литеры, 
+ни тело блока — не должно подходить к
+ []
+
+File: gen/model/renders/strike.png Graphic file (type bmp)
+<gen/model/renders/strike.png>
+
+Underfull \hbox (badness 1502) in paragraph at lines 1250--1251
+[]\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 на литерных блоках были отлиты толь
+ко ряды 1–4: верхний регистр (ряды 5–8)
+ []
+
+
+Underfull \hbox (badness 1558) in paragraph at lines 1251--1252
+[]\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 блоки стояли на челноке в обратном 
+порядке: челнок, повёрнутый выборкой на
+ []
+
+[50]
+Overfull \hbox (89.34283pt too wide) in alignment at lines 1261--1265
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+(./gen/tab_strike.tex)
+Overfull \hbox (89.34283pt too wide) in alignment at lines 1265--1268
+ [] [] [] [] [] [] [] [] [] 
+ []
+
+[51]
+File: gen/model/renders/code_under.png Graphic file (type bmp)
+<gen/model/renders/code_under.png>
+ [52]
+Underfull \hbox (badness 2229) in paragraph at lines 1288--1289
+[]\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 Все печатные детали уложены на стол
+ 220$\OMS/cmsy/m/n/10.95 ^^B$\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 220 мм: 
+укладка выбирает положение
+ []
+
+
+Underfull \hbox (badness 1496) in paragraph at lines 1288--1289
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 с наименьшей высотой, литерные блоки 
+и кодовые пластины печатаются в заданном
+ []
+
+(./gen/tab_model_print.tex) (./gen/tab_model_print.tex)
+(./gen/tab_model_print.tex
+Underfull \hbox (badness 1762) in paragraph at lines 8--8
+[]|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10 печатающий узел: башня, коромысла, фи
+ксатор,
+ []
+
+)
+Overfull \hbox (6.43857pt too wide) in alignment at lines 1305--1309
+ [] [] [] 
+ []
+
+(./gen/tab_model_buy.tex)
+Overfull \hbox (6.43857pt too wide) in alignment at lines 1309--1312
+ [] [] [] 
+ []
+
+[53] [54] (./gen/tab_motor_I.tex) [55] (./gen/fig_cycle.tex)
+(./gen/tab_motor_sim.tex) [56] (./gen/tab_motor_spring.tex)
+(./gen/tab_motor_spring.tex) (./gen/tab_motor_spring.tex)
+File: gen/model/renders/drive.png Graphic file (type bmp)
+<gen/model/renders/drive.png>
+ [57]
+Underfull \hbox (badness 1163) in paragraph at lines 1399--1400
+[]\TU/PT_Serif-Web-Regular.ttf(1)/b/n/10.95 Мерные рамки. \TU/PT_Serif-Web-Regu
+lar.ttf(1)/m/n/10.95 Стальной пруток 5 мм на пролёте 276 мм под нагрузкой 0,3 Н
+
+ []
+
+File: gen/model/renders/case_iso_front.png Graphic file (type bmp)
+<gen/model/renders/case_iso_front.png>
+[58] [59]
+File: gen/model/renders/case_fascia.png Graphic file (type bmp)
+<gen/model/renders/case_fascia.png>
+
+Underfull \hbox (badness 1092) in paragraph at lines 1433--1434
+ []\TU/PT_Serif-Web-Regular.ttf(1)/b/n/10.95 Герб.[] \TU/PT_Serif-Web-Regular.t
+tf(1)/m/n/10.95 На левой башне — щит с гербом автора, Mírë Nolmeo (двенадцатая 
+редакция):
+ []
+
+File: gen/model/renders/case_device.png Graphic file (type bmp)
+<gen/model/renders/case_device.png>
+[60]
+Underfull \hbox (badness 1210) in paragraph at lines 1442--1443
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 (в модели их нет). Серебро печатается
+ вместе с панелью: панель лежит лицом вверх,
+ []
+
+File: gen/model/renders/case_typist.png Graphic file (type bmp)
+<gen/model/renders/case_typist.png>
+[61]
+File: gen/model/renders/case_iso_back.png Graphic file (type bmp)
+<gen/model/renders/case_iso_back.png>
+ [62] [63] [64]
+Overfull \vbox (17.20232pt too high) has occurred while \output is active []
+
+
+[65]
+Underfull \hbox (badness 3229) in paragraph at lines 1504--1505
+[]\TU/PT_Serif-Web-Regular.ttf(1)/b/n/10.95 Двигатель и цикл. \TU/PT_Serif-Web-
+Regular.ttf(1)/m/n/10.95 Барабан с пружиной, передача, регулятор, цикловой вал 
+с
+ []
+
+(./gen/tab_stamps.tex) (./gen/tab_stamps.tex) (./gen/tab_stamps.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+[]|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10 строки на квенья и
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--4
+[]|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10 строки на квенья и
+ []
+
+)
+File: stl/tpm2_em13_nozzle04_sample.png Graphic file (type bmp)
+<stl/tpm2_em13_nozzle04_sample.png>
+ [66]
+Underfull \hbox (badness 1077) in paragraph at lines 1536--1537
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 число зависит от КПД кулачков и трени
+я, которые пока приняты. Если окажется
+ []
+
+
+Underfull \hbox (badness 2582) in paragraph at lines 1540--1541
+[]\TU/PT_Serif-Web-Regular.ttf(1)/b/n/10.95 Точность гребёнок. \TU/PT_Serif-Web
+-Regular.ttf(1)/m/n/10.95 Требование $\OML/cmm/m/it/10.95 ^^[ \OMS/cmsy/m/n/10.
+95 ^^T \OT1/cmr/m/n/10.95 0[]08$ \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 мм к
+ ходу щупа (§[]10.4[]) по оценке
+ []
+
+
+Underfull \hbox (badness 1776) in paragraph at lines 1540--1541
+\OML/cmm/m/it/10.95 k$ \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 придётся увели
+чить до 1,2–1,5 мм/u (гребёнки глубже, головка ближе к валу).
+ []
+
+
+Underfull \hbox (badness 2057) in paragraph at lines 1542--1543
+[]\TU/PT_Serif-Web-Regular.ttf(1)/b/n/10.95 Холостой цикл. \TU/PT_Serif-Web-Reg
+ular.ttf(1)/m/n/10.95 Запоры построены (§[]8.7[]); удар взводного рычага по зап
+ертому
+ []
+
+
+Underfull \hbox (badness 3098) in paragraph at lines 1545--1546
+[]\TU/PT_Serif-Web-Regular.ttf(1)/b/n/10.95 Заправка листа. \TU/PT_Serif-Web-Re
+gular.ttf(1)/m/n/10.95 Молоток за листом — заправка неудобнее, чем на рычажной
+ []
+
+
+Underfull \hbox (badness 1748) in paragraph at lines 1548--1549
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 ролика или высоты балки сдвигает все 
+зубья сразу, поэтому повторитель нужно
+ []
+
+[67]
+Underfull \hbox (badness 1990) in paragraph at lines 1558--1559
+[]\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 замеры стенда Э2: силы пружин, трен
+ие, повторяемость упоров — они заменят
+ []
+
+File: gen/model/renders/asm_frame.png Graphic file (type bmp)
+<gen/model/renders/asm_frame.png>
+File: gen/model/renders/asm_keys.png Graphic file (type bmp)
+<gen/model/renders/asm_keys.png>
+File: gen/model/renders/asm_levers.png Graphic file (type bmp)
+<gen/model/renders/asm_levers.png>
+[68]
+File: gen/model/renders/asm_plates.png Graphic file (type bmp)
+<gen/model/renders/asm_plates.png>
+ [69]
+File: gen/model/renders/asm_bails.png Graphic file (type bmp)
+<gen/model/renders/asm_bails.png>
+ [70]
+File: gen/model/renders/asm_sectors.png Graphic file (type bmp)
+<gen/model/renders/asm_sectors.png>
+ [71]
+File: gen/model/renders/asm_select.png Graphic file (type bmp)
+<gen/model/renders/asm_select.png>
+ [72]
+File: gen/model/renders/asm_uframe.png Graphic file (type bmp)
+<gen/model/renders/asm_uframe.png>
+ [73]
+File: gen/model/renders/asm_shuttle.png Graphic file (type bmp)
+<gen/model/renders/asm_shuttle.png>
+ [74]
+File: gen/model/renders/asm_carriage.png Graphic file (type bmp)
+<gen/model/renders/asm_carriage.png>
+ [75]
+File: gen/model/renders/asm_esc.png Graphic file (type bmp)
+<gen/model/renders/asm_esc.png>
+ [76]
+File: gen/model/renders/asm_ribbon.png Graphic file (type bmp)
+<gen/model/renders/asm_ribbon.png>
+ [77]
+File: gen/model/renders/asm_drive.png Graphic file (type bmp)
+<gen/model/renders/asm_drive.png>
+ [78]
+File: gen/model/renders/asm_hammer.png Graphic file (type bmp)
+<gen/model/renders/asm_hammer.png>
+ [79]
+File: gen/model/renders/asm_case.png Graphic file (type bmp)
+<gen/model/renders/asm_case.png>
+ [80] [81]
+(./gen/tab_part_numbers.tex
+Underfull \hbox (badness 3364) in paragraph at lines 1--1
+[]|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 Печатающий узел: плита, деревья,
+ []
+
+
+Underfull \hbox (badness 3364) in paragraph at lines 2--2
+[]|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 Печатающий узел: плита, деревья,
+ []
+
+
+Underfull \hbox (badness 3364) in paragraph at lines 10--10
+[]|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 Печатающий узел: плита, деревья,
+ []
+
+
+Underfull \hbox (badness 3364) in paragraph at lines 11--11
+[]|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 Печатающий узел: плита, деревья,
+ []
+
+
+Underfull \hbox (badness 3364) in paragraph at lines 12--12
+[]|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 Печатающий узел: плита, деревья,
+ []
+
+
+Underfull \hbox (badness 3364) in paragraph at lines 13--13
+[]|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 Печатающий узел: плита, деревья,
+ []
+
+
+Underfull \hbox (badness 3364) in paragraph at lines 77--77
+[]|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 Печатающий узел: плита, деревья,
+ []
+
+
+Underfull \hbox (badness 3364) in paragraph at lines 121--121
+[]|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 Печатающий узел: плита, деревья,
+ []
+
+
+Underfull \hbox (badness 3364) in paragraph at lines 122--122
+[]|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 Печатающий узел: плита, деревья,
+ []
+
+
+Underfull \hbox (badness 3364) in paragraph at lines 137--137
+[]|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 Печатающий узел: плита, деревья,
+ []
+
+
+Underfull \hbox (badness 3364) in paragraph at lines 142--142
+[]|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 Печатающий узел: плита, деревья,
+ []
+
+
+Underfull \hbox (badness 3364) in paragraph at lines 143--143
+[]|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 Печатающий узел: плита, деревья,
+ []
+
+
+Underfull \hbox (badness 3364) in paragraph at lines 145--145
+[]|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 Печатающий узел: плита, деревья,
+ []
+
+
+Underfull \hbox (badness 3364) in paragraph at lines 146--146
+[]|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 Печатающий узел: плита, деревья,
+ []
+
+
+Underfull \hbox (badness 3364) in paragraph at lines 216--216
+[]|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 Печатающий узел: плита, деревья,
+ []
+
+
+Underfull \hbox (badness 3364) in paragraph at lines 217--217
+[]|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 Печатающий узел: плита, деревья,
+ []
+
+
+Underfull \hbox (badness 3364) in paragraph at lines 219--219
+[]|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 Печатающий узел: плита, деревья,
+ []
+
+
+Underfull \hbox (badness 3364) in paragraph at lines 232--232
+[]|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 Печатающий узел: плита, деревья,
+ []
+
+
+Underfull \hbox (badness 3364) in paragraph at lines 262--262
+[]|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 Печатающий узел: плита, деревья,
+ []
+
+
+Underfull \hbox (badness 3364) in paragraph at lines 263--263
+[]|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 Печатающий узел: плита, деревья,
+ []
+
+
+Underfull \hbox (badness 3364) in paragraph at lines 287--287
+[]|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 Печатающий узел: плита, деревья,
+ []
+
+
+Underfull \hbox (badness 3364) in paragraph at lines 290--290
+[]|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 Печатающий узел: плита, деревья,
+ []
+
+
+Underfull \hbox (badness 3364) in paragraph at lines 303--303
+[]|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 Печатающий узел: плита, деревья,
+ []
+
+
+Underfull \hbox (badness 3364) in paragraph at lines 311--311
+[]|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 Печатающий узел: плита, деревья,
+ []
+
+
+Underfull \hbox (badness 3364) in paragraph at lines 312--312
+[]|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 Печатающий узел: плита, деревья,
+ []
+
+
+Underfull \hbox (badness 3364) in paragraph at lines 313--313
+[]|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 Печатающий узел: плита, деревья,
+ []
+
+
+Underfull \hbox (badness 3364) in paragraph at lines 314--314
+[]|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 Печатающий узел: плита, деревья,
+ []
+
+
+Underfull \hbox (badness 3364) in paragraph at lines 315--315
+[]|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 Печатающий узел: плита, деревья,
+ []
+
+) [82] [83] [84] [85] [86] (./gen/tab_codes.tex) [87] [88] (./gen/tab_combs.tex
+) [89]
+
+Package enumitem Warning: Negative labelwidth. This does not make much
+(enumitem)                sense, on input line 1613.
+
+
+Underfull \hbox (badness 1297) in paragraph at lines 1614--1615
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 Карло — почти вдвое хуже посадка знак
+ов), сила удара зависит от пальца, раскладка
+ []
+
+[90] [91] [92] (./main.aux)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+ ***********
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 745CB3B9CDE2FB4B2E58014B5A50B4A5;15848.
+ ) 
+Here is how much of TeX's memory you used:
+ 30372 strings out of 476846
+ 658361 string characters out of 5803823
+ 2046627 words of memory out of 5000000
+ 51507 multiletter control sequences out of 15000+600000
+ 564209 words of font info for 152 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 89i,13n,120p,1732b,1190s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on main.pdf (93 pages).
