@@ -39,6 +39,7 @@ MARKS = [
     ('dbl', 'uniE051', 'DL', 'черта удвоения, узкая'),
     ('dblW', 'uniE051.wide', 'DL', 'черта удвоения, широкая'),
     ('dblL', 'uniE051.lambe', 'DX', 'черта удвоения для lambe/alda'),
+    ('ddotbL', 'uniE043.inlambe', 'DX', 'две точки в lambe/alda — y'),     # rev. 0.14: glyphvar.py
     ('lsd', 'uniE07D', 'DB', 'метка младшего разряда'),
 ]
 

@@ -16,7 +16,8 @@ os.makedirs(out, exist_ok=True)
 sys.argv = ['gen_shuttle.py', font, data_dir, gen_dir]
 G = runpy.run_path(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'gen_shuttle.py'))
 ITEMS, U, MARK_AX = G['ITEMS'], G['U'], G['MARK_AX']
-F = TTFont(font); GS = F.getGlyphSet()
+import glyphvar
+F = TTFont(font); GS = glyphvar.VarGlyphSet(F.getGlyphSet(), G['D'].get('synth'))
 INCH = 25.4
 SIZES = [('em13_nozzle04', INCH / 3, 0.45), ('em14_nozzle025', INCH / 4, 0.30)]
 RELIEF, BASE, MARGIN = 1.2, 2.5, 4.0     # mm

@@ -90,17 +90,9 @@ for i, (sig, u) in enumerate(sorted(uniq.items(), key=lambda kv: (kv[0][0], kv[1
                          vol=round(float(u['vol']), 0), mass=round(float(u['vol']) * DENS, 1), first=u['names'][0], names=u['names'],
                          number_on=where, bodies=bodies))
 json.dump(fit_rows, open(os.path.join(out, 'printable.json'), 'w'), ensure_ascii=False, indent=1)
-# rev. 0.12: the device plaque in colours: one STL per colour, all in the plaque's frame (load them as parts of one object)
-os.makedirs(os.path.join(out, 'stl', 'device'), exist_ok=True)
-for _f in os.listdir(os.path.join(out, 'stl', 'device')):
-    os.remove(os.path.join(out, 'stl', 'device', _f))
-_pl = [p for p in parts if p.name == 'case device plaque'][0]
-_b = np.array(_pl.mesh.bounding_box())
-_dev = [_pl] + [p for p in parts if p.name.startswith('case device ') and p.kind == 'inlay']
-for i, p in enumerate(_dev):
-    V, F = geo.to_arrays(p.mesh.translate((-_b[0], -_b[1], -_b[2])))
-    hexc = '%02x%02x%02x' % tuple(p.color)
-    trimesh.Trimesh(V, F, process=False).export(os.path.join(out, 'stl', 'device', f'device_{i:02d}_{hexc}.stl'))
+# rev. 0.12a: the device is a decal (data/device/*.svg), not parts: no colour files
+import shutil
+shutil.rmtree(os.path.join(out, 'stl', 'device'), ignore_errors=True)
 # rev. 0.9c: assembly sheets and the table of part numbers
 import assembly
 FONT_B = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'fonts', 'PT_Sans-Web-Bold.ttf')
@@ -130,6 +122,11 @@ scene.export(os.path.join(out, 'tpm2_assembly.glb'))
 # ------------------------------------------------------------------ pictures
 def objs(ps, clip=None, hide=(), case=False):
     res = []
+    if case and any(p.name == 'case device plaque' for p in ps):      # rev. 0.12a: the device as a picture on its plaque
+        import case as CASE
+        for k, (m, col) in enumerate(CASE.decal_meshes()):
+            V, F = geo.to_arrays(m)
+            res.append((V, F, col, 100000 + k))
     for i, p in enumerate(ps):
         if any(h == p.group or p.name.startswith(h) for h in hide):
             continue
@@ -236,7 +233,7 @@ _cp = [p for p in parts if p.group == 'case' and (p.name.startswith(('case fasci
                                                     or p.name.startswith('cap ') or p.name.startswith('stem '))]
 img, _ = render.render(objs([p for p in parts if p.group == 'case' and p.name.startswith('case fascia')], case=True),
                        ((0, -420, 160), (0, -236, 107)), W=2400, H=700, light=(-0.2, -0.8, 0.5)); save(img, 'case_fascia', crop=True)
-img, _ = render.render(objs([p for p in parts if p.name.startswith('case device')], case=True), ((-201, -300.5, 600), (-201, -300.5, 140), (0, 1, 0)),
+img, _ = render.render(objs([p for p in parts if p.name == 'case device plaque'], case=True), ((-201, -300.5, 600), (-201, -300.5, 140), (0, 1, 0)),
                        W=1400, H=1400, light=(-0.3, 0.3, 0.9)); save(img, 'case_device', crop=True)
 print('renders', round(time.time() - t0))
 
@@ -255,7 +252,7 @@ num = dict(parts=len(parts), unique_print=len(uniq), rest_interferences=len(rest
            case_mass_g=round(sum(p.mesh.volume() for p in parts if p.group == 'case') * DENS, 0),
            case_extent=[[round(float(min(p.mesh.bounding_box()[i] for p in parts if p.group == 'case')), 1) for i in range(3)],
                         [round(float(max(p.mesh.bounding_box()[i + 3] for p in parts if p.group == 'case')), 1) for i in range(3)]],
-           device_colours=len(_dev) - 1, inscription=__import__('case').info(),
+           device_colours=len(__import__('case').decal_meshes()), inscription=__import__('case').info(),
            print_mass_g=round(sum(b['vol'] for b in bom.values() if b['kind'] == 'print') * DENS, 0),
            not_fit=[r['file'] for r in fit_rows if not r['fits']])
 json.dump(dict(numbers=num, bom=list(bom.values()), rest=rest_int, scen=scen), open(os.path.join(out, 'model.json'), 'w'),

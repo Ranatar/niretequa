@@ -4,6 +4,30 @@ from manifold3d import Manifold
 
 # designed contacts: (substring a, substring b)
 ALLOW = [
+    # rev. 0.14 stage 2b: the governor's brake -- collars on the arbor (fixed pinned, sliding), the felt on the plate,
+    # the leaf springs in the collars and the weights on the springs, the arbor's end in the plate
+    ('governor sliding collar', 'governor arbor'), ('governor fixed collar', 'governor arbor'), ('governor brake pad', 'governor brake plate'),
+    ('governor leaf spring', 'governor sliding collar'), ('governor leaf spring', 'governor fixed collar'), ('governor weight', 'governor leaf spring'),
+    ('governor brake plate', 'governor arbor'), ('governor brake plate', 'base plate'),
+    # rev. 0.14b: key return springs under the levers, their bar and posts; the stem's collar under the comb (rest stop)
+    ('key return spring', 'lever '), ('key return spring', 'key return bar'), ('key return bar post', 'key return bar'),
+    ('key return bar post', 'base plate'),
+    # rev. 0.14 (physics checks): the clips on the lever pivot rod (in their grooves, against the brackets)
+    ('lift collar keeper', 'shuttle'),
+    # rev. 0.14: supports of stage 1
+    ('cycle trip post', 'base plate'), ('cycle trip pin', 'cycle trip post'), ('cycle trip pin', 'cycle trip lever'), ('cycle trip post', 'cycle trip lever'),
+    ('cycle stop latch post', 'base plate'), ('cycle stop latch pin', 'cycle stop latch'), ('cycle stop latch pin', 'cycle stop latch post'),
+    ('zero stop M bridge', 'escapement bracket'), ('zero stop M bridge', 'memory zero stop'), ('pusher guide hanger', 'selector comb'), ('pusher guide hanger', 'pusher guide'),
+    ('stop carrier rod clip', 'stop carrier rod'), ('stop carrier rod clip', 'stop carrier rod bracket'), ('read lock axle clip', 'read lock axle'),
+    ('paper guide cheek', 'carriage end plate'), ('paper guide cheek', 'paper guide'), ('paper rest arm', 'carriage end plate'), ('paper rest arm', 'paper rest'),
+    ('return rocker post', 'base plate'), ('row detent wedge spring', 'row detent wedge'), ('row detent wedge spring', 'row detent wedge lug'),
+    ('row detent wedge lug', 'row detent post'), ('governor flywheel', 'governor arbor'),
+    # rev. 0.14: return rockers -- the rod's pin in the slot, the roller on the return cam, the rocker on its pin and post
+    ('return rocker', 'cam rod'), ('return rocker', 'return rocker pin'), ('return rocker pin', 'return rocker post'),
+    ('return rocker', 'return rod'), ('return rod', 'return rocker post'), ('return rod rotate', 'cam rotate return'), ('return rod lift', 'cam lift return'),
+    ('rotate tape return', 'pulley and detent'), ('rotate tape return', 'rotate tape idler'), ('rotate tape return', 'rotate tape tensioner'),
+    ('rotate tape idler', 'rotate tape idler post'), ('rotate tape idler post', 'U-frame base'), ('rotate tape tensioner', 'tape slider'),     # rev. 0.14: the keeper is screwed round the hub
+    ('lever pivot clip', 'lever pivot rod'), ('lever pivot clip', 'pivot bracket'),
     # rev. 0.12: the case: its panels, inlays and pillars are bonded or screwed to each other
     ('case ', 'case '),
     # rev. 0.11: carriage release (axle in its bores, the sheath stop on the escapement's back post)
@@ -52,7 +76,11 @@ ALLOW = [
     ('row detent wedge', 'row detent post'), ('row detent link', 'row detent wedge'),
     ('row detent post', 'U-frame base'), ('row detent link', 'row detent post'), ('row detent link', 'detent link'),
     ('hammer cocking lever', 'hammer axle'), ('hammer cocking lever', 'hammer cocking rod'), ('hammer cocking rod', 'hammer trip link'),
-    ('hammer spring', 'hammer axle'), ('hammer spring', 'hammer'), ('hammer cocking lever', 'hammer'), ('escapement stop', 'escapement shaft'),
+    ('hammer spring', 'hammer axle'), ('hammer spring', 'hammer'),
+    # rev. 0.14: the hammer's collar on its axle, the lip on the tab, the sear on its pin and bracket, the lug on the toe
+    ('hammer collar', 'hammer axle'), ('hammer collar', 'hammer cocking lever'), ('hammer collar', 'hammer sear'),
+    ('hammer sear', 'hammer sear pin'), ('hammer sear', 'hammer cocking lever'), ('hammer sear pin', 'hammer sear bracket'),
+    ('hammer sear bracket', 'U-frame arm and hammer post'), ('hammer cocking lever', 'hammer'), ('escapement stop', 'escapement shaft'),
     ('escapement stop', 'escapement wheel'), ('hammer cocking rod', 'U-frame arm'),
     ('sector axis', 'memory sleeve'), ('memory sleeve', 'memory sleeve'), ('sector axis', 'sector bracket'), ('sector bracket', 'motor cheek'), ('sector axis', 'motor cheek'),
     ('memory pawl', 'sector bracket'), ('memory pawl', 'memory sleeve'), ('memory pawl', 'memory pawl'),

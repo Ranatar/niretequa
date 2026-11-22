@@ -67,7 +67,7 @@ def text_geom(text, path=SANS, height=5.0, cap=True):
 def tengwar_geom(item, em, pmin=0.8):
     """Glyphs of a keyboard item (as on the shuttle, not mirrored), y up, in mm at em size `em`, strokes >= pmin."""
     key = f'kcap_{item}_{em:.2f}_{pmin}'.replace(':', '-').replace('+', 'p').replace('/', '_')
-    fn = os.path.join(CACHE, key + '.pkl')
+    fn = os.path.join(CACHE, D.fsname(key) + '.pkl')
     if os.path.exists(fn):
         return pickle.load(open(fn, 'rb'))
     import typeblocks as TB

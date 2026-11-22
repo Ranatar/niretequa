@@ -56,6 +56,13 @@ def groups():
     out.append(('cycle', 'кулачки → толкатели', cyc(all_a),
                 [('cam rod rotate', 'cam rotate', 'кулачок позиции'), ('cam rod lift', 'cam lift', 'кулачок ряда'),
                  ('cam rod detent', 'cam detent', 'кулачок фиксаторов'), ('cam rod ribbon', 'cam ribbon', 'кулачок ленты')]))
+    # rev. 0.14: positive drive of the rotate and lift push rods (return cams and balance beams)
+    out.append(('cycle', 'обратные кулачки', cyc((0, 60, 90, 105, 205, 230, 300)),     # in the dwell they stand off 0.5 mm
+                [('return rod rotate', 'cam rotate return', 'обратный кулачок позиции'), ('return rod lift', 'cam lift return', 'обратный кулачок ряда')]))
+    out.append(('cycle', 'коромысла обратных кулачков', cyc(all_a),
+                [('cam rod rotate', 'return rocker rotate', 'палец толкателя в пазу коромысла'), ('return rod rotate', 'return rocker rotate', '—'),
+                 ('cam rod lift', 'return rocker lift', '—'), ('return rod lift', 'return rocker lift', '—')]))
+    out.append(('cycle', 'держатель челнока', cyc((0, 60, 120, 205, 300)), [('lift collar keeper', 'lift collar', 'лапки под воротником')]))
     out.append(('cycle', 'кулачок взвода', cyc((0, 60, 90, 120, 150, 190, 230, 300)), [('cam rod hammer', 'cam hammer', 'кулачок молотка')]))
     out.append(('cycle', 'привод деревьев', cyc(all_a),
                 [('cam rod rotate', 'rotate drive bellcrank', 'палец толкателя в пазу качалки'), ('cam rod lift', 'lift drive bellcrank', '—'),

@@ -1,9 +1,9 @@
 """Items of the layout (advancing characters, dead marks) from measured codes (data/codes.json or fontprof.codes_at).
 rev. 0.11: shared by gen_shuttle.py (the document) and model/data.py (the model, any font set)."""
-BELOW_MARKS = {'dotb', 'ddotb', 'dbl', 'dblW', 'dblL', 'lsd'}
+BELOW_MARKS = {'dotb', 'ddotb', 'ddotbL', 'dbl', 'dblW', 'dblL', 'lsd'}
 MARK_CP = {'mark:a': 0xE040, 'mark:e': 0xE046, 'mark:i': 0xE044, 'mark:o': 0xE04A, 'mark:u': 0xE04C,
            'mark:tilde': 0xE052, 'mark:nas': 0xE050, 'mark:nasW': 0xE050, 'mark:dotb': 0xE045,
-           'mark:ddotb': 0xE043, 'mark:dbl': 0xE051, 'mark:dblW': 0xE051, 'mark:dblL': 0xE051, 'mark:lsd': 0xE07D}
+           'mark:ddotb': 0xE043, 'mark:dbl': 0xE051, 'mark:dblW': 0xE051, 'mark:dblL': 0xE051, 'mark:ddotbL': 0xE043, 'mark:lsd': 0xE07D}
 ADV = ('T', 'C', 'N', 'P')
 VOWEL_KEY = {0xE040: 'a', 0xE046: 'e', 0xE044: 'i', 0xE04A: 'o', 0xE04C: 'u'}
 # a character missing from a font: its cell has no glyph and the code of a narrow blank (the key types 4 u of space)

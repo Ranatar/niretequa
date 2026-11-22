@@ -116,6 +116,11 @@ def motion(p):
         if s_ == 'read':
             return dict(t='locklever', s=s_, a='z', p=[L, g['y'] + 1.0 - PT.LOCK_LEVER_R], ang=PT.lock_phi(g['travel']))
         return dict(t='locklever', s=s_, a='y', p=[L, g['z'] - 1.0 - PT.LOCK_LEVER_R], ang=-PT.lock_phi(g['travel']))
+    if m.startswith('kspring'):                     # rev. 0.14b: a key's return spring, compressed by its lever
+        kn = int(m[7:]); k = keys[kn]
+        z0 = PT.KRS_BAR_Z[1]
+        return dict(t='kspring', n=kn, L=P.LEVER_PIVOT_Y - k['y'], z0=z0, L0=PT.krs_top(k, 0.0)[0] - z0,
+                    dy=PT.KRS_Y - P.LEVER_PIVOT_Y, dz=P.LEVER_Z0 - (P.LEVER_Z0 + P.LEVER_Z1) / 2, zc=(P.LEVER_Z0 + P.LEVER_Z1) / 2)
     if m.startswith('spring'):
         return dict(t='fspring', b=m[6:], z0=PT.TIER_BOT_Z[1], L=PT.SLEEVE_Z[0] - PT.TIER_BOT_Z[1])
     if m.startswith('follow'):
@@ -128,10 +133,19 @@ def motion(p):
         return dict(t='lock')
     if m == 'tier':
         return dict(t='tier')
+    if n == 'hammer sear':                                  # rev. 0.14: the sear's turn by whole degrees of the cycle
+        return dict(t='sear', p=list(PT._polar(*PT.SEAR_PIV)))
     if m == 'cock':
         return dict(t='unit', s='cock_lever' if n == 'hammer cocking lever' else 'cock')
+    if n.startswith('return rocker ') and n.split()[2] in PT.RET:   # rev. 0.14: balance beam and return push rod
+        k = n.split()[2]
+        return dict(t='retrocker', k=k, p=[PT.RET[k]['xp'], PT.RET[k]['zp']])
+    if n.startswith('return rod '):
+        return dict(t='retrod', k=n.split()[2])
     if n in ('row detent wedge', 'row detent roller'):     # rev. 0.9.3: the roller rides on the wedge
         return dict(t='unit', s='rowwedge')
+    if n == 'rotate tape return':                           # rev. 0.14: the return run is drawn in place
+        return dict(t='unit', s='unit')
     if n == 'rotate tape':                                  # rev. 0.9.3: the band stretches from the pulley to the clamp
         return dict(t='unit', s='tapeband')
     if n == 'detent link':
@@ -314,7 +328,14 @@ C.update(
     RAMP=PT.RAMP, DET_RISE=PT.DET_RISE,
     READ=dict(C0=P.READ_C0, K=P.READ_K, TRAVEL=P.READ_TRAVEL, RAMP=list(P.READ_RAMP), CAM=PT.READ_CAM_LIFT,
               CH=list(P.READ_CH), ROCK=[round(PT.read_rocker_angle(PT.State(cycle=float(a))), 3) for a in range(361)]),
-    COCK=dict(rc=LK.hammer_geom()['r_cock'], lift=6.0),
+    COCK=dict(rc=LK.hammer_geom()['r_cock'], lift=PT.CAM_LIFT['hammer']),
+    # rev. 0.14: hammer, cocking lever and sear by whole degrees (the lever's lip governs the hammer's return)
+    HAM=dict(COCK=[round(PT.cam_lift('cock', float(a)), 5) for a in range(361)],
+             STRIKE=[round(PT.cam_lift('strike', float(a)), 5) for a in range(361)],
+             SEAR=[round(math.degrees(PT.sear_beta(PT.cam_lift('cock', float(a)), PT.cam_lift('strike', float(a)))), 3) for a in range(361)]),
+    RET={k: dict(ANG=[round(-(1 if PT.CAM_X[k] > PT.RET[k]['xp'] else -1) * math.degrees(PT.ret_psi(k, float(a)) - PT.ret_psi(k, 0.0)), 4)
+                      for a in range(361)],
+                 DZ=[round(PT.ret_pin_z(k, float(a)) - PT.ret_pin_z(k, 0.0), 4) for a in range(361)]) for k in PT.RET},
     ROWDET=dict(dir=PT.ROWDET_DIR, stroke=5.0), LOCK_SHIFT=PT.LOCK_SHIFT, SEL_RISE=PT.SEL_RISE,
     STOPS=dict(SBC=list(PT.SBC), BC_R=LK.BC_R, NSEL=list(PT.NSEL), N_IN=LK.N_IN, N_OUT=LK.N_OUT, N_SHIFT=LK.N_SHIFT, OBC=list(PT.OBC),
                O_BC_R=LK.O_BC_R, OROCK=list(PT.OROCK), ROCKER=list(LK.ROCKER), O_ARM=LK.O_ARM, O_CLAMP=LK.O_CLAMP))

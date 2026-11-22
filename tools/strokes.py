@@ -11,8 +11,9 @@ from PIL import Image, ImageDraw
 from glyphgeom import glyph_geom
 
 font, data_dir, out = sys.argv[1:4]
-F = TTFont(font); GS = F.getGlyphSet()
 D = json.load(open(os.path.join(data_dir, 'codes.json')))
+import glyphvar
+F = TTFont(font); GS = glyphvar.VarGlyphSet(F.getGlyphSet(), D.get('synth'))
 S = 2.0  # px per font unit
 
 

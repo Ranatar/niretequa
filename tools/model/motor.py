@@ -46,7 +46,25 @@ C = P.CYCLE
 ETA = 0.8              # cams with rollers and links, per transfer
 E_HAMMER = 0.020       # J, hammer spring cocked by the cycle from 0 deg to just before the strike
 TAU_FRIC = 0.0012      # N m at the cycle shaft: bearings, latches, detent, escapement trip
-J0 = 4.0e-5            # kg m2: cycle shaft, cams, train and governor reflected to the cycle shaft
+def _Ix(name, y0, z0, dens=DENS):
+    V, F = geo.to_arrays(ps[name].mesh)
+    tm = trimesh.Trimesh(V, F, process=False); tm.density = dens / 1000.0
+    c = tm.center_mass
+    return (tm.moment_inertia[0, 0] + tm.mass * ((c[1] - y0) ** 2 + (c[2] - z0) ** 2)) * 1e-6   # kg m2
+
+
+# rev. 0.14 (physics checks, node E): J0 from the meshes -- the cycle shaft with its cams, gears and stop arm, and the
+# governor through its 32/8 pair (x 16); rev. <= 0.13 took 4e-5 kg m2, eight times too much, and so a cycle too slow
+_yC, _zC = PT.CYC
+_yD = _yC + (PT.ZG['gov'] + PT.ZG['govpin']) / 2
+J0 = sum(_Ix(n, _yC, _zC, 7.85e-3 if ps[n].mat == 'сталь' else DENS) for n in
+         ('cycle shaft', 'cam lift', 'cam rotate', 'cam detent', 'cam hammer', 'cam ribbon', 'cam read', 'cycle stop arm',
+          'cam rotate return', 'cam lift return',
+          'governor gear', 'bevel cycle 1:1') if n in ps) + \
+    16 * sum(_Ix(n, _yD, _zC, 7.85e-3 if ps[n].mat == 'сталь' else 8.5e-3 if ps[n].mat == 'латунь' else DENS) for n in
+             ('governor fan', 'governor arbor', 'governor pinion', 'governor flywheel', 'governor sliding collar', 'governor fixed collar',
+              'governor weight 1', 'governor weight 2', 'governor weight 3', 'governor leaf spring 1', 'governor leaf spring 2',
+              'governor leaf spring 3') if n in ps)          # rev. 0.14 stage 2b: + the brake's collars, springs and weights
 
 
 def cyc(t):
@@ -95,9 +113,26 @@ READ_OUT = (P.CYCLE['read'][0] - P.READ_RAMP[0], P.CYCLE['read'][0])
 READ_WIN = (P.CYCLE['read'][1], P.CYCLE['read'][1] + P.READ_RAMP[1])
 
 
-def simulate(tau, c_gov, th, dz, dphi=0.25, er=(0.0, 0.0)):
+W_FREE = 2 * math.pi / 0.18          # the fan was sized for an unloaded cycle of 0.18 s at 18.5 mN m (rev. 0.14)
+TAU_FAN = 0.0185                     # rev. 0.14 stage 2b: the fan as built: its coefficient does not follow tau_C
+C_FAN = (TAU_FAN - TAU_FRIC) / W_FREE ** 2
+# rev. 0.14, stage 2b: the fan's drag goes with w^2, so the shaft's speed went with sqrt(torque) -- twice the design speed at
+# full wind. A centrifugal brake on the governor's arbor grips above W_CAP (params.GOV_T_FREE per free turn).
+W_CAP = 2 * math.pi / P.GOV_T_FREE
+K_BRAKE = P.GOV_K_BRAKE
+
+
+def gov_drag(w, c_gov=None, cap=True):
+    c = C_FAN if c_gov is None else c_gov
+    x = c * w * w
+    if cap and w > W_CAP:
+        x += K_BRAKE * (w - W_CAP)
+    return x
+
+
+def simulate(tau, c_gov, th, dz, dphi=0.25, er=(0.0, 0.0), cap=True):
     """Integrate one revolution from rest; returns time, min/max speed. th rad, dz m; er: read work (returned, taken), J;
-    both follow the cycloidal cam (torque ~ 1 - cos)."""
+    both follow the cycloidal cam (torque ~ 1 - cos). Rev. 0.14 stage 2b: the governor's brake above W_CAP (cap)."""
     Jsh = I_rot * th ** 2 + m_lift * dz ** 2          # x (ds/dphi)^2 gives reflected inertia
     E = 0.0; t = 0.0; phi = 0.0; wmax = 0.0; wmin = 1e9
     s_prev, d_prev = shape(0.0)
@@ -108,7 +143,7 @@ def simulate(tau, c_gov, th, dz, dphi=0.25, er=(0.0, 0.0)):
         s1, d1 = shape(phi1)
         J1 = J0 + Jsh * d1 ** 2
         w_prev = math.sqrt(2 * E / J_prev) if E > 0 else 0.0
-        drive = tau - c_gov * w_prev ** 2 - TAU_FRIC
+        drive = tau - gov_drag(w_prev, c_gov, cap) - TAU_FRIC
         if 0.0 <= phi < C['strike'] - 10.0:
             drive -= E_HAMMER / hammer_t
         if er[0] and READ_OUT[0] <= phi < READ_OUT[1]:
@@ -157,12 +192,11 @@ def build_chars(rest_row, row_of):
 chars = build_chars(P.REST_ROW, lambda r: r)
 th_max = (P.NPOS - 1) / 2 * P.STEP
 z_max = max(abs(dz) for _, dz, _ in chars)
-W_FREE = 2 * math.pi / 0.18          # governor holds an unloaded cycle at 0.18 s
 
 
 def run(tau, chs=None):
     chs = chs or chars
-    cg = (tau - TAU_FRIC) / W_FREE ** 2
+    cg = C_FAN                                   # rev. 0.14 stage 2b: the fan as built, whatever the torque
     times = [simulate(tau, cg, abs(th), abs(dz), er=read_work(it))[0] for th, dz, it in chs]
     w = np.array([weight(it) for _, _, it in chs])
     worst = max(times)
@@ -179,7 +213,12 @@ for tau in taus:
 target = P.CYCLE_T
 WORST_K = 2.0          # rev. 0.8: the rarest, farthest characters may take up to twice the mean cycle
 ok = [r for r in table if r['avg'] <= target and r['worst'] <= WORST_K * target]
-pick = min(ok, key=lambda r: r['tau'])
+pick_old = min(ok, key=lambda r: r['tau'])
+# rev. 0.14, stage 2b of the physics checks: the torque at the end of the wind is no longer picked by the mean cycle of
+# this simplified model -- on the shaft's real law (every load at once, the start from the latch) the shaft stops on
+# the cocking below params.TAU_END (tools/physics/stage2b.py, the least torque that turns every character, + 5 %)
+_a, _w, _l, _cg = run(P.TAU_END)
+pick = dict(tau=P.TAU_END, E=2 * math.pi * P.TAU_END, avg=_a, worst=_w, light=_l)
 
 
 def pick_for(chs):
@@ -218,6 +257,13 @@ M_max = SIG * bsp * tsp ** 2 / 6 / 1000.0
 M_avg = U_use / (2 * math.pi * N_turns)
 chars_energy = U_use * ETA_TRAIN / E_char
 chars_turns = N_turns * ratio
+# rev. 0.14 stage 2b: with the brake every character takes one turn of the shaft whatever the spring's torque, so the
+# characters per wind are the barrel's turns above M_need times the ratio; the spring's torque taken linear over its
+# turns from M_max (fully wound) to nothing (an assumption: the curve of a spiral spring in its barrel is to be measured)
+turns_usable = N_turns * max(0.0, 1.0 - M_need / M_max)
+chars_usable = turns_usable * ratio
+M_need_old = TAU_FAN * ratio / ETA_TRAIN           # rev. 0.14 before stage 2b: 18.5 mN m at the shaft
+chars_usable_old = N_turns * (1.0 - M_need_old / M_max) * ratio
 WIND = 3.0                                  # crank gear reduction
 crank_turns = N_turns * WIND
 crank_force = M_max / WIND / 0.085          # N at the 85 mm handle
@@ -233,7 +279,9 @@ res = dict(rot={k: round(v, 1) for k, v in rot.items()}, lift={k: round(v, 1) fo
            spring=dict(Rb=Rb, Ra=Ra, L=Lsp, b=bsp, t=tsp, turns=N_turns, U_theory=U_theory, U_use=U_use, M_max=M_max, M_avg=M_avg),
            chars_energy=chars_energy, M_need=M_need, chars_turns=chars_turns, crank_turns=crank_turns, crank_force=crank_force,
            I_old=2174.0, cps_avg=1 / pick['avg'], cps_worst=1 / pick['worst'], cps_light=1 / pick['light'],
-           compare=compare, worst_k=WORST_K)
+           compare=compare, worst_k=WORST_K, J0=J0, pick_old={k: float(v) for k, v in pick_old.items()},
+           turns_usable=turns_usable, chars_usable=chars_usable, chars_usable_old=chars_usable_old, M_need_old=M_need_old,
+           C_FAN=C_FAN, W_CAP=W_CAP, K_BRAKE=K_BRAKE, gov_T_free=P.GOV_T_FREE)
 json.dump(res, open(sys.argv[1], 'w'), indent=1, ensure_ascii=False)
 for k, v in res.items():
     if k != 'table':

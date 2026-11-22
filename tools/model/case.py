@@ -8,12 +8,12 @@ the Noldorin devices: eight- and sixteen-rayed stars, round-headed niches, lozen
     release key, one the winding crank's shaft);
   * fascia behind the keys: the inscription in tengwar, set as the machine itself types it (Alcarin, the page's
     transcriber, the machine's own advances), enlarged 1.55 times;
-  * the left tower: the owner's device (Mirë Nolmeo, v12) as an inlaid plaque; the right one: a pierced star over
-    the spring barrel;
+  * the left tower: a raised plaque for the owner's device (Mirë Nolmeo, v12; a decal, a texture on the page); the
+    right one: its deck pierced into a star over the spring barrel;
   * the pillars: fluted, with silver bases, capitals and sixteen-rayed star finials.
 Every part is in group 'case' and fixed; ornament on a panel is a separate part of kind 'inlay' (silver: printed with
-the panel by one filament change at the panel's face, everything above the face is silver), the device's colours are
-inlays of the plaque (multi-colour print, one STL per colour with a common origin, see build.py).
+the panel by one filament change at the panel's face, everything above the face is silver; the pillars' bases,
+capitals and finials likewise, two changes in the upright print).
 Clearances are not designed by hand only: the model's checks run the case against every motion (scenarios.py)."""
 import os, json, math
 import numpy as np
@@ -155,7 +155,8 @@ def inscription_geom(k=1.55):
     f = TTFont(os.path.join(ROOT, fontsets.BY_ID['alcarin']['file']))
     codes = json.load(open(os.path.join(ROOT, 'data', 'codes.json')))
     items, mark_ax = build_items(codes, f)
-    gs = f.getGlyphSet()
+    import glyphvar
+    gs = glyphvar.VarGlyphSet(f.getGlyphSet(), codes.get('synth'))      # rev. 0.14: marks moved into lambe
     J = json.load(open(os.path.join(ROOT, 'data', 'inscription.json')))
     U = P.U; S = P.EM / f['head'].unitsPerEm
     car = 0.0; mem = dict(b=0, c=0)
@@ -373,10 +374,14 @@ def _build():
     tdeck = tdeck.difference(unary_union([post(-1), post(1)]))
     grille_c = (201.0, (YT + YFA) / 2)
     dev_c = (-201.0, grille_c[1])
-    tdeck = tdeck.difference(Point(*grille_c).buffer(50.0, 96))
+    # rev. 0.12a: the star over the barrel is the tower's own deck, pierced between the rays (one printed piece)
+    gx, gy = grille_c
+    st = unary_union([feanor(gx, gy, 47.0), Point(gx, gy).buffer(50.0, 96).difference(Point(gx, gy).buffer(46.0, 96)),
+                      sbox(gx - 47.0, gy - 1.2, gx + 47.0, gy + 1.2), sbox(gx - 1.2, gy - 47.0, gx + 1.2, gy + 47.0)])
+    tdeck = tdeck.difference(Point(gx, gy).buffer(50.0, 96).difference(st))
+    fl = Point(gx, gy).buffer(55.0, 96).difference(Point(gx, gy).buffer(46.0, 96))
     topf = plane((0, 0, ZT), (1, 0, 0), (0, 1, 0))
-    orn = unary_union([lozenges(-COURT[0] + 10, COURT[0] - 10, COURT[1] - 8.0, 9.0, 16.0),
-                       frame_rule(Point(*grille_c).buffer(55.0, 96), 1.4),
+    orn = unary_union([lozenges(-COURT[0] + 10, COURT[0] - 10, COURT[1] - 8.0, 9.0, 16.0), st, fl,
                        frame_rule(Polygon([(dev_c[0], dev_c[1] + 59), (dev_c[0] + 59, dev_c[1]), (dev_c[0], dev_c[1] - 59),
                                            (dev_c[0] - 59, dev_c[1])]), 1.2)]).intersection(tdeck)
     cells = {'tower -1': sbox(-XI - 1, YT - 1, -XT, YFA), 'tower +1': sbox(XT, YT - 1, XI + 1, YFA),
@@ -385,8 +390,19 @@ def _build():
              'side -1 b': sbox(-XI - 1, -121.0, -COURT[0], COURT[2]), 'side +1 b': sbox(COURT[0], -121.0, XI + 1, COURT[2]),
              'pit -1': sbox(-XI - 1, PIT[1], -PIT[0], PIT[2]), 'pit +1': sbox(PIT[0], PIT[1], XI + 1, PIT[2]),
              'back -1': sbox(-XI - 1, PIT[2], -87.0, YB0), 'back 0': sbox(-87.0, PIT[2], 87.0, YB0), 'back +1': sbox(87.0, PIT[2], XI + 1, YB0)}
+    # rev. 0.12a: the device's plaque is a raised lozenge of the left tower's deck; the device itself is a picture on it
+    # (a printed decal from data/device/*.svg, or the top layers in colour), not parts: the page draws it as a texture
+    D = device_regions()
+    sc = 56.0 / D['half_diagonal']
+    lz = affinity.translate(affinity.scale(Polygon([(0, 270), (270, 0), (0, -270), (-270, 0)]), sc, sc, origin=(0, 0)), *dev_c)
+    plaque = geo.shapely_to_cs(lz).extrude(2.4).translate((0, 0, ZT))
+    _CACHE['decal'] = (D, sc, dev_c)
     for nm, cell in cells.items():
-        _deck_piece(add, f'case top {nm}', tdeck.intersection(cell), orn.intersection(cell), topf, 'case_top', z0=ZT - TD)
+        extra = [plaque] if nm == 'tower -1' else []
+        _deck_piece(add, f'case top {nm}', tdeck.intersection(cell), orn.intersection(cell), topf, 'case_top', z0=ZT - TD, extra=extra)
+        if extra:
+            add('case device plaque', plaque, None, (20, 20, 20), 'inlay',
+                note='щит с гербом Mírë Nolmeo: часть деки левой башни; рисунок — наклейка из data/device/*.svg (112 мм) или цветная печать верхних слоёв')
     # stiffening lips under the free edges (court, pit)
     lips = [geo.box(-COURT[0] - 3.0, COURT[0] + 3.0, COURT[1] - 3.0, COURT[1], ZT - TD - 6.0, ZT - TD)]
     for sx in (-1, 1):
@@ -405,57 +421,30 @@ def _build():
     for i, m in enumerate(pieces):
         add(f'case lip {i + 1}', m, 'case_lip', printable=_lay(m, 'auto'), note='ребро под свободным краем деки')
 
-    # ---------------------------------------------------------------- the pierced star over the barrel (right tower)
-    gx, gy = grille_c
-    ring = Point(gx, gy).buffer(49.6, 96).difference(Point(gx, gy).buffer(46.0, 96))
-    st = unary_union([feanor(gx, gy, 47.0), ring, sbox(gx - 47.0, gy - 1.2, gx + 47.0, gy + 1.2),
-                      sbox(gx - 1.2, gy - 47.0, gx + 1.2, gy + 47.0)])
-    fl = Point(gx, gy).buffer(55.0, 96).difference(Point(gx, gy).buffer(46.0, 96))
-    g = geo.shapely_to_cs(st).extrude(TD + 1.2).translate((0, 0, ZT - TD)) + geo.shapely_to_cs(fl).extrude(1.2).translate((0, 0, ZT))
-    add('case star grille', g, 'case_grille', SILVER, printable=_lay(g, 'z'), note='решётка-звезда над барабаном пружины, серебро')
-
-    # ---------------------------------------------------------------- the device plaque (left tower)
-    D = device_regions()
-    sc = 56.0 / D['half_diagonal']
-    lz = Polygon([(0, 270), (270, 0), (0, -270), (-270, 0)])
-    base = affinity.translate(affinity.scale(lz, sc, sc, origin=(0, 0)), *dev_c)
-    pb = geo.shapely_to_cs(base).extrude(2.4).translate((0, 0, ZT))
-    add('case device plaque', pb, 'case_device', (20, 20, 20), printable=_lay(pb, 'z'),
-        note='щит с гербом Mírë Nolmeo: многоцветная печать, файлы по цветам в stl/device/')
-    for r in D['regions']:
-        if r['color'] == '#141414':
-            continue                                    # the field of the lozenge is the plaque itself
-        polys = [Polygon(p[0], p[1:]).buffer(0) for p in r['polys']]
-        g = unary_union(polys)
-        g = affinity.translate(affinity.scale(g, sc, sc, origin=(0, 0)), *dev_c)
-        h = 0.3 + 0.9 * r['lum']
-        m = geo.shapely_to_cs(g).extrude(h).translate((0, 0, ZT + 2.4))
-        col = tuple(int(r['color'][i:i + 2], 16) for i in (1, 3, 5))
-        add(f'case device {r["color"][1:]}', m, None, col, 'inlay')
-
     # ---------------------------------------------------------------- pillars over the carriage's posts
     for sx in (-1, 1):
         cx, cy, hf = sx * PIL['x'], PIL['y'], PIL['half']
-        shaft = geo.box(cx - hf, cx + hf, cy - hf, cy + hf, PIL['z0'] + 10.0, PIL['z1'])
+        shaft = geo.box(cx - hf, cx + hf, cy - hf, cy + hf, PIL['z0'] + 9.6, PIL['z1'] + 0.4)
         shaft = shaft - geo.box(cx - PIL['hole'], cx + PIL['hole'], cy - PIL['hole'], cy + PIL['hole'], 0, PIL['z1'] + 1)
         ix = cx - sx * hf                                     # the inner face (toward the carriage): the rod goes in here
         shaft = shaft - geo.cyl((ix - 8, cy, P.CAR_RAIL_HI[1]), (ix + 8, cy, P.CAR_RAIL_HI[1]), 5.5, 32)
         for du in (-9.0, 0.0, 9.0):                           # flutes on the front and back faces
             for y0_, y1_ in ((cy - hf - 0.1, cy - hf + 1.2), (cy + hf - 1.2, cy + hf + 0.1)):
                 shaft = shaft - geo.box(cx + du - 2.0, cx + du + 2.0, y0_, y1_, PIL['z0'] + 22.0, PIL['z1'] - 12.0)
-        add(f'case pillar {sx:+d}', shaft, 'case_pillar', PILLAR, printable=_lay(shaft, 'z'),
-            note='пилястра над стойкой каретки, пустотелая; печатается стоя')
         base_ = geo.box(cx - hf - 3, cx + hf + 3, cy - hf - 3, cy + hf + 3, PIL['z0'], PIL['z0'] + 10.0) - \
             geo.box(cx - PIL['hole'], cx + PIL['hole'], cy - PIL['hole'], cy + PIL['hole'], 0, 400)
-        add(f'case pillar base {sx:+d}', base_, 'case_pillar_base', SILVER, printable=_lay(base_, 'z'))
         cap = geo.box(cx - hf - 4, cx + hf + 4, cy - hf - 4, cy + hf + 4, PIL['z1'], PIL['z1'] + 8.0) + \
             geo.box(cx - hf - 1.5, cx + hf + 1.5, cy - hf - 1.5, cy + hf + 1.5, PIL['z1'] + 8.0, PIL['z1'] + 12.0)
-        add(f'case pillar capital {sx:+d}', cap, 'case_pillar_cap', SILVER, printable=_lay(cap, 'z'))
         fin_c = PIL['z1'] + 12.0 + 24.0
-        fin = on_plane(unary_union([feanor(0.0, 0.0, 24.0), sbox(-5.0, -24.0, 5.0, -17.0)]),
+        fin = on_plane(unary_union([feanor(0.0, 0.0, 24.0), sbox(-5.0, -24.4, 5.0, -17.0)]),
                        plane((cx, cy, fin_c), (1, 0, 0), (0, 0, 1)), -3.0, 3.0)
-        add(f'case finial {sx:+d}', fin, 'case_finial', SILVER, printable=_lay(fin, 'y'),
-            note='навершие: шестнадцатилучевая звезда')
+        whole = shaft + base_ + cap + fin
+        add(f'case pillar {sx:+d}', shaft, 'case_pillar', PILLAR, printable=_lay(whole, 'z'),
+            note='пилястра над стойкой каретки с базой, капителью и навершием-звездой: одна деталь, печатается стоя, '
+                 'серебро — сменой прутка на высоте 10 мм (база) и 132 мм (капитель)')
+        add(f'case pillar base {sx:+d}', base_, None, SILVER, 'inlay')
+        add(f'case pillar capital {sx:+d}', cap, None, SILVER, 'inlay')
+        add(f'case finial {sx:+d}', fin, None, SILVER, 'inlay')
     return out
 
 
@@ -487,14 +476,17 @@ def _lay(m, axis):
     return f
 
 
-def _deck_piece(add, name, g, orn, face, bom, z0=None):
+def _deck_piece(add, name, g, orn, face, bom, z0=None, extra=()):
     g = polys_only(g)
     if g is None:
         return
     O, U, V, N = face
     body = on_plane(g, face, -TD, 0.0)
     inl = on_plane(orn.intersection(g), face, 0.0, H_IN) if orn is not None else None
-    add(name, body, bom, printable=_face_up(face, body, inl))
+    pr = inl
+    for e in extra:
+        pr = e if pr is None else pr + e
+    add(name, body, bom, printable=_face_up(face, body, pr))
     if inl is not None:
         add(name + ' inlay', inl, None, SILVER, 'inlay')
 
@@ -519,6 +511,22 @@ def _gap_cut(g, near):
             if not g.intersects(sbox(x - 0.8, -1000, x + 0.8, 1000)):
                 return float(x)
     return float(near)
+
+
+def decal_meshes():
+    """The device as thin coloured films on the plaque: for the document's pictures only (not parts; the page uses a
+    texture, the machine a decal)."""
+    parts()
+    D, sc, c = _CACHE['decal']
+    out = []
+    for r in D['regions']:
+        if r['color'] == '#141414':
+            continue
+        g = unary_union([Polygon(p[0], p[1:]).buffer(0) for p in r['polys']])
+        g = affinity.translate(affinity.scale(g, sc, sc, origin=(0, 0)), *c)
+        m = geo.shapely_to_cs(g).extrude(0.05).translate((0, 0, ZT + 2.4))
+        out.append((m, tuple(int(r['color'][i:i + 2], 16) for i in (1, 3, 5))))
+    return out
 
 
 def info():

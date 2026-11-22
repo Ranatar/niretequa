@@ -18,6 +18,7 @@ F = TTFont(font_path)
 GID = {n: i for i, n in enumerate(F.getGlyphOrder())}
 D = json.load(open(os.path.join(data_dir, 'codes.json')))
 U = D['U']
+SYNTH = D.get('synth', {})
 SPACE_W, SPACE_N = 6, 4
 
 from items import build_items, ADV, MARK_CP, BELOW_MARKS, QUENYA, SINDARIN
@@ -30,6 +31,8 @@ def hexs(cp):
 
 
 def gl(name, x=0, y=0, extra=''):
+    if name in SYNTH:                # rev. 0.14: a synthetic glyph (glyphvar.py): its base glyph, moved
+        b, dx, dy = SYNTH[name]; name, x, y = b, x + dx, y + dy
     return (f"\\node[anchor=base west,inner sep=0pt,outer sep=0pt{extra}] at ({x:.1f},{y:.1f}) "
             f"{{\\TG{{{GID[name]}}}}};\n")
 
@@ -310,7 +313,7 @@ files['fig_geometry.tex'] = fig_geometry()
 files['fig_slugs_adv.tex'] = row([(0xE000, 'tinco'), (0xE004, 'ando'), (0xE00A, 'harma'), (0xE028, 'hyarmen'),
                                   (0xE02E, 'telco'), ('combo:ára+e', 'ára+e')])
 files['fig_slugs_dead.tex'] = row([('mark:a', 'a'), ('mark:e', 'e'), ('mark:nasW', 'нос. шир.'), ('mark:ddotb', 'y'),
-                                   ('mark:dbl', 'удв. узк.'), ('mark:dblL', 'удв. lambe')])
+                                   ('mark:dbl', 'удв. узк.'), ('mark:dblL', 'удв. lambe'), ('mark:ddotbL', 'y в lambe')])
 files['keyboard.tex'] = keyboard()
 files['fig_shuttle.tex'] = fig_shuttle()
 files['tab_codes.tex'] = tab_codes()

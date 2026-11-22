@@ -184,7 +184,7 @@ def reader_parts(st, Part, COL):
     t = travels(st)
     for ch in CH:
         parts.append(Part(f'feeler {ch}', 'reader', 'buy', TU(feeler_mesh(ch, t[ch])), COL['steel'], 'feeler_strip', 'сталь',
-                          'щуп: полоса 1,6×2×22 мм, лапка с зажимом троса', mov=f'feel{ch}'))
+                          'щуп: полоса 1,6×2×22 мм, лапка с зажимом троса; на носу эластомерный наконечник 0,5 мм (ред. 0.14, ступень 2б: отскок от зубца ≤ 0,3 мм)', mov=f'feel{ch}'))
     parts.append(Part('reading retract bar', 'reader', 'buy', TU(retract_bar_mesh(P.READ_TRAVEL if max(t.values()) > 0 else 0.0)), COL['steel'], 'strip_retract', 'сталь',
                       'тяга отвода щупов (полоса 1,5 мм)', mov='feelbar'))
     parts.append(Part('reading stem and arm', 'reader', 'print', TU(_cached('stem', stem_mesh)), (120, 140, 190), 'read_stem', 'PETG',

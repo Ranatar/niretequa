@@ -216,12 +216,18 @@ def escape_link():
 
 # ------------------------------------------------------------------------------------------- hammer
 def hammer_geom():
-    swing = math.radians(18.0)
-    return dict(r_cock=6.0 / swing, swing_deg=18.0, cam_stroke=6.0)
+    """rev. 0.14: the cocking lever turns 21.4 deg (the hammer 18), arm to the rod's pin 6 / tan 21.4 = 15.3 mm."""
+    lev = math.radians(21.4)
+    return dict(r_cock=6.0 / math.tan(lev), swing_deg=18.0, lever_deg=21.4, cam_stroke=6.0)
+
+
+HAM_T0 = 0.015          # N m: spring preload (relative angle 0): holds the hammer's tab on the lip and the hammer home
 
 
 def hammer():
-    """Hammer cocked by its cam over 10..150 deg, released at 160 deg (sharp drop of the cam)."""
+    """rev. 0.14: the spring between the cocking lever and the hammer is wound against the sear over 10..160 deg; the
+    lever's lug trips the sear and the hammer flies alone over its 18 deg; it reaches the sheet with the spring still
+    3.4 deg wound past its preload (it is pressed there until the lip lifts it, 175..200 deg)."""
     import parts as PT, geo, trimesh
     V, F = geo.to_arrays(PT.hammer_mesh())
     tm = trimesh.Trimesh(V, F, process=False)
@@ -231,21 +237,26 @@ def hammer():
     I_c = tm.moment_inertia[0, 0]
     m = tm.mass                                     # kg
     d2 = (c[1] - yp) ** 2 + (c[2] - zp) ** 2
-    I = (I_c + m * d2) * 1e-6 + 2e-7                # kg m2 (+ rubber pad and spring end)
-    E = 0.020
-    swing = math.radians(18.0)
+    I = (I_c + m * d2) * 1e-6 + 2e-7 + 0.15e-7      # kg m2 (+ rubber pad, the collar and half the spring)
+    E = 0.020                                       # J delivered over the flight
+    g = hammer_geom()
+    swing, lev = math.radians(g['swing_deg']), math.radians(g['lever_deg'])
+    rel0, rel1 = lev - swing, lev                   # spring's relative wind at the blow and at the release
+    k = (E - HAM_T0 * swing) / (0.5 * (rel1 ** 2 - rel0 ** 2))   # N m / rad
     r_head = math.hypot(0 - yp, P.ZP - zp) * 1e-3  # m, pivot to the head
     w = math.sqrt(2 * E / I)
     v = w * r_head
-    t_flight = swing / (w / 2) if w else 0          # from rest under a roughly constant torque
-    # spring: torsion spring on the axle, preload so that the hammer rests on its back stop
-    T_mean = E / swing                              # N m over the swing
-    k_t = 2 * T_mean / swing * 0.5                  # half the torque is preload
-    r_cock = 6.0 / math.degrees(swing) * 180 / math.pi   # cam stroke 6 mm through a cocking arm
-    F_cam = T_mean / (r_cock * 1e-3) * 1.4          # peak about 1.4 x mean
-    return dict(mass_g=m * 1000, I_kgmm2=I * 1e6, r_head_mm=r_head * 1000, E=E, swing_deg=18.0, v_impact=v,
-                t_flight_ms=t_flight * 1000, T_mean_Nmm=T_mean * 1000, k_t_Nmm_per_deg=k_t * 1000 * math.pi / 180,
-                r_cock_mm=r_cock, F_cam_N=F_cam, cam_rise=(10, 150), release=160)
+    T_rel = HAM_T0 + k * rel1                       # at the release (the sear's load)
+    T_sheet = HAM_T0 + k * rel0                     # pressing the hammer on the sheet
+    t_flight = swing / (w / 2) if w else 0
+    E_wind = HAM_T0 * rel1 + 0.5 * k * rel1 ** 2    # cam work per cycle
+    r_cock = g['r_cock']
+    F_cam = T_rel / (r_cock * 1e-3) / math.cos(lev) ** 2
+    return dict(mass_g=m * 1000, I_kgmm2=I * 1e6, r_head_mm=r_head * 1000, E=E, swing_deg=18.0, lever_deg=21.4,
+                v_impact=v, t_flight_ms=t_flight * 1000, T_mean_Nmm=E / swing * 1000, T0_Nmm=HAM_T0 * 1000,
+                T_release_Nmm=T_rel * 1000, T_sheet_Nmm=T_sheet * 1000, k_t_Nmm_per_deg=k * 1000 * math.pi / 180,
+                E_wind=E_wind, r_cock_mm=r_cock, F_cam_N=F_cam, cam_rise=(10, P.CYCLE['strike'] + 11), release=P.CYCLE['strike'],
+                F_sear_N=T_rel / 6.5e-3, rod_return_N=P.COCK_ROD_N)
 
 
 # ------------------------------------------------------------------------------------------- row detent

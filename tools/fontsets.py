@@ -27,9 +27,18 @@ FONTSETS = [
     dict(id='annatar-bold', file='fonts/sets/TengwarAnnatarBold.ttf', name='Tengwar Annatar Bold', author='Johan Winge', lic='—', ds=True),
     dict(id='parmaite', file='fonts/sets/Parmaite.ttf', name='Tengwar Parmaitë', author='Måns Björkman', lic='—', ds=True),
     dict(id='reformalized', file='fonts/sets/Tengwar-Reformalized.ttf', name='Tengwar Reformalized', author='Jakob Teuber', lic='—', ds=True),
+    # rev. 0.12: Dan Smith's own Tengwar Sindarin (postcard-ware, non-commercial use only; see its README)
+    dict(id='sindarin', file='fonts/sets/TengwarSindarin.ttf', name='Tengwar Sindarin', author='Daniel Steven Smith',
+         lic='postcard-ware, некоммерч.', ds=True),
+    # rev. 0.14: Enrique Mombello's Tengwar Elfica (Dan Smith's layout; personal / non-commercial use, see its PDF;
+    # Elfica-A is a supplement of alternates for Elfica and is not a set of its own)
+    dict(id='elfica', file='fonts/sets/Elfica.ttf', name='Tengwar Elfica', author='Enrique Mombello', lic='личн., некоммерч.', ds=True),
     # rev. 0.11: CSUR without mark anchors, the axes from shaping (fontprof.raw_shaped, HarfBuzz)
     dict(id='eldamar', file='fonts/sets/Eldamar.ttf', name='Eldamar', author='Måns Björkman', lic='OFL', shaped=True),
-    dict(id='eldamar-old', file='fonts/sets/tengel__.ttf', name='Tengwar Eldamar', author='Måns Björkman', lic='—', shaped=True),
+    # rev. 0.12: Tengwar Telcontar (CSUR, Graphite only: HarfBuzz places no marks, the axes come from the outlines)
+    dict(id='telcontar', file='fonts/sets/TengwarTelcontar.ttf', name='Tengwar Telcontar', author='Johan Winge', lic='GPL 3 + font exception', shaped=True),
+    dict(id='telcontar-bold', file='fonts/sets/TengwarTelcontar-Bold.ttf', name='Tengwar Telcontar Bold', author='Johan Winge',
+         lic='GPL 3 + font exception', shaped=True),
     dict(id='formal', file='fonts/sets/TengwarFormalCSUR.ttf', name='Tengwar Formal CSUR', author='Michał Nowakowski', lic='—', shaped=True),
     dict(id='freemono', file='fonts/sets/FreeMonoTengwar-embedding.ttf', name='FreeMono Tengwar', author='GNU FreeFont', lic='GPL + font exception', shaped=True),
     dict(id='miue', file='fonts/sets/miue.ttf', name='miue serif', author='—', lic='—', shaped=True),

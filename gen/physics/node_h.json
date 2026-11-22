@@ -1,0 +1,178 @@
+{
+ "rows": [
+  {
+   "name": "sector return spring B",
+   "part": "memory sleeve B",
+   "kind": "key",
+   "t_ms": 50.0,
+   "m_g": 3.6971527945322253,
+   "m_eff_g": 8.960514138822388,
+   "travel_mm": 8.87234465906073,
+   "turn_deg": 32.62562034323367,
+   "dz_mm": 1.7947391770224854,
+   "F_min_N": 0.10880720674308339,
+   "preload_N": 0.2
+  },
+  {
+   "name": "sector return spring C",
+   "part": "memory sleeve C",
+   "kind": "key",
+   "t_ms": 50.0,
+   "m_g": 3.952481880705863,
+   "m_eff_g": 8.862294748246388,
+   "travel_mm": 9.381775174685009,
+   "turn_deg": 32.625618869667726,
+   "dz_mm": 2.2776607010848764,
+   "F_min_N": 0.11632154174917356,
+   "preload_N": 0.2
+  },
+  {
+   "name": "bksp link spring",
+   "part": "bksp link",
+   "kind": "key",
+   "t_ms": 50.0,
+   "m_g": 2.0679544689500102,
+   "m_eff_g": 2.315224271036523,
+   "travel_mm": 5.431255685935857,
+   "turn_deg": 2.297017371646791,
+   "dz_mm": 1.3918178878535414,
+   "F_min_N": 0.06666666666666667,
+   "preload_N": 0.1
+  },
+  {
+   "name": "back link spring",
+   "part": "back link",
+   "kind": "key",
+   "t_ms": 50.0,
+   "m_g": 2.346532629861861,
+   "m_eff_g": 2.5517330021947777,
+   "travel_mm": 21.31234180111,
+   "turn_deg": 6.7666355797162865,
+   "dz_mm": -6.761242614907971,
+   "F_min_N": 0.06905845529683458,
+   "preload_N": 0.15000000000000002
+  },
+  {
+   "name": "memory lever M return spring",
+   "part": "memory lever M",
+   "kind": "cycle",
+   "t_ms": 15.0,
+   "m_g": 0.7479679870673609,
+   "m_eff_g": 7.86961462103524,
+   "travel_mm": 6.24538944705511,
+   "turn_deg": 102.00000040484747,
+   "dz_mm": -1.764682622251712e-08,
+   "F_min_N": 0.5897856973072384,
+   "preload_N": 0.9
+  },
+  {
+   "name": "memory holding pawl spring",
+   "part": "memory holding pawl",
+   "kind": "pawl",
+   "m_g": 0.010464870932870166,
+   "preload_N": 0.1,
+   "why": "собачка: держится на упоре против толчков 3 g"
+  },
+  {
+   "name": "stop carrier spring",
+   "part": "stop carrier",
+   "kind": "cycle",
+   "t_ms": 15.0,
+   "m_g": 1.7233388791319395,
+   "m_eff_g": 1.7233388791319395,
+   "travel_mm": 8.995820480654345,
+   "turn_deg": 0.0,
+   "dz_mm": 1.0413273798803857e-08,
+   "F_min_N": 0.1860341662080361,
+   "preload_N": 0.30000000000000004
+  },
+  {
+   "name": "W latch pawl spring",
+   "part": "W latch pawl",
+   "kind": "pawl",
+   "m_g": 0.2692399999999994,
+   "preload_N": 0.1,
+   "why": "собачка: держится на упоре против толчков 3 g"
+  },
+  {
+   "name": "pm-u detent spring",
+   "part": "pm-u detent",
+   "kind": "pawl",
+   "m_g": 0.4708699438671672,
+   "preload_N": 0.1,
+   "why": "собачка: держится на упоре против толчков 3 g"
+  },
+  {
+   "name": "carriage release key spring",
+   "part": "carriage release key",
+   "kind": "key",
+   "t_ms": 50.0,
+   "m_g": 1.9095715625348622,
+   "m_eff_g": 3.4260528379393254,
+   "travel_mm": 2.4038939555396683,
+   "turn_deg": 12.373627522073082,
+   "dz_mm": -2.4027168060290123,
+   "F_min_N": 0.06666666666666667,
+   "preload_N": 0.1
+  },
+  {
+   "name": "read lock spring",
+   "part": "read lock pin",
+   "kind": "cycle",
+   "t_ms": 15.0,
+   "m_g": 1.123911050717301,
+   "m_eff_g": 1.123911050717301,
+   "travel_mm": 5.0,
+   "turn_deg": 0.0,
+   "dz_mm": 0.0,
+   "F_min_N": 0.06743466304303805,
+   "preload_N": 0.15000000000000002
+  },
+  {
+   "name": "hammer lock spring",
+   "part": "hammer lock pin",
+   "kind": "cycle",
+   "t_ms": 15.0,
+   "m_g": 1.3402042670184982,
+   "m_eff_g": 1.3402042670184982,
+   "travel_mm": 8.995834112167358,
+   "turn_deg": 0.0,
+   "dz_mm": -2.842170943040401e-14,
+   "F_min_N": 0.14467506315020714,
+   "preload_N": 0.25
+  },
+  {
+   "name": "ribbon vibrator return",
+   "part": "ribbon vibrator",
+   "kind": "ribbon",
+   "t_ms": 39.99999999999999,
+   "m_g": 14.984079844050127,
+   "m_eff_g": 14.984079844050303,
+   "travel_mm": 11.83232176280209,
+   "turn_deg": 1.7075472925031877e-06,
+   "dz_mm": 9.984054565429716,
+   "F_min_N": 0.44098146981039527,
+   "preload_N": 0.7000000000000001
+  },
+  {
+   "name": "detent pawl return",
+   "part": "detent pawl",
+   "kind": "cycle",
+   "t_ms": 15.0,
+   "m_g": 3.5138303757125757,
+   "m_eff_g": 3.5138303757125757,
+   "travel_mm": 9.34999950921788,
+   "turn_deg": 0.0,
+   "dz_mm": 3.4425255535097676e-08,
+   "F_min_N": 0.3942517474606496,
+   "preload_N": 0.6000000000000001
+  }
+ ],
+ "windows_ms": {
+  "cycle": 15.0,
+  "pawl": 5.0,
+  "key": 50.0,
+  "ribbon": 39.99999999999999
+ },
+ "mu": 0.35
+}

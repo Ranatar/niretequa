@@ -64,7 +64,11 @@ TAB_W = 3.0                      # tab width along the ring (the feeler is 1.6 m
 TAB_H = 2.6                      # tab height (z)
 READ_DZ = {'W': 3.6, 'B': 0.0, 'C': -3.6}   # tab rows of a cell, mm above the centre of the row
 READ_CH = ('W', 'B', 'C')
-READ_F_SPRING = {'W': 0.6, 'B': 0.45, 'C': 0.45}  # N, feeler springs (long, nearly constant over the stroke)
+READ_F_SPRING = {'W': 1.00, 'B': 0.75, 'C': 0.78}  # rev. 0.14 stage 2b (were 0.82 / 0.62 / 0.66): on the shaft's real law, with the speed-capping governor
+READ_TIP_E = 0.15             # rev. 0.14 stage 2b: elastomer tip on each feeler (restitution on its tab; bare steel 0.5)
+_OLD_READ_F_SPRING = {'W': 0.82, 'B': 0.62, 'C': 0.66}  # N, feeler springs (long, nearly constant over the stroke); rev. 0.14: node F with the carbon rods and the flywheel (a light cycle 0.27 s)
+                                                 # (physics checks, node F): 0.6/0.45/0.45 N did not bring the feelers
+                                                 # to their tabs in the window; with the carbon rods Y and X they do
 READ_F_LOAD = {'W': 0.35, 'B': 0.3, 'C': 0.3}     # N, what each feeler drags out: the escapement return spring (0.2 N
                                                  # in rev. 0.10); on B and C the follower and its pawl (as the old
                                                  # frames: 0.3 N); the wire's friction in its housing
@@ -73,11 +77,15 @@ TAPE_PER_POS = PULLEY_R * STEP   # tape travel per shuttle position, mm
 
 # cycle and spring motor
 CYCLE_T = 0.40                   # s per character on average (2.5 characters per second)
-CYCLE = dict(out=(10, 120), detent=(120, 185), ribbon=(155, 175), strike=160, back=(200, 310), feed=(310, 350),
-             read=(140, 150), wlatch=345)   # degrees of the cycle shaft
+CYCLE = dict(out=(10, 120), detent=(120, 185), ribbon=(155, 175), strike=158, back=(200, 310), feed=(200, 340),
+             read=(140, 150), wlatch=345, dog=325, u_in=(190, 350))   # degrees of the cycle shaft
 # rev. 0.10: 'read' -- the feelers are out: the cam lets them go over 118..140 and takes them back over 150..197, before the
 # shuttle moves back at 200 (a long return keeps the cam's torque low);
 # 'wlatch' -- the latch that holds frame W from the reading to the feed lets it go
+# rev. 0.14 (physics checks, node D): the feed starts right after the blow, at 200 deg, not at 310: the carriage spring
+# then needs about 1 N instead of 27 and the carriage meets U's finger with 1/20 of the energy; the holding dog D stays
+# out until 'dog' (325 deg), when the carriage has settled on the finger (rebounds die out), and drops in before U
+# is drawn out at 350; 'u_in': U's finger is in the teeth from 190 deg (after the reading, before the feed)
 
 # keyboard and levers
 KEY_ROW_Y = [-250.0 - 19 * r for r in range(4)]
@@ -135,3 +143,20 @@ def info():
 if __name__ == '__main__':
     for k, v in info().items():
         print(k, v)
+
+# rev. 0.14 (physics checks): carriage drive spring (constant-force spring motor), N -- sized by node D for the feed
+# window 200..325 deg at the governor's free speed; key return springs on the stems, N (node A)
+CAR_SPRING_N = 7.0            # rev. 0.14 stage 2b (was 4.0): the carriage settles on U before D on the real law;            # rev. 0.14 (node D): constant-force carriage motor; settled on U (elastomer pad) by 315 deg
+KEY_RETURN_N = 0.2            # rev. 0.14 (node A): return spring on each key stem (0.09 N was short)
+# rev. 0.14b: the return spring is under the lever (a stem has no room for it), on a bar at y = KRS_Y; one spring for all
+# keys: KRS_PRE at rest gives KEY_RETURN_N at the key of the longest lever (spaces), more on the shorter ones
+KRS_Y = -222.0
+KRS_K = 0.01                  # N/mm
+KRS_PRE = round(KEY_RETURN_N * (LEVER_PIVOT_Y - SPACE_Y) / (LEVER_PIVOT_Y - KRS_Y), 2)    # 0.34 N
+
+# rev. 0.14, stage 2b of the physics checks (docs/physics_checks_log.md, run 6): the drive as the author accepted it
+TAPE_PRELOAD_N = 16.0         # closed rotate tape's tensioner (was 10)
+COCK_ROD_N = 3.0              # cocking rod's return spring (was 2.5)
+GOV_T_FREE = 0.25             # s per free turn where the governor's centrifugal brake grips (speed cap)
+GOV_K_BRAKE = 0.05            # N m per rad/s above the cap (the brake's slope at the cycle shaft)
+TAU_END = 0.0394              # N m at the cycle shaft at the end of the wind: the least that turns every character (+5 %)

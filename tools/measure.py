@@ -10,10 +10,11 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from fontTools.ttLib import TTFont
 from fontTools.pens.boundsPen import BoundsPen
 import inventory as inv
+import glyphvar as GV
 
 font_path, out = sys.argv[1], sys.argv[2]
 f = TTFont(font_path)
-cmap = f.getBestCmap(); hm = f['hmtx']; gs = f.getGlyphSet()
+cmap = f.getBestCmap(); hm = f['hmtx']; gs = GV.VarGlyphSet(f.getGlyphSet())
 UPM = f['head'].unitsPerEm
 U = UPM / 16.0
 gpos = f['GPOS'].table
@@ -55,6 +56,14 @@ for cp, name in inv.TENGWAR:
                                 w=w, a=a, b=b,
                                 err_top=(a * U - top[0]) / U,          # residual of axis vs true top anchor, in u
                                 d_bot=(bot[0] - top[0]) / U))          # bottom axis offset from top axis, in u
+
+# rev. 0.14: the two dots of y moved into lambe's bowl, onto the middle of Alcarin's own doubling bar for lambe
+_lam = cmap[0xE022]; _ax = base_anchor[_lam]['botL'][0]
+_lb = bounds('uniE051.lambe'); _la = mark_anchor['uniE051.lambe'][0]
+_dx, _dy = GV.place_in(gs, 'uniE043', mark_anchor['uniE043'][0], _lam, _ax, (_ax - _la + 0.5 * (_lb[0] + _lb[2]), 0.5 * (_lb[1] + _lb[3])))
+gs.add('uniE043' + GV.SUFFIX, 'uniE043', _dx, _dy)
+mark_anchor['uniE043' + GV.SUFFIX] = (mark_anchor['uniE043'][0], mark_anchor['uniE043'][1] + _dy)
+data['synth'] = {n: list(v) for n, v in gs.extra.items()}
 
 for key, g, kind, role in inv.MARKS:
     bb = bounds(g); ma = mark_anchor.get(g, ((bb[0] + bb[2]) / 2, 0))

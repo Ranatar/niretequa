@@ -986,6 +986,14 @@
    "label": "метка младшего разряда",
    "kind": "DB",
    "missing": false
+  },
+  {
+   "row": 8,
+   "pos": 9,
+   "key": "mark:ddotbL",
+   "label": "две точки в lambe/alda — y",
+   "kind": "DX",
+   "missing": false
   }
  ],
  "code_bad": [],
@@ -997,7 +1005,7 @@
   "fails": []
  },
  "strike": {
-  "n": 86,
+  "n": 87,
   "bad": 0,
   "fails": []
  },

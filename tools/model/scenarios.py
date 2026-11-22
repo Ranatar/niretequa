@@ -62,8 +62,8 @@ def cycle_state(a, pos_t, row_t, **kw):
         if P.CYCLE['read'][0] <= a <= P.CYCLE['wlatch']:
             fr['Wr'] = P.READ_K * v[0]
         kw = dict(kw, feel=feel, frames=dict(kw.get('frames', {}), **fr))
-    if 'u_in' not in kw:               # rev. 0.11: U's finger goes into the teeth for the release (feed 310..350 deg)
-        kw = dict(kw, u_in=300.0 <= a <= 350.0)
+    if 'u_in' not in kw:               # rev. 0.11: U's finger goes into the teeth for the release; rev. 0.14: from 190 deg
+        kw = dict(kw, u_in=P.CYCLE['u_in'][0] <= a <= P.CYCLE['u_in'][1])
     return PT.State(pos=home_p + (pos_t - home_p) * k, row=P.REST_ROW + (row_t - P.REST_ROW) * k, cycle=a, bits=bits,
                     detent=PT.cam_lift('detent', a), hammer=0.0 if kw.get('lock_hammer') else PT.cam_lift('strike', a),
                     cock=PT.cam_lift('cock', a),
@@ -129,7 +129,7 @@ def run(verbose=True):
             for lk in (0.0, 1.0):
                 su = P.MARK_REF_U if 'O' in fr else 0.0          # a dead mark retracts the unit to the step of memory 0
                 st = PT.State(pressed={k['n']: 1.0}, frames=fr, tier=tier, lock=lk, slide_u=su)
-                for r in check_moving(st, [f"key{k['n']}", 'bail', 'sel', 'bit', 'tier', 'follow', 'lock', 'spring', 'nsel', 'orod', 'orock',
+                for r in check_moving(st, [f"key{k['n']}", f"kspring{k['n']}", 'bail', 'sel', 'bit', 'tier', 'follow', 'lock', 'spring', 'nsel', 'orod', 'orock',
                                            'obc', 'stop', 'uframe']):
                     out.append((f"key {k['id']} tier {tier} lock {lk}",) + r)
     report['keys'] = out

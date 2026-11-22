@@ -18,7 +18,7 @@ _slugs = {}
 
 def slug(name):
     if name not in _slugs:
-        fn = os.path.join(CACHE, f'slug_{name}_{P.EM:.3f}_{PMIN}.pkl')        # rev. 0.11: CACHE is per font
+        fn = os.path.join(CACHE, D.fsname(f'slug_{name}_{P.EM:.3f}_{PMIN}.pkl'))        # rev. 0.11: CACHE is per font
         if os.path.exists(fn):
             _slugs[name] = pickle.load(open(fn, 'rb'))
         else:

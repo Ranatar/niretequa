@@ -1,14 +1,14 @@
 {
  "numbers": {
-  "parts": 813,
-  "unique_print": 316,
+  "parts": 885,
+  "unique_print": 331,
   "rest_interferences": 0,
-  "contacts": 77,
+  "contacts": 84,
   "contacts_failed": 0,
-  "strike": 86,
+  "strike": 87,
   "strike_failed": 0,
-  "numbered": 192,
-  "numbered_top": 132,
+  "numbered": 189,
+  "numbered_top": 134,
   "scen": {
    "shuttle": 0,
    "slide": 0,
@@ -40,7 +40,7 @@
    [
     -265.8,
     -412.0,
-    0.0
+    -4.0
    ],
    [
     299.0,
@@ -48,9 +48,9 @@
     374.1
    ]
   ],
-  "case_parts": 72,
-  "case_inlays": 60,
-  "case_mass_g": 2406.0,
+  "case_parts": 64,
+  "case_inlays": 34,
+  "case_mass_g": 2401.0,
   "case_extent": [
    [
     -265.8,
@@ -71,7 +71,7 @@
    "height": 13.0,
    "scale": 1.55
   },
-  "print_mass_g": 5068.0,
+  "print_mass_g": 4976.0,
   "not_fit": []
  },
  "bom": [
@@ -202,7 +202,7 @@
    "mat": "PETG",
    "note": "",
    "qty": 47,
-   "vol": 108119.05140996866,
+   "vol": 108162.40351175384,
    "names": [
     "cap k00",
     "cap k01",
@@ -260,7 +260,7 @@
    "mat": "PETG",
    "note": "",
    "qty": 49,
-   "vol": 10045.656729459444,
+   "vol": 17004.596963609656,
    "names": [
     "stem k00",
     "stem k01",
@@ -333,7 +333,7 @@
    "mat": "PETG",
    "note": "печатается двумя частями, стыкуется на накладке",
    "qty": 1,
-   "vol": 60237.14821364999,
+   "vol": 61163.25,
    "names": [
     "key comb"
    ]
@@ -345,7 +345,7 @@
    "mat": "PETG",
    "note": "",
    "qty": 1,
-   "vol": 12826.091413346805,
+   "vol": 12865.5,
    "names": [
     "space comb"
    ]
@@ -357,7 +357,7 @@
    "mat": "PETG",
    "note": "",
    "qty": 49,
-   "vol": 515803.36902144947,
+   "vol": 509619.3638348863,
    "names": [
     "lever k00",
     "lever k01",
@@ -411,13 +411,13 @@
    ]
   },
   {
-   "id": "rod4x280",
+   "id": "rod4x315",
    "kind": "buy",
    "group": "levers",
    "mat": "сталь",
-   "note": "пруток 4 мм, 280 мм",
+   "note": "пруток 4 мм, 315 мм, с канавками под стопорные кольца",
    "qty": 1,
-   "vol": 3428.843553991204,
+   "vol": 3857.448998240102,
    "names": [
     "lever pivot rod"
    ]
@@ -509,13 +509,95 @@
    ]
   },
   {
+   "id": "bar4x6",
+   "kind": "cut",
+   "group": "levers",
+   "mat": "сталь",
+   "note": "полоса 4×6 мм, 222 мм, с бобышками под пружины (запрессованные штифты)",
+   "qty": 1,
+   "vol": 5930.37481343673,
+   "names": [
+    "key return bar"
+   ]
+  },
+  {
+   "id": "krs_post",
+   "kind": "print",
+   "group": "levers",
+   "mat": "PETG",
+   "note": "стойка на основании, два самореза",
+   "qty": 2,
+   "vol": 1175.9999999999995,
+   "names": [
+    "key return bar post -1",
+    "key return bar post +1"
+   ]
+  },
+  {
+   "id": "spring_key",
+   "kind": "buy",
+   "group": "levers",
+   "mat": "сталь",
+   "note": "пружина сжатия 3,5×0,3 мм, 0,34 Н в покое, 0.01 Н/мм",
+   "qty": 46,
+   "vol": 3181.748229937486,
+   "names": [
+    "key return spring k00",
+    "key return spring k01",
+    "key return spring k02",
+    "key return spring k03",
+    "key return spring k04",
+    "key return spring k05",
+    "key return spring k06",
+    "key return spring k07",
+    "key return spring k08",
+    "key return spring k09",
+    "key return spring k010",
+    "key return spring k10",
+    "key return spring k11",
+    "key return spring k12",
+    "key return spring k13",
+    "key return spring k14",
+    "key return spring k15",
+    "key return spring k16",
+    "key return spring k17",
+    "key return spring k18",
+    "key return spring k19",
+    "key return spring k110",
+    "key return spring k20",
+    "key return spring k21",
+    "key return spring k22",
+    "key return spring k23",
+    "key return spring k24",
+    "key return spring k25",
+    "key return spring k26",
+    "key return spring k27",
+    "key return spring k28",
+    "key return spring k29",
+    "key return spring k210",
+    "key return spring k30",
+    "key return spring k31",
+    "key return spring k32",
+    "key return spring k33",
+    "key return spring k34",
+    "key return spring k35",
+    "key return spring k36",
+    "key return spring k37",
+    "key return spring k38",
+    "key return spring k39",
+    "key return spring k310",
+    "key return spring space4",
+    "key return spring space6"
+   ]
+  },
+  {
    "id": "code_plate",
    "kind": "print",
    "group": "plates",
    "mat": "PETG",
    "note": "",
    "qty": 46,
-   "vol": 142830.17303801887,
+   "vol": 142755.17303801887,
    "names": [
     "plate k00",
     "plate k01",
@@ -571,8 +653,8 @@
    "group": "plates",
    "mat": "сталь",
    "note": "установочный винт М3×25, плоский конец",
-   "qty": 96,
-   "vol": 16200.000000000176,
+   "qty": 98,
+   "vol": 16537.50000000018,
    "names": [
     "grub k00 R0",
     "grub k00 R1",
@@ -594,6 +676,8 @@
     "grub k08 O1",
     "grub k08 N1",
     "grub k09 R0",
+    "grub k09 O1",
+    "grub k09 N1",
     "grub k010 R0",
     "grub k10 R0",
     "grub k10 R1",
@@ -730,8 +814,8 @@
    "group": "bails",
    "mat": "сталь",
    "note": "направляющие 3 мм",
-   "qty": 9,
-   "vol": 4287.6778624127055,
+   "qty": 12,
+   "vol": 4792.430881081013,
    "names": [
     "bail R guides -1",
     "bail R guides +1",
@@ -741,7 +825,10 @@
     "bail O guides +1",
     "bail N guides -1",
     "bail N guides +1",
-    "stop carrier rod"
+    "stop carrier rod",
+    "governor arbor",
+    "return rod rotate",
+    "return rod lift"
    ]
   },
   {
@@ -909,16 +996,14 @@
    "group": "sectors",
    "mat": "сталь",
    "note": "ось собачек памяти",
-   "qty": 7,
-   "vol": 674.0647509447948,
+   "qty": 5,
+   "vol": 432.67500000000257,
    "names": [
     "memory pawl shaft",
     "stop bellcrank pin",
     "stop selector pin",
     "O rocker pin",
-    "O bellcrank pin",
-    "memory zero stop",
-    "governor arbor"
+    "O bellcrank pin"
    ]
   },
   {
@@ -983,11 +1068,11 @@
    ]
   },
   {
-   "id": "rod2x430",
+   "id": "cfrod2x430",
    "kind": "buy",
    "group": "sectors",
-   "mat": "сталь",
-   "note": "тяга 2 мм, 430 мм (работает на растяжение)",
+   "mat": "углепластик",
+   "note": "тяга 2 мм, 430 мм, углепластиковый пруток (работает на растяжение; ред. 0.14: вместо стали — щупу W вчетверо легче)",
    "qty": 1,
    "vol": 1387.8021102434634,
    "names": [
@@ -1079,11 +1164,11 @@
    ]
   },
   {
-   "id": "rod2x160",
+   "id": "cfrod2x160",
    "kind": "buy",
    "group": "sectors",
-   "mat": "сталь",
-   "note": "тяга 2 мм к упору спуска",
+   "mat": "углепластик",
+   "note": "тяга 2 мм к упору спуска, углепластиковый пруток (ред. 0.14)",
    "qty": 1,
    "vol": 454.1999999999973,
    "names": [
@@ -1532,12 +1617,51 @@
    "kind": "buy",
    "group": "uframe",
    "mat": "сталь",
-   "note": "стальная лента 5×0,1 мм",
-   "qty": 2,
-   "vol": 23.466291627010666,
+   "note": "стальная лента 2,5×0,1 мм (прямая ветвь)",
+   "qty": 3,
+   "vol": 42.84653606780389,
    "names": [
     "rotate tape",
+    "rotate tape return",
     "escapement tape"
+   ]
+  },
+  {
+   "id": "idler8x3",
+   "kind": "buy",
+   "group": "uframe",
+   "mat": "сталь",
+   "note": "ролик обратной ветви ленты (ред. 0.14)",
+   "qty": 1,
+   "vol": 174.80092852645092,
+   "names": [
+    "rotate tape idler"
+   ]
+  },
+  {
+   "id": "pin3x12",
+   "kind": "buy",
+   "group": "uframe",
+   "mat": "сталь",
+   "note": "ось ролика (ред. 0.14)",
+   "qty": 3,
+   "vol": 180.902678734601,
+   "names": [
+    "rotate tape idler post",
+    "return rocker pin rotate",
+    "return rocker pin lift"
+   ]
+  },
+  {
+   "id": "tape_tensioner",
+   "kind": "print",
+   "group": "uframe",
+   "mat": "PETG",
+   "note": "натяжитель обратной ветви: пружина 16 Н в ползунке (ред. 0.14, ступень 2б)",
+   "qty": 1,
+   "vol": 68.40000000000009,
+   "names": [
+    "rotate tape tensioner"
    ]
   },
   {
@@ -1781,12 +1905,13 @@
    "group": "uframe",
    "mat": "сталь",
    "note": "палец выходного ползуна",
-   "qty": 3,
-   "vol": 87.69599999999976,
+   "qty": 4,
+   "vol": 108.39599999999972,
    "names": [
     "lift output pin",
     "bksp tail pin",
-    "back tail pin"
+    "back tail pin",
+    "cycle trip pin"
    ]
   },
   {
@@ -1844,7 +1969,7 @@
    "mat": "PETG",
    "note": "тяга взвода от кулачка молотка",
    "qty": 1,
-   "vol": 5020.070618052324,
+   "vol": 4974.609845788029,
    "names": [
     "hammer trip link"
    ]
@@ -1854,9 +1979,9 @@
    "kind": "buy",
    "group": "uframe",
    "mat": "сталь",
-   "note": "толкатель взвода",
+   "note": "толкатель взвода; возвратная пружина 2,5 Н (ред. 0.14)",
    "qty": 6,
-   "vol": 3982.6681399731156,
+   "vol": 4022.6044500389917,
    "names": [
     "hammer cocking rod",
     "cam rod lift",
@@ -1871,9 +1996,9 @@
    "kind": "print",
    "group": "uframe",
    "mat": "PETG",
-   "note": "взводной рычаг на оси молотка",
+   "note": "взводной рычаг на оси молотка: губа на упоре молотка, кулачок спуска шептала (ред. 0.14)",
    "qty": 1,
-   "vol": 342.4544990789579,
+   "vol": 395.4691607733144,
    "names": [
     "hammer cocking lever"
    ]
@@ -1883,11 +2008,47 @@
    "kind": "buy",
    "group": "uframe",
    "mat": "сталь",
-   "note": "пружина кручения 0,8 мм, 4 витка",
+   "note": "пружина кручения между рычагом взвода и молотком (ред. 0.14)",
    "qty": 1,
-   "vol": 154.10295483733233,
+   "vol": 149.43316832711017,
    "names": [
     "hammer spring"
+   ]
+  },
+  {
+   "id": "hammer_sear",
+   "kind": "print",
+   "group": "uframe",
+   "mat": "PETG",
+   "note": "шептало: держит зуб втулки молотка; пружина 0,3 Н (ред. 0.14)",
+   "qty": 1,
+   "vol": 50.6157558427634,
+   "names": [
+    "hammer sear"
+   ]
+  },
+  {
+   "id": "pin2x6",
+   "kind": "buy",
+   "group": "uframe",
+   "mat": "сталь",
+   "note": "ось шептала (ред. 0.14)",
+   "qty": 1,
+   "vol": 16.200000000000074,
+   "names": [
+    "hammer sear pin"
+   ]
+  },
+  {
+   "id": "sear_bracket",
+   "kind": "print",
+   "group": "uframe",
+   "mat": "PETG",
+   "note": "кронштейн шептала на стойке молотка (ред. 0.14)",
+   "qty": 1,
+   "vol": 217.48272249922496,
+   "names": [
+    "hammer sear bracket"
    ]
   },
   {
@@ -1939,6 +2100,30 @@
    ]
   },
   {
+   "id": "spring_ext_0.5N",
+   "kind": "buy",
+   "group": "uframe",
+   "mat": "сталь",
+   "note": "пружина растяжения клина ряда, 0,5 Н (ред. 0.14)",
+   "qty": 1,
+   "vol": 37.15199999999954,
+   "names": [
+    "row detent wedge spring"
+   ]
+  },
+  {
+   "id": "row_lug",
+   "kind": "print",
+   "group": "uframe",
+   "mat": "PETG",
+   "note": "ушко пружины клина на стойке (ред. 0.14)",
+   "qty": 1,
+   "vol": 382.83039447944736,
+   "names": [
+    "row detent wedge lug"
+   ]
+  },
+  {
    "id": "pin4x4",
    "kind": "buy",
    "group": "uframe",
@@ -1980,11 +2165,10 @@
    "group": "uframe",
    "mat": "сталь",
    "note": "ось вилки подъёма",
-   "qty": 2,
-   "vol": 538.8182727700486,
+   "qty": 1,
+   "vol": 244.91739671365866,
    "names": [
-    "lift fork pin",
-    "hammer axle"
+    "lift fork pin"
    ]
   },
   {
@@ -1997,6 +2181,30 @@
    "vol": 3579.0084403634405,
    "names": [
     "hammer"
+   ]
+  },
+  {
+   "id": "rod4x25",
+   "kind": "buy",
+   "group": "hammer",
+   "mat": "сталь",
+   "note": "ось 4 мм, запрессована в молоток (ред. 0.14)",
+   "qty": 1,
+   "vol": 300.0238109742314,
+   "names": [
+    "hammer axle"
+   ]
+  },
+  {
+   "id": "hammer_collar",
+   "kind": "print",
+   "group": "hammer",
+   "mat": "PETG",
+   "note": "втулка молотка на оси: зуб под шептало, упор под губу рычага (ред. 0.14)",
+   "qty": 1,
+   "vol": 149.80848948024087,
+   "names": [
+    "hammer collar"
    ]
   },
   {
@@ -2043,7 +2251,7 @@
    "mat": "сталь",
    "note": "",
    "qty": 3,
-   "vol": 74.25000000000006,
+   "vol": 76.65000000000003,
    "names": [
     "hammer lock axle",
     "read rocker axle",
@@ -2177,7 +2385,7 @@
    "mat": "PETG",
    "note": "литерный блок: 8 литер, лицом вверх, слой 0,1",
    "qty": 1,
-   "vol": 3144.758056530074,
+   "vol": 3146.1662237081996,
    "names": [
     "type block 9"
    ]
@@ -2240,6 +2448,18 @@
    "vol": 494.75749161476483,
    "names": [
     "shuttle bushing"
+   ]
+  },
+  {
+   "id": "collar_keeper",
+   "kind": "print",
+   "group": "shuttle",
+   "mat": "PETG",
+   "note": "держатель: две лапки под воротник подъёма (ред. 0.14)",
+   "qty": 1,
+   "vol": 517.9481878360542,
+   "names": [
+    "lift collar keeper"
    ]
   },
   {
@@ -2424,7 +2644,7 @@
    "kind": "buy",
    "group": "reader",
    "mat": "сталь",
-   "note": "щуп: полоса 1,6×2×22 мм, лапка с зажимом троса",
+   "note": "щуп: полоса 1,6×2×22 мм, лапка с зажимом троса; на носу эластомерный наконечник 0,5 мм (ред. 0.14, ступень 2б: отскок от зубца ≤ 0,3 мм)",
    "qty": 3,
    "vol": 245.99999999999963,
    "names": [
@@ -2659,6 +2879,19 @@
    ]
   },
   {
+   "id": "guide_cheek",
+   "kind": "print",
+   "group": "carriage",
+   "mat": "PETG",
+   "note": "щёчка направляющей бумаги на торцевой стенке, винт М3 (ред. 0.14)",
+   "qty": 2,
+   "vol": 3060.4972388978435,
+   "names": [
+    "paper guide cheek -1",
+    "paper guide cheek +1"
+   ]
+  },
+  {
    "id": "roller14",
    "kind": "buy",
    "group": "carriage",
@@ -2725,7 +2958,7 @@
    "kind": "print",
    "group": "esc",
    "mat": "PETG",
-   "note": "упор полей на кронштейне спуска, между упорами левого и правого поля",
+   "note": "упор полей на кронштейне спуска, между упорами левого и правого поля; на обеих гранях накладки из полиуретана 1 мм (ред. 0.14, ступень 2б)",
    "qty": 1,
    "vol": 242.23541237596046,
    "names": [
@@ -2742,6 +2975,19 @@
    "vol": 29599.999999999825,
    "names": [
     "paper rest"
+   ]
+  },
+  {
+   "id": "rest_arm",
+   "kind": "print",
+   "group": "carriage",
+   "mat": "PETG",
+   "note": "кронштейн подставки бумаги на торцевой стенке (ред. 0.14)",
+   "qty": 2,
+   "vol": 5610.0,
+   "names": [
+    "paper rest arm -1",
+    "paper rest arm +1"
    ]
   },
   {
@@ -2833,7 +3079,7 @@
    "kind": "print",
    "group": "esc",
    "mat": "PETG",
-   "note": "палец U: ползун в пазу рычага; в покое выведен из зубьев на 3 мм, входит перед спуском",
+   "note": "палец U: ползун в пазу рычага; в покое выведен из зубьев на 3 мм, входит перед спуском; на рабочей грани накладка из полиуретана 1 мм (ред. 0.14)",
    "qty": 1,
    "vol": 72.12948763956872,
    "names": [
@@ -2934,6 +3180,18 @@
    "vol": 468.1665389308396,
    "names": [
     "memory ratchet sector"
+   ]
+  },
+  {
+   "id": "rod3x25",
+   "kind": "buy",
+   "group": "esc",
+   "mat": "сталь",
+   "note": "упор нуля M: стальной штифт 3 мм в мостике над линейкой полей (ред. 0.14)",
+   "qty": 1,
+   "vol": 170.50998691354022,
+   "names": [
+    "memory zero stop"
    ]
   },
   {
@@ -3326,6 +3584,94 @@
    ]
   },
   {
+   "id": "gov_brake_plate",
+   "kind": "print",
+   "group": "drive",
+   "mat": "PETG",
+   "note": "тормозная шайба регулятора на стойке (два самореза в основание); левая опора оси; винт уставки скорости",
+   "qty": 1,
+   "vol": 516.9421408414719,
+   "names": [
+    "governor brake plate"
+   ]
+  },
+  {
+   "id": "felt13",
+   "kind": "buy",
+   "group": "drive",
+   "mat": "войлок",
+   "note": "войлочное кольцо 13×5×0,6 мм, наклеено на шайбу",
+   "qty": 1,
+   "vol": 67.93163237572912,
+   "names": [
+    "governor brake pad"
+   ]
+  },
+  {
+   "id": "gov_collar",
+   "kind": "buy",
+   "group": "drive",
+   "mat": "латунь",
+   "note": "скользящая муфта: латунь, торец по войлоку",
+   "qty": 1,
+   "vol": 187.49757501161292,
+   "names": [
+    "governor sliding collar"
+   ]
+  },
+  {
+   "id": "gov_collar_fix",
+   "kind": "buy",
+   "group": "drive",
+   "mat": "латунь",
+   "note": "неподвижная муфта: латунь, штифт 1 мм в оси",
+   "qty": 1,
+   "vol": 91.88523920731154,
+   "names": [
+    "governor fixed collar"
+   ]
+  },
+  {
+   "id": "gov_leaf",
+   "kind": "buy",
+   "group": "drive",
+   "mat": "сталь",
+   "note": "плоская пружина 0,1×2 мм между муфтами",
+   "qty": 3,
+   "vol": 6.318761621332925,
+   "names": [
+    "governor leaf spring 1",
+    "governor leaf spring 2",
+    "governor leaf spring 3"
+   ]
+  },
+  {
+   "id": "gov_weight",
+   "kind": "buy",
+   "group": "drive",
+   "mat": "латунь",
+   "note": "грузик регулятора: латунный шарик Ø4 мм на пружине",
+   "qty": 3,
+   "vol": 95.14973303486617,
+   "names": [
+    "governor weight 1",
+    "governor weight 2",
+    "governor weight 3"
+   ]
+  },
+  {
+   "id": "disc31x3",
+   "kind": "buy",
+   "group": "drive",
+   "mat": "сталь",
+   "note": "маховик регулятора: стальной диск 31×3,2 мм на оси регулятора (ред. 0.14)",
+   "qty": 1,
+   "vol": 2386.3223121864003,
+   "names": [
+    "governor flywheel"
+   ]
+  },
+  {
    "id": "rod8x380",
    "kind": "buy",
    "group": "drive",
@@ -3339,10 +3685,10 @@
   },
   {
    "id": "cam_lift",
-   "kind": "print",
+   "kind": "cut",
    "group": "drive",
-   "mat": "PETG",
-   "note": "",
+   "mat": "сталь",
+   "note": "кулачок: сталь 45 5 мм, закалка; ролик закалённый (ред. 0.14)",
    "qty": 1,
    "vol": 3987.317674201485,
    "names": [
@@ -3351,10 +3697,10 @@
   },
   {
    "id": "cam_rotate",
-   "kind": "print",
+   "kind": "cut",
    "group": "drive",
-   "mat": "PETG",
-   "note": "",
+   "mat": "сталь",
+   "note": "кулачок: сталь 45 5 мм, закалка; ролик закалённый (ред. 0.14)",
    "qty": 1,
    "vol": 3987.3176742014857,
    "names": [
@@ -3380,7 +3726,7 @@
    "mat": "PETG",
    "note": "",
    "qty": 1,
-   "vol": 1634.3172804710018,
+   "vol": 1974.3242552073043,
    "names": [
     "cam hammer"
    ]
@@ -3395,6 +3741,30 @@
    "vol": 2296.88078762323,
    "names": [
     "cam ribbon"
+   ]
+  },
+  {
+   "id": "cam_rotate_return",
+   "kind": "cut",
+   "group": "drive",
+   "mat": "сталь",
+   "note": "обратный кулачок: сталь 45 5 мм, закалка; профиль — основной через коромысло, в выстое отступ 0,5 мм (ред. 0.14)",
+   "qty": 1,
+   "vol": 1725.5296087283293,
+   "names": [
+    "cam rotate return"
+   ]
+  },
+  {
+   "id": "cam_lift_return",
+   "kind": "cut",
+   "group": "drive",
+   "mat": "сталь",
+   "note": "обратный кулачок: сталь 45 5 мм, закалка; профиль — основной через коромысло, в выстое отступ 0,5 мм (ред. 0.14)",
+   "qty": 1,
+   "vol": 3425.3458512455086,
+   "names": [
+    "cam lift return"
    ]
   },
   {
@@ -3414,11 +3784,48 @@
    "kind": "print",
    "group": "drive",
    "mat": "PETG",
-   "note": "защёлка цикла; спускается последней точкой хода клавиши",
+   "note": "защёлка цикла; спускается последней точкой хода клавиши; упорная грань с накладкой из полиуретана 2 мм (ред. 0.14)",
    "qty": 1,
    "vol": 576.0,
    "names": [
     "cycle stop latch"
+   ]
+  },
+  {
+   "id": "ret_rocker_rotate",
+   "kind": "print",
+   "group": "drive",
+   "mat": "PETG",
+   "note": "коромысло-коромысло: пальцы основного и обратного толкателей в пазах (ред. 0.14)",
+   "qty": 1,
+   "vol": 334.0341217071692,
+   "names": [
+    "return rocker rotate"
+   ]
+  },
+  {
+   "id": "ret_post",
+   "kind": "print",
+   "group": "drive",
+   "mat": "PETG",
+   "note": "стойка коромысла с направляющей обратного толкателя, на основании (ред. 0.14)",
+   "qty": 2,
+   "vol": 2577.5549902657604,
+   "names": [
+    "return rocker post rotate",
+    "return rocker post lift"
+   ]
+  },
+  {
+   "id": "ret_rocker_lift",
+   "kind": "print",
+   "group": "drive",
+   "mat": "PETG",
+   "note": "коромысло-коромысло: пальцы основного и обратного толкателей в пазах (ред. 0.14)",
+   "qty": 1,
+   "vol": 381.0573217071684,
+   "names": [
+    "return rocker lift"
    ]
   },
   {
@@ -3458,6 +3865,167 @@
    "vol": 2714.989285061596,
    "names": [
     "lay shaft bearing"
+   ]
+  },
+  {
+   "id": "plywood4_500x525",
+   "kind": "cut",
+   "group": "frame",
+   "mat": "фанера",
+   "note": "основание: фанера 4 мм под рамой, на винтах М5 с Т-гайками в нижние пазы профиля; детали, стоящие на основании, привёрнуты снизу винтами М3 во вставки (ред. 0.14)",
+   "qty": 1,
+   "vol": 1026172.0,
+   "names": [
+    "base plate"
+   ]
+  },
+  {
+   "id": "bar6x6x413",
+   "kind": "cut",
+   "group": "keys",
+   "mat": "Д16Т",
+   "note": "брус гребёнок: квадрат 6×6 мм, на двух стойках; гребёнки клавиш и пробела на лапках, на винтах М3 (ред. 0.14)",
+   "qty": 1,
+   "vol": 14868.0,
+   "names": [
+    "comb bridge"
+   ]
+  },
+  {
+   "id": "comb_post",
+   "kind": "print",
+   "group": "keys",
+   "mat": "PETG",
+   "note": "стойка бруса гребёнок на основании (ред. 0.14)",
+   "qty": 2,
+   "vol": 4032.0,
+   "names": [
+    "comb post -1",
+    "comb post +1"
+   ]
+  },
+  {
+   "id": "comb_tab_key",
+   "kind": "print",
+   "group": "keys",
+   "mat": "PETG",
+   "note": "лапка гребёнки клавиш от бруса (ред. 0.14)",
+   "qty": 2,
+   "vol": 702.100000000001,
+   "names": [
+    "key comb tab -1",
+    "key comb tab +1"
+   ]
+  },
+  {
+   "id": "comb_tab_space",
+   "kind": "print",
+   "group": "keys",
+   "mat": "PETG",
+   "note": "лапка гребёнки пробела от бруса (ред. 0.14)",
+   "qty": 2,
+   "vol": 544.0000000000002,
+   "names": [
+    "space comb tab -1",
+    "space comb tab +1"
+   ]
+  },
+  {
+   "id": "eclip3_2",
+   "kind": "buy",
+   "group": "levers",
+   "mat": "сталь",
+   "note": "стопорное кольцо DIN 6799 3,2 на оси рычагов (ред. 0.14)",
+   "qty": 2,
+   "vol": 33.60680167039311,
+   "names": [
+    "lever pivot clip -1",
+    "lever pivot clip +1"
+   ]
+  },
+  {
+   "id": "trip_post",
+   "kind": "print",
+   "group": "levers",
+   "mat": "PETG",
+   "note": "стойка качалки спуска цикла с осью (ред. 0.14)",
+   "qty": 1,
+   "vol": 568.4600000000006,
+   "names": [
+    "cycle trip post"
+   ]
+  },
+  {
+   "id": "latch_post",
+   "kind": "print",
+   "group": "drive",
+   "mat": "PETG",
+   "note": "стойка защёлки цикла на основании (ред. 0.14)",
+   "qty": 1,
+   "vol": 1261.2,
+   "names": [
+    "cycle stop latch post"
+   ]
+  },
+  {
+   "id": "pin2x12",
+   "kind": "buy",
+   "group": "drive",
+   "mat": "сталь",
+   "note": "ось защёлки цикла (ред. 0.14)",
+   "qty": 1,
+   "vol": 34.50000000000008,
+   "names": [
+    "cycle stop latch pin"
+   ]
+  },
+  {
+   "id": "zero_m_bridge",
+   "kind": "print",
+   "group": "esc",
+   "mat": "PETG",
+   "note": "мостик упора нуля M над линейкой полей: на верхней плите кронштейна спуска (ред. 0.14)",
+   "qty": 1,
+   "vol": 354.0237715644636,
+   "names": [
+    "zero stop M bridge"
+   ]
+  },
+  {
+   "id": "pusher_hanger",
+   "kind": "print",
+   "group": "select",
+   "mat": "PETG",
+   "note": "подвес направляющей толкателей к гребёнке выбора (ред. 0.14)",
+   "qty": 2,
+   "vol": 632.1000000000006,
+   "names": [
+    "pusher guide hanger -1",
+    "pusher guide hanger +1"
+   ]
+  },
+  {
+   "id": "eclip2_3",
+   "kind": "buy",
+   "group": "sectors",
+   "mat": "сталь",
+   "note": "стопорное кольцо на прутке каретки щупа (ред. 0.14)",
+   "qty": 1,
+   "vol": 14.094917696246325,
+   "names": [
+    "stop carrier rod clip 0"
+   ]
+  },
+  {
+   "id": "eclip1_5",
+   "kind": "buy",
+   "group": "drive",
+   "mat": "сталь",
+   "note": "стопорное кольцо на оси запора чтения (ред. 0.14)",
+   "qty": 1,
+   "vol": 8.667926692217272,
+   "names": [
+    "read lock axle clip"
    ]
   },
   {
@@ -3588,7 +4156,7 @@
    "mat": "PETG",
    "note": "",
    "qty": 2,
-   "vol": 48371.099994188546,
+   "vol": 48038.099994188546,
    "names": [
     "case keyboard deck 1",
     "case keyboard deck 2"
@@ -3640,7 +4208,7 @@
    "mat": "PETG",
    "note": "",
    "qty": 13,
-   "vol": 297109.1064577282,
+   "vol": 304322.8547739062,
    "names": [
     "case top tower -1",
     "case top tower +1",
@@ -3677,79 +4245,16 @@
    ]
   },
   {
-   "id": "case_grille",
-   "kind": "print",
-   "group": "case",
-   "mat": "PETG серебристый",
-   "note": "решётка-звезда над барабаном пружины, серебро",
-   "qty": 1,
-   "vol": 11702.896300699831,
-   "names": [
-    "case star grille"
-   ]
-  },
-  {
-   "id": "case_device",
-   "kind": "print",
-   "group": "case",
-   "mat": "PETG",
-   "note": "щит с гербом Mírë Nolmeo: многоцветная печать, файлы по цветам в stl/device/",
-   "qty": 1,
-   "vol": 15052.800000000065,
-   "names": [
-    "case device plaque"
-   ]
-  },
-  {
    "id": "case_pillar",
    "kind": "print",
    "group": "case",
    "mat": "PETG",
-   "note": "пилястра над стойкой каретки, пустотелая; печатается стоя",
+   "note": "пилястра над стойкой каретки с базой, капителью и навершием-звездой: одна деталь, печатается стоя, серебро — сменой прутка на высоте 10 мм (база) и 132 мм (капитель)",
    "qty": 2,
-   "vol": 182726.11540973024,
+   "vol": 183878.1154097303,
    "names": [
     "case pillar -1",
     "case pillar +1"
-   ]
-  },
-  {
-   "id": "case_pillar_base",
-   "kind": "print",
-   "group": "case",
-   "mat": "PETG серебристый",
-   "note": "",
-   "qty": 2,
-   "vol": 23760.0,
-   "names": [
-    "case pillar base -1",
-    "case pillar base +1"
-   ]
-  },
-  {
-   "id": "case_pillar_cap",
-   "kind": "print",
-   "group": "case",
-   "mat": "PETG серебристый",
-   "note": "",
-   "qty": 2,
-   "vol": 43144.0,
-   "names": [
-    "case pillar capital -1",
-    "case pillar capital +1"
-   ]
-  },
-  {
-   "id": "case_finial",
-   "kind": "print",
-   "group": "case",
-   "mat": "PETG серебристый",
-   "note": "навершие: шестнадцатилучевая звезда",
-   "qty": 2,
-   "vol": 4220.3765924066065,
-   "names": [
-    "case finial -1",
-    "case finial +1"
    ]
   }
  ],

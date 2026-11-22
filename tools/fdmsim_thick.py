@@ -4,7 +4,9 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from fontTools.ttLib import TTFont
 from thicken import slug_geometry
 font, data_dir, gen = sys.argv[1:4]
-F = TTFont(font); GS = F.getGlyphSet(); D = json.load(open(os.path.join(data_dir, 'codes.json')))
+D = json.load(open(os.path.join(data_dir, 'codes.json')))
+import glyphvar
+F = TTFont(font); GS = glyphvar.VarGlyphSet(F.getGlyphSet(), D.get('synth'))
 names = [t['glyph'] for t in D['tengwar']] + [m['glyph'] for m in D['marks']] + [n['glyph'] for n in D['numerals'] + D['punct']]
 INCH = 25.4
 out = []

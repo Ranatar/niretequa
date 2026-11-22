@@ -20,7 +20,8 @@ FONT = os.path.join(ROOT, FONTSET['file'])
 if FONT_ID == 'alcarin':
     CODES = json.load(open(os.path.join(ROOT, 'data', 'codes.json')))
     _F = TTFont(FONT)
-    GLYPHSET = _F.getGlyphSet()
+    import glyphvar
+    GLYPHSET = glyphvar.VarGlyphSet(_F.getGlyphSet(), CODES.get('synth'))      # rev. 0.14: marks raised into lambe
     PROFILE = None
     CACHE = os.path.join(ROOT, 'gen', 'model_cache')
 else:
@@ -34,6 +35,12 @@ else:
                    missing=CODES['missing'], shrunk=CODES['shrunk'], warn=CODES['warn'], name=_R['name'])
     CACHE = os.path.join(ROOT, 'gen', 'model_cache', 'font-' + FONT_ID)
 os.makedirs(CACHE, exist_ok=True)
+
+
+def fsname(s):
+    """rev. 0.14: cache file names safe for case-insensitive file systems (Android storage, Windows, macOS):
+    capital A -> ^a, non-ASCII -> ~hhhh, so slug_n and slug_N no longer collide."""
+    return ''.join(('^' + c.lower()) if c.isascii() and c.isupper() else c if c.isascii() else f'~{ord(c):04x}' for c in s)
 ITEMS, MARK_AX = build_items(CODES, _F)
 U_FONT = CODES['U']
 G = dict(QUENYA=QUENYA, SINDARIN=SINDARIN)

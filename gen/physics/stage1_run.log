@@ -1,0 +1,37 @@
+design рабочее unheld 34 friction-only 59
+design наклон 5° вперёд unheld 34 friction-only 134
+design наклон 5° назад unheld 35 friction-only 121
+design наклон 5° влево unheld 81 friction-only 87
+design наклон 5° вправо unheld 81 friction-only 88
+design наклон 15° вперёд unheld 82 friction-only 87
+design наклон 15° назад unheld 83 friction-only 74
+design наклон 15° влево unheld 83 friction-only 85
+design наклон 15° вправо unheld 82 friction-only 87
+design перенос 30° вперёд unheld 82 friction-only 86
+design перенос 30° назад unheld 83 friction-only 67
+design перенос 30° влево unheld 84 friction-only 85
+design перенос 30° вправо unheld 84 friction-only 86
+design на боку −x unheld 79 friction-only 33
+design на боку +x unheld 77 friction-only 38
+design на передней стенке −y unheld 76 friction-only 73
+design на задней стенке +y unheld 77 friction-only 52
+design вверх дном unheld 69 friction-only 57
+declared рабочее unheld 34 friction-only 66
+declared наклон 5° вперёд unheld 34 friction-only 195
+declared наклон 5° назад unheld 35 friction-only 181
+declared наклон 5° влево unheld 39 friction-only 204
+declared наклон 5° вправо unheld 38 friction-only 204
+declared наклон 15° вперёд unheld 67 friction-only 164
+declared наклон 15° назад unheld 71 friction-only 148
+declared наклон 15° влево unheld 90 friction-only 153
+declared наклон 15° вправо unheld 89 friction-only 153
+declared перенос 30° вперёд unheld 86 friction-only 144
+declared перенос 30° назад unheld 87 friction-only 125
+declared перенос 30° влево unheld 90 friction-only 154
+declared перенос 30° вправо unheld 90 friction-only 154
+declared на боку −x unheld 86 friction-only 95
+declared на боку +x unheld 84 friction-only 101
+declared на передней стенке −y unheld 81 friction-only 123
+declared на задней стенке +y unheld 81 friction-only 105
+declared вверх дном unheld 75 friction-only 65
+stage 1 done 444.6 s; missing rows 423

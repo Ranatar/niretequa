@@ -131,26 +131,48 @@ def keyboard(st):
         parts.append(Part(f"cap {k['id']}", 'keys', 'print', cap, COL['key'], 'keycap' if k['kind'] != 'space' else 'spacebar',
                           'PETG', mov=f"key{k['n']}"))
         sx = k['lx']
-        stem = (zcyl(sx, k['y'], RISER_TOP + 2.0, k['top'] - 8, 2.0, 16) + Manifold.sphere(2.0, 16).translate((sx, k['y'], RISER_TOP + 2.0))).translate((0, 0, dz))
+        # rev. 0.14b (stage 1): the stem used to stand on the lever's riser above the comb, a ball on a post -- every cap
+        # toppled at 5 deg. Now the stem comes down to the lever's top through the comb (guided over the whole stroke),
+        # its pin sits in the lever's slot (the lever is kept sideways by the stem), and the collar at its foot with a
+        # 0.5 mm rubber pad bears on the comb's underside: the rest stop against the return spring under the lever.
+        z0 = STEM_Z0
+        # rev. 0.14b: every stem is 3 x 4 mm, as wide as the lever: its lower end goes down between the code plates of
+        # the neighbouring levers (0.2 mm on each side of a lever); not round, so no cap turns about its stem
+        stem = box(sx - STEM_X, sx + STEM_X, k['y'] - STEM_Y, k['y'] + STEM_Y, z0 + 1.0, k['top'] - 8)
+        # the collar's foot is an arc (R 6 about X): it rolls on the lever, which tilts 5 deg over the stroke
+        foot = cyl((sx - 3, k['y'], z0 + COLLAR_R), (sx + 3, k['y'], z0 + COLLAR_R), COLLAR_R, 48)
+        stem = stem + (box(sx - STEM_X, sx + STEM_X, k['y'] - COLLAR_Y, k['y'] + COLLAR_Y, z0, P.COMB_Z[0]) ^ foot) + \
+            box(sx - PIN_X, sx + PIN_X, k['y'] - PIN_Y, k['y'] + PIN_Y, z0 - PIN_H, z0 + 1.0)
+        stem = stem.translate((0, 0, dz))
         if abs(sx - k['x']) > 0.1:
             stem = stem + box(min(sx, k['x']) - 2, max(sx, k['x']) + 2, k['y'] - 2, k['y'] + 2, k['top'] - 11, k['top'] - 8).translate((0, 0, dz))
         parts.append(Part(f"stem {k['id']}", 'keys', 'print', stem, COL['key'], 'keystem', 'PETG', mov=f"key{k['n']}"))
     # key comb: guides the stems
     comb = box(-138, 140, P.KEY_ROW_Y[3] - 10, P.KEY_ROW_Y[0] + 9, *P.COMB_Z)
-    holes = [zcyl(k['lx'], k['y'], P.COMB_Z[0] - 1, P.COMB_Z[1] + 1, 2.7, 16) for k in key_list() if k['kind'] != 'space']
+    def hole(k):
+        # rev. 0.14b: guides the stem itself (3 x 4 in 3.5 x 4.5)
+        return box(k['lx'] - STEM_X - 0.25, k['lx'] + STEM_X + 0.25, k['y'] - STEM_Y - 0.25, k['y'] + STEM_Y + 0.25,
+                   P.COMB_Z[0] - 1, P.COMB_Z[1] + 1)
+    holes = [hole(k) for k in key_list() if k['kind'] != 'space']
     comb = comb - union(holes)
     parts.append(Part('key comb', 'keys', 'print', comb, (110, 112, 120), 'comb', 'PETG',
                       note='печатается двумя частями, стыкуется на накладке', printable=lambda comb=comb: split_planes(comb, 0, [0.0])))
     # space bar guide: a second, short comb under the space bars
     sc = box(-120, 120, P.SPACE_Y - 9, P.SPACE_Y + 9, *P.COMB_Z) - union(
-        [zcyl(k['lx'], k['y'], P.COMB_Z[0] - 1, P.COMB_Z[1] + 1, 2.7, 16) for k in key_list() if k['kind'] == 'space'])
+        [hole(k) for k in key_list() if k['kind'] == 'space'])
     parts.append(Part('space comb', 'keys', 'print', sc, (110, 112, 120), 'comb_space', 'PETG',
                       printable=lambda sc=sc: split_planes(sc, 0, [0.0])))
     return parts
 
 
 # --------------------------------------------------------------------------------------------- levers
-RISER_TOP = 70.0
+RISER_TOP = 70.0                    # rev. 0.14b: no riser any more; kept for the cap and stem heights elsewhere
+STEM_Z0 = P.LEVER_Z1                # rev. 0.14b: the stem stands on the lever's top
+STEM_X, STEM_Y = P.LEVER_T / 2, 2.0  # half sizes of the stem
+COLLAR_Y, COLLAR_R, PIN_X, PIN_Y, PIN_H = 4.0, 6.0, 0.5, 0.7, 3.0    # stem collar (rest stop), pin into the lever's slot
+SLOT_X, SLOT_Y = 0.7, 1.9                                 # the lever's slot: 1.4 wide; under the stem the lever moves 0.2 mm along Y and tilts 3.5-5 deg over the stroke
+KRS_Y, KRS_PRE, KRS_K = P.KRS_Y, P.KRS_PRE, P.KRS_K    # rev. 0.14b: key return springs under the levers (params)
+KRS_BAR_Z = (19.0, 25.0)            # their steel bar between the code bars and the lock bail
 LOCK_Y = -200.0                     # rev. 0.8: lock comb under the levers
 LOCK_Z = (40.5, 42.5)               # comb plane: under the tabs of the levers at rest, over the tab of a pressed lever
 LOCK_TAB = (LOCK_Z[1] + 0.5, P.LEVER_Z0)      # tab under each lever (full width)
@@ -162,12 +184,96 @@ BIT_Y = {'l1': -5.0, 'l2': -1.0, 'l4': 3.0, 'r1': 7.0, 'r2': 11.0, 'r4': 15.0, '
 BIT_Z = P.LEVER_Z1 + 3.0          # underside of the lift-bit bails at rest
 
 
+def has_return_spring(k):
+    """rev. 0.14b: the keys of one frame (letters, spaces) carry the return spring of node A (params.KEY_RETURN_N)."""
+    return k['kind'] in ('char', 'space')
+
+
+def krs_top(k, frac):
+    """Height of the lever's underside over the return spring (the boss's root) at the key's stroke `frac`."""
+    a = math.radians(lever_angle(k, frac))
+    zc = (P.LEVER_Z0 + P.LEVER_Z1) / 2
+    dy, dzz = KRS_Y - P.LEVER_PIVOT_Y, P.LEVER_Z0 - zc
+    return zc + dy * math.sin(a) + dzz * math.cos(a), P.LEVER_PIVOT_Y + dy * math.cos(a) - dzz * math.sin(a)
+
+
+def key_return(st):
+    """rev. 0.14b: return springs of the keys (compression 3.5 x 0.3 mm on the bar's bosses, under the levers' bosses)
+    and their bar on two posts at the ends."""
+    parts = []
+    xs = [k['lx'] for k in key_list() if has_return_spring(k)]
+    x0, x1 = min(xs) - 4.0, max(xs) + 4.0
+    bar = box(x0, x1, KRS_Y - 2.0, KRS_Y + 2.0, *KRS_BAR_Z) + union(
+        [zcyl(x, KRS_Y, KRS_BAR_Z[1] - 0.5, KRS_BAR_Z[1] + 3.0, 1.2, 16) for x in xs])
+    parts.append(Part('key return bar', 'levers', 'cut', bar, COL['steel'], 'bar4x6', 'сталь',
+                      f'полоса 4×6 мм, {x1 - x0:.0f} мм, с бобышками под пружины (запрессованные штифты)'))
+    for sx, xx in ((-1, x0), (1, x1)):
+        xa, xb = sorted((xx, xx + sx * 4.0))
+        # the foot reaches back only: the tier carriages and the O plates come to y = -226.5 on tier 1
+        post = box(xa, xb, KRS_Y - 2.0, KRS_Y + 2.0, 0.0, KRS_BAR_Z[1]) + box(xa - 3, xb + 3, KRS_Y - 2.0, KRS_Y + 9.0, 0.0, 2.0)
+        parts.append(Part(f'key return bar post {sx:+d}', 'levers', 'print', post, (110, 112, 120), 'krs_post', 'PETG',
+                          note='стойка на основании, два самореза'))
+    for k in key_list():
+        if not has_return_spring(k):
+            continue
+        zt, yt = krs_top(k, st.pressed.get(k['n'], 0.0))
+        sp = geo.tube(k['lx'], KRS_Y, KRS_BAR_Z[1], zt, 1.75, 1.45)
+        parts.append(Part(f"key return spring {k['id']}", 'levers', 'buy', sp, COL['steel'], 'spring_key', 'сталь',
+                          f'пружина сжатия 3,5×0,3 мм, {KRS_PRE:.2f} Н в покое, {KRS_K} Н/мм'.replace('.', ',', 1), mov=f"kspring{k['n']}"))
+    return parts
+
+
+GB_X0 = 167.6               # rev. 0.14 stage 2b: the governor's brake, left of the cycle stop arm's sweep (x 176.5..180.5)
+
+
+def governor_brake(yD, zC):
+    """rev. 0.14, stage 2b of the physics checks: the fan alone let the shaft run twice its design speed at full wind
+    (its drag goes with w^2). A gramophone governor on the same arbor caps it: three brass weights on flat springs
+    between a fixed and a sliding collar; above the setting (params.GOV_T_FREE per free turn of the cycle shaft) the
+    weights fly out, the springs draw the sliding collar to the left and its felt presses the fixed brake plate.
+    The plate on its post also carries the arbor's left end; the setting is the plate's screw (axial position)."""
+    out = []
+    x0 = GB_X0
+    plate = cyl((x0, yD, zC), (x0 + 1.2, yD, zC), 9.0, 48) + box(x0, x0 + 1.2, yD - 4, yD + 4, 0.0, zC) + \
+        box(x0, x0 + 4.5, yD - 6, yD + 6, 0.0, 2.0)
+    plate = plate - cyl((x0 + 0.05, yD, zC), (x0 + 2.5, yD, zC), 1.6, 16)
+    out.append(Part('governor brake plate', 'drive', 'print', plate, (110, 112, 120), 'gov_brake_plate', 'PETG',
+                    note='тормозная шайба регулятора на стойке (два самореза в основание); левая опора оси; винт уставки скорости'))
+    pad = cyl((x0 + 1.2, yD, zC), (x0 + 1.8, yD, zC), 6.5, 48) - cyl((x0 + 1, yD, zC), (x0 + 3, yD, zC), 2.5, 16)
+    out.append(Part('governor brake pad', 'drive', 'buy', pad, (90, 70, 60), 'felt13', 'войлок',
+                    note='войлочное кольцо 13×5×0,6 мм, наклеено на шайбу'))
+    xs0, xs1 = x0 + 1.9, x0 + 3.4                       # sliding collar (a 0.1 mm gap to the felt at rest)
+    xf0, xf1 = x0 + 7.4, x0 + 8.7                       # fixed collar, pinned to the arbor (clear of the stop arm at 176.5)
+    out.append(Part('governor sliding collar', 'drive', 'buy',
+                    cyl((xs0, yD, zC), (xs1, yD, zC), 6.5, 48) - cyl((xs0 - 1, yD, zC), (xs1 + 1, yD, zC), 1.55, 16),
+                    COL['brass'] if 'brass' in COL else (190, 160, 80), 'gov_collar', 'латунь', note='скользящая муфта: латунь, торец по войлоку'))
+    out.append(Part('governor fixed collar', 'drive', 'buy',
+                    cyl((xf0, yD, zC), (xf1, yD, zC), 5.0, 32) - cyl((xf0 - 1, yD, zC), (xf1 + 1, yD, zC), 1.55, 16),
+                    COL['brass'] if 'brass' in COL else (190, 160, 80), 'gov_collar_fix', 'латунь', note='неподвижная муфта: латунь, штифт 1 мм в оси'))
+    xm = 0.5 * (xs1 + xf0)
+    for i in range(3):
+        a = math.radians(90.0 + 120.0 * i)
+        cy, cz = math.cos(a), math.sin(a)
+        r_end, r_mid = 4.6, 7.0
+        p0 = (xs1, yD + r_end * cy, zC + r_end * cz); p1 = (xm, yD + r_mid * cy, zC + r_mid * cz); p2 = (xf0, yD + r_end * cy, zC + r_end * cz)
+        leaf = cyl(p0, p1, 0.35, 8) + cyl(p1, p2, 0.35, 8)
+        out.append(Part(f'governor leaf spring {i + 1}', 'drive', 'buy', leaf, COL['steel'], 'gov_leaf', 'сталь',
+                        note='плоская пружина 0,1×2 мм между муфтами'))
+        w = Manifold.sphere(2.0, 20).translate((xm, yD + 9.0 * cy, zC + 9.0 * cz)) + cyl(p1, (xm, yD + 8.0 * cy, zC + 8.0 * cz), 0.6, 8)
+        out.append(Part(f'governor weight {i + 1}', 'drive', 'buy', w, (190, 160, 80), 'gov_weight', 'латунь',
+                        note='грузик регулятора: латунный шарик Ø4 мм на пружине'))
+    return out
+
+
 def lever_mesh(k):
     x = k['lx']; t = P.LEVER_T / 2
     y_front = k['y'] - 4
     zc = (P.LEVER_Z0 + P.LEVER_Z1) / 2
     body = box(x - t, x + t, y_front, P.LEVER_TAIL_Y, P.LEVER_Z0, P.LEVER_Z1)
-    body = body + box(x - t, x + t, k['y'] - 2, k['y'] + 2, P.LEVER_Z1, RISER_TOP)    # riser through the comb
+    # rev. 0.14b: no riser; a slot for the stem's pin (the stem is guided by the comb, the lever by the stem)
+    body = body - box(x - SLOT_X, x + SLOT_X, k['y'] - SLOT_Y, k['y'] + SLOT_Y, P.LEVER_Z1 - PIN_H - 0.5, P.LEVER_Z1 + 1)
+    if has_return_spring(k):         # boss for the return spring
+        body = body + zcyl(x, KRS_Y, P.LEVER_Z0 - 3.0, P.LEVER_Z0 + 0.5, 1.2, 16)
     body = body - cyl((x - 3, P.LEVER_PIVOT_Y, zc), (x + 3, P.LEVER_PIVOT_Y, zc), 2.15, 16)
     if k['kind'] == 'char' or k['id'] == 'shift':
         # notch under the row-bit bails; lugs only where the key's row (or shift) sets the bit
@@ -201,8 +307,9 @@ def levers(st):
         parts.append(Part(f"lever {k['id']}", 'levers', 'print', m, COL['lever'], 'lever', 'PETG',
                           mov=f"key{k['n']}", printable=lambda k=k: lever_pieces(k)))
     zc = (P.LEVER_Z0 + P.LEVER_Z1) / 2
-    parts.append(Part('lever pivot rod', 'levers', 'buy', cyl((-140, P.LEVER_PIVOT_Y, zc), (140, P.LEVER_PIVOT_Y, zc), 2.0, 16),
-                      COL['steel'], 'rod4x280', 'сталь', 'пруток 4 мм, 280 мм'))
+    # rev. 0.14 (physics checks): the rod ended 2 mm short of its brackets; it passes through them, E-clips outside
+    parts.append(Part('lever pivot rod', 'levers', 'buy', cyl((-157.5, P.LEVER_PIVOT_Y, zc), (157.5, P.LEVER_PIVOT_Y, zc), 2.0, 16),
+                      COL['steel'], 'rod4x315', 'сталь', 'пруток 4 мм, 315 мм, с канавками под стопорные кольца'))
     # rev. 0.8 interlocks: the lock bail slides 6 mm under the tabs while the cycle runs (the pressed lever cannot rise,
     # the others cannot go down); the ball race lets one fin in at a time; R or O at 15.5 mm trips the cycle.
     xl0, xl1 = lever_x(-1) - 3, lever_x(44) + 3
@@ -603,8 +710,8 @@ def escape_link(st):
     yb = yx - ra                             # rod Y end and the bellcrank's pivot
     flat = box(ESC_ROD_X - 1.0, ESC_ROD_X + 5.0, yf - 1.5, yf, zs + 2.0, zs + r + 2.0)
     rod1 = flat + cyl((ESC_ROD_X, yf, z_r), (ESC_ROD_X, yb, z_r), 1.0, 12)
-    parts.append(Part('escapement rod Y', 'sectors', 'buy', rod1.translate((0, -s, 0)), COL['steel'], 'rod2x430', 'сталь',
-                      'тяга 2 мм, 430 мм (работает на растяжение)', mov='followW'))
+    parts.append(Part('escapement rod Y', 'sectors', 'buy', rod1.translate((0, -s, 0)), (40, 40, 44), 'cfrod2x430', 'углепластик',
+                      'тяга 2 мм, 430 мм, углепластиковый пруток (работает на растяжение; ред. 0.14: вместо стали — щупу W вчетверо легче)', mov='followW'))
     # rev. 0.10: the W wire of the reading head is clamped to the front of the flat and leaves forward along the rod into
     # its housing, held by a bracket on the W follower's upright; a ratchet strip on the flat and a pawl hold the rod
     # from the reading to the feed (the pawl is lifted when the keyboard lock lets go, at 345 deg)
@@ -648,8 +755,8 @@ def escape_link(st):
     parts.append(Part('pm-u detent', 'sectors', 'print', ntch, (110, 112, 120), 'pmu_detent', 'PETG',
                       note='гребёнка рычажка ±u: три гнезда под шарик рычажка'))
     rod2 = cyl((px - 1.5, yx, z_x), (-6.0, yx, z_x), 1.0, 12)
-    parts.append(Part('escapement rod X', 'sectors', 'buy', rod2.translate((-s, 0, 0)), COL['steel'], 'rod2x160', 'сталь',
-                      'тяга 2 мм к упору спуска', mov='followW'))
+    parts.append(Part('escapement rod X', 'sectors', 'buy', rod2.translate((-s, 0, 0)), (40, 40, 44), 'cfrod2x160', 'углепластик',
+                      'тяга 2 мм к упору спуска, углепластиковый пруток (ред. 0.14)', mov='followW'))
     return parts
 
 
@@ -836,6 +943,9 @@ CAM_X = {'lift': -145.0, 'rotate': 140.0, 'detent': 145.0, 'hammer': 150.0, 'rib
 CAM_Y = 3.0
 WT_Z = (Z_B0, Z_B0 + 8.0)                      # whiffletree layer on the base
 SLIDER_X = P.PULLEY_R                          # tape leaves the pulley tangentially at x = +R, toward +Y
+TAPE_Z1 = (P.Z_PULLEY[0] + 0.3, P.Z_PULLEY[0] + 2.8)      # rev. 0.14: two tracks of the pulley's band
+TAPE_Z2 = (P.Z_PULLEY[0] + 3.4, P.Z_PULLEY[0] + 5.9)
+RET_IDLER_Y, RET_IDLER_R = -96.0, 4.0
 SLIDER_Y0 = -14.0                              # slider at home (rev. 0.8: off the pulley flange at position 0)
 
 
@@ -1153,9 +1263,26 @@ def uframe(st):
     clamp = box(SLIDER_X - 0.2, SLIDER_X + 0.5, ty - 8, ty + 8, P.Z_PULLEY[0], P.Z_PULLEY[1]) + \
         box(SLIDER_X + 0.5, SLIDER_X + 4, ty - 8, ty + 8, Z_B0 + 8, P.Z_PULLEY[1])
     parts.append(Part('tape clamp', 'uframe', 'print', T(clamp), COL['pin'], 'tape_clamp', 'PETG', mov='tape'))
-    tape = box(SLIDER_X - 0.1, SLIDER_X, P.AXIS_Y, ty - 8, P.Z_PULLEY[0] + 0.5, P.Z_PULLEY[1] - 0.5)
+    # rev. 0.14 (physics checks, node B): a closed tape loop. The tape alone could only pull the pulley one way (the
+    # shuttle's return relied on a spring); a second tape, wound the other way round the pulley in the band's upper
+    # track, runs to an idler and back to the slider's front through a tensioner (spring 10 N), so the slider drives the
+    # pulley both ways and the tapes stay taut. Both tapes 2.5 x 0.1 mm steel.
+    tape = box(SLIDER_X - 0.1, SLIDER_X, P.AXIS_Y, ty - 8, *TAPE_Z1)
     parts.append(Part('rotate tape', 'uframe', 'buy', T(tape), (60, 60, 70), 'tape', 'сталь',
-                      'стальная лента 5×0,1 мм', mov='tape'))
+                      'стальная лента 2,5×0,1 мм (прямая ветвь)', mov='tape'))
+    xi = SLIDER_X + RET_IDLER_R
+    ret = box(SLIDER_X - 0.1, SLIDER_X, RET_IDLER_Y, P.AXIS_Y, *TAPE_Z2) + \
+        geo.sector_xy(xi, RET_IDLER_Y, RET_IDLER_R, RET_IDLER_R + 0.1, 90.0, 270.0, *TAPE_Z2) + \
+        box(xi + RET_IDLER_R, xi + RET_IDLER_R + 0.1, RET_IDLER_Y, ty - 14.0, *TAPE_Z2)
+    parts.append(Part('rotate tape return', 'uframe', 'buy', T(ret), (60, 60, 70), 'tape', 'сталь',
+                      'стальная лента 2,5×0,1 мм (обратная ветвь, ред. 0.14)', mov='tape'))
+    parts.append(Part('rotate tape idler', 'uframe', 'buy', T(zcyl(xi, RET_IDLER_Y, TAPE_Z2[0] - 0.5, TAPE_Z2[1] + 0.5, RET_IDLER_R, 32)),
+                      COL['buy'], 'idler8x3', 'сталь', 'ролик обратной ветви ленты (ред. 0.14)', mov='uframe'))
+    parts.append(Part('rotate tape idler post', 'uframe', 'buy', T(zcyl(xi, RET_IDLER_Y, Z_B0, TAPE_Z2[0] - 0.5, 1.5, 16)),
+                      COL['steel'], 'pin3x12', 'сталь', 'ось ролика (ред. 0.14)', mov='uframe'))
+    tens = box(SLIDER_X + 1.0, SLIDER_X + 10.5, ty - 14.0, ty - 11.0, Z_B0 + 5.5, TAPE_Z2[1])    # over the rail
+    parts.append(Part('rotate tape tensioner', 'uframe', 'print', T(tens), COL['pin'], 'tape_tensioner', 'PETG',
+                      note=f'натяжитель обратной ветви: пружина {P.TAPE_PRELOAD_N:.0f} Н в ползунке (ред. 0.14, ступень 2б)', mov='tape'))
     # rev. 0.8: the selection unit worked out (whiffletrees with latches, bails, amplifiers, output links)
     parts += selection_unit(st, T)
     # detent: notched wheel on the shaft, pawl from +X
@@ -1186,30 +1313,44 @@ def uframe(st):
     parts.append(Part('detent link', 'uframe', 'print', T(link.translate((0, 0, DET_RISE * eng))), COL['pin'], 'detent_link', 'PETG',
                       note='тяга фиксаторов: кулачок поднимает её на 3 мм', mov='detent'))
     # hammer trip link to the post
-    # rev. 0.8: hammer cocking. The cam lifts the trip link 6 mm over 10..150 deg; a rod beside the post lifts the cocking
-    # lever on the hammer axle (arm 19.1 mm, 18 deg), winding the hammer spring; at 160 deg the cam drops and the spring
-    # throws the hammer (the lever's lip strikes its tail).
-    zc_ = 6.0 * st.cock
+    # rev. 0.8: hammer cocking; rev. 0.14: the lever winds the spring against the sear and throws the hammer free
+    zc_ = CAM_LIFT['hammer'] * st.cock
     yp_, zp_ = P.HAMMER_PIVOT
     hl = box(10, CAM_X['hammer'] + 4 + P.SLIDE_MAX, 13, 22, P.Z_DETENT[1] + 0.5, P.Z_DETENT[1] + 3.5) + \
-        box(10, 14, 13, yp_ + LK.hammer_geom()['r_cock'] + 2, P.Z_DETENT[1] + 0.5, P.Z_DETENT[1] + 3.5)
+        box(10, 14, 13, yp_ + HAM_RC + 2, P.Z_DETENT[1] + 0.5, P.Z_DETENT[1] + 3.5)
     parts.append(Part('hammer trip link', 'uframe', 'print', T(hl.translate((0, 0, zc_))), COL['hammer'], 'hammer_link', 'PETG',
                       note='тяга взвода от кулачка молотка', mov='cock'))
-    rc = LK.hammer_geom()['r_cock']
+    rc = HAM_RC
     # rev. 0.9c: the rod carries a pin (on the part that moves straight) in a radial slot of the lever: exact rc tan(phi)
     rod = box(12.0, 13.5, yp_ + rc - 1.5, yp_ + rc + 1.5, P.Z_DETENT[1] + 3.5, zp_ + 1.5) + cyl((8.0, yp_ + rc, zp_), (13.5, yp_ + rc, zp_), 1.2, 12)
     parts.append(Part('hammer cocking rod', 'uframe', 'buy', T(rod.translate((0, 0, zc_))), COL['steel'], 'rod3x80', 'сталь',
-                      'толкатель взвода', mov='cock'))
-    r_sl = math.hypot(rc, 6.0) + 1.5
+                      'толкатель взвода; возвратная пружина 2,5 Н (ред. 0.14)', mov='cock'))
+    r_sl = math.hypot(rc, CAM_LIFT['hammer']) + 1.5
     lev = box(8.6, 11.9, yp_, yp_ + rc - 3.0, zp_ - 1.5, zp_ + 1.5) + box(8.6, 11.9, yp_ + rc - 3.0, yp_ + r_sl + 1.5, zp_ - 3.0, zp_ + 3.0) + \
-        cyl((8.6, yp_, zp_), (11.9, yp_, zp_), 4.0, 16) - cyl((8, yp_, zp_), (12.5, yp_, zp_), 2.05, 16)
+        cyl((8.6, yp_, zp_), (11.9, yp_, zp_), 4.0, 16)
     lev = lev - box(8, 12.5, yp_ + rc - 2.0, yp_ + r_sl, zp_ - 1.2, zp_ + 1.2)
-    a_c = math.degrees(math.atan2(zc_, rc))
+    # rev. 0.14: the lip (on the hammer's tab) and the trip lug (under the sear's toe), on arms out to the collar's plane
+    r0, r1, a0, a1 = HAM_LIP
+    lev = lev + sector_yz(yp_, zp_, 3.9, r1, a0, a1, 8.6, 11.9) + sector_yz(yp_, zp_, r0, r1, a0, a1, 11.9, HX[1])
+    r0, r1, a0, a1 = HAM_LUG
+    lev = lev + sector_yz(yp_, zp_, 3.9, r1, a0, a1, 8.6, 11.9) + sector_yz(yp_, zp_, r0, r1, a0, a1, 11.9, HX[1])
+    lev = lev - cyl((8, yp_, zp_), (12.5, yp_, zp_), 2.05, 16)
+    a_c = ham_lever_deg(st.cock)
     parts.append(Part('hammer cocking lever', 'uframe', 'print', T(rotx(lev, a_c, yp_, zp_)), COL['hammer'], 'cock_lever', 'PETG',
-                      note='взводной рычаг на оси молотка', mov='cock'))
-    spr = cyl((-11.9, yp_, zp_), (-8.6, yp_, zp_), 4.5, 24) - cyl((-12.5, yp_, zp_), (-8, yp_, zp_), 2.3, 16)
+                      note='взводной рычаг на оси молотка: губа на упоре молотка, кулачок спуска шептала (ред. 0.14)', mov='cock'))
+    spr = cyl((12.2, yp_, zp_), (15.4, yp_, zp_), 4.5, 24) - cyl((11.5, yp_, zp_), (16, yp_, zp_), 2.3, 16)
     parts.append(Part('hammer spring', 'uframe', 'buy', T(spr), COL['steel'], 'torsion_spring', 'сталь',
-                      'пружина кручения 0,8 мм, 4 витка', mov='uframe'))
+                      'пружина кручения между рычагом взвода и молотком (ред. 0.14)', mov='uframe'))
+    b = sear_beta(st.cock, st.hammer)
+    piv = _polar(*SEAR_PIV)
+    sear = rotx(cached('sear', sear_mesh), math.degrees(b), *piv)
+    parts.append(Part('hammer sear', 'uframe', 'print', T(sear), COL['pin'], 'hammer_sear', 'PETG',
+                      note='шептало: держит зуб втулки молотка; пружина 0,3 Н (ред. 0.14)', mov='cock'))
+    parts.append(Part('hammer sear pin', 'uframe', 'buy', T(cyl((13.0, piv[0], piv[1]), (HX[1] + 0.8, piv[0], piv[1]), 1.0, 12)), COL['steel'],
+                      'pin2x6', 'сталь', 'ось шептала (ред. 0.14)', mov='uframe'))
+    brk = box(8.0, 13.6, 74.0, piv[0] + 2.0, 217.6, piv[1] + 2.0) + box(8.0, 13.6, 74.0, 79.5, 214.0, 219.0)
+    parts.append(Part('hammer sear bracket', 'uframe', 'print', T(brk), COL['uframe'], 'sear_bracket', 'PETG',
+                      note='кронштейн шептала на стойке молотка (ред. 0.14)', mov='uframe'))
     # lift fork
     fork = fork_mesh()
     ang = math.degrees(math.atan2(st.lift() - LIFT_MIN, 150.0))
@@ -1234,6 +1375,19 @@ def uframe(st):
     post = box(xg - 4, xg + 4, yw0 - 5, yw0 - 1, Z_B0, zg + 6) + box(xg - 10, xg + 4, yw0 - 1, yw1 + 1, zg - 6, zg - 3)
     parts.append(Part('row detent post', 'uframe', 'print', T(post), (110, 112, 120), 'row_post', 'PETG',
                       note='стойка с направляющей клина', mov='uframe'))
+    # rev. 0.14 (stage 1: the wedge and its roller fell out): an extension spring 0.5 N from the wedge's tail to a lug
+    # beyond it holds the wedge out against the roller and the link
+    ym = 0.5 * (yw0 + yw1)
+    r_lug = 92.0
+    t0 = (xp_ + (rw + 20.0) * ux, zp_ + (rw + 20.0) * uz); t1 = (xp_ + r_lug * ux, zp_ + r_lug * uz)
+    spr = cyl((t0[0], ym, t0[1]), (t1[0], ym, t1[1]), 1.2, 12)
+    parts.append(Part('row detent wedge spring', 'uframe', 'buy', T(spr), COL['steel'], 'spring_ext_0.5N', 'сталь',
+                      'пружина растяжения клина ряда, 0,5 Н (ред. 0.14)', mov='detent'))
+    lg = (xp_ + (r_lug + 1.5) * ux, zp_ + (r_lug + 1.5) * uz)
+    lug = box(lg[0] - 1.5, lg[0] + 1.5, yw0 - 5, ym + 1.5, lg[1] - 1.5, lg[1] + 1.5) + box(xg - 4, xg + 4, yw0 - 5, yw0 - 1, zg + 6, lg[1] + 1.5) + \
+        box(min(xg - 4, lg[0] - 1.5), max(xg + 4, lg[0] + 1.5), yw0 - 5, yw0 - 1, lg[1] - 1.5, lg[1] + 1.5)
+    parts.append(Part('row detent wedge lug', 'uframe', 'print', T(lug), (110, 112, 120), 'row_lug', 'PETG',
+                      note='ушко пружины клина на стойке (ред. 0.14)', mov='uframe'))
     # rev. 0.9b: the row link is screwed to the detent pawl (it moves 3 mm toward -X with it) and runs round the
     # shuttle to an incline that pushes a roller on the wedge: two straight motions joined by a plane, so the wedge
     # goes in exactly 5/3 of the link's travel
@@ -1354,6 +1508,93 @@ R_STRIKE = P.R_FACE + RIBBON_T + PAPER_T   # rev. 0.9.2: radius of the hammer fa
 HAMMER_EDGE = 0.1        # face beyond the ink of the widest glyphs, mm
 
 
+def sector_yz(cy, cz, r0, r1, p0, p1, x0, x1):
+    """rev. 0.14: annular sector about an axis along X through (cy, cz); angles from +Y toward +Z (as rotx turns)."""
+    n = max(6, int(abs(p1 - p0) / 2) + 2)
+    pts = [(cy + r1 * math.cos(math.radians(p0 + (p1 - p0) * i / n)), cz + r1 * math.sin(math.radians(p0 + (p1 - p0) * i / n))) for i in range(n + 1)]
+    pts += [(cy + r0 * math.cos(math.radians(p0 + (p1 - p0) * i / n)), cz + r0 * math.sin(math.radians(p0 + (p1 - p0) * i / n))) for i in range(n, -1, -1)]
+    return CrossSection([geo._ccw(pts)]).extrude(x1 - x0).transform(np.array([[0, 0, 1, x0], [1, 0, 0, 0], [0, 1, 0, 0]], float))
+
+
+# rev. 0.14 (physics checks, node C): the hammer flies alone. A torsion spring between the cocking lever and the hammer
+# (on the axle, x 12.2..15.4) presses the hammer's tab against the lever's lip; at home a sear (a pawl on a bracket of
+# the post) holds a tooth of the hammer's collar. The cam turns the lever HAM_LEVER_MAX deg ahead, winding the spring
+# against the sear; at the end of the rise the lever's lug lifts the pawl's toe, the hammer is thrown free (no link, no
+# rod, no lever in its flight), stays pressed on the sheet until the returning lip lifts it off (195 deg) and is
+# brought home, where the pawl drops in front of the tooth again. Angles about the hammer axle, from +Y toward +Z.
+HX = (15.6, 17.6)                        # collar, pawl, lug and lip's working plane
+HAM_TOOTH = (5.0, 7.0, 38.0, 42.0)       # collar tooth (r0, r1, phi0, phi1) at home
+HAM_TAB = (5.0, 8.5, -110.0, -90.0)      # collar tab at home (its +phi face on the lever's lip)
+HAM_LIP = (6.5, 8.5, -90.0, -70.0)       # lever's lip at the lever's rest
+HAM_LUG = (7.5, 9.5, 6.5, 16.5)          # lever's trip lug at the lever's rest
+SEAR_PIV = (8.6, 89.0)                   # pawl pivot (r, phi)
+SEAR_NOSE = (5.3, 7.4, 42.5, 50.0)       # pawl nose, engaged (in front of the tooth)
+SEAR_TOE = (7.6, 9.6, 28.6, 36.0)        # pawl toe the lug lifts
+
+
+def _polar(r, ph):
+    yp, zp = P.HAMMER_PIVOT
+    return (yp + r * math.cos(math.radians(ph)), zp + r * math.sin(math.radians(ph)))
+
+
+def _rot_about(pt, c, b):
+    cb, sb = math.cos(b), math.sin(b)
+    dy, dz = pt[0] - c[0], pt[1] - c[1]
+    return (c[0] + dy * cb - dz * sb, c[1] + dy * sb + dz * cb)
+
+
+def _ang_r(pt):
+    yp, zp = P.HAMMER_PIVOT
+    return math.degrees(math.atan2(pt[1] - zp, pt[0] - yp)), math.hypot(pt[0] - yp, pt[1] - zp)
+
+
+def sear_beta(cock, ham):
+    """Pawl turn (rad, + lifts the nose) for the lever at `cock` and the hammer at `ham` (0 home .. 1 on the sheet)."""
+    piv = _polar(*SEAR_PIV)
+    lug = HAM_LUG[3] + ham_lever_deg(cock) + 0.15                   # the lug's leading face (deg)
+    toe = [_polar(r, SEAR_TOE[2]) for r in (SEAR_TOE[0], 0.5 * (SEAR_TOE[0] + SEAR_TOE[1]), SEAR_TOE[1])]
+    nose = [_polar(SEAR_NOSE[0], ph) for ph in np.linspace(SEAR_NOSE[2], SEAR_NOSE[3], 5)]
+    d = HAM_SWING * ham                                               # hammer turned from home (deg)
+    t0, t1 = HAM_TOOTH[2] + d, HAM_TOOTH[3] + d
+    tooth_under = t1 > SEAR_NOSE[2] - 0.2 and t0 < SEAR_NOSE[3] + 0.2
+    def ok(b):
+        if min(_ang_r(_rot_about(q, piv, b))[0] for q in toe) < lug and lug > SEAR_TOE[2] - 0.5:
+            return False
+        if tooth_under and min(_ang_r(_rot_about(q, piv, b))[1] for q in nose) < HAM_TOOTH[1] + 0.2:
+            return False
+        return True
+    if ok(0.0):
+        return 0.0
+    lo, hi = 0.0, math.radians(45.0)
+    for _ in range(30):
+        mid = 0.5 * (lo + hi)
+        lo, hi = (lo, mid) if ok(mid) else (mid, hi)
+    return hi
+
+
+def sear_mesh():
+    piv = _polar(*SEAR_PIV)
+    x0, x1 = HX
+    nose = sector_yz(*P.HAMMER_PIVOT, *SEAR_NOSE, x0, x1)
+    toe = sector_yz(*P.HAMMER_PIVOT, *SEAR_TOE, x0, x1)
+    def bar(a, b, w):
+        dy, dz = b[0] - a[0], b[1] - a[1]; L = math.hypot(dy, dz); ny, nz = -dz / L * w / 2, dy / L * w / 2
+        pts = [(a[0] + ny, a[1] + nz), (b[0] + ny, b[1] + nz), (b[0] - ny, b[1] - nz), (a[0] - ny, a[1] - nz)]
+        return CrossSection([geo._ccw(pts)]).extrude(x1 - x0).transform(np.array([[0, 0, 1, x0], [1, 0, 0, 0], [0, 1, 0, 0]], float))
+    m = nose + toe + bar(piv, _polar(8.4, 47.0), 2.0) + bar(piv, _polar(8.8, 32.0), 2.0) + \
+        cyl((x0, piv[0], piv[1]), (x1, piv[0], piv[1]), 2.0, 16)
+    return m - cyl((x0 - 1, piv[0], piv[1]), (x1 + 1, piv[0], piv[1]), 1.05, 12)
+
+
+def collar_h_mesh():
+    """The hammer's collar on the axle (pinned): tooth for the sear, tab against the lever's lip (strike pose)."""
+    yp, zp = P.HAMMER_PIVOT; x0, x1 = HX
+    m = cyl((x0, yp, zp), (x1, yp, zp), 5.0, 32) - cyl((x0 - 1, yp, zp), (x1 + 1, yp, zp), 2.0, 16)
+    r0, r1, a0, a1 = HAM_TOOTH; m = m + sector_yz(yp, zp, r0 - 0.3, r1, a0 + HAM_SWING, a1 + HAM_SWING, x0, x1)
+    r0, r1, a0, a1 = HAM_TAB; m = m + sector_yz(yp, zp, r0 - 0.3, r1, a0 + HAM_SWING, a1 + HAM_SWING, x0, x1)
+    return m
+
+
 def hammer_face():
     """rev. 0.9.2: the window of the hammer face (x0, x1, z0, z1): the ink of all items on the shuttle plus HAMMER_EDGE,
     no more -- the neighbouring positions' glyphs stay about 1 mm outside it.
@@ -1394,8 +1635,11 @@ def hammer(st, dx):
     h = hammer_now(st, dx)
     return [Part('hammer', 'hammer', 'print', h, COL['hammer'], 'hammer', 'PETG',
                  note='боёк с накладкой из резины 1 мм', mov='hammer'),
-            Part('hammer axle', 'hammer', 'buy', cyl((-12 + dx, yp, zp), (12 + dx, yp, zp), 2.0, 16), COL['steel'],
-                 'rod4x24', 'сталь', mov='uframe')]
+            Part('hammer axle', 'hammer', 'buy', cyl((-6 + dx, yp, zp), (18.5 + dx, yp, zp), 2.0, 16), COL['steel'],
+                 'rod4x25', 'сталь', 'ось 4 мм, запрессована в молоток (ред. 0.14)', mov='uframe'),
+            Part('hammer collar', 'hammer', 'print', rotx(cached('ham_collar', collar_h_mesh), -HAM_SWING * (1 - st.hammer), yp, zp).translate((dx, 0, 0)),
+                 COL['hammer'], 'hammer_collar', 'PETG', note='втулка молотка на оси: зуб под шептало, упор под губу рычага (ред. 0.14)',
+                 mov='hammer')]
 
 
 def pressed(sheet, pusher, t, y_back):
@@ -1493,7 +1737,20 @@ def shuttle(st):
     parts.append(Part('shuttle bushing', 'shuttle', 'buy',
                       T(zcyl(*GUIDE_XY, HUB_Z0, HUB_Z0 + 14, 4.5, 24) - zcyl(*GUIDE_XY, HUB_Z0 - 1, HUB_Z0 + 15, 3.0, 16)),
                       COL['buy'], 'bushing6', 'бронза', 'втулка 6×9×14 с поджимом', mov='shuttle'))
+    # rev. 0.14 (physics checks, node B): the shuttle could leave its lift collar (up to 6.2 mm at the lift's reversal);
+    # a keeper on the hub hooks under the collar, so the collar drives the shuttle both up and down
+    parts.append(Part('lift collar keeper', 'shuttle', 'print', T(cached('keeper', keeper_mesh)), COL['shuttle'],
+                      'collar_keeper', 'PETG', note='держатель: две лапки под воротник подъёма (ред. 0.14)', mov='shuttle'))
     return parts
+
+
+def keeper_mesh():
+    z_cb = HUB_Z0 - 5.0                 # collar bottom
+    m = zcyl(0, P.AXIS_Y, HUB_Z0, HUB_Z0 + 4.0, 12.0, 48) - zcyl(0, P.AXIS_Y, HUB_Z0 - 1, HUB_Z0 + 5.0, 11.0, 48)
+    for a0 in (90.0, 270.0):            # clear of the collar's fork pins (along Y)
+        m = m + geo.sector_xy(0, P.AXIS_Y, 11.3, 12.0, a0 - 25, a0 + 25, z_cb - 1.7, HUB_Z0 + 0.01)
+        m = m + geo.sector_xy(0, P.AXIS_Y, 5.0, 12.0, a0 - 25, a0 + 25, z_cb - 1.7, z_cb - 0.2)
+    return m
 
 
 # --------------------------------------------------------------------------------------- carriage
@@ -1527,6 +1784,13 @@ def carriage(st):
                                      cyl((xc - 110, 1.0, 150), (xc + 110, 1.0, 150), 0.8, 8)])
     parts.append(Part('paper guide', 'carriage', 'cut', guide, COL['carriage'], 'guide_sheet', 'жесть',
                       'направляющая бумаги — полоса 0,5 мм', mov='carriage'))
+    # rev. 0.14 (physics checks, stage 1): the guide and the rest hung in the air; cheeks on the end plates carry them
+    xe0, xe1 = xc - P.CAR_HALF + 3, xc + P.CAR_HALF - 3          # inner faces of the end plates
+    for sx, (u0, u1) in ((-1, (xe0, xc - 110)), (1, (xc + 110, xe1))):
+        ch = geo.Manifold.batch_hull([cyl((u0, 24, 135), (u1, 24, 135), 1.6, 12), cyl((u0, 1.0, 150), (u1, 1.0, 150), 1.6, 12)])
+        ch = ch + box(u0, u1, 6.0, 24.0, 146.0, 158.0)      # the end plate is a frame: the cheek reaches its rim (z > 155)
+        parts.append(Part(f'paper guide cheek {sx:+d}', 'carriage', 'print', ch, COL['carriage'], 'guide_cheek', 'PETG',
+                          note='щёчка направляющей бумаги на торцевой стенке, винт М3 (ред. 0.14)', mov='carriage'))
     ry, rz, rr = P.ROLLER
     parts.append(Part('feed roller', 'carriage', 'buy', cyl((xc - P.CAR_HALF + 3, ry, rz), (xc + P.CAR_HALF - 3, ry, rz), rr, 32),
                       (60, 60, 60), 'roller14', 'сталь+резина', 'вал 6 мм с резиновой трубкой 14 мм', mov='carriage'))
@@ -1556,6 +1820,10 @@ def carriage(st):
     parts.append(Part('paper', 'paper', 'ref', pap + rest, COL['paper'], None, mov='carriage'))
     parts.append(Part('paper rest', 'carriage', 'print', rotx(box(xc - 100, xc + 100, ry + 6, ry + 80, rz + rr - 2.5, rz + rr - 0.5), 25, ry, rz + rr),
                       COL['carriage'], 'paper_rest', 'PETG', mov='carriage', printable=lambda: box(0, 200, 0, 74, 0, 2)))
+    for sx, (u0, u1) in ((-1, (xc - P.CAR_HALF + 3, xc - 100)), (1, (xc + 100, xc + P.CAR_HALF - 3))):   # rev. 0.14
+        arm = rotx(box(u0, u1, ry + 6, ry + 40, rz + rr - 6.0, rz + rr - 0.5), 25, ry, rz + rr)
+        parts.append(Part(f'paper rest arm {sx:+d}', 'carriage', 'print', arm, COL['carriage'], 'rest_arm', 'PETG',
+                          note='кронштейн подставки бумаги на торцевой стенке (ред. 0.14)', mov='carriage'))
     return parts
 
 
@@ -1598,7 +1866,7 @@ def margins(st, rack_y):
                           note='упор поля: скоба на планке полей, язычок в пазу, шаг 6u', mov='carriage'))
     ab = box(MARGIN_AB[0], MARGIN_AB[1], ys0, 112.0, zs + 0.5, zs + 7.0)
     parts.append(Part('margin abutment', 'esc', 'print', ab, (110, 112, 120), 'margin_ab', 'PETG',
-                      note='упор полей на кронштейне спуска, между упорами левого и правого поля'))
+                      note='упор полей на кронштейне спуска, между упорами левого и правого поля; на обеих гранях накладки из полиуретана 1 мм (ред. 0.14, ступень 2б)'))
     return parts
 
 
@@ -1731,6 +1999,16 @@ def train_ratio():
     return ZG['barrel'] / ZG['pin'] * ZG['int1'] / ZG['pin'] * ZG['bevel'] / ZG['bevpin']
 
 
+# rev. 0.14 (node C): the hammer swings HAM_SWING deg; the cocking lever (arm HAM_RC to its rod's pin) goes
+# HAM_LEVER_MAX deg, so at the blow its lip stays 3.4 deg ahead of the hammer's tab (the hammer flies alone)
+HAM_SWING, HAM_LEVER_MAX = 18.0, 21.4
+HAM_RC = 6.0 / math.tan(math.radians(HAM_LEVER_MAX))   # 15.3 mm: the cam's 6 mm stroke turns the lever 21.4 deg
+
+
+def ham_lever_deg(cock):
+    return math.degrees(math.atan2(CAM_LIFT['hammer'] * cock, HAM_RC))
+
+
 CAM_PROFILE = {'lift': 'out', 'rotate': 'out', 'detent': 'detent', 'hammer': 'cock', 'rowdet': 'detent', 'ribbon': 'ribbon',
                'read': 'read'}
 # top of each push rod (with its finger) at rest: just under the arm or link it lifts
@@ -1766,19 +2044,28 @@ def cam_lift(kind, a):
         if a < r0: return 1.0 - cyc((a - r0 + g0) / g0)
         if a <= r1: return 0.0
         return cyc((a - r1) / g1)
-    if kind == 'cock':          # rev. 0.8: the hammer spring is cocked over 10..150 deg and released at the strike
-        s0 = c['strike']
+    if kind == 'cock':
+        # rev. 0.14 (physics checks, node C): the cocking lever winds the spring between itself and the hammer, which
+        # the sear holds back: rise over 10..150 deg, the last 20 % over 133..171 deg trips the sear (it lets go at 160 deg) (the lever's lug
+        # lifts the pawl's toe); the lever stays up to 175 deg, then comes back: 1.0 -> 0.45 by 200 deg (its lip
+        # takes the hammer off the sheet before the feed, 200 deg), -> 0 by 330 deg (it brings the hammer home
+        # and the sear drops in front of the collar's tooth).
+        # rev. 0.14 (stage 2b): the trip segment follows the release angle (CYCLE['strike'], 158 deg since stage 2b)
+        o = c['strike'] - 160.0
         if a < 10: return 0.0
-        if a < 150: return cyc((a - 10) / 140)
-        if a < s0: return 1.0
-        if a < s0 + 2: return 1.0 - (a - s0) / 2
+        if a < 133 + o: return 0.8 * cyc((a - 10) / (123 + o))
+        if a < 171 + o: return 0.8 + 0.2 * cyc((a - 133 - o) / 38)
+        if a < 175: return 1.0
+        if a < 200: return 1.0 - 0.55 * cyc((a - 175) / 25)
+        if a < 330: return 0.45 * (1.0 - cyc((a - 200) / 130))
         return 0.0
-    if kind == 'strike':        # the hammer itself: flies to the paper in about 8 deg (9 ms), rests on its stop by 190
+    if kind == 'strike':
+        # rev. 0.14: the hammer (0 = home, 18 deg back; 1 = on the sheet): free flight 160..168 deg, then on the
+        # sheet (its spring presses it) until the lever's lip lifts it off: hammer <= lever (HAM_SWING deg of lever = 1)
         s0 = c['strike']
-        if s0 <= a < s0 + 8: return cyc((a - s0) / 8)
-        if s0 + 8 <= a < s0 + 11: return 1.0
-        if s0 + 11 <= a < s0 + 30: return 1.0 - cyc((a - s0 - 11) / 19)
-        return 0.0
+        if a < s0: return 0.0
+        if a < s0 + 8: return cyc((a - s0) / 8)
+        return min(1.0, ham_lever_deg(cam_lift('cock', a)) / HAM_SWING)
     return 0.0
 
 
@@ -1805,6 +2092,119 @@ def bevel(apex, axis, r_big, r_small, length, seg=48):
     """Bevel gear blank as a frustum along axis from the big end at 'apex' (schematic)."""
     apex = np.asarray(apex, float); axis = np.asarray(axis, float)
     return cyl(apex, apex + axis * length, r_big, seg, r1=r_small)
+
+
+# rev. 0.14 (physics checks, node B): positive drive of the rotate and lift cams. A cam pushed its roller only upward;
+# at the start of the return (205..215 deg) the trees and the shuttle (1.6 and 7.4 kg reflected to the rollers) would
+# have needed 14 and 35 N to follow the falling cam. A balance beam (return rocker) on a fixed pivot ties each push rod to
+# a short return push rod beside it, whose roller runs on a return cam: both ends of the beam hold the rods' pins in
+# slots, so the rods stay vertical and their rollers parallel to the shaft; the return cam's profile is the main one
+# mirrored through the beam (z_ret - zp = -(a_ret/a_main)(z_main - zp)), so the pair holds the rod in both directions.
+RET = {'rotate': dict(xr=111.5, xp=120.0, zp=40.0, yp=(-10.0, -6.0)),   # beam clear of the space6 and backspace levers
+       'lift': dict(xr=-112.0, xp=-122.0, zp=43.0, yp=(-10.0, -6.0))}     # clear of the shift and space4 levers
+RET_PIN_DZ = 3.5                  # pins above their rollers' centres
+RET_Y = (-2.0, 0.8)               # beam plane (in front of the push rods)
+
+
+def ret_arms(kind):
+    g = RET[kind]
+    return abs(CAM_X[kind] - g['xp']), abs(g['xp'] - g['xr'])
+
+
+def ret_main_pin_z(kind, a):
+    return CYC[1] + 9.0 + 2.0 + RET_PIN_DZ + CAM_LIFT[kind] * cam_lift(CAM_PROFILE[kind], a % 360.0)
+
+
+def ret_psi(kind, a):
+    """Beam angle (rad, + = main end up) at cycle angle a."""
+    am, _ = ret_arms(kind)
+    return math.atan2(ret_main_pin_z(kind, a) - RET[kind]['zp'], am)
+
+
+def ret_pin_z(kind, a):
+    am, ar = ret_arms(kind)
+    return RET[kind]['zp'] - ar / am * (ret_main_pin_z(kind, a) - RET[kind]['zp'])
+
+
+def ret_roller_z(kind, a):
+    return ret_pin_z(kind, a) - RET_PIN_DZ
+
+
+RET_RELIEF = (0.5, 122.0, 196.0, 3.0)    # mm, from, to, ramp (deg): the return cam stands off in the dwell
+
+
+def ret_relief(a):
+    """rev. 0.14: in the dwell (the follower still, the detents at work) the return cam stands off by RET_RELIEF[0]: the
+    detents move the shuttle as before, against the trees' own return springs only."""
+    h, a0, a1, rp = RET_RELIEF
+    a = a % 360.0
+    if a <= a0 - rp or a >= a1 + rp:
+        return 0.0
+    if a < a0:
+        return h * cam_ramp((a - a0 + rp) / rp)
+    if a > a1:
+        return h * (1.0 - cam_ramp((a - a1) / rp))
+    return h
+
+
+def cam_ramp(t):
+    t = min(max(t, 0.0), 1.0); return t - math.sin(2 * math.pi * t) / (2 * math.pi)
+
+
+def ret_cam_mesh(kind, x, roller=2.0):
+    """Return cam: pitch curve = the return roller's centre (top contact), offset inward by the roller."""
+    pts = []
+    for i in range(720):
+        aa = 360.0 * i / 720
+        r = ret_roller_z(kind, (90.0 - aa) % 360.0) - CYC[1] - ret_relief((90.0 - aa) % 360.0)
+        th = math.radians(aa)
+        pts.append((r * math.cos(th), r * math.sin(th)))
+    cs = geo.CrossSection([geo._ccw(pts)]).offset(-roller, JoinType.Round, 2.0, 96)
+    m = cs.extrude(5).transform(np.array([[0, 0, 1, x - 2.5], [1, 0, 0, CYC[0]], [0, 1, 0, CYC[1]]], float))
+    return m - cyl((x - 3, CYC[0], CYC[1]), (x + 3, CYC[0], CYC[1]), 2.05, 16)
+
+
+def ret_guide_z(kind):
+    return max(ret_pin_z(kind, a) for a in range(0, 360, 2)) + 3.0
+
+
+def ret_rocker_parts(kind, st):
+    g = RET[kind]; xm = CAM_X[kind]; xp = g['xp']; xr = g['xr']; zp = g['zp']; sgn = 1.0 if xm > xp else -1.0
+    am, ar = ret_arms(kind)
+    a = st.cycle % 360.0
+    psi = ret_psi(kind, a)
+    y0, y1 = RET_Y
+    yC = CYC[0]
+    # the beam at psi = 0 (horizontal), then turned about the pivot (axis along Y); the pins slide in the slots
+    # (along the beam they sit at a/cos(psi): up to 1.1 a at 24 deg)
+    e0, e1 = sorted((xp - sgn * (ar * 1.12 + 3.0), xp + sgn * (am * 1.12 + 3.0)))
+    bar = box(e0, e1, y0, y1, zp - 1.8, zp + 1.8)
+    for arm, sg in ((am, sgn), (ar, -sgn)):
+        s0, s1 = sorted((xp + sg * (arm - 1.5), xp + sg * (arm * 1.12 + 1.6)))
+        bar = bar - box(s0, s1, y0 - 1, y1 + 1, zp - 1.25, zp + 1.25)
+    bar = bar + cyl((xp, y0, zp), (xp, y1, zp), 3.5, 20) - cyl((xp, y0 - 1, zp), (xp, y1 + 1, zp), 1.55, 12)
+    m = geo.roty(bar, -sgn * math.degrees(psi), xp, zp)
+    out = [Part(f'return rocker {kind}', 'drive', 'print', m, (200, 120, 60), f'ret_rocker_{kind}', 'PETG',
+                note='коромысло-коромысло: пальцы основного и обратного толкателей в пазах (ред. 0.14)', mov='cycle')]
+    # the return push rod: roller on the return cam, pin into the beam, guided above the beam
+    zr = ret_roller_z(kind, a); zpin = zr + RET_PIN_DZ
+    zg = ret_guide_z(kind)
+    pin_min = min(ret_pin_z(kind, b) for b in range(0, 360, 2))
+    top = zpin + (zg + 3.0 - pin_min) + 0.5
+    rod = zcyl(xr, yC, zr + 0.3, top, 1.5, 12)
+    rod = rod + cyl((xr - 1.5, yC, zr), (xr + 1.5, yC, zr), 2.0, 16)
+    rod = rod + cyl((xr, y0 - 0.6, zpin), (xr, yC, zpin), 1.235, 16)
+    out.append(Part(f'return rod {kind}', 'drive', 'buy', rod, COL['steel'], 'rod3x30', 'сталь',
+                    'обратный толкатель с роликом (ред. 0.14)', mov='cycle'))
+    py0, py1 = g['yp']
+    post = box(xp - 2.0, xp + 2.0, py0, py1, 0.0, zg + 3.0)
+    gx0, gx1 = sorted((xr - sgn * 2.4, xp))
+    arm_ = box(gx0, gx1, py0, yC + 2.6, zg, zg + 3.0) - zcyl(xr, yC, zg - 1, zg + 4, 1.6, 16)    # under the key levers (z 53)
+    out.append(Part(f'return rocker post {kind}', 'drive', 'print', post + arm_, (110, 112, 120), 'ret_post', 'PETG',
+                    note='стойка коромысла с направляющей обратного толкателя, на основании (ред. 0.14)'))
+    out.append(Part(f'return rocker pin {kind}', 'drive', 'buy', cyl((xp, py0 + 0.5, zp), (xp, y1 + 0.6, zp), 1.5, 12),
+                    COL['steel'], 'pin3x12', 'сталь', 'ось коромысла (ред. 0.14)'))
+    return out
 
 
 def drive(st):
@@ -1859,18 +2259,34 @@ def drive(st):
                  cyl((gxg + 5, yD, zC), (gxg + 9, yD, zC), 4, 16)])
     parts.append(Part('governor fan', 'drive', 'print', fan, (180, 160, 120), 'governor', 'PETG',
                       note='воздушный регулятор: 4 лопасти 30 мм, раствор подгоняется'))
-    parts.append(Part('governor arbor', 'drive', 'buy', cyl((gxg - 6, yD, zC), (gxg + 12, yD, zC), 1.5, 16), COL['steel'], 'rod3x20', 'сталь'))
+    parts.append(Part('governor arbor', 'drive', 'buy', cyl((GB_X0 + 0.1, yD, zC), (gxg + 13.6, yD, zC), 1.5, 16), COL['steel'], 'rod3x30', 'сталь',
+                      'ось регулятора 3 мм, 30 мм (ред. 0.14, ступень 2б: левым концом — в тормозной шайбе)'))
+    parts += governor_brake(yD, zC)
+    # rev. 0.14 (physics checks, node E): the flywheel the comment above promised. The cycle shaft with its cams is light
+    # (4.8e-6 kg m2 by the meshes), and the reading's retraction (up to 23 mJ in some 20 deg) would stall it; motor.py
+    # had taken 4e-5. A steel disc 31 x 3.2 mm on the governor arbor (x 16 through the 32/8 pair) gives 3.6e-5.
+    parts.append(Part('governor flywheel', 'drive', 'buy', cyl((gxg + 9.6, yD, zC), (gxg + 12.8, yD, zC), 15.5, 48) -
+                      cyl((gxg + 9, yD, zC), (gxg + 13.4, yD, zC), 1.5, 16), COL['steel'], 'disc31x3', 'сталь',
+                      'маховик регулятора: стальной диск 31×3,2 мм на оси регулятора (ред. 0.14)'))
     parts.append(Part('cycle shaft', 'drive', 'buy', cyl((-160, yC, zC), (X_LAY - 8, yC, zC), 4.0, 24), COL['steel'], 'rod8x380', 'сталь',
                       'вал 8 мм, 380 мм — цикловой вал'))
     rot = st.cycle
     for kind, x in CAM_X.items():
         cm = rotx(cam_mesh(kind, x, lift=CAM_LIFT[kind]), rot, yC, zC)
-        parts.append(Part(f'cam {kind}', 'drive', 'print', cm, (200, 120, 60), f'cam_{kind}', 'PETG', mov='cycle'))
+        if kind in RET:     # rev. 0.14 (node B): roller loads 21..85 N -- 43..113 MPa on PETG; hardened steel
+            parts.append(Part(f'cam {kind}', 'drive', 'cut', cm, COL['steel'], f'cam_{kind}', 'сталь',
+                              note='кулачок: сталь 45 5 мм, закалка; ролик закалённый (ред. 0.14)', mov='cycle'))
+        else:
+            parts.append(Part(f'cam {kind}', 'drive', 'print', cm, (200, 120, 60), f'cam_{kind}', 'PETG', mov='cycle'))
+    for kind in RET:                    # rev. 0.14: return cams of the rotate and lift push rods
+        cm = rotx(cached(f'retcam_{kind}', lambda kind=kind: ret_cam_mesh(kind, RET[kind]['xr'])), rot, yC, zC)
+        parts.append(Part(f'cam {kind} return', 'drive', 'cut', cm, COL['steel'], f'cam_{kind}_return', 'сталь',
+                          note='обратный кулачок: сталь 45 5 мм, закалка; профиль — основной через коромысло, в выстое отступ 0,5 мм (ред. 0.14)', mov='cycle'))
     gs = 178.5
     stop = rotx(box(gs - 2, gs + 2, yC - 3, yC + 3, zC, zC + 14), rot, yC, zC)
     parts.append(Part('cycle stop arm', 'drive', 'print', stop, (200, 120, 60), 'stop_arm', 'PETG', mov='cycle'))
     parts.append(Part('cycle stop latch', 'drive', 'print', box(gs - 3, gs + 3, yC - 18, yC - 10, zC + 10, zC + 22),
-                      (110, 112, 120), 'stop_latch', 'PETG', note='защёлка цикла; спускается последней точкой хода клавиши'))
+                      (110, 112, 120), 'stop_latch', 'PETG', note='защёлка цикла; спускается последней точкой хода клавиши; упорная грань с накладкой из полиуретана 2 мм (ред. 0.14)'))
     for kind, x in CAM_X.items():
         lift = CAM_LIFT[kind] * cam_lift(CAM_PROFILE[kind], st.cycle % 360.0)
         h = 9.0 + lift
@@ -1896,8 +2312,12 @@ def drive(st):
             rod = zcyl(x, yC, zC + h + 0.3, top, 1.5, 12)
             rod = rod + box(x + fx[0], x + fx[1], min(yC, yf) - 1.5, max(yC, yf) + 1.5, top - 2.0, top)
         roller = cyl((x - 2.5, yC, zC + h + 2.0), (x + 2.5, yC, zC + h + 2.0), 2.0, 16)
+        if kind in RET:                 # rev. 0.14: the pin for the return rocker's slot, in front of the rod
+            roller = roller + cyl((x, RET_Y[0] - 0.6, zC + h + 2.0 + RET_PIN_DZ), (x, yC, zC + h + 2.0 + RET_PIN_DZ), 1.235, 16)
         parts.append(Part(f'cam rod {kind}', 'drive', 'buy', rod + roller, COL['steel'], 'rod3x80', 'сталь',
                           'толкатель с роликом', mov='cycle'))
+    for kind in RET:
+        parts += ret_rocker_parts(kind, st)
     # bearing blocks and motor cheeks
     for x in (-153.0, 120.0, 171.0):
         parts.append(Part(f'cycle bearing block {x:.0f}', 'drive', 'print',
@@ -2021,7 +2441,7 @@ def read_lock(st):
     lev = lev - zcyl(ax, ay, 6.0, zl[1] + 0.5, 1.05, 12)
     parts.append(Part('read lock lever', 'drive', 'print', rotz(lev, phi, ax, ay), (200, 120, 60), 'lock_lever', 'PETG',
                       note='рычажок запора 9/9 мм на вертикальной оси: плечо на головке штыря, плечо под тросы О и W', mov='readlock'))
-    parts.append(Part('read lock axle', 'drive', 'buy', zcyl(ax, ay, 4.0, zl[1] + 0.3, 1.0, 12), COL['steel'], 'rod2x10', 'сталь'))
+    parts.append(Part('read lock axle', 'drive', 'buy', zcyl(ax, ay, 4.0, zl[1] + 1.1, 1.0, 12), COL['steel'], 'rod2x10', 'сталь', 'ось с канавкой под кольцо (ред. 0.14)'))
     return parts
 
 
@@ -2073,9 +2493,11 @@ def lock_phi(push):
 
 def build(st):
     out = []
-    for fn in (frame, keyboard, levers, plates, bails, frame_springs, sectors, mark_stops, selectors, uframe, shuttle, reading, carriage,
+    for fn in (frame, keyboard, levers, key_return, plates, bails, frame_springs, sectors, mark_stops, selectors, uframe, shuttle, reading, carriage,
                escapement, carriage_release, ribbon, drive):
         out += fn(st)
+    import supports as SUP
+    out += SUP.parts(st, Part, COL)                 # rev. 0.14: base plate, comb bridge, E-clips (physics checks)
     if st.case:
         import case as CASE
         out += CASE.parts()
@@ -2085,7 +2507,8 @@ def build(st):
 def press_all(out, st):
     """rev. 0.9.2: at the blow the hammer carries the sheet, and the sheet the ribbon, onto the type face."""
     by = {p.name: p for p in out}
-    if st.hammer > 0.9 and all(n in by for n in ('hammer', 'paper', 'ribbon')):
+    # rev. 0.14: the hammer now lies on the sheet and leaves it slowly (the lever's lip lifts it): press from 0.8
+    if st.hammer > 0.8 and all(n in by for n in ('hammer', 'paper', 'ribbon')):
         by['paper'].mesh, push = pressed(by['paper'].mesh, by['hammer'].mesh, PAPER_T, PAPER_BACK)
         if push is not by['hammer'].mesh:
             by['ribbon'].mesh, _ = pressed(by['ribbon'].mesh, push, RIBBON_T, P.RIBBON_Y + RIBBON_T / 2)
@@ -2137,7 +2560,7 @@ def mark_stops(st):
     car = car - cyl((169.5, -300, 99), (169.5, -260, 99), 1.6, 12)
     parts.append(Part('stop carrier', 'sectors', 'print', car.translate((0, -d, 0)), COL['sector'], 'stop_carrier', 'PETG',
                       note='каретка щупа: ход до 9 мм по Y, пружина к ролику', mov='stopcar'))
-    parts.append(Part('stop carrier rod', 'sectors', 'buy', cyl((169.5, -307, 99), (169.5, -280, 99), 1.5, 12), COL['steel'], 'rod3x30', 'сталь',
+    parts.append(Part('stop carrier rod', 'sectors', 'buy', cyl((169.5, -307.8, 99), (169.5, -280, 99), 1.5, 12), COL['steel'], 'rod3x30', 'сталь',
                       'направляющая каретки щупа'))
     parts.append(Part('stop carrier rod bracket', 'sectors', 'print',
                       box(167.5, 173, -308, -303, 92, 104) - cyl((169.5, -309, 99), (169.5, -302, 99), 1.55, 12), (110, 112, 120), 'stop_rod_br', 'PETG'))

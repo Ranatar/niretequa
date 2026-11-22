@@ -1,0 +1,443 @@
+{
+ "I_rot": 0.0003183712311969491,
+ "m_lift": 0.1259261629266639,
+ "rot_own_kg": 0.05006339209538396,
+ "lift_own_kg": 0.06159388840324294,
+ "tau": 0.0394,
+ "c_gov": 1.419813746380079e-05,
+ "validation": [
+  {
+   "target": "дальняя",
+   "pos": 0,
+   "row": 7,
+   "t_motor": 0.48117881660613493,
+   "t_here": 0.48089686038402274,
+   "diff_pct": -0.0585969731795144
+  },
+  {
+   "target": "средняя",
+   "pos": 2,
+   "row": 3,
+   "t_motor": 0.34243854803224627,
+   "t_here": 0.3423369917486099,
+   "diff_pct": -0.02965679074974359
+  },
+  {
+   "target": "без хода",
+   "pos": 5,
+   "row": -1,
+   "t_motor": 0.2701228569352441,
+   "t_here": 0.2700713149036942,
+   "diff_pct": -0.019080958988337837
+  }
+ ],
+ "F_ret_known": {
+  "rot": 1.6530789010102798,
+  "lift": 1.2547607563812337,
+  "note": "возврат толкателя: пружины ползунов разрядов 0,4 Н × 4 (3) и вес толкателя; приведение 1:1 (допущение)"
+ },
+ "cases": [
+  {
+   "target": "дальняя (0, 7)",
+   "pos": 0,
+   "row": 7,
+   "t_cycle": 0.4711777933324284,
+   "w_max": 27.87012331307668,
+   "N_rot_min": -9.62048581943562,
+   "N_rot_min_deg": 109.89999999999803,
+   "N_lift_min": -41.21695629825854,
+   "N_lift_min_deg": 109.89999999999803,
+   "collar_acc_min": -53.6200914967477,
+   "collar_acc_min_deg": 109.89999999999803,
+   "collar_separates": [
+    99.8999999999986,
+    223.79999999999157
+   ],
+   "tape_min_N": -5.2139724213532,
+   "tape_min_deg": 109.89999999999803,
+   "F_ret_rot_needed": 11.2735647204459,
+   "F_ret_lift_needed": 42.47171705463977,
+   "m_rot": 1.6020965420211615,
+   "m_lift_eff": 7.373420983042226,
+   "slot_friction_rotate_mJ": 1.0297251266348182,
+   "main_rotate_max_N": 17.38362402937539,
+   "ret_rotate_max_N": 22.63643722220146,
+   "ret_rotate_at_deg": 109.89999999999803,
+   "ret_rotate_needed_in_relief_N": 0.0,
+   "slot_friction_lift_mJ": 2.338227394465435,
+   "main_lift_max_N": 83.06561030437904,
+   "ret_lift_max_N": 94.79899948599464,
+   "ret_lift_at_deg": 109.89999999999803,
+   "ret_lift_needed_in_relief_N": 0.0,
+   "keeper_max_N": 5.5168367196515025,
+   "tape_branch_min_N": 8.724694406251338,
+   "tape_branch_max_N": 23.275305593748662,
+   "flights": [
+    {
+     "leave_deg": 99.8999999999986,
+     "land_deg": 246.49999999999028,
+     "gap_max_mm": 7.7743340730147406,
+     "over_target_mm": 7.7743340730147406,
+     "v_land": -0.27964363241292634
+    }
+   ]
+  },
+  {
+   "target": "дальняя (10, 7)",
+   "pos": 10,
+   "row": 7,
+   "t_cycle": 0.4711777933324284,
+   "w_max": 27.87012331307668,
+   "N_rot_min": -9.62048581943562,
+   "N_rot_min_deg": 109.89999999999803,
+   "N_lift_min": -41.21695629825854,
+   "N_lift_min_deg": 109.89999999999803,
+   "collar_acc_min": -53.6200914967477,
+   "collar_acc_min_deg": 109.89999999999803,
+   "collar_separates": [
+    99.8999999999986,
+    223.79999999999157
+   ],
+   "tape_min_N": -5.2139724213532,
+   "tape_min_deg": 109.89999999999803,
+   "F_ret_rot_needed": 11.2735647204459,
+   "F_ret_lift_needed": 42.47171705463977,
+   "m_rot": 1.6020965420211615,
+   "m_lift_eff": 7.373420983042226,
+   "slot_friction_rotate_mJ": 1.0297251266348182,
+   "main_rotate_max_N": 17.38362402937539,
+   "ret_rotate_max_N": 22.63643722220146,
+   "ret_rotate_at_deg": 109.89999999999803,
+   "ret_rotate_needed_in_relief_N": 0.0,
+   "slot_friction_lift_mJ": 2.338227394465435,
+   "main_lift_max_N": 83.06561030437904,
+   "ret_lift_max_N": 94.79899948599464,
+   "ret_lift_at_deg": 109.89999999999803,
+   "ret_lift_needed_in_relief_N": 0.0,
+   "keeper_max_N": 5.5168367196515025,
+   "tape_branch_min_N": 8.724694406251338,
+   "tape_branch_max_N": 23.275305593748662,
+   "flights": [
+    {
+     "leave_deg": 99.8999999999986,
+     "land_deg": 246.49999999999028,
+     "gap_max_mm": 7.7743340730147406,
+     "over_target_mm": 7.7743340730147406,
+     "v_land": -0.27964363241292634
+    }
+   ]
+  },
+  {
+   "target": "поворот (0, 0)",
+   "pos": 0,
+   "row": 0,
+   "t_cycle": 0.31336990966109984,
+   "w_max": 27.417951945576622,
+   "N_rot_min": -16.72789560359479,
+   "N_rot_min_deg": 102.09999999999847,
+   "N_lift_min": 0.4139787680623299,
+   "N_lift_min_deg": 102.09999999999847,
+   "collar_acc_min": -10.928104366013338,
+   "collar_acc_min_deg": 102.09999999999847,
+   "collar_separates": [
+    99.69999999999861,
+    105.49999999999828
+   ],
+   "tape_min_N": -8.501117128532922,
+   "tape_min_deg": 102.09999999999847,
+   "F_ret_rot_needed": 18.380974504605067,
+   "F_ret_lift_needed": 0.8407819883189038,
+   "m_rot": 1.6020965420211615,
+   "m_lift_eff": 0.17584118675697705,
+   "slot_friction_rotate_mJ": 7.601741264825323,
+   "main_rotate_max_N": 23.777609690946118,
+   "ret_rotate_max_N": 39.3597543613995,
+   "ret_rotate_at_deg": 102.09999999999847,
+   "ret_rotate_needed_in_relief_N": 0.0,
+   "slot_friction_lift_mJ": 0.0,
+   "main_lift_max_N": 4.859738392633701,
+   "ret_lift_max_N": 0.0,
+   "ret_lift_at_deg": 102.09999999999847,
+   "ret_lift_needed_in_relief_N": 0.0,
+   "keeper_max_N": 0.1407985925636098,
+   "tape_branch_min_N": 5.7675051117688945,
+   "tape_branch_max_N": 26.232494888231106,
+   "flights": [
+    {
+     "leave_deg": 99.69999999999861,
+     "land_deg": 115.19999999999773,
+     "gap_max_mm": 0.020343188000964546,
+     "over_target_mm": -0.0026964540370578993,
+     "v_land": -0.014997566771578706
+    }
+   ]
+  },
+  {
+   "target": "подъём (5, 7)",
+   "pos": 5,
+   "row": 7,
+   "t_cycle": 0.4436721734522187,
+   "w_max": 27.859146084676556,
+   "N_rot_min": 1.276340338213203,
+   "N_rot_min_deg": 109.19999999999807,
+   "N_lift_min": -44.81867365467733,
+   "N_lift_min_deg": 109.19999999999807,
+   "collar_acc_min": -57.34225605496712,
+   "collar_acc_min_deg": 109.19999999999807,
+   "collar_separates": [
+    98.59999999999867,
+    225.89999999999145
+   ],
+   "tape_min_N": 0.0,
+   "tape_min_deg": 0.0,
+   "F_ret_rot_needed": 0.37673856279707674,
+   "F_ret_lift_needed": 46.073434411058564,
+   "m_rot": 0.05006339209538396,
+   "m_lift_eff": 7.373420983042226,
+   "slot_friction_rotate_mJ": 0.0,
+   "main_rotate_max_N": 2.170928258304032,
+   "ret_rotate_max_N": 0.0,
+   "ret_rotate_at_deg": 109.19999999999807,
+   "ret_rotate_needed_in_relief_N": 0.0,
+   "slot_friction_lift_mJ": 2.9911927526866355,
+   "main_lift_max_N": 86.9377468572682,
+   "ret_lift_max_N": 103.08294940575786,
+   "ret_lift_at_deg": 109.19999999999807,
+   "ret_lift_needed_in_relief_N": 0.0,
+   "keeper_max_N": 5.985554620249696,
+   "tape_branch_min_N": 16.0,
+   "tape_branch_max_N": 16.0,
+   "flights": [
+    {
+     "leave_deg": 98.59999999999867,
+     "land_deg": 263.7999999999915,
+     "gap_max_mm": 11.315095531827343,
+     "over_target_mm": 9.948972584240877,
+     "v_land": -0.40700265777115907
+    }
+   ]
+  },
+  {
+   "target": "средняя (3, 2)",
+   "pos": 3,
+   "row": 2,
+   "t_cycle": 0.3009467958874908,
+   "w_max": 27.265251080020004,
+   "N_rot_min": -1.957370993643296,
+   "N_rot_min_deg": 100.49999999999856,
+   "N_lift_min": -8.401889668101914,
+   "N_lift_min_deg": 100.49999999999856,
+   "collar_acc_min": -34.57523930827887,
+   "collar_acc_min_deg": 100.49999999999856,
+   "collar_separates": [
+    88.99999999999922,
+    238.29999999999075
+   ],
+   "tape_min_N": -3.5862048807032223,
+   "tape_min_deg": 100.49999999999856,
+   "F_ret_rot_needed": 3.6104498946535757,
+   "F_ret_lift_needed": 9.656650424483148,
+   "m_rot": 0.2983886960835084,
+   "m_lift_eff": 1.0898195735868506,
+   "slot_friction_rotate_mJ": 0.5054158334594501,
+   "main_rotate_max_N": 5.8641206113366895,
+   "ret_rotate_max_N": 4.605578808572461,
+   "ret_rotate_at_deg": 100.49999999999856,
+   "ret_rotate_needed_in_relief_N": 0.0,
+   "slot_friction_lift_mJ": 1.5324480609726936,
+   "main_lift_max_N": 20.164925220109705,
+   "ret_lift_max_N": 19.324346236634405,
+   "ret_lift_at_deg": 100.49999999999856,
+   "ret_lift_needed_in_relief_N": 0.0,
+   "keeper_max_N": 3.1185915600521454,
+   "tape_branch_min_N": 11.817236417882368,
+   "tape_branch_max_N": 20.18276358211763,
+   "flights": [
+    {
+     "leave_deg": 88.99999999999922,
+     "land_deg": 210.7999999999923,
+     "gap_max_mm": 6.383327355894905,
+     "over_target_mm": 6.383327355894905,
+     "v_land": -0.2757399619442006
+    }
+   ]
+  },
+  {
+   "target": "пробел (5, 0)",
+   "pos": 5,
+   "row": 0,
+   "t_cycle": 0.26537466953248234,
+   "w_max": 25.907338197922236,
+   "N_rot_min": 0.9830797056369663,
+   "N_rot_min_deg": 227.59999999999135,
+   "N_lift_min": 0.07813249205962602,
+   "N_lift_min_deg": 227.59999999999135,
+   "collar_acc_min": -12.747323081448233,
+   "collar_acc_min_deg": 227.59999999999135,
+   "collar_separates": [
+    81.49999999999964,
+    240.09999999999064
+   ],
+   "tape_min_N": 0.0,
+   "tape_min_deg": 0.0,
+   "F_ret_rot_needed": 0.6699991953733134,
+   "F_ret_lift_needed": 1.1766282643216077,
+   "m_rot": 0.05006339209538396,
+   "m_lift_eff": 0.17584118675697705,
+   "slot_friction_rotate_mJ": 0.0,
+   "main_rotate_max_N": 2.3554344260779025,
+   "ret_rotate_max_N": 0.0,
+   "ret_rotate_at_deg": 227.59999999999135,
+   "ret_rotate_needed_in_relief_N": 0.0,
+   "slot_friction_lift_mJ": 0.0,
+   "main_lift_max_N": 4.898350871072022,
+   "ret_lift_max_N": 0.0,
+   "ret_lift_at_deg": 227.59999999999135,
+   "ret_lift_needed_in_relief_N": 0.0,
+   "keeper_max_N": 0.36988582492270056,
+   "tape_branch_min_N": 16.0,
+   "tape_branch_max_N": 16.0,
+   "flights": [
+    {
+     "leave_deg": 81.49999999999964,
+     "land_deg": 131.09999999999684,
+     "gap_max_mm": 0.4252168579428183,
+     "over_target_mm": 0.4239617739126792,
+     "v_land": -0.09178850584728981
+    },
+    {
+     "leave_deg": 215.29999999999205,
+     "land_deg": 265.5999999999919,
+     "gap_max_mm": 0.43092379374274314,
+     "over_target_mm": -0.19478310497124224,
+     "v_land": -0.1112224909179943
+    }
+   ]
+  }
+ ],
+ "hertz": {
+  "rotate": {
+   "F_main": 23.777609690946118,
+   "F_ret": 39.3597543613995,
+   "p_main_petg_MPa": 46.059393891284365,
+   "p_ret_petg_MPa": 76.50409573781111,
+   "p_main_steel_MPa": 314.60233749634097,
+   "p_ret_steel_MPa": 522.5506745479253
+  },
+  "lift": {
+   "F_main": 86.9377468572682,
+   "F_ret": 103.08294940575786,
+   "p_main_petg_MPa": 88.07209192176494,
+   "p_ret_petg_MPa": 123.80891412038787,
+   "p_main_steel_MPa": 601.5642770328091,
+   "p_ret_steel_MPa": 845.6597122639997
+  }
+ },
+ "pressure": {
+  "rotate": {
+   "main": {
+    "max_deg": 37.80838016854016,
+    "at_deg": 56.75,
+    "r_min": 11.0,
+    "r_max": 23.0
+   },
+   "return": {
+    "max_deg": 23.000904618370637,
+    "at_deg": 69.5,
+    "r_min": 9.674999999999997,
+    "r_max": 15.274999999999999
+   }
+  },
+  "lift": {
+   "main": {
+    "max_deg": 37.80838016854016,
+    "at_deg": 56.75,
+    "r_min": 11.0,
+    "r_max": 23.0
+   },
+   "return": {
+    "max_deg": 17.8906189870105,
+    "at_deg": 251.5,
+    "r_min": 13.891304347826086,
+    "r_max": 19.608695652173914
+   }
+  }
+ },
+ "at_governor_speed": [
+  {
+   "target": "дальняя (0, 7)",
+   "F_ret_rot_needed": 20.700908765751613,
+   "F_ret_lift_needed": 85.85972431562615,
+   "collar_acc": 98.45906326969889,
+   "ret_roller_rot_N": 48.70802062529792,
+   "ret_roller_lift_N": 197.47736592594015,
+   "keeper_N": 11.163236384596237
+  },
+  {
+   "target": "подъём (5, 7)",
+   "F_ret_rot_needed": 0.6468759435452955,
+   "F_ret_lift_needed": 85.85972431562615,
+   "collar_acc": 98.45906326969889,
+   "ret_roller_rot_N": 1.5220610436359896,
+   "ret_roller_lift_N": 197.47736592594015,
+   "keeper_N": 11.163236384596237
+  },
+  {
+   "target": "поворот (0, 0)",
+   "F_ret_rot_needed": 20.700908765751613,
+   "F_ret_lift_needed": 1.0954108343206146,
+   "collar_acc": 12.307382908712361,
+   "ret_roller_rot_N": 48.70802062529792,
+   "ret_roller_lift_N": 2.5194449189374137,
+   "keeper_N": 0.3144858470527785
+  }
+ ],
+ "spring_cost": [
+  {
+   "F": 5,
+   "peak_mNm": 62.504486741544355
+  },
+  {
+   "F": 10,
+   "peak_mNm": 125.00897348308871
+  },
+  {
+   "F": 20,
+   "peak_mNm": 250.01794696617742
+  },
+  {
+   "F": 40,
+   "peak_mNm": 500.03589393235484
+  },
+  {
+   "F": 80,
+   "peak_mNm": 1000.0717878647097
+  }
+ ],
+ "cycle_vs_motor": [
+  {
+   "target": "дальняя (0, 7)",
+   "t": 0.4711777933324284
+  },
+  {
+   "target": "дальняя (10, 7)",
+   "t": 0.4711777933324284
+  },
+  {
+   "target": "поворот (0, 0)",
+   "t": 0.31336990966109984
+  },
+  {
+   "target": "подъём (5, 7)",
+   "t": 0.4436721734522187
+  },
+  {
+   "target": "средняя (3, 2)",
+   "t": 0.3009467958874908
+  },
+  {
+   "target": "пробел (5, 0)",
+   "t": 0.26537466953248234
+  }
+ ]
+}

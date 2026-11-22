@@ -193,7 +193,7 @@ def parts(st, Part, COL, cached):
             box(x + 21.2, x + 22.4, y - 1.2, y + 1.2, Z_UP[0] + 0.3, Z_UA[1])
     rout = 0.0 if st.u_in else 3.0
     add('escapement stop finger', 'print', rotz(cached('escUF', ufinger).translate((rout, 0, 0)), th_u, x, y), COL['esc'],
-        'esc_finger', 'PETG', 'палец U: ползун в пазу рычага; в покое выведен из зубьев на 3 мм, входит перед спуском', 'followW')
+        'esc_finger', 'PETG', 'палец U: ползун в пазу рычага; в покое выведен из зубьев на 3 мм, входит перед спуском; на рабочей грани накладка из полиуретана 1 мм (ред. 0.14)', 'followW')
     # tape (machine frame): from rod X's end along the drum's bottom, wrapped CCW to its anchor; the drum turns CW
     a_anchor = 40.0 - PITCH * (s_w + st.pm_u)
     tp = box(-6.0, 0.0, y - R_DRUM - 0.1, y - R_DRUM, Z_UD[0] + 0.25, Z_UD[1] - 0.25) + \
@@ -277,8 +277,8 @@ def parts(st, Part, COL, cached):
         'неподвижный храповой сектор M (шаг 6°), подвешен к верхней плите')
     za = TH_M - 5.0 - math.degrees(math.asin(1.5 / 16.0))
     zs = P2(16.0, za)
-    add('memory zero stop', 'buy', zcyl(zs[0], zs[1], Z_M[0], 98.0, 1.5, 24), COL['steel'], 'rod3x20', 'сталь',
-        'упор нуля M: стальной штифт 3 мм в верхней плите')
+    add('memory zero stop', 'buy', zcyl(zs[0], zs[1], Z_M[0], 105.6, 1.5, 24), COL['steel'], 'rod3x25', 'сталь',
+        'упор нуля M: стальной штифт 3 мм в мостике над линейкой полей (ред. 0.14)')
     # ---- rockers, tail pins, links (machine frame)
     for key, n in (('bksp', 46), ('back', 47)):
         f = st.pressed.get(n, 0.0)

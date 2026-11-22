@@ -1480,6 +1480,23 @@
    "length": 348
   },
   {
+   "key": "ddotbL",
+   "glyph": "uniE043.inlambe",
+   "kind": "DX",
+   "role": "две точки в lambe/alda — y",
+   "bbox": [
+    81.0,
+    148.0,
+    345.0,
+    258.0
+   ],
+   "anchor": [
+    152,
+    336.0
+   ],
+   "length": 264.0
+  },
+  {
    "key": "lsd",
    "glyph": "uniE07D",
    "kind": "DB",
@@ -1747,5 +1764,12 @@
    "b": 2,
    "has_anchor": false
   }
- ]
+ ],
+ "synth": {
+  "uniE043.inlambe": [
+   "uniE043",
+   61.0,
+   336.0
+  ]
+ }
 }

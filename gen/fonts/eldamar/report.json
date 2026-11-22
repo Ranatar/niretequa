@@ -993,6 +993,14 @@
    "label": "метка младшего разряда",
    "kind": "DB",
    "missing": false
+  },
+  {
+   "row": 8,
+   "pos": 9,
+   "key": "mark:ddotbL",
+   "label": "две точки в lambe/alda — y",
+   "kind": "DX",
+   "missing": false
   }
  ],
  "code_bad": [],
@@ -1004,7 +1012,7 @@
   "fails": []
  },
  "strike": {
-  "n": 84,
+  "n": 85,
   "bad": 0,
   "fails": []
  },
@@ -1014,7 +1022,7 @@
  },
  "blocks": {
   "mass_g": 44.3,
-  "I_kgmm2": 143.8
+  "I_kgmm2": 143.9
  },
  "ranges": {
   "w": [

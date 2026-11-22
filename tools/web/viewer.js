@@ -344,7 +344,7 @@ async function loadModel() {
         const sc = document.createElement('script');
         sc.src = fm.file;
         sc.onload = res;
-        sc.onerror = () => rej(new Error('нет файла ' + fm.file + ' рядом со страницей'));
+        sc.onerror = () => rej(new Error('нет файла ' + fm.file + ' (папка fonts рядом со страницей)'));
         document.head.appendChild(sc);
       });
     const T = window.TPM2_FONTS[id];
@@ -513,6 +513,13 @@ async function loadModel() {
     t = Math.min(Math.max(t, 0), 1);
     return t - Math.sin(2 * Math.PI * t) / (2 * Math.PI);
   }
+  function tab(R, a) {
+    // rev. 0.14: a table by whole degrees of the cycle, interpolated
+    a = ((a % 360) + 360) % 360;
+    const i = Math.floor(a),
+      f = a - i;
+    return R[i] + (R[Math.min(i + 1, 360)] - R[i]) * f;
+  }
   function camLift(kind, a) {
     const c = C.CYCLE;
     if (kind === 'out') {
@@ -543,22 +550,9 @@ async function loadModel() {
       if (a <= r1) return 0;
       return cyc((a - r1) / g1);
     }
-    if (kind === 'cock') {
-      // hammer spring cocked over 10..150 deg, released at the strike
-      const s0 = c.strike;
-      if (a < 10) return 0;
-      if (a < 150) return cyc((a - 10) / 140);
-      if (a < s0) return 1;
-      if (a < s0 + 2) return 1 - (a - s0) / 2;
-      return 0;
-    }
-    if (kind === 'strike') {
-      // the hammer flies in 8 deg, rests on the paper, returns by 190 deg
-      const s0 = c.strike;
-      if (a >= s0 && a < s0 + 8) return cyc((a - s0) / 8);
-      if (a >= s0 + 8 && a < s0 + 11) return 1;
-      if (a >= s0 + 11 && a < s0 + 30) return 1 - cyc((a - s0 - 11) / 19);
-      return 0;
+    if (kind === 'cock' || kind === 'strike') {
+      // rev. 0.14: the cocking lever and the hammer (sear, free flight, the lip brings it home): the model's tables
+      return tab(kind === 'cock' ? C.HAM.COCK : C.HAM.STRIKE, a);
     }
     return 0;
   }
@@ -848,6 +842,12 @@ async function loadModel() {
         if (m.a === 'z') return rZ(m.ang * f * deg, m.p[0], m.p[1]);
         return T(-st.slide * U, 0, 0).multiply(rY(m.ang * f * deg, m.p[0], m.p[1]));
       }
+      case 'sear': // rev. 0.14: the hammer's sear (exported at phi = 0, where it is in)
+        return T(-st.slide * U, 0, 0).multiply(rX(tab(C.HAM.SEAR, st.phi) * deg, m.p[0], m.p[1]));
+      case 'retrocker': // rev. 0.14: the balance beam of a positive cam drive
+        return rY(tab(C.RET[m.k].ANG, st.phi) * deg, m.p[0], m.p[1]);
+      case 'retrod':
+        return T(0, 0, tab(C.RET[m.k].DZ, st.phi));
       case 'readrocker': {
         // rev. 0.10: the model's rocker angle (roller on the cam's pitch curve) by whole degrees, interpolated
         // rev. 0.11: with the read lock in, the rocker stays where the cam leaves it at rest
@@ -868,6 +868,11 @@ async function loadModel() {
       }
       case 'stops': return stopsM(m);
       case 'esc2': return esc2M(m);
+      case 'kspring': {      // rev. 0.14b: a key's return spring between its bar and the lever's underside
+        const a = Math.atan2(C.KEY_TRAVEL * keyF(m.n), m.L), zt = m.zc + m.dy * Math.sin(a) + m.dz * Math.cos(a);
+        const k = (zt - m.z0) / m.L0;
+        return new M().set(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, k, m.z0 - k * m.z0, 0, 0, 0, 1);
+      }
       case 'fspring': {      // a frame spring: compressed between the strip and the sleeve
         const k = (m.L - (st.frames[m.b] || 0)) / m.L, z0 = m.z0;
         const mm = new M().set(1, 0, 0, 0, 0, 1, 0, C.TIER * st.tier, 0, 0, k, z0 - k * z0, 0, 0, 0, 1);
@@ -1676,7 +1681,11 @@ async function loadModel() {
     return null;
   }
   window.addEventListener('keydown', (e) => {
-    if (e.target.tagName === 'SELECT' || e.ctrlKey || e.metaKey || e.altKey) return;
+    // rev. 0.14: keys typed into a text field (the transcriber, the margins) belong to the field, in any layout
+    const tg = e.target;
+    if (tg && (tg.tagName === 'TEXTAREA' || (tg.tagName === 'INPUT' && !['checkbox', 'radio', 'button', 'range'].includes(tg.type)) || tg.isContentEditable))
+      return;
+    if (tg.tagName === 'SELECT' || e.ctrlKey || e.metaKey || e.altKey || e.isComposing) return;
     if (e.key === 'Shift') {
       st.shiftHeld = true;
       applyState();
@@ -1981,6 +1990,25 @@ async function loadModel() {
       }
     dirty = true;
   });
+  // rev. 0.12a: the owner's device is a picture on its plaque (a decal on the machine): a texture, projected from above
+  if (C.DEVICE_TEX)
+    for (const m of meshes)
+      if (m.userData.n === 'case device plaque') {
+        const g = m.geometry;
+        g.computeBoundingBox();
+        const bb = g.boundingBox, P = g.attributes.position, uv = new Float32Array(P.count * 2);
+        for (let i = 0; i < P.count; i++) {
+          uv[2 * i] = (P.getX(i) - bb.min.x) / (bb.max.x - bb.min.x);
+          uv[2 * i + 1] = (P.getY(i) - bb.min.y) / (bb.max.y - bb.min.y);
+        }
+        g.setAttribute('uv', new THREE.BufferAttribute(uv, 2));
+        const tex = new THREE.TextureLoader().load(C.DEVICE_TEX, () => (dirty = true));
+        if ('colorSpace' in tex) tex.colorSpace = THREE.SRGBColorSpace;
+        else tex.encoding = THREE.sRGBEncoding;
+        tex.anisotropy = 8;
+        m.material = new THREE.MeshStandardMaterial({ map: tex, roughness: 0.45, metalness: 0.1 });
+        m.userData.mat0 = m.material;
+      }
   // rev. 0.12: the case shown, as glass, or hidden
   const caseGlass = new THREE.MeshStandardMaterial({
     color: 0x6f86c8,

@@ -36,7 +36,7 @@ TOP_CP = (0xE040, 0xE044, 0xE046, 0xE04A, 0xE04C)
 BOT_CP = (0xE045, 0xE043)
 # mark key -> codepoint (gen_shuttle.MARK_CP); the variant names are Alcarin's, used when the font has them
 MARK_CP = {'a': 0xE040, 'e': 0xE046, 'i': 0xE044, 'o': 0xE04A, 'u': 0xE04C, 'tilde': 0xE052, 'nas': 0xE050,
-           'nasW': 0xE050, 'dotb': 0xE045, 'ddotb': 0xE043, 'dbl': 0xE051, 'dblW': 0xE051, 'dblL': 0xE051, 'lsd': 0xE07D}
+           'nasW': 0xE050, 'dotb': 0xE045, 'ddotb': 0xE043, 'dbl': 0xE051, 'dblW': 0xE051, 'dblL': 0xE051, 'ddotbL': 0xE043, 'lsd': 0xE07D}
 
 
 class _G:
@@ -179,7 +179,7 @@ DS_NP.update({0xE060: '=', 0xE061: '-', 0xE065: 'Á', 0xE066: 'À', 0xE067: 'Œ'
 DS_V = {'a': '#EDC', 'e': '$RFV', 'i': '%TGB', 'o': '^YHN', 'u': '&UJM'}     # widths: wide, normal, narrow, narrowest
 DS_BELOW = 'ÈÉÊË'                               # dot below, four widths
 DS_MARK = {'a': 'E', 'e': 'R', 'i': 'T', 'o': 'Y', 'u': 'U', 'tilde': 'p', 'nas': '[', 'nasW': '{', 'dotb': 'É',
-           'ddotb': 'Í', 'dbl': "'", 'dblW': '"', 'dblL': "'"}           # the dead marks: the normal width
+           'ddotb': 'Í', 'dbl': "'", 'dblW': '"', 'dblL': "'", 'ddotbL': 'Í'}           # the dead marks: the normal width
 
 
 def _ink_centre(G, body, zone, strip_stems=False):
@@ -351,8 +351,9 @@ def raw_shaped(path, f):
     return dict(path=path, ok=True, name=name, upm=upm, gs=gs, T=T, M=M, NP=NP, body=body / upm, anchored=0, shaped=True,
                 combo=combo, est=n_est)
 
-def codes_at(R, s):
-    """Codes and the fit report at scale s (1 = Alcarin's body height)."""
+def codes_at(R, s, shrink_letters=False):
+    """Codes and the fit report at scale s (1 = Alcarin's body height). rev. 0.12: with shrink_letters a letter that
+    leaves the window vertically is drawn smaller about its origin (used only when no scale fits otherwise)."""
     k = R['body'] and (ALCARIN_BODY / R['body']) * s * 1000.0 / R['upm']
     U = 1000.0 / 16
     rd = lambda x: int(round(x))
@@ -393,6 +394,15 @@ def codes_at(R, s):
         if t.get('missing'):
             D['missing'].append(t['name']); D['tengwar'].append(dict(cp=t['cp'], name=t['name'], missing=True)); continue
         adv = t['adv'] * k; top, bot = sc(t['top']), sc(t['bot']); bb = sc(t['bbox'])
+        if shrink_letters and bb is not None:
+            f = 1.0
+            if bb[3] * mm > _WZ[1]: f = min(f, _WZ[1] / (bb[3] * mm) * 0.995)
+            if bb[1] * mm < _WZ[0]: f = min(f, _WZ[0] / (bb[1] * mm) * 0.995)
+            if f < 1.0:
+                D['shrink'][t['glyph']] = f; D['shrunk'].append((t['name'], round(f, 3)))
+                adv *= f; bb = tuple(v * f for v in bb)
+                top = tuple(v * f for v in top) if top else None
+                bot = tuple(v * f for v in bot) if bot else None
         a, b, w, d, tx = code(t['name'], adv, top, bot, bb=bb)
         if not top:
             D['warn'].append((t['name'], 'нет якоря: ось посередине ширины'))
@@ -469,6 +479,12 @@ def fit(path, s_try=None):
     R = raw(path)
     if not R['ok']:
         return R, None
+    import glyphvar as GV
+    R['gs'] = GV.VarGlyphSet(R['gs'])
+    if 'font' not in R:
+        R['font'] = TTFont(path)
+    no_dotted_circle(R)
+    in_lambe(R)
     grid = s_try or sorted({round(1.0 - 0.005 * i, 3) for i in range(0, 41)} | {round(1.0 + 0.005 * i, 3) for i in range(1, 21)},
                            key=lambda s: (abs(s - 1.0), -s))
     best = None
@@ -478,7 +494,72 @@ def fit(path, s_try=None):
             best = D; break
         if best is None or len(D['issues']) < len(best['issues']):
             best = D
+    if best['issues']:              # rev. 0.12: no scale fits: the few letters that leave the window are drawn smaller
+        for s in grid:
+            D = codes_at(R, s, shrink_letters=True)
+            if not D['issues']:
+                best = D; break
     return R, best
+
+
+def no_dotted_circle(R):
+    """rev. 0.14: Tengwar Telcontar draws its marks with a dotted circle (composite: the mark + uni25CC); the
+    circle would be cut into the type. The mark alone is a synthetic glyph '<mark>.nodc' (its component, where the
+    composite puts it); its anchor is taken again from its own ink where it was the middle of the composite's."""
+    import glyphvar as GV
+    gs = R['gs']
+    f = R.get('font')
+    if f is None or 'glyf' not in f:
+        return
+    glyf = f['glyf']
+    for m in R['M']:
+        if m.get('missing') or m['glyph'] not in glyf:
+            continue
+        g = glyf[m['glyph']]
+        if not g.isComposite():
+            continue
+        comps = [c for c in g.components if c.glyphName not in ('uni25CC', 'dottedcircle', 'dotted_circle')]
+        if len(comps) == len(g.components) or len(comps) != 1:
+            continue
+        c = comps[0]; name = m['glyph'] + '.nodc'
+        gs.add(name, c.glyphName, c.x, c.y)
+        bb = GV.bounds(gs, name); ob = m['bbox']
+        an = m['anchor']
+        if abs(an[0] - 0.5 * (ob[0] + ob[2])) < 1e-6:
+            an = (0.5 * (bb[0] + bb[2]), an[1])
+        m.update(glyph=name, bbox=bb, anchor=an, length=bb[2] - bb[0])
+
+
+def in_lambe(R):
+    """rev. 0.14: the marks under lambe (dblL where the font has no lambe variant, ddotbL always) are moved into
+    its bowl (glyphvar.py): synthetic glyphs '<mark>.inlambe', centred on the bowl's middle (or on the font's own
+    doubling bar for lambe); R['inlambe'] keeps how much of each lies on lambe's ink."""
+    import glyphvar as GV
+    gs = R['gs']
+    R['inlambe'] = {}
+    lam = next((t for t in R['T'] if t['cp'] == 0xE022 and not t.get('missing')), None)
+    if lam is None:
+        return
+    x = (lam.get('botL') or lam.get('bot') or (None,))[0]
+    if x is None:
+        bb = lam['bbox']; x = 0.5 * (bb[0] + bb[2])
+    ref = next((m for m in R['M'] if m['key'] == 'dblL' and m.get('variant') and not m.get('missing')), None)
+    centre = None
+    if ref:
+        b = ref['bbox']; xl = (lam.get('botL') or lam.get('bot'))[0]
+        centre = (xl - ref['anchor'][0] + 0.5 * (b[0] + b[2]), 0.5 * (b[1] + b[3]))
+    for m in R['M']:
+        if m.get('missing') or m['key'] not in ('dblL', 'ddotbL') or m.get('variant'):
+            continue
+        d = GV.place_in(gs, m['glyph'], m['anchor'][0], lam['glyph'], x, centre)
+        if d is None:
+            continue
+        dx, dy = d
+        name = m['glyph'] + GV.SUFFIX
+        gs.add(name, m['glyph'], dx, dy)
+        b = m['bbox']
+        m.update(glyph=name, bbox=(b[0] + dx, b[1] + dy, b[2] + dx, b[3] + dy), anchor=(m['anchor'][0], m['anchor'][1] + dy), variant=True)
+        R['inlambe'][m['key']] = round(GV.overlap(gs, name, 0, 0, m['anchor'][0], lam['glyph'], x), 3)
 
 
 def glyphset(R, D):

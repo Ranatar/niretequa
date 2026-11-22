@@ -38,6 +38,8 @@ def strokes(text, width):
             base = None; i += 1; continue
         if c == 0xE02C and i + 1 < len(s) and s[i + 1] in VOW:
             out.append('combo:ára+' + VOW[s[i + 1]]); base = 0xE02C; i += 2; continue
+        if c == 0xE043 and base in (0xE022, 0xE023):          # rev. 0.14: the two dots inside lambe / alda
+            out.append('mark:ddotbL'); i += 1; continue
         if c in MARK:
             out.append('mark:' + MARK[c]); i += 1; continue
         if c in (0xE050, 0xE051):

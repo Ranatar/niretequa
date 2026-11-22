@@ -4,7 +4,7 @@ Usage: python3 -I build_page.py MODEL_JSON WEB_SRC_DIR OUT_HTML [--single] [--pl
 WEB_SRC_DIR holds page.html (markup), viewer.css, transcribe.js and viewer.js (joined into tpm2-model.js). Next to OUT_HTML go tpm2-model.css, tpm2-model.js and
 tpm2-model-data.js: the model metadata as JSON (one part per line) and the geometry (model.bin, re-encoded, deflated,
 base64 in lines of 100 characters). The page loads them with ordinary <link> and <script src>, so it also opens from
-the disk (file://). With --single everything is inlined into one self-contained file.
+the disk (file://). With --single everything is inlined into one self-contained file. rev. 0.14: the font sets go into fonts/ beside the page.
 With --plain the geometry is written readable instead: one line per shape, {"v": [x, y, z, ...], "i": [a, b, c, ...]},
 vertex coordinates in steps of Q from the part's corner and triangle indices as plain integers (about 4 times larger)."""
 import sys, os, json, zlib, base64
@@ -26,11 +26,28 @@ for f in FONTSETS:
     if not os.path.exists(wj):
         continue
     W = json.load(open(wj, encoding='utf-8'))
-    fn = f"tpm2-font-{f['id']}.js"
+    fn = f"fonts/tpm2-font-{f['id']}.js"           # rev. 0.14: the font sets in their own folder
     fonts_meta.append(dict(id=f['id'], name=f['name'], author=f['author'], file=fn, info=W['info']))
     if f['id'] != 'alcarin':
         font_files[fn] = (W, open(os.path.join(fdir, f['id'], 'web.bin'), 'rb').read())
 meta['C']['FONTS'] = fonts_meta
+# rev. 0.12a: the owner's device as a texture of its plaque (drawn here from data/device/device_regions.json)
+from PIL import Image, ImageDraw
+import io
+_root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+_D = json.load(open(os.path.join(_root, 'data', 'device', 'device_regions.json'), encoding='utf-8'))
+_N, _h = 1024, _D['half_diagonal']
+_img = Image.new('RGB', (_N, _N), (20, 20, 20))
+_pt = lambda x, y: ((x / _h + 1) / 2 * _N, (1 - y / _h) / 2 * _N)
+for _r in _D['regions']:
+    for _poly in _r['polys']:
+        _m = Image.new('L', (_N, _N), 0); _d = ImageDraw.Draw(_m)
+        _d.polygon([_pt(*q) for q in _poly[0]], fill=255)
+        for _hole in _poly[1:]:
+            _d.polygon([_pt(*q) for q in _hole], fill=0)
+        _img.paste(_r['color'], mask=_m)
+_buf = io.BytesIO(); _img.save(_buf, 'JPEG', quality=88)
+meta['C']['DEVICE_TEX'] = 'data:image/jpeg;base64,' + base64.b64encode(_buf.getvalue()).decode()
 
 
 def transport(meta, blob):
@@ -120,6 +137,7 @@ tag = '<script src="tpm2-model-data.js"></script>'
 if single:
     page = page.replace('<script>\n' + data_js + '</script>', '<script>\n' + data_js + '</script>' + ''.join('<script>\n' + t + '</script>' for t in font_js.values()), 1)
 else:
+    os.makedirs(os.path.join(odir, 'fonts'), exist_ok=True)
     for fn, t in font_js.items():
         open(os.path.join(odir, fn), 'w', encoding='utf-8').write(t)
 open(out, 'w', encoding='utf-8').write(page)

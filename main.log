@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2026.11.16)  20 NOV 2026 07:16
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2026.11.16)  22 NOV 2026 13:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1170,19 +1170,37 @@ Underfull \hbox (badness 1158) in paragraph at lines 20--21
 к у граммофона. Все знаки и их коды
  []
 
+
+Underfull \hbox (badness 2173) in paragraph at lines 26--27
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10 затем динамика шести узлов, сверенная с 
+расчётами проекта. Найдено: детали,
+ []
+
 [1
 
-]
-Overfull \hbox (1.33147pt too wide) in paragraph at lines 32--33
+] [2]
+Overfull \hbox (2.50468pt too wide) in paragraph at lines 36--37
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10 открыты. На странице модели корпус можно
+ показать, сделать стеклянным или скрыть. Транскриптор
+ []
+
+
+Overfull \hbox (12.89664pt too wide) in paragraph at lines 36--37
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10 страницы получил русский режим (§[]19[])
+; добавлены наборы шрифтов Tengwar Sindarin, Tengwar Telcontar
+ []
+
+
+Overfull \hbox (1.33147pt too wide) in paragraph at lines 38--39
 []\TU/PT_Serif-Web-Regular.ttf(1)/b/n/10 Что нового в редакции 0.11. \TU/PT_Ser
 if-Web-Regular.ttf(1)/m/n/10 Холостой цикл построен: запоры чтения и удара для 
 мёртвых знаков
  []
 
 LaTeX Font Info:    Font shape `TU/PTMono.ttf(0)/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 34.
+(Font)              scaled to size 9.19998pt on input line 40.
 LaTeX Font Info:    Font shape `TU/PTMono.ttf(0)/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 34.
+(Font)              scaled to size 10.07397pt on input line 40.
 
 Package fontspec Info: Font family 'PTMono.ttf(1)' created for font
 (fontspec)             'PTMono.ttf' with options
@@ -1203,84 +1221,84 @@ flt;"
 (fontspec)             \tex_hyphenchar:D \font =-1\scan_stop: 
 
 LaTeX Font Info:    Font shape `TU/PTMono.ttf(1)/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 34.
+(Font)              scaled to size 9.19998pt on input line 40.
 
-Overfull \hbox (6.29068pt too wide) in paragraph at lines 34--35
+Overfull \hbox (6.29068pt too wide) in paragraph at lines 40--41
 \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10 детали, STL и проверки модели те же, что
  в 0.9.2. Страница выгружает челнок в позе покоя, а поднимала
  []
 
 
-Overfull \hbox (5.58714pt too wide) in paragraph at lines 34--35
+Overfull \hbox (5.58714pt too wide) in paragraph at lines 40--41
 \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10 Сверка страницы с моделью (\TU/PTMono.tt
 f(1)/m/n/10 tools/web/compare_model.py\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10 : 
 одни и те же положения, точные габариты
  []
 
 
-Overfull \hbox (1.20741pt too wide) in paragraph at lines 34--35
+Overfull \hbox (1.20741pt too wide) in paragraph at lines 40--41
 \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10 всех деталей) нашла ещё три: цикловой ва
 л с кулачками вращался в обратную сторону, лента поворота
  []
 
 
-Overfull \hbox (25.5975pt too wide) in paragraph at lines 42--42
+Overfull \hbox (25.5975pt too wide) in paragraph at lines 48--48
 \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10 втулках, тяга от сектора W к спуску, взв
 од молотка, фиксатор ряда, вибратор ленты, блокировка клавиатуры
  []
 
-(./main.toc [1] [2])
+(./main.toc [1] [2] [3])
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [3]
+ [4]
 
 Package enumitem Warning: Negative labelwidth. This does not make much
-(enumitem)                sense, on input line 53.
+(enumitem)                sense, on input line 59.
 
 
-Overfull \hbox (8.17278pt too wide) in paragraph at lines 54--55
+Overfull \hbox (8.17278pt too wide) in paragraph at lines 60--61
 \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 ударов, исправление одним нажатием, р
 овный оттиск при любой силе нажатия, смена шрифта
  []
 
 
-Overfull \hbox (23.16241pt too wide) in paragraph at lines 55--56
+Overfull \hbox (23.16241pt too wide) in paragraph at lines 61--62
 \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 Положение каждого знака задаётся как 
 можно меньшим числом звеньев; каждое звено доводится
  []
 
 
-Overfull \hbox (7.39534pt too wide) in paragraph at lines 55--56
+Overfull \hbox (7.39534pt too wide) in paragraph at lines 61--62
 \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 жёстким упором или фиксатором до цело
 й единицы; регулировка, от которой зависит посадка
  []
 
-[4]
+[5]
 
 Package enumitem Warning: Negative labelwidth. This does not make much
-(enumitem)                sense, on input line 88.
+(enumitem)                sense, on input line 94.
 
 
-Overfull \hbox (30.65399pt too wide) in paragraph at lines 89--90
+Overfull \hbox (30.65399pt too wide) in paragraph at lines 95--96
 \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 с полукругом вертикальных штифтов: на
 жатая клавиша поднимает штифт, челнок поворачивается
  []
 
 
-Overfull \hbox (23.65697pt too wide) in paragraph at lines 89--90
+Overfull \hbox (23.65697pt too wide) in paragraph at lines 95--96
 \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 и останавливается на нём; затем сраба
 тывает молоток, штифт опускается, и челнок возвращается
  []
 
 
-Overfull \hbox (2.11739pt too wide) in paragraph at lines 90--91
+Overfull \hbox (2.11739pt too wide) in paragraph at lines 96--97
 \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 четыре единицы в зависимости от нажат
 ой клавиши; спуск связан с молотком, чтобы каретка
  []
 
 
-Overfull \hbox (11.18398pt too wide) in paragraph at lines 91--92
+Overfull \hbox (11.18398pt too wide) in paragraph at lines 97--98
 \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 Механизм работает от пальца: клавиша 
 задаёт точку останова сектора и сама его поворачивает.
  []
@@ -1289,11 +1307,11 @@ Overfull \hbox (11.18398pt too wide) in paragraph at lines 91--92
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[5]
+[6]
 LaTeX Font Info:    Font shape `TU/PTMono.ttf(1)/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 138.
+(Font)              scaled to size 10.07397pt on input line 144.
 
-Overfull \hbox (1.879pt too wide) in paragraph at lines 138--139
+Overfull \hbox (1.879pt too wide) in paragraph at lines 144--145
 []\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 Модель ТПМ-2 (\TU/PTMono.ttf(1)/m/n
 /10.95 simulate_mech \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 в \TU/PTMono.ttf
 (1)/m/n/10.95 tools/gen_shuttle.py\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 ) п
@@ -1301,50 +1319,50 @@ Overfull \hbox (1.879pt too wide) in paragraph at lines 138--139
  []
 
 
-Overfull \hbox (7.25665pt too wide) in paragraph at lines 144--145
+Overfull \hbox (7.25665pt too wide) in paragraph at lines 150--151
 \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 соседние задевались бы. Поэтому шаг —
  19u (самая широкая клетка 16u плюс 3u промежутка).
  []
 
-(./gen/tab_trade.tex) [6]
-Overfull \hbox (1.63368pt too wide) in paragraph at lines 156--157
+(./gen/tab_trade.tex) [7]
+Overfull \hbox (1.63368pt too wide) in paragraph at lines 162--163
 \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10 (высота лувы), «точка» (высота точки-тех
 ты), «отвод» (наибольший ход ползуна, 9u) — в миллиметрах.
  []
 
 
-Overfull \hbox (28.53798pt too wide) in paragraph at lines 160--161
+Overfull \hbox (28.53798pt too wide) in paragraph at lines 166--167
 \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 пропорциональна массе литер и квадрат
 у пути, который проходит литера от исходного положения
  []
 
 
-Overfull \hbox (6.65332pt too wide) in paragraph at lines 160--161
+Overfull \hbox (6.65332pt too wide) in paragraph at lines 166--167
 \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 до точки удара. При 4 рядах по 22 лит
 ера в среднем проходит по дуге почти четверть развёртки
  []
 
 
-Overfull \hbox (3.90578pt too wide) in paragraph at lines 160--161
+Overfull \hbox (3.90578pt too wide) in paragraph at lines 166--167
 \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 для энергии радиус безразличен, а мен
 ьший челнок легче и компактнее. Исходное положение
  []
 
 
-Overfull \hbox (41.26364pt too wide) in paragraph at lines 168--169
+Overfull \hbox (41.26364pt too wide) in paragraph at lines 174--175
 \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 два морфологических действия над конт
 уром литеры: размыкание (пропадает всё уже минимальной
  []
 
-(./gen/tab_fdmsim.tex) [7]
-Overfull \hbox (21.64pt too wide) in paragraph at lines 180--181
+(./gen/tab_fdmsim.tex) [8]
+Overfull \hbox (21.64pt too wide) in paragraph at lines 186--187
 \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10 процентах площади; $\OML/cmm/m/it/10 n$ 
 \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10 — сколько литер теряют или заплывают бол
 ьше чем на 5%. Сопло — в миллиметрах. 
  []
 
 
-Overfull \hbox (25.419pt too wide) in paragraph at lines 182--183
+Overfull \hbox (25.419pt too wide) in paragraph at lines 188--189
  []\TU/PT_Serif-Web-Regular.ttf(1)/b/n/10.95 Главная трудность — контраст.[] \T
 U/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 Alcarin — книжный шрифт: дуга примыкает
  к ножке волосяной
@@ -1355,20 +1373,20 @@ File: gen/fdm_panel.png Graphic file (type bmp)
 (./gen/tab_fdmsim_thick.tex)
 File: gen/fdm_panel2.png Graphic file (type bmp)
 <gen/fdm_panel2.png>
- [8]
-Overfull \hbox (21.17299pt too wide) in paragraph at lines 214--215
+ [9]
+Overfull \hbox (21.17299pt too wide) in paragraph at lines 220--221
 \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 давало наплыв (в редакции 0.4 — на ко
 нце акута). Теперь каждая ветвь скелета перед утолщением
  []
 
 
-Overfull \hbox (16.36421pt too wide) in paragraph at lines 214--215
+Overfull \hbox (16.36421pt too wide) in paragraph at lines 220--221
 \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 укорачивается на радиус утолщения: ра
 звилки короче этого радиуса исчезают, а круг утолщения
  []
 
 
-Overfull \hbox (6.4352pt too wide) in paragraph at lines 214--215
+Overfull \hbox (6.4352pt too wide) in paragraph at lines 220--221
 \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 на новом конце доходит ровно туда, гд
 е кончалась ветвь. Точки-техты при этом не пропадают:
  []
@@ -1377,68 +1395,86 @@ Overfull \hbox (6.4352pt too wide) in paragraph at lines 214--215
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (4.66791pt too wide) in paragraph at lines 266--267
+Overfull \hbox (4.66791pt too wide) in paragraph at lines 272--273
  []\TU/PT_Serif-Web-Regular.ttf(1)/b/n/10.95 Из чего состоит.[] \TU/PT_Serif-We
 b-Regular.ttf(1)/m/n/10.95 Остов по схеме Хаммонда (челнок на вертикальном валу
 , молоток, каретка
  []
 
 
-Overfull \hbox (11.89575pt too wide) in paragraph at lines 266--267
+Overfull \hbox (11.89575pt too wide) in paragraph at lines 272--273
 \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 с пружинным двигателем, колесо спуска
 ), пружинный двигатель с цикловым валом, коромысла
  []
 
 
-Overfull \hbox (12.50804pt too wide) in paragraph at lines 266--267
+Overfull \hbox (12.50804pt too wide) in paragraph at lines 272--273
 \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 тремя щупами и тросами, пластины приз
 наков, четыре мерные рамки (R, W, О, N), два ползунка
  []
 
-(./gen/tab_visibility.tex) [9]
-Underfull \hbox (badness 5592) in paragraph at lines 295--296
+(./gen/tab_visibility.tex) [10]
+Underfull \hbox (badness 5592) in paragraph at lines 301--302
 \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 к строке стоят частые ряды. Частоты о
 ценены транскрипцией в режиме тэхт
  []
 
 
-Underfull \hbox (badness 1231) in paragraph at lines 295--296
+Underfull \hbox (badness 1231) in paragraph at lines 301--302
 \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 (\TU/PTMono.ttf(1)/m/n/10.95 tools/mo
 del/freq.py\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 ) на 164 именах и коротких
  фразах квенья и синдарина —
  []
 
 
-Underfull \hbox (badness 1152) in paragraph at lines 295--296
+Underfull \hbox (badness 1152) in paragraph at lines 301--302
 \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 нижний — 19,5%, верхний регистр — око
 ло 4%, цифровой ряд — почти ничего.
  []
 
-[10]
+[11]
 File: gen/model/renders/view_before.png Graphic file (type bmp)
 <gen/model/renders/view_before.png>
 File: gen/model/renders/view_after.png Graphic file (type bmp)
 <gen/model/renders/view_after.png>
 
-Overfull \hbox (11.0561pt too wide) in paragraph at lines 317--318
+Overfull \hbox (11.0561pt too wide) in paragraph at lines 323--324
 \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 второго рядов клавиатуры), l2 (первог
 о и четвёртого) и l4 (клавиша регистра). Ряды клавиатуры
  []
 
 
-Overfull \hbox (1.90277pt too wide) in paragraph at lines 319--320
+Overfull \hbox (1.90277pt too wide) in paragraph at lines 325--326
 \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 машинках с шаровой головкой): поворот
 а (четыре разряда) и подъёма (три разряда). В начале
  []
 
 
-Overfull \hbox (36.18286pt too wide) in paragraph at lines 321--322
+Overfull \hbox (6.6275pt too wide) in paragraph at lines 325--326
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 Выход подъёма — вилка под ступицей че
+лнока: 11,43 мм на ряд. С ред. 0.14 толкатели поворота
+ []
+
+
+Overfull \hbox (20.94398pt too wide) in paragraph at lines 325--326
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 зажат между кулачками на всём обороте
+. В выстое (122–196°), когда толкатель стоит, а фиксаторы
+ []
+
+
+Overfull \hbox (6.70276pt too wide) in paragraph at lines 325--326
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 каретки ленты (пружина 10 Н). Челнок 
+прижат к кольцу подъёма держателем — двумя лапками
+ []
+
+[12]
+Overfull \hbox (36.18286pt too wide) in paragraph at lines 327--328
 \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 клиновыми вырезами; в конце хода кула
 чок вводит в вырез стальной клин, и колесо доворачивается
  []
 
-[11]
-Overfull \hbox (14.38577pt too wide) in paragraph at lines 325--326
+
+Overfull \hbox (14.38577pt too wide) in paragraph at lines 331--332
  []\TU/PT_Serif-Web-Regular.ttf(1)/b/n/10.95 Расчёт коромысел.[] \TU/PT_Serif-W
 eb-Regular.ttf(1)/m/n/10.95 Разряд с поставленной защёлкой проходит $\OML/cmm/m
 /it/10.95 S \OT1/cmr/m/n/10.95 = 12$ \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 
@@ -1446,55 +1482,56 @@ eb-Regular.ttf(1)/m/n/10.95 Разряд с поставленной защёл�
  []
 
 
-Overfull \hbox (25.26004pt too wide) in paragraph at lines 325--326
+Overfull \hbox (25.26004pt too wide) in paragraph at lines 331--332
 \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 на ряд; рычаг 1,33 и вилка 1:5). Пост
 оянное смещение задаёт опора выходного рычага, сдвигаемая
  []
 
 (./gen/tab_whiffle.tex) (./gen/tab_whiffle.tex) (./gen/tab_whiffle.tex)
-Underfull \hbox (badness 3058) in paragraph at lines 341--342
+Underfull \hbox (badness 3058) in paragraph at lines 347--348
 \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10 «После настройки» — передаточное число и
  нуль выставлены регулировочными винтами по
  []
 
 File: gen/model/renders/print_unit.png Graphic file (type bmp)
 <gen/model/renders/print_unit.png>
-[12] (./gen/fig_shuttle.tex)
+[13] (./gen/fig_shuttle.tex)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[13]
-Underfull \hbox (badness 1127) in paragraph at lines 376--377
+[14] [15]
+Underfull \hbox (badness 1127) in paragraph at lines 384--385
  []\TU/PT_Serif-Web-Regular.ttf(1)/b/n/10.95 Два поля пластин.[] \TU/PT_Serif-W
 eb-Regular.ttf(1)/m/n/10.95 Рычаги идут с шагом 4,75 мм, а винту выступа нужна 
 бобышка
  []
 
 
-Underfull \hbox (badness 2409) in paragraph at lines 378--379
+Underfull \hbox (badness 2409) in paragraph at lines 386--387
  []\TU/PT_Serif-Web-Regular.ttf(1)/b/n/10.95 Выступы.[] \TU/PT_Serif-Web-Regula
 r.ttf(1)/m/n/10.95 Выступ — установочный винт М3 с плоским концом, ввёрнутый сн
 изу в
  []
 
-[14] (./gen/tab_read.tex) (./gen/tab_read.tex) (./gen/tab_read.tex) [15]
-Underfull \hbox (badness 4819) in paragraph at lines 436--438
+[16] (./gen/tab_read.tex) (./gen/tab_read.tex) (./gen/tab_read.tex)
+Underfull \hbox (badness 4819) in paragraph at lines 444--446
  []\TU/PT_Serif-Web-Regular.ttf(1)/b/n/10.95 Куда идут тросы.[] \TU/PT_Serif-We
 b-Regular.ttf(1)/m/n/10.95 Каждый щуп после свободного хода $\OML/cmm/m/it/10.9
 5 c[]$ \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 тянет внутренний трос
  []
 
-[16]
+[17]
 File: gen/model/renders/read_head.png Graphic file (type bmp)
 <gen/model/renders/read_head.png>
 File: gen/model/renders/read_cut.png Graphic file (type bmp)
 <gen/model/renders/read_cut.png>
+ [18]
 File: gen/model/renders/read_slides.png Graphic file (type bmp)
 <gen/model/renders/read_slides.png>
 File: gen/model/renders/read_comb.png Graphic file (type bmp)
 <gen/model/renders/read_comb.png>
- [17]
-Underfull \hbox (badness 1590) in paragraph at lines 464--465
+ [19]
+Underfull \hbox (badness 1590) in paragraph at lines 472--473
 \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 на ось удара и пускает из конца каждо
 го щупа девять лучей вдоль оси: все должны
  []
@@ -1502,101 +1539,103 @@ Underfull \hbox (badness 1590) in paragraph at lines 464--465
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[18]
+[20]
 File: gen/model/renders/idle_locks.png Graphic file (type bmp)
 <gen/model/renders/idle_locks.png>
 
-Underfull \hbox (badness 2932) in paragraph at lines 522--522
+Underfull \hbox (badness 2932) in paragraph at lines 530--530
 \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10 стоит на штыре (под ним рычажок на верти
 кальной оси). Справа — запор удара: штырь в
  []
 
-[19]
-Underfull \hbox (badness 3417) in paragraph at lines 533--534
+[21]
+Underfull \hbox (badness 3417) in paragraph at lines 541--542
 []\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 Шрифт задаёт только литерные блоки 
 и кодовые гребёнки, поэтому для другого
  []
 
-[20] (./gen/tab_fonts.tex) (./gen/tab_fonts.tex) (./gen/tab_fonts.tex)
-Underfull \hbox (badness 1152) in paragraph at lines 555--556
+[22] (./gen/tab_fonts.tex) (./gen/tab_fonts.tex) (./gen/tab_fonts.tex)
+Underfull \hbox (badness 1152) in paragraph at lines 563--564
 \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 тяжелее: у узких шрифтов (Miriel) код
 ы меньше, зубцы длиннее; самая тяжёлая — на
  []
 
-[21]
+[23]
 File: gen/fonts/annatar/axes.png Graphic file (type bmp)
 <gen/fonts/annatar/axes.png>
- [22]
-File: gen/fonts/eldamar-old/axes.png Graphic file (type bmp)
-<gen/fonts/eldamar-old/axes.png>
- [23] [24]
-Underfull \hbox (badness 3323) in paragraph at lines 621--622
+ [24]
+File: gen/fonts/telcontar/axes.png Graphic file (type bmp)
+<gen/fonts/telcontar/axes.png>
+ [25] [26]
+Underfull \hbox (badness 3323) in paragraph at lines 629--630
 []\TU/PT_Serif-Web-Regular.ttf(1)/b/n/10.95 Назад на литеру \TU/PT_Serif-Web-Re
 gular.ttf(1)/m/n/10.95 — храповой толкатель поворачивает колесо спуска назад до
 
  []
 
 
-Underfull \hbox (badness 2351) in paragraph at lines 621--622
+Underfull \hbox (badness 2351) in paragraph at lines 629--630
 \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 упора сектора W и сбрасывает память. 
 Если затем ударить ту же литеру через
  []
 
-
-Underfull \hbox (badness 1735) in paragraph at lines 637--638
+[27]
+Underfull \hbox (badness 1735) in paragraph at lines 645--646
 []\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 В редакции 0.7 часть звеньев была д
 ана в модели схематично — габаритами, без
  []
 
 (./gen/tab_links_sel.tex) (./gen/tab_links_sel.tex) (./gen/tab_links_sel.tex)
-Underfull \hbox (badness 1043) in paragraph at lines 656--657
+Underfull \hbox (badness 1043) in paragraph at lines 664--665
  []\TU/PT_Serif-Web-Regular.ttf(1)/b/n/10.95 Защёлки.[] \TU/PT_Serif-Web-Regula
 r.ttf(1)/m/n/10.95 Над каждым ползуном разряда — палец 3 мм с пружиной вниз. Ст
 ержень
  []
 
 
-Underfull \hbox (badness 1253) in paragraph at lines 656--657
+Underfull \hbox (badness 1253) in paragraph at lines 664--665
 \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 приводной планки; планка уводит ползу
 н на 12 мм. Площадка пальца длиной 18 мм
  []
 
 File: gen/model/renders/select_unit.png Graphic file (type bmp)
 <gen/model/renders/select_unit.png>
-[25] (./gen/tab_links_frames.tex) [26]
+[28] (./gen/tab_links_frames.tex) [29]
 File: gen/model/renders/frames.png Graphic file (type bmp)
 <gen/model/renders/frames.png>
+ [30]
 File: gen/model/renders/hammer_cock.png Graphic file (type bmp)
 <gen/model/renders/hammer_cock.png>
 File: gen/model/renders/row_detent.png Graphic file (type bmp)
 <gen/model/renders/row_detent.png>
- [27]
-Underfull \hbox (badness 5607) in paragraph at lines 710--711
+
+Underfull \hbox (badness 5607) in paragraph at lines 718--719
 []\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 Пятого кулачка нет: клин фиксатора 
 ряда ведёт тяга фиксатора позиции через
  []
 
+[31]
 File: gen/model/renders/lock.png Graphic file (type bmp)
 <gen/model/renders/lock.png>
-[28]
-Underfull \hbox (badness 10000) in paragraph at lines 731--732
+
+Underfull \hbox (badness 10000) in paragraph at lines 739--740
 []\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 каретка ленты поворота задевала фла
 нец шкива на крайних позициях —
  []
 
 
-Underfull \hbox (badness 1400) in paragraph at lines 732--733
+Underfull \hbox (badness 1400) in paragraph at lines 740--741
 []\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 вилка подъёма была построена с неве
 рной кинематикой: угол не соответствовал
  []
 
-(./gen/tab_stops.tex) [29]
+[32] (./gen/tab_stops.tex)
 File: gen/model/renders/stops.png Graphic file (type bmp)
 <gen/model/renders/stops.png>
 File: gen/model/renders/olink.png Graphic file (type bmp)
 <gen/model/renders/olink.png>
- [30]
-Underfull \hbox (badness 1983) in paragraph at lines 775--776
+ [33]
+Underfull \hbox (badness 1983) in paragraph at lines 783--784
 []\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 Каждая рамка стоит на двух пружинах
  сжатия 5,2$\OMS/cmsy/m/n/10.95 ^^B$\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 0
 ,5 мм, надетых на её задние
@@ -1606,15 +1645,15 @@ File: gen/model/renders/escapement.png Graphic file (type bmp)
 <gen/model/renders/escapement.png>
 File: gen/model/renders/escapement_back.png Graphic file (type bmp)
 <gen/model/renders/escapement_back.png>
-[31]
-Underfull \hbox (badness 1776) in paragraph at lines 794--795
+[34]
+Underfull \hbox (badness 1776) in paragraph at lines 802--803
 []\TU/PT_Serif-Web-Regular.ttf(1)/b/n/10.95 Рычажок $\OMS/cmsy/m/n/10.95 ^^F\OM
 L/cmm/m/it/10.95 u$ \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 стоит под осью уг
 лового рычага тяги W: эксцентрик 1 мм в трёх
  []
 
-[32] [33]
-Underfull \hbox (badness 2237) in paragraph at lines 815--816
+[35] [36]
+Underfull \hbox (badness 2237) in paragraph at lines 823--824
  []\TU/PT_Serif-Web-Regular.ttf(1)/b/n/10.95 Указатель точки печати.[] \TU/PT_S
 erif-Web-Regular.ttf(1)/m/n/10.95 У обычной машинки точку печати показывают мет
 ки на
@@ -1625,148 +1664,148 @@ erif-Web-Regular.ttf(1)/m/n/10.95 У обычной машинки точку п
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 2096) in paragraph at lines 864--865
+Underfull \hbox (badness 2096) in paragraph at lines 872--873
 []\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 С редакции 0.10 кодом служит не заз
 ор выступа, а ход щупа до зубца гребёнки;
  []
 
 
-Underfull \hbox (badness 7362) in paragraph at lines 864--865
+Underfull \hbox (badness 7362) in paragraph at lines 872--873
 \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 рассуждение то же. Фиксатор доводит з
 начение до ближайшей единицы, поэтому
  []
 
 
-Underfull \hbox (badness 4168) in paragraph at lines 864--865
+Underfull \hbox (badness 4168) in paragraph at lines 872--873
 \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 ошибка зазора меньше половины ступени
  (0,5 мм) не вредит. Если ошибку зазора
  []
 
-[34] (./gen/tab_gap_fdm.tex)
-Underfull \hbox (badness 4341) in paragraph at lines 878--879
+[37] (./gen/tab_gap_fdm.tex)
+Underfull \hbox (badness 4341) in paragraph at lines 886--887
 \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 при $\OML/cmm/m/it/10.95 ^^[ \OT1/cmr
 /m/n/10.95 = 0[]1$ \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 мм промах бывает п
 римерно раз на 400 страниц, при 0,15 мм —
  []
 
-[35] (./gen/fig_slugs_adv.tex) (./gen/fig_slugs_dead.tex) [36]
+[38] (./gen/fig_slugs_adv.tex) (./gen/fig_slugs_dead.tex) [39]
 (./gen/keyboard.tex
 LaTeX Font Info:    Font shape `TU/PTMono.ttf(1)/m/n' will be
 (Font)              scaled to size 5.51999pt on input line 2.
 LaTeX Font Info:    Font shape `TU/PTMono.ttf(0)/m/n' will be
 (Font)              scaled to size 5.51999pt on input line 2.
-) (./gen/tab_freq_rows.tex) [37] (./gen/tab_freq_top.tex)
-Underfull \hbox (badness 1776) in paragraph at lines 977--978
+) (./gen/tab_freq_rows.tex) [40] (./gen/tab_freq_top.tex)
+Underfull \hbox (badness 1776) in paragraph at lines 985--986
 \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 а под ними в нижнем ряду стоят носите
 ли telco и ára рядом с чертами удвоения и
  []
 
 
-Underfull \hbox (badness 2512) in paragraph at lines 977--978
+Underfull \hbox (badness 2512) in paragraph at lines 985--986
 \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 носовыми чертами; в верхнем регистре 
 над техтами — литеры «ára + гласная». Это
  []
 
-(./gen/fig_trace_q.tex) [38] (./gen/tab_trace_q.tex) [39]
+(./gen/fig_trace_q.tex) [41] (./gen/tab_trace_q.tex) [42]
 (./gen/fig_trace_s.tex) (./gen/tab_trace_s.tex)
-Underfull \hbox (badness 1668) in paragraph at lines 1036--1037
+Underfull \hbox (badness 1668) in paragraph at lines 1044--1045
 \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 Систематические ошибки фиксированы дл
 я данной машинки (у каждой позиции или
  []
 
 (./gen/tab_assume_fdm.tex) (./gen/tab_assume_fdm.tex) (./gen/tab_assume_fdm.tex
-) [40
+) [43
 
 ] (./gen/tab_mc_fdm_var.tex)
-Underfull \hbox (badness 1062) in paragraph at lines 1060--1061
+Underfull \hbox (badness 1062) in paragraph at lines 1068--1069
  []\TU/PT_Serif-Web-Regular.ttf(1)/b/n/10.95 Вывод.[] \TU/PT_Serif-Web-Regular.
 ttf(1)/m/n/10.95 Как напечатано, машинка держится на грани ориентира: 95-й проц
 ентиль —
  []
 
 
-Underfull \hbox (badness 2343) in paragraph at lines 1060--1061
+Underfull \hbox (badness 2343) in paragraph at lines 1068--1069
 \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 на челноке, фиксатор колеса челнока и
  люфт подачи. Две меры снимают проблему:
  []
 
 
-Underfull \hbox (badness 1253) in paragraph at lines 1072--1073
+Underfull \hbox (badness 1253) in paragraph at lines 1080--1081
 []\TU/PT_Serif-Web-Regular.ttf(1)/b/n/10.95 Нулевой упор ползуна. \TU/PT_Serif-
 Web-Regular.ttf(1)/m/n/10.95 Набрать «telco + точка сверху» и «ando + точка све
 рху»
  []
 
-[41] (./gen/fig_test.tex) (./gen/tab_test.tex) [42]
-Underfull \hbox (badness 2951) in paragraph at lines 1147--1148
+[44] (./gen/fig_test.tex) (./gen/tab_test.tex) [45]
+Underfull \hbox (badness 2951) in paragraph at lines 1155--1156
 []\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 Блоки ставятся в печатное кольцо че
 лнока (дуга 106°, $\OML/cmm/m/it/10.95 R \OT1/cmr/m/n/10.95 = 60$ \TU/PT_Serif-
 Web-Regular.ttf(1)/m/n/10.95 мм) в гнёзда с
  []
 
 
-Underfull \hbox (badness 4217) in paragraph at lines 1149--1150
+Underfull \hbox (badness 4217) in paragraph at lines 1157--1158
 \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 стола; слой 0,1 мм, сплошное заполнен
 ие. Отверстия под штифты Ø2 прогоняются
  []
 
 
-Underfull \hbox (badness 1215) in paragraph at lines 1153--1154
+Underfull \hbox (badness 1215) in paragraph at lines 1161--1162
 \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 просвет (пробные штампы этапа Э1, см.
  ниже), усадку материала (отверстия и пазы).
  []
 
-[43]
-Underfull \hbox (badness 1226) in paragraph at lines 1159--1160
+[46]
+Underfull \hbox (badness 1226) in paragraph at lines 1167--1168
 []\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 Модель (\TU/PTMono.ttf(1)/m/n/10.95
  tools/model/\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 ) собирает машинку из па
 раметров: кегль, шаг позиций, ход
  []
 
 
-Underfull \hbox (badness 2326) in paragraph at lines 1159--1160
+Underfull \hbox (badness 2326) in paragraph at lines 1167--1168
 \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 уложенных на стол, сборку в формате G
 LB, рисунки этого раздела и интерактивную
  []
 
 
-Underfull \hbox (badness 1194) in paragraph at lines 1159--1160
+Underfull \hbox (badness 1194) in paragraph at lines 1167--1168
 \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 Måns Björkman, «Amanyë Tenceli»), пок
 азывает тенгвар и клавиши, которые нажмёт, и
  []
 
 File: gen/model/renders/iso_front.png Graphic file (type bmp)
 <gen/model/renders/iso_front.png>
-[44]
+[47]
 File: gen/model/renders/section_x0.png Graphic file (type bmp)
 <gen/model/renders/section_x0.png>
- [45] [46]
-Underfull \hbox (badness 6625) in paragraph at lines 1193--1194
+ [48] [49]
+Underfull \hbox (badness 6625) in paragraph at lines 1201--1202
 []\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 Детали проверяются попарно: пересеч
 ение объёмом больше 0,05 мм$[]$ считается
  []
 
 
-Underfull \hbox (badness 1558) in paragraph at lines 1193--1194
+Underfull \hbox (badness 1558) in paragraph at lines 1201--1202
 \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 ошибкой, кроме оговорённых посадок (в
 ал в подшипнике, винт в бобышке, штифт в
  []
 
 (./gen/tab_model_checks.tex) (./gen/tab_model_checks.tex)
 (./gen/tab_model_checks.tex)
-Underfull \hbox (badness 1194) in paragraph at lines 1210--1211
+Underfull \hbox (badness 1194) in paragraph at lines 1218--1219
 []\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 Отсутствие пересечений ещё не значи
 т, что механизм работает: если толкатель не
  []
 
 
-Underfull \hbox (badness 2460) in paragraph at lines 1214--1215
+Underfull \hbox (badness 2460) in paragraph at lines 1222--1223
 []\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 кулачки отставали от роликов на пов
 оротах профиля: профиль теперь строится
  []
 
-[47]
-Overfull \hbox (0.54727pt too wide) in alignment at lines 1223--1227
+[50]
+Overfull \hbox (0.54727pt too wide) in alignment at lines 1231--1235
  [] [] [] [] [] 
  []
 
@@ -1776,12 +1815,12 @@ LaTeX Font Info:    Font shape `TU/PTMono.ttf(0)/m/n' will be
 LaTeX Font Info:    Font shape `TU/PTMono.ttf(1)/m/n' will be
 (Font)              scaled to size 8.27998pt on input line 2.
 )
-Overfull \hbox (0.54727pt too wide) in alignment at lines 1227--1230
+Overfull \hbox (0.54727pt too wide) in alignment at lines 1235--1238
  [] [] [] [] [] 
  []
 
-[48] [49]
-Underfull \hbox (badness 2253) in paragraph at lines 1239--1240
+[51] [52]
+Underfull \hbox (badness 2253) in paragraph at lines 1247--1248
 []\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 ничто другое — ни соседние литеры, 
 ни тело блока — не должно подходить к
  []
@@ -1789,39 +1828,182 @@ Underfull \hbox (badness 2253) in paragraph at lines 1239--1240
 File: gen/model/renders/strike.png Graphic file (type bmp)
 <gen/model/renders/strike.png>
 
-Underfull \hbox (badness 1502) in paragraph at lines 1250--1251
+Underfull \hbox (badness 1502) in paragraph at lines 1258--1259
 []\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 на литерных блоках были отлиты толь
 ко ряды 1–4: верхний регистр (ряды 5–8)
  []
 
 
-Underfull \hbox (badness 1558) in paragraph at lines 1251--1252
+Underfull \hbox (badness 1558) in paragraph at lines 1259--1260
 []\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 блоки стояли на челноке в обратном 
 порядке: челнок, повёрнутый выборкой на
  []
 
-[50]
-Overfull \hbox (89.34283pt too wide) in alignment at lines 1261--1265
+[53]
+Overfull \hbox (89.34283pt too wide) in alignment at lines 1269--1273
  [] [] [] [] [] [] [] [] [] 
  []
 
 (./gen/tab_strike.tex)
-Overfull \hbox (89.34283pt too wide) in alignment at lines 1265--1268
+Overfull \hbox (89.34283pt too wide) in alignment at lines 1273--1276
  [] [] [] [] [] [] [] [] [] 
  []
 
-[51]
+[54]
+Underfull \hbox (badness 4254) in paragraph at lines 1281--1282
+[]\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 С редакции 0.13 модель проверяется 
+и как механизм под силами: держится ли
+ []
+
+
+Underfull \hbox (badness 1478) in paragraph at lines 1281--1282
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 отскакивают ли. Порядок, допущения и 
+критерии — в \TU/PTMono.ttf(1)/m/n/10.95 docs/physics_checks_spec.md\TU/PT_Seri
+f-Web-Regular.ttf(1)/m/n/10.95 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1281--1282
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 скрипты — в \TU/PTMono.ttf(1)/m/n/10.
+95 tools/physics/\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 , результаты — в \TU
+/PTMono.ttf(1)/m/n/10.95 gen/physics/\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 
+, ход работ — в
+ []
+
+
+Underfull \hbox (badness 2460) in paragraph at lines 1281--1282
+\TU/PTMono.ttf(1)/m/n/10.95 docs/physics_checks_log.md\TU/PT_Serif-Web-Regular.
+ttf(1)/m/n/10.95 . В 0.13 проверки только искали; найденное исправлено
+ []
+
+
+Underfull \hbox (badness 1648) in paragraph at lines 1283--1284
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 построенное и названное) и «в модели»
+. Опоры — не типы из реестра, а настоящие
+ []
+
+[55] (./gen/tab_stage1.tex) (./gen/tab_stage1.tex) (./gen/tab_stage1.tex)
+Underfull \hbox (badness 1194) in paragraph at lines 1298--1299
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 чтения, кронштейн качалок) убраны сто
+порными кольцами DIN 6799 и упорами;
+ []
+
+
+Underfull \hbox (badness 2368) in paragraph at lines 1299--1300
+[]\TU/PT_Serif-Web-Regular.ttf(1)/b/n/10.95 Клавиши \TU/PT_Serif-Web-Regular.tt
+f(1)/m/n/10.95 (дополнение 0.14). В первой редакции 0.14 опрокидывались колпачк
+и
+ []
+
+[56]
+Underfull \hbox (badness 1472) in paragraph at lines 1306--1307
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 расчёт проекта в его допущениях (моло
+ток — \TU/PTMono.ttf(1)/m/n/10.95 links.py\TU/PT_Serif-Web-Regular.ttf(1)/m/n/1
+0.95 , цикл — \TU/PTMono.ttf(1)/m/n/10.95 motor.py\TU/PT_Serif-Web-Regular.ttf(
+1)/m/n/10.95 , подача —
+ []
+
+(./gen/tab_stage2.tex) (./gen/tab_stage2.tex) (./gen/tab_stage2.tex
+Overfull \hbox (4.93216pt too wide) in paragraph at lines 7--8
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 накладкой|  
+ []
+
+
+Overfull \hbox (5.59816pt too wide) in paragraph at lines 9--10
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 расчётный|  
+ []
+
+) [57] [58]
+Underfull \hbox (badness 1888) in paragraph at lines 1330--1331
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 часы одни — цикловой вал, а ступень 2
+ давала каждому узлу свой закон: узлы C и
+ []
+
+
+Underfull \hbox (badness 2005) in paragraph at lines 1330--1331
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 D переводили градусы в миллисекунды р
+авномерно, по времени цикла из \TU/PTMono.ttf(1)/m/n/10.95 motor.py\TU/PT_Serif
+-Web-Regular.ttf(1)/m/n/10.95 .
+ []
+
+File: gen/physics/stage2b_omega.png Graphic file (type bmp)
+<gen/physics/stage2b_omega.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+(./gen/tab_stage2b.tex
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 1343--1344
+[]\TU/PT_Serif-Web-Regular.ttf(1)/b/n/10.95 Вал встаёт на взводе \TU/PT_Serif-W
+eb-Regular.ttf(1)/m/n/10.95 (ошибка замысла). На конце завода (18,5 мН$\OMS/cms
+y/m/n/10.95 ^^A$\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 м) вал
+ []
+
+
+Underfull \hbox (badness 1194) in paragraph at lines 1343--1344
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 приходится подъём ленты (10 мДж на 75
+–155°); пик нагрузки — около 36 мН$\OMS/cmsy/m/n/10.95 ^^A$\TU/PT_Serif-Web-Reg
+ular.ttf(1)/m/n/10.95 м.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1344--1345
+[]\TU/PT_Serif-Web-Regular.ttf(1)/b/n/10.95 Регулятор не держит скорость \TU/PT
+_Serif-Web-Regular.ttf(1)/m/n/10.95 (ошибка замысла). Крыльчатка тормозит
+ []
+
+[59] [60]
+
+LaTeX Font Warning: Font shape `TU/PTMono.ttf(0)/b/n' undefined
+(Font)              using `TU/PTMono.ttf(0)/m/n' instead on input line 1353.
+
+
+LaTeX Font Warning: Font shape `TU/PTMono.ttf(1)/b/n' undefined
+(Font)              using `TU/PTMono.ttf(1)/m/n' instead on input line 1353.
+
+LaTeX Font Info:    Font shape `TU/PTMono.ttf(0)/b/n' will be
+(Font)              scaled to size 10.07397pt on input line 1353.
+LaTeX Font Info:    Font shape `TU/PTMono.ttf(1)/b/n' will be
+(Font)              scaled to size 10.07397pt on input line 1353.
+
+Underfull \hbox (badness 1189) in paragraph at lines 1353--1354
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 на рабочих заводах растут со скорость
+ю вала, поэтому главный вариант — регулятор,
+ []
+
+(./gen/tab_stage2b_var.tex)
+Overfull \hbox (34.55214pt too wide) in paragraph at lines 1356--1363
+ [] 
+ []
+
+[61]
+Underfull \hbox (badness 1789) in paragraph at lines 1368--1369
+[]\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 регулятор с ограничением скорости: 
+центробежный тормоз с уставкой 0,25 с на
+ []
+
+
+Underfull \hbox (badness 2671) in paragraph at lines 1377--1378
+ []\TU/PT_Serif-Web-Regular.ttf(1)/b/n/10.95 Решения (ред. 0.14).[] \TU/PT_Seri
+f-Web-Regular.ttf(1)/m/n/10.95 Вопросы раздела 0.13 решены так, как надёжнее дл
+я работы
+ []
+
+[62]
 File: gen/model/renders/code_under.png Graphic file (type bmp)
 <gen/model/renders/code_under.png>
- [52]
-Underfull \hbox (badness 2229) in paragraph at lines 1288--1289
+ [63]
+Underfull \hbox (badness 2229) in paragraph at lines 1399--1400
 []\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 Все печатные детали уложены на стол
  220$\OMS/cmsy/m/n/10.95 ^^B$\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 220 мм: 
 укладка выбирает положение
  []
 
 
-Underfull \hbox (badness 1496) in paragraph at lines 1288--1289
+Underfull \hbox (badness 1496) in paragraph at lines 1399--1400
 \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 с наименьшей высотой, литерные блоки 
 и кодовые пластины печатаются в заданном
  []
@@ -1834,22 +2016,32 @@ Underfull \hbox (badness 1762) in paragraph at lines 8--8
  []
 
 )
-Overfull \hbox (6.43857pt too wide) in alignment at lines 1305--1309
+Overfull \hbox (6.43857pt too wide) in alignment at lines 1416--1420
  [] [] [] 
  []
 
 (./gen/tab_model_buy.tex)
-Overfull \hbox (6.43857pt too wide) in alignment at lines 1309--1312
+Overfull \hbox (6.43857pt too wide) in alignment at lines 1420--1423
  [] [] [] 
  []
 
-[53] [54] (./gen/tab_motor_I.tex) [55] (./gen/fig_cycle.tex)
-(./gen/tab_motor_sim.tex) [56] (./gen/tab_motor_spring.tex)
-(./gen/tab_motor_spring.tex) (./gen/tab_motor_spring.tex)
+[64] [65] [66] (./gen/tab_motor_I.tex) (./gen/fig_cycle.tex) [67]
+(./gen/tab_motor_sim.tex) [68] (./gen/tab_motor_spring.tex)
+(./gen/tab_motor_spring.tex) (./gen/tab_motor_spring.tex
+Underfull \hbox (badness 10000) in paragraph at lines 2--3
+[]|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10 внутренний радиус
+ []
+
+) [69]
+Underfull \hbox (badness 1694) in paragraph at lines 1512--1513
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 Сталь с допускаемым напряжением изгиб
+а 2000 МПа вместо 1500 (лучшие стали для
+ []
+
 File: gen/model/renders/drive.png Graphic file (type bmp)
 <gen/model/renders/drive.png>
- [57]
-Underfull \hbox (badness 1163) in paragraph at lines 1399--1400
+[70]
+Underfull \hbox (badness 1163) in paragraph at lines 1527--1528
 []\TU/PT_Serif-Web-Regular.ttf(1)/b/n/10.95 Мерные рамки. \TU/PT_Serif-Web-Regu
 lar.ttf(1)/m/n/10.95 Стальной пруток 5 мм на пролёте 276 мм под нагрузкой 0,3 Н
 
@@ -1857,35 +2049,36 @@ lar.ttf(1)/m/n/10.95 Стальной пруток 5 мм на пролёте 27
 
 File: gen/model/renders/case_iso_front.png Graphic file (type bmp)
 <gen/model/renders/case_iso_front.png>
-[58] [59]
+[71] [72]
 File: gen/model/renders/case_fascia.png Graphic file (type bmp)
 <gen/model/renders/case_fascia.png>
 
-Underfull \hbox (badness 1092) in paragraph at lines 1433--1434
+Underfull \hbox (badness 1092) in paragraph at lines 1561--1562
  []\TU/PT_Serif-Web-Regular.ttf(1)/b/n/10.95 Герб.[] \TU/PT_Serif-Web-Regular.t
 tf(1)/m/n/10.95 На левой башне — щит с гербом автора, Mírë Nolmeo (двенадцатая 
 редакция):
  []
 
-File: gen/model/renders/case_device.png Graphic file (type bmp)
-<gen/model/renders/case_device.png>
-[60]
-Underfull \hbox (badness 1210) in paragraph at lines 1442--1443
-\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 (в модели их нет). Серебро печатается
- вместе с панелью: панель лежит лицом вверх,
+
+Underfull \hbox (badness 5726) in paragraph at lines 1561--1562
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 принтере, верхними слоями в цвете. На
+ странице модели щит несёт рисунок как
  []
 
+File: gen/model/renders/case_device.png Graphic file (type bmp)
+<gen/model/renders/case_device.png>
+[73]
 File: gen/model/renders/case_typist.png Graphic file (type bmp)
 <gen/model/renders/case_typist.png>
-[61]
+ [74]
 File: gen/model/renders/case_iso_back.png Graphic file (type bmp)
 <gen/model/renders/case_iso_back.png>
- [62] [63] [64]
-Overfull \vbox (17.20232pt too high) has occurred while \output is active []
+ [75] [76] [77]
+Overfull \vbox (53.20232pt too high) has occurred while \output is active []
 
 
-[65]
-Underfull \hbox (badness 3229) in paragraph at lines 1504--1505
+[78]
+Underfull \hbox (badness 3229) in paragraph at lines 1632--1633
 []\TU/PT_Serif-Web-Regular.ttf(1)/b/n/10.95 Двигатель и цикл. \TU/PT_Serif-Web-
 Regular.ttf(1)/m/n/10.95 Барабан с пружиной, передача, регулятор, цикловой вал 
 с
@@ -1904,14 +2097,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--4
 )
 File: stl/tpm2_em13_nozzle04_sample.png Graphic file (type bmp)
 <stl/tpm2_em13_nozzle04_sample.png>
- [66]
-Underfull \hbox (badness 1077) in paragraph at lines 1536--1537
+ [79]
+Underfull \hbox (badness 1077) in paragraph at lines 1664--1665
 \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 число зависит от КПД кулачков и трени
 я, которые пока приняты. Если окажется
  []
 
 
-Underfull \hbox (badness 2582) in paragraph at lines 1540--1541
+Underfull \hbox (badness 2582) in paragraph at lines 1668--1669
 []\TU/PT_Serif-Web-Regular.ttf(1)/b/n/10.95 Точность гребёнок. \TU/PT_Serif-Web
 -Regular.ttf(1)/m/n/10.95 Требование $\OML/cmm/m/it/10.95 ^^[ \OMS/cmsy/m/n/10.
 95 ^^T \OT1/cmr/m/n/10.95 0[]08$ \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 мм к
@@ -1919,32 +2112,45 @@ Underfull \hbox (badness 2582) in paragraph at lines 1540--1541
  []
 
 
-Underfull \hbox (badness 1776) in paragraph at lines 1540--1541
+Underfull \hbox (badness 1776) in paragraph at lines 1668--1669
 \OML/cmm/m/it/10.95 k$ \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 придётся увели
 чить до 1,2–1,5 мм/u (гребёнки глубже, головка ближе к валу).
  []
 
 
-Underfull \hbox (badness 2057) in paragraph at lines 1542--1543
-[]\TU/PT_Serif-Web-Regular.ttf(1)/b/n/10.95 Холостой цикл. \TU/PT_Serif-Web-Reg
-ular.ttf(1)/m/n/10.95 Запоры построены (§[]8.7[]); удар взводного рычага по зап
-ертому
- []
-
-
-Underfull \hbox (badness 3098) in paragraph at lines 1545--1546
+Underfull \hbox (badness 3098) in paragraph at lines 1673--1674
 []\TU/PT_Serif-Web-Regular.ttf(1)/b/n/10.95 Заправка листа. \TU/PT_Serif-Web-Re
 gular.ttf(1)/m/n/10.95 Молоток за листом — заправка неудобнее, чем на рычажной
  []
 
 
-Underfull \hbox (badness 1748) in paragraph at lines 1548--1549
+Underfull \hbox (badness 4403) in paragraph at lines 1676--1677
+[]\TU/PT_Serif-Web-Regular.ttf(1)/b/n/10.95 Физические проверки \TU/PT_Serif-We
+b-Regular.ttf(1)/m/n/10.95 (§[]19.5[]). Узлы ступени 2 по отдельности проходят 
+свои
+ []
+
+
+Underfull \hbox (badness 1024) in paragraph at lines 1676--1677
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 вал вдвое быстрее); с тормозом регуля
+тора, моментом 39,4 мН$\OMS/cmsy/m/n/10.95 ^^A$\TU/PT_Serif-Web-Regular.ttf(1)/
+m/n/10.95 м в конце завода
+ []
+
+
+Underfull \hbox (badness 1199) in paragraph at lines 1676--1677
+\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 и новыми числами пружин всё сходится.
+ Риски: характеристика тормоза, кривая
+ []
+
+[80]
+Underfull \hbox (badness 1748) in paragraph at lines 1677--1678
 \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 ролика или высоты балки сдвигает все 
 зубья сразу, поэтому повторитель нужно
  []
 
-[67]
-Underfull \hbox (badness 1990) in paragraph at lines 1558--1559
+
+Underfull \hbox (badness 1990) in paragraph at lines 1687--1688
 []\TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 замеры стенда Э2: силы пружин, трен
 ие, повторяемость упоров — они заменят
  []
@@ -1953,45 +2159,46 @@ File: gen/model/renders/asm_frame.png Graphic file (type bmp)
 <gen/model/renders/asm_frame.png>
 File: gen/model/renders/asm_keys.png Graphic file (type bmp)
 <gen/model/renders/asm_keys.png>
+[81]
 File: gen/model/renders/asm_levers.png Graphic file (type bmp)
 <gen/model/renders/asm_levers.png>
-[68]
+ [82]
 File: gen/model/renders/asm_plates.png Graphic file (type bmp)
 <gen/model/renders/asm_plates.png>
- [69]
+ [83]
 File: gen/model/renders/asm_bails.png Graphic file (type bmp)
 <gen/model/renders/asm_bails.png>
- [70]
+ [84]
 File: gen/model/renders/asm_sectors.png Graphic file (type bmp)
 <gen/model/renders/asm_sectors.png>
- [71]
+ [85]
 File: gen/model/renders/asm_select.png Graphic file (type bmp)
 <gen/model/renders/asm_select.png>
- [72]
+ [86]
 File: gen/model/renders/asm_uframe.png Graphic file (type bmp)
 <gen/model/renders/asm_uframe.png>
- [73]
+ [87]
 File: gen/model/renders/asm_shuttle.png Graphic file (type bmp)
 <gen/model/renders/asm_shuttle.png>
- [74]
+ [88]
 File: gen/model/renders/asm_carriage.png Graphic file (type bmp)
 <gen/model/renders/asm_carriage.png>
- [75]
+ [89]
 File: gen/model/renders/asm_esc.png Graphic file (type bmp)
 <gen/model/renders/asm_esc.png>
- [76]
+ [90]
 File: gen/model/renders/asm_ribbon.png Graphic file (type bmp)
 <gen/model/renders/asm_ribbon.png>
- [77]
+ [91]
 File: gen/model/renders/asm_drive.png Graphic file (type bmp)
 <gen/model/renders/asm_drive.png>
- [78]
+ [92]
 File: gen/model/renders/asm_hammer.png Graphic file (type bmp)
 <gen/model/renders/asm_hammer.png>
- [79]
+ [93]
 File: gen/model/renders/asm_case.png Graphic file (type bmp)
 <gen/model/renders/asm_case.png>
- [80] [81]
+ [94] [95]
 (./gen/tab_part_numbers.tex
 Underfull \hbox (badness 3364) in paragraph at lines 1--1
 []|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 Печатающий узел: плита, деревья,
@@ -2023,32 +2230,32 @@ Underfull \hbox (badness 3364) in paragraph at lines 13--13
  []
 
 
-Underfull \hbox (badness 3364) in paragraph at lines 77--77
+Underfull \hbox (badness 3364) in paragraph at lines 70--70
 []|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 Печатающий узел: плита, деревья,
  []
 
 
-Underfull \hbox (badness 3364) in paragraph at lines 121--121
+Underfull \hbox (badness 3364) in paragraph at lines 118--118
 []|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 Печатающий узел: плита, деревья,
  []
 
 
-Underfull \hbox (badness 3364) in paragraph at lines 122--122
+Underfull \hbox (badness 3364) in paragraph at lines 119--119
 []|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 Печатающий узел: плита, деревья,
  []
 
 
-Underfull \hbox (badness 3364) in paragraph at lines 137--137
+Underfull \hbox (badness 3364) in paragraph at lines 134--134
+[]|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 Печатающий узел: плита, деревья,
+ []
+
+
+Underfull \hbox (badness 3364) in paragraph at lines 141--141
 []|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 Печатающий узел: плита, деревья,
  []
 
 
 Underfull \hbox (badness 3364) in paragraph at lines 142--142
-[]|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 Печатающий узел: плита, деревья,
- []
-
-
-Underfull \hbox (badness 3364) in paragraph at lines 143--143
 []|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 Печатающий узел: плита, деревья,
  []
 
@@ -2063,42 +2270,57 @@ Underfull \hbox (badness 3364) in paragraph at lines 146--146
  []
 
 
-Underfull \hbox (badness 3364) in paragraph at lines 216--216
+Underfull \hbox (badness 3364) in paragraph at lines 147--147
 []|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 Печатающий узел: плита, деревья,
  []
 
 
-Underfull \hbox (badness 3364) in paragraph at lines 217--217
+Underfull \hbox (badness 3364) in paragraph at lines 220--220
 []|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 Печатающий узел: плита, деревья,
  []
 
 
-Underfull \hbox (badness 3364) in paragraph at lines 219--219
+Underfull \hbox (badness 3364) in paragraph at lines 221--221
 []|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 Печатающий узел: плита, деревья,
  []
 
 
-Underfull \hbox (badness 3364) in paragraph at lines 232--232
+Underfull \hbox (badness 3364) in paragraph at lines 223--223
 []|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 Печатающий узел: плита, деревья,
  []
 
 
-Underfull \hbox (badness 3364) in paragraph at lines 262--262
+Underfull \hbox (badness 3364) in paragraph at lines 236--236
 []|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 Печатающий узел: плита, деревья,
  []
 
 
-Underfull \hbox (badness 3364) in paragraph at lines 263--263
+Underfull \hbox (badness 3364) in paragraph at lines 272--272
 []|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 Печатающий узел: плита, деревья,
  []
 
 
-Underfull \hbox (badness 3364) in paragraph at lines 287--287
+Underfull \hbox (badness 3364) in paragraph at lines 273--273
 []|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 Печатающий узел: плита, деревья,
  []
 
 
-Underfull \hbox (badness 3364) in paragraph at lines 290--290
+Underfull \hbox (badness 3364) in paragraph at lines 274--274
+[]|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 Печатающий узел: плита, деревья,
+ []
+
+
+Underfull \hbox (badness 3364) in paragraph at lines 275--275
+[]|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 Печатающий узел: плита, деревья,
+ []
+
+
+Underfull \hbox (badness 3364) in paragraph at lines 299--299
+[]|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 Печатающий узел: плита, деревья,
+ []
+
+
+Underfull \hbox (badness 3364) in paragraph at lines 300--300
 []|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 Печатающий узел: плита, деревья,
  []
 
@@ -2108,57 +2330,66 @@ Underfull \hbox (badness 3364) in paragraph at lines 303--303
  []
 
 
-Underfull \hbox (badness 3364) in paragraph at lines 311--311
+Underfull \hbox (badness 3364) in paragraph at lines 317--317
 []|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 Печатающий узел: плита, деревья,
  []
 
 
-Underfull \hbox (badness 3364) in paragraph at lines 312--312
+Underfull \hbox (badness 3364) in paragraph at lines 325--325
 []|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 Печатающий узел: плита, деревья,
  []
 
 
-Underfull \hbox (badness 3364) in paragraph at lines 313--313
+Underfull \hbox (badness 3364) in paragraph at lines 326--326
 []|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 Печатающий узел: плита, деревья,
  []
 
 
-Underfull \hbox (badness 3364) in paragraph at lines 314--314
+Underfull \hbox (badness 3364) in paragraph at lines 327--327
 []|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 Печатающий узел: плита, деревья,
  []
 
 
-Underfull \hbox (badness 3364) in paragraph at lines 315--315
+Underfull \hbox (badness 3364) in paragraph at lines 328--328
 []|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 Печатающий узел: плита, деревья,
  []
 
-) [82] [83] [84] [85] [86] (./gen/tab_codes.tex) [87] [88] (./gen/tab_combs.tex
-) [89]
+
+Underfull \hbox (badness 3364) in paragraph at lines 329--329
+[]|\TU/PT_Serif-Web-Regular.ttf(1)/m/n/9 Печатающий узел: плита, деревья,
+ []
+
+) [96] [97] [98] [99] [100] (./gen/tab_codes.tex) [101] [102]
+(./gen/tab_combs.tex) [103] [104]
 
 Package enumitem Warning: Negative labelwidth. This does not make much
-(enumitem)                sense, on input line 1613.
+(enumitem)                sense, on input line 1744.
 
 
-Underfull \hbox (badness 1297) in paragraph at lines 1614--1615
+Underfull \hbox (badness 1297) in paragraph at lines 1745--1746
 \TU/PT_Serif-Web-Regular.ttf(1)/m/n/10.95 Карло — почти вдвое хуже посадка знак
 ов), сила удара зависит от пальца, раскладка
  []
 
-[90] [91] [92] (./main.aux)
+[105] [106] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 745CB3B9CDE2FB4B2E58014B5A50B4A5;15848.
+(rerunfilecheck)             Checksum: 60002936E78F019F4D9CEBB459D38BCE;16060.
  ) 
 Here is how much of TeX's memory you used:
- 30372 strings out of 476846
- 658361 string characters out of 5803823
- 2046627 words of memory out of 5000000
- 51507 multiletter control sequences out of 15000+600000
+ 30416 strings out of 476846
+ 659278 string characters out of 5803823
+ 2050627 words of memory out of 5000000
+ 51529 multiletter control sequences out of 15000+600000
  564209 words of font info for 152 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 89i,13n,120p,1732b,1190s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,13n,120p,2806b,1192s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (93 pages).
+Output written on main.pdf (108 pages).

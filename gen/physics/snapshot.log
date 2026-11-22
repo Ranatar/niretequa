@@ -1,0 +1,48 @@
+rest built 1.5 s 779
+states 433
+0 rest 4.1 s
+25 slide 9u row 7 hammer 0.0 23.5 s
+50 key k02 tier 0 44.4 s
+75 key k17 tier 0 63.7 s
+100 key k30 tier 1 82.7 s
+125 mark B=0 at 0.4 102.0 s
+150 cycle 40 target 10/7 121.6 s
+175 cycle 120 target 4/5 141.4 s
+200 cycle 210 target 0/0 161.7 s
+225 cycle 290 target 10/7 181.3 s
+250 idle space cycle 60 201.0 s
+275 read 10/4 220.6 s
+300 M mem=17 car 0u 240.6 s
+325 U w=16 pm=1 car 60u 259.8 s
+350 U w=6 pm=1 car 300u 279.3 s
+375 M mem=17 car 300u 298.1 s
+400 contacts cycle 230° 317.6 s
+425 contacts idle запоры на полпути 338.0 s
+done 343.4 s
+  non-rigid bail R spring -1 81 states, max 8.0
+  non-rigid bail R spring +1 81 states, max 8.0
+  non-rigid bail W spring -1 72 states, max 6.0
+  non-rigid bail W spring +1 72 states, max 6.0
+  non-rigid bail O spring -1 35 states, max 8.0
+  non-rigid bail O spring +1 35 states, max 8.0
+  non-rigid bail N spring -1 10 states, max 8.0
+  non-rigid bail N spring +1 10 states, max 8.0
+  non-rigid pm-u eccentric 43 states, max 1.192
+  non-rigid escapement rod X 43 states, max 0.5
+  non-rigid O rod A spring 50 states, max 4.366
+  non-rigid rotate tape 138 states, max 12.568
+  non-rigid rotate summing lever 1 60 states, max 1.307
+  non-rigid rotate summing lever 2 95 states, max 1.065
+  non-rigid rotate summing lever 3 93 states, max 0.57
+  non-rigid rotate amplifier 126 states, max 3.415
+  non-rigid lift summing lever 1 45 states, max 0.83
+  non-rigid lift summing lever 2 45 states, max 0.401
+  non-rigid lift amplifier 136 states, max 3.867
+  non-rigid paper 18 states, max 137.785
+  non-rigid escapement tape 138 states, max 8.322
+  non-rigid bksp link 8 states, max 0.781
+  non-rigid back link 28 states, max 10.146
+  non-rigid ribbon 148 states, max 35.56
+  non-rigid cam rod lift 3 states, max 0.993
+  non-rigid cam rod rotate 3 states, max 0.993
+  non-rigid cam rod hammer 3 states, max 2.0

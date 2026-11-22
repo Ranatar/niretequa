@@ -98,14 +98,17 @@ rows = [f"{k} & {f(v, 0)}\\\\\n" for k, v in MO['rot'].items()]
 rows.append(f"\\midrule\n\\textbf{{итого}} & \\textbf{{{f(MO['I_rot'], 0)}}}\\\\\n")
 w('tab_motor_I.tex', ''.join(rows))
 tb = MO['table']
-sel = [r for r in tb if 0.30 <= r['avg'] <= 0.9][::3]
+sel = [r for r in tb if r['tau'] >= MO['pick']['tau'] - 1e-9 and r['avg'] <= 0.9][::2]    # rev. 0.14 stage 2b: below the end-of-wind torque the shaft stops
 if MO['pick'] not in sel:
     sel = sorted(sel + [MO['pick']], key=lambda r: r['tau'])
 rows = []
 for r in sel:
     bold = abs(r['tau'] - MO['pick']['tau']) < 1e-9
+    # rev. 0.14 stage 2b: with the governor's brake a character takes one turn of the shaft whatever the torque: the
+    # characters per wind are the barrel's turns above the needed torque (linear fall of the spring's torque)
+    Mn = r['tau'] * MO['ratio'] / 0.93 ** 4
     cells = [f(r['tau'] * 1000, 1), f(r['E'] * 1000, 0), f(r['light'], 2), f(r['avg'], 2), f(r['worst'], 2),
-             f(MO['spring']['U_use'] * 0.93 ** 4 / r['E'], -1 if False else 0)]
+             f(MO['spring']['turns'] * max(0.0, 1 - Mn / MO['spring']['M_max']) * MO['ratio'], 0)]
     if bold:
         cells = [f'\\textbf{{{c}}}' for c in cells]
     rows.append(' & '.join(cells) + '\\\\\n')
@@ -118,7 +121,7 @@ rows = [f"полоса & {f(sp['b'], 0)}$\\times${f(sp['t'], 1)} мм, длин�
         f"момент (наибольший / средний) & {f(sp['M_max'], 1)} / {f(sp['M_avg'], 2)} Н$\\cdot$м\\\\\n",
         f"передача к цикловому валу & 1 : {f(MO['ratio'], 1)} (80/12 · 48/12 · 24/12)\\\\\n",
         f"нужно на цикловом валу / на барабане & {f(MO['tau_C'] * 1000, 1)} мН$\\cdot$м / {f(MO['M_need'], 2)} Н$\\cdot$м\\\\\n",
-        f"знаков на завод (по энергии / по оборотам) & {f(MO['chars_energy'], 0)} / {f(MO['chars_turns'], 0)}\\\\\n",
+        f"знаков на завод (обороты барабана выше нужного момента; до ступени 2б) & {f(MO.get('chars_usable', MO['chars_energy']), 0)} ({f(MO.get('chars_usable_old', 0), 0)})\\\\\n",
         f"завод: оборотов ручки, усилие на ручке & {f(MO['crank_turns'], 0)}, до {f(MO['crank_force'], 0)} Н\\\\\n"]
 w('tab_motor_spring.tex', ''.join(rows))
 # cycle diagram (tikz): bars over 0..360 deg
@@ -180,7 +183,7 @@ for k in range(len(SP['stairs']['C']['R'])):
 w('tab_stops.tex', ''.join(rows))
 num = dict(parts=N['parts'], printfiles=len(PR), printpieces=tot_q, printmass=f(tot_m / 1000, 1), height=f(N['height'], 0),
            Irot=f(MO['I_rot'], 0), Iold=f(MO['I_old'], 0), mlift=f(MO['m_lift'], 0), Echar=f(MO['E_char'] * 1000, 0),
-           tauC=f(MO['tau_C'] * 1000, 1), charswind=f(round(MO['chars_energy'], -1), 0), crankturns=f(MO['crank_turns'], 0),
+           tauC=f(MO['tau_C'] * 1000, 1), charswind=f(round(MO.get('chars_usable', MO['chars_energy']), -1), 0), charswindold=f(round(MO.get('chars_usable_old', 0), -1), 0), crankturns=f(MO['crank_turns'], 0),
            crankforce=f(MO['crank_force'], 0), cpsavg=f(MO['cps_avg'], 1), cpsworst=f(MO['cps_worst'], 1), cpslight=f(MO['cps_light'], 1),
            tavg=f(MO['pick']['avg'], 2), tworst=f(MO['pick']['worst'], 2), tlight=f(MO['pick']['light'], 2),
            springL=f(MO['spring']['L'] / 1000, 1), Uuse=f(MO['spring']['U_use'], 0), ratio=f(MO['ratio'], 1),

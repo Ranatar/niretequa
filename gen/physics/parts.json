@@ -1,0 +1,8852 @@
+[
+{
+"name": "frame front",
+"group": "frame",
+"kind": "cut",
+"bom": "2020x500",
+"mat": "алюминий",
+"note": "профиль 2020, 500 мм",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "frame back",
+"group": "frame",
+"kind": "cut",
+"bom": "2020x500",
+"mat": "алюминий",
+"note": "профиль 2020, 500 мм",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "frame side -1",
+"group": "frame",
+"kind": "cut",
+"bom": "2020x485",
+"mat": "алюминий",
+"note": "профиль 2020, 485 мм",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "frame side +1",
+"group": "frame",
+"kind": "cut",
+"bom": "2020x485",
+"mat": "алюминий",
+"note": "профиль 2020, 485 мм",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "beam post -150 -1",
+"group": "frame",
+"kind": "cut",
+"bom": "2020x50",
+"mat": "алюминий",
+"note": "профиль 2020, 50 мм",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "beam post -150 +1",
+"group": "frame",
+"kind": "cut",
+"bom": "2020x50",
+"mat": "алюминий",
+"note": "профиль 2020, 50 мм",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "beam -150",
+"group": "frame",
+"kind": "cut",
+"bom": "2020x460",
+"mat": "алюминий",
+"note": "профиль 2020, 460 мм",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "rail MGN12 -150",
+"group": "frame",
+"kind": "buy",
+"bom": "MGN12_300",
+"mat": "сталь",
+"note": "линейная направляющая MGN12, 300 мм",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "beam post -20 -1",
+"group": "frame",
+"kind": "cut",
+"bom": "2020x50",
+"mat": "алюминий",
+"note": "профиль 2020, 50 мм",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "beam post -20 +1",
+"group": "frame",
+"kind": "cut",
+"bom": "2020x50",
+"mat": "алюминий",
+"note": "профиль 2020, 50 мм",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "beam -20",
+"group": "frame",
+"kind": "cut",
+"bom": "2020x460",
+"mat": "алюминий",
+"note": "профиль 2020, 460 мм",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "rail MGN12 -20",
+"group": "frame",
+"kind": "buy",
+"bom": "MGN12_300",
+"mat": "сталь",
+"note": "линейная направляющая MGN12, 300 мм",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "carriage post lo -1",
+"group": "frame",
+"kind": "cut",
+"bom": "2020x82",
+"mat": "алюминий",
+"note": "профиль 2020, 82 мм",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "carriage post lo +1",
+"group": "frame",
+"kind": "cut",
+"bom": "2020x82",
+"mat": "алюминий",
+"note": "профиль 2020, 82 мм",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "carriage rod lo",
+"group": "frame",
+"kind": "buy",
+"bom": "rod8x460",
+"mat": "сталь",
+"note": "калиброванный пруток 8 мм, 460 мм",
+"mov": "fixed",
+"nv": 48
+},
+{
+"name": "carriage post hi -1",
+"group": "frame",
+"kind": "cut",
+"bom": "2020x252",
+"mat": "алюминий",
+"note": "профиль 2020, 252 мм",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "carriage post hi +1",
+"group": "frame",
+"kind": "cut",
+"bom": "2020x252",
+"mat": "алюминий",
+"note": "профиль 2020, 252 мм",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "carriage rod hi",
+"group": "frame",
+"kind": "buy",
+"bom": "rod8x460",
+"mat": "сталь",
+"note": "калиброванный пруток 8 мм, 460 мм",
+"mov": "fixed",
+"nv": 48
+},
+{
+"name": "frame cross pivot",
+"group": "frame",
+"kind": "cut",
+"bom": "2020x460",
+"mat": "алюминий",
+"note": "профиль 2020, 460 мм",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "ribbon post -1",
+"group": "frame",
+"kind": "print",
+"bom": "ribbon_post",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 16
+},
+{
+"name": "ribbon post +1",
+"group": "frame",
+"kind": "print",
+"bom": "ribbon_post",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 16
+},
+{
+"name": "cap k00",
+"group": "keys",
+"kind": "print",
+"bom": "keycap",
+"mat": "PETG",
+"note": "",
+"mov": "key0",
+"nv": 660
+},
+{
+"name": "stem k00",
+"group": "keys",
+"kind": "print",
+"bom": "keystem",
+"mat": "PETG",
+"note": "",
+"mov": "key0",
+"nv": 48
+},
+{
+"name": "cap k01",
+"group": "keys",
+"kind": "print",
+"bom": "keycap",
+"mat": "PETG",
+"note": "",
+"mov": "key4",
+"nv": 444
+},
+{
+"name": "stem k01",
+"group": "keys",
+"kind": "print",
+"bom": "keystem",
+"mat": "PETG",
+"note": "",
+"mov": "key4",
+"nv": 48
+},
+{
+"name": "cap k02",
+"group": "keys",
+"kind": "print",
+"bom": "keycap",
+"mat": "PETG",
+"note": "",
+"mov": "key8",
+"nv": 602
+},
+{
+"name": "stem k02",
+"group": "keys",
+"kind": "print",
+"bom": "keystem",
+"mat": "PETG",
+"note": "",
+"mov": "key8",
+"nv": 48
+},
+{
+"name": "cap k03",
+"group": "keys",
+"kind": "print",
+"bom": "keycap",
+"mat": "PETG",
+"note": "",
+"mov": "key12",
+"nv": 346
+},
+{
+"name": "stem k03",
+"group": "keys",
+"kind": "print",
+"bom": "keystem",
+"mat": "PETG",
+"note": "",
+"mov": "key12",
+"nv": 48
+},
+{
+"name": "cap k04",
+"group": "keys",
+"kind": "print",
+"bom": "keycap",
+"mat": "PETG",
+"note": "",
+"mov": "key16",
+"nv": 678
+},
+{
+"name": "stem k04",
+"group": "keys",
+"kind": "print",
+"bom": "keystem",
+"mat": "PETG",
+"note": "",
+"mov": "key16",
+"nv": 48
+},
+{
+"name": "cap k05",
+"group": "keys",
+"kind": "print",
+"bom": "keycap",
+"mat": "PETG",
+"note": "",
+"mov": "key20",
+"nv": 718
+},
+{
+"name": "stem k05",
+"group": "keys",
+"kind": "print",
+"bom": "keystem",
+"mat": "PETG",
+"note": "",
+"mov": "key20",
+"nv": 48
+},
+{
+"name": "cap k06",
+"group": "keys",
+"kind": "print",
+"bom": "keycap",
+"mat": "PETG",
+"note": "",
+"mov": "key24",
+"nv": 329
+},
+{
+"name": "stem k06",
+"group": "keys",
+"kind": "print",
+"bom": "keystem",
+"mat": "PETG",
+"note": "",
+"mov": "key24",
+"nv": 48
+},
+{
+"name": "cap k07",
+"group": "keys",
+"kind": "print",
+"bom": "keycap",
+"mat": "PETG",
+"note": "",
+"mov": "key28",
+"nv": 494
+},
+{
+"name": "stem k07",
+"group": "keys",
+"kind": "print",
+"bom": "keystem",
+"mat": "PETG",
+"note": "",
+"mov": "key28",
+"nv": 48
+},
+{
+"name": "cap k08",
+"group": "keys",
+"kind": "print",
+"bom": "keycap",
+"mat": "PETG",
+"note": "",
+"mov": "key32",
+"nv": 552
+},
+{
+"name": "stem k08",
+"group": "keys",
+"kind": "print",
+"bom": "keystem",
+"mat": "PETG",
+"note": "",
+"mov": "key32",
+"nv": 48
+},
+{
+"name": "cap k09",
+"group": "keys",
+"kind": "print",
+"bom": "keycap",
+"mat": "PETG",
+"note": "",
+"mov": "key36",
+"nv": 322
+},
+{
+"name": "stem k09",
+"group": "keys",
+"kind": "print",
+"bom": "keystem",
+"mat": "PETG",
+"note": "",
+"mov": "key36",
+"nv": 48
+},
+{
+"name": "cap k010",
+"group": "keys",
+"kind": "print",
+"bom": "keycap",
+"mat": "PETG",
+"note": "",
+"mov": "key40",
+"nv": 182
+},
+{
+"name": "stem k010",
+"group": "keys",
+"kind": "print",
+"bom": "keystem",
+"mat": "PETG",
+"note": "",
+"mov": "key40",
+"nv": 48
+},
+{
+"name": "cap k10",
+"group": "keys",
+"kind": "print",
+"bom": "keycap",
+"mat": "PETG",
+"note": "",
+"mov": "key1",
+"nv": 635
+},
+{
+"name": "stem k10",
+"group": "keys",
+"kind": "print",
+"bom": "keystem",
+"mat": "PETG",
+"note": "",
+"mov": "key1",
+"nv": 51
+},
+{
+"name": "cap k11",
+"group": "keys",
+"kind": "print",
+"bom": "keycap",
+"mat": "PETG",
+"note": "",
+"mov": "key5",
+"nv": 488
+},
+{
+"name": "stem k11",
+"group": "keys",
+"kind": "print",
+"bom": "keystem",
+"mat": "PETG",
+"note": "",
+"mov": "key5",
+"nv": 51
+},
+{
+"name": "cap k12",
+"group": "keys",
+"kind": "print",
+"bom": "keycap",
+"mat": "PETG",
+"note": "",
+"mov": "key9",
+"nv": 515
+},
+{
+"name": "stem k12",
+"group": "keys",
+"kind": "print",
+"bom": "keystem",
+"mat": "PETG",
+"note": "",
+"mov": "key9",
+"nv": 51
+},
+{
+"name": "cap k13",
+"group": "keys",
+"kind": "print",
+"bom": "keycap",
+"mat": "PETG",
+"note": "",
+"mov": "key13",
+"nv": 494
+},
+{
+"name": "stem k13",
+"group": "keys",
+"kind": "print",
+"bom": "keystem",
+"mat": "PETG",
+"note": "",
+"mov": "key13",
+"nv": 51
+},
+{
+"name": "cap k14",
+"group": "keys",
+"kind": "print",
+"bom": "keycap",
+"mat": "PETG",
+"note": "",
+"mov": "key17",
+"nv": 733
+},
+{
+"name": "stem k14",
+"group": "keys",
+"kind": "print",
+"bom": "keystem",
+"mat": "PETG",
+"note": "",
+"mov": "key17",
+"nv": 51
+},
+{
+"name": "cap k15",
+"group": "keys",
+"kind": "print",
+"bom": "keycap",
+"mat": "PETG",
+"note": "",
+"mov": "key21",
+"nv": 730
+},
+{
+"name": "stem k15",
+"group": "keys",
+"kind": "print",
+"bom": "keystem",
+"mat": "PETG",
+"note": "",
+"mov": "key21",
+"nv": 51
+},
+{
+"name": "cap k16",
+"group": "keys",
+"kind": "print",
+"bom": "keycap",
+"mat": "PETG",
+"note": "",
+"mov": "key25",
+"nv": 744
+},
+{
+"name": "stem k16",
+"group": "keys",
+"kind": "print",
+"bom": "keystem",
+"mat": "PETG",
+"note": "",
+"mov": "key25",
+"nv": 51
+},
+{
+"name": "cap k17",
+"group": "keys",
+"kind": "print",
+"bom": "keycap",
+"mat": "PETG",
+"note": "",
+"mov": "key29",
+"nv": 759
+},
+{
+"name": "stem k17",
+"group": "keys",
+"kind": "print",
+"bom": "keystem",
+"mat": "PETG",
+"note": "",
+"mov": "key29",
+"nv": 51
+},
+{
+"name": "cap k18",
+"group": "keys",
+"kind": "print",
+"bom": "keycap",
+"mat": "PETG",
+"note": "",
+"mov": "key33",
+"nv": 716
+},
+{
+"name": "stem k18",
+"group": "keys",
+"kind": "print",
+"bom": "keystem",
+"mat": "PETG",
+"note": "",
+"mov": "key33",
+"nv": 51
+},
+{
+"name": "cap k19",
+"group": "keys",
+"kind": "print",
+"bom": "keycap",
+"mat": "PETG",
+"note": "",
+"mov": "key37",
+"nv": 548
+},
+{
+"name": "stem k19",
+"group": "keys",
+"kind": "print",
+"bom": "keystem",
+"mat": "PETG",
+"note": "",
+"mov": "key37",
+"nv": 51
+},
+{
+"name": "cap k110",
+"group": "keys",
+"kind": "print",
+"bom": "keycap",
+"mat": "PETG",
+"note": "",
+"mov": "key41",
+"nv": 598
+},
+{
+"name": "stem k110",
+"group": "keys",
+"kind": "print",
+"bom": "keystem",
+"mat": "PETG",
+"note": "",
+"mov": "key41",
+"nv": 51
+},
+{
+"name": "cap k20",
+"group": "keys",
+"kind": "print",
+"bom": "keycap",
+"mat": "PETG",
+"note": "",
+"mov": "key2",
+"nv": 643
+},
+{
+"name": "stem k20",
+"group": "keys",
+"kind": "print",
+"bom": "keystem",
+"mat": "PETG",
+"note": "",
+"mov": "key2",
+"nv": 48
+},
+{
+"name": "cap k21",
+"group": "keys",
+"kind": "print",
+"bom": "keycap",
+"mat": "PETG",
+"note": "",
+"mov": "key6",
+"nv": 465
+},
+{
+"name": "stem k21",
+"group": "keys",
+"kind": "print",
+"bom": "keystem",
+"mat": "PETG",
+"note": "",
+"mov": "key6",
+"nv": 48
+},
+{
+"name": "cap k22",
+"group": "keys",
+"kind": "print",
+"bom": "keycap",
+"mat": "PETG",
+"note": "",
+"mov": "key10",
+"nv": 579
+},
+{
+"name": "stem k22",
+"group": "keys",
+"kind": "print",
+"bom": "keystem",
+"mat": "PETG",
+"note": "",
+"mov": "key10",
+"nv": 48
+},
+{
+"name": "cap k23",
+"group": "keys",
+"kind": "print",
+"bom": "keycap",
+"mat": "PETG",
+"note": "",
+"mov": "key14",
+"nv": 762
+},
+{
+"name": "stem k23",
+"group": "keys",
+"kind": "print",
+"bom": "keystem",
+"mat": "PETG",
+"note": "",
+"mov": "key14",
+"nv": 48
+},
+{
+"name": "cap k24",
+"group": "keys",
+"kind": "print",
+"bom": "keycap",
+"mat": "PETG",
+"note": "",
+"mov": "key18",
+"nv": 751
+},
+{
+"name": "stem k24",
+"group": "keys",
+"kind": "print",
+"bom": "keystem",
+"mat": "PETG",
+"note": "",
+"mov": "key18",
+"nv": 48
+},
+{
+"name": "cap k25",
+"group": "keys",
+"kind": "print",
+"bom": "keycap",
+"mat": "PETG",
+"note": "",
+"mov": "key22",
+"nv": 252
+},
+{
+"name": "stem k25",
+"group": "keys",
+"kind": "print",
+"bom": "keystem",
+"mat": "PETG",
+"note": "",
+"mov": "key22",
+"nv": 48
+},
+{
+"name": "cap k26",
+"group": "keys",
+"kind": "print",
+"bom": "keycap",
+"mat": "PETG",
+"note": "",
+"mov": "key26",
+"nv": 472
+},
+{
+"name": "stem k26",
+"group": "keys",
+"kind": "print",
+"bom": "keystem",
+"mat": "PETG",
+"note": "",
+"mov": "key26",
+"nv": 48
+},
+{
+"name": "cap k27",
+"group": "keys",
+"kind": "print",
+"bom": "keycap",
+"mat": "PETG",
+"note": "",
+"mov": "key30",
+"nv": 264
+},
+{
+"name": "stem k27",
+"group": "keys",
+"kind": "print",
+"bom": "keystem",
+"mat": "PETG",
+"note": "",
+"mov": "key30",
+"nv": 48
+},
+{
+"name": "cap k28",
+"group": "keys",
+"kind": "print",
+"bom": "keycap",
+"mat": "PETG",
+"note": "",
+"mov": "key34",
+"nv": 394
+},
+{
+"name": "stem k28",
+"group": "keys",
+"kind": "print",
+"bom": "keystem",
+"mat": "PETG",
+"note": "",
+"mov": "key34",
+"nv": 48
+},
+{
+"name": "cap k29",
+"group": "keys",
+"kind": "print",
+"bom": "keycap",
+"mat": "PETG",
+"note": "",
+"mov": "key38",
+"nv": 360
+},
+{
+"name": "stem k29",
+"group": "keys",
+"kind": "print",
+"bom": "keystem",
+"mat": "PETG",
+"note": "",
+"mov": "key38",
+"nv": 48
+},
+{
+"name": "cap k210",
+"group": "keys",
+"kind": "print",
+"bom": "keycap",
+"mat": "PETG",
+"note": "",
+"mov": "key42",
+"nv": 176
+},
+{
+"name": "stem k210",
+"group": "keys",
+"kind": "print",
+"bom": "keystem",
+"mat": "PETG",
+"note": "",
+"mov": "key42",
+"nv": 48
+},
+{
+"name": "cap k30",
+"group": "keys",
+"kind": "print",
+"bom": "keycap",
+"mat": "PETG",
+"note": "",
+"mov": "key3",
+"nv": 680
+},
+{
+"name": "stem k30",
+"group": "keys",
+"kind": "print",
+"bom": "keystem",
+"mat": "PETG",
+"note": "",
+"mov": "key3",
+"nv": 48
+},
+{
+"name": "cap k31",
+"group": "keys",
+"kind": "print",
+"bom": "keycap",
+"mat": "PETG",
+"note": "",
+"mov": "key7",
+"nv": 526
+},
+{
+"name": "stem k31",
+"group": "keys",
+"kind": "print",
+"bom": "keystem",
+"mat": "PETG",
+"note": "",
+"mov": "key7",
+"nv": 48
+},
+{
+"name": "cap k32",
+"group": "keys",
+"kind": "print",
+"bom": "keycap",
+"mat": "PETG",
+"note": "",
+"mov": "key11",
+"nv": 378
+},
+{
+"name": "stem k32",
+"group": "keys",
+"kind": "print",
+"bom": "keystem",
+"mat": "PETG",
+"note": "",
+"mov": "key11",
+"nv": 48
+},
+{
+"name": "cap k33",
+"group": "keys",
+"kind": "print",
+"bom": "keycap",
+"mat": "PETG",
+"note": "",
+"mov": "key15",
+"nv": 424
+},
+{
+"name": "stem k33",
+"group": "keys",
+"kind": "print",
+"bom": "keystem",
+"mat": "PETG",
+"note": "",
+"mov": "key15",
+"nv": 48
+},
+{
+"name": "cap k34",
+"group": "keys",
+"kind": "print",
+"bom": "keycap",
+"mat": "PETG",
+"note": "",
+"mov": "key19",
+"nv": 596
+},
+{
+"name": "stem k34",
+"group": "keys",
+"kind": "print",
+"bom": "keystem",
+"mat": "PETG",
+"note": "",
+"mov": "key19",
+"nv": 48
+},
+{
+"name": "cap k35",
+"group": "keys",
+"kind": "print",
+"bom": "keycap",
+"mat": "PETG",
+"note": "",
+"mov": "key23",
+"nv": 338
+},
+{
+"name": "stem k35",
+"group": "keys",
+"kind": "print",
+"bom": "keystem",
+"mat": "PETG",
+"note": "",
+"mov": "key23",
+"nv": 48
+},
+{
+"name": "cap k36",
+"group": "keys",
+"kind": "print",
+"bom": "keycap",
+"mat": "PETG",
+"note": "",
+"mov": "key27",
+"nv": 596
+},
+{
+"name": "stem k36",
+"group": "keys",
+"kind": "print",
+"bom": "keystem",
+"mat": "PETG",
+"note": "",
+"mov": "key27",
+"nv": 48
+},
+{
+"name": "cap k37",
+"group": "keys",
+"kind": "print",
+"bom": "keycap",
+"mat": "PETG",
+"note": "",
+"mov": "key31",
+"nv": 264
+},
+{
+"name": "stem k37",
+"group": "keys",
+"kind": "print",
+"bom": "keystem",
+"mat": "PETG",
+"note": "",
+"mov": "key31",
+"nv": 48
+},
+{
+"name": "cap k38",
+"group": "keys",
+"kind": "print",
+"bom": "keycap",
+"mat": "PETG",
+"note": "",
+"mov": "key35",
+"nv": 237
+},
+{
+"name": "stem k38",
+"group": "keys",
+"kind": "print",
+"bom": "keystem",
+"mat": "PETG",
+"note": "",
+"mov": "key35",
+"nv": 48
+},
+{
+"name": "cap k39",
+"group": "keys",
+"kind": "print",
+"bom": "keycap",
+"mat": "PETG",
+"note": "",
+"mov": "key39",
+"nv": 186
+},
+{
+"name": "stem k39",
+"group": "keys",
+"kind": "print",
+"bom": "keystem",
+"mat": "PETG",
+"note": "",
+"mov": "key39",
+"nv": 48
+},
+{
+"name": "cap k310",
+"group": "keys",
+"kind": "print",
+"bom": "keycap",
+"mat": "PETG",
+"note": "",
+"mov": "key43",
+"nv": 186
+},
+{
+"name": "stem k310",
+"group": "keys",
+"kind": "print",
+"bom": "keystem",
+"mat": "PETG",
+"note": "",
+"mov": "key43",
+"nv": 48
+},
+{
+"name": "cap space4",
+"group": "keys",
+"kind": "print",
+"bom": "spacebar",
+"mat": "PETG",
+"note": "",
+"mov": "key-1",
+"nv": 640
+},
+{
+"name": "stem space4",
+"group": "keys",
+"kind": "print",
+"bom": "keystem",
+"mat": "PETG",
+"note": "",
+"mov": "key-1",
+"nv": 56
+},
+{
+"name": "cap space6",
+"group": "keys",
+"kind": "print",
+"bom": "spacebar",
+"mat": "PETG",
+"note": "",
+"mov": "key44",
+"nv": 2165
+},
+{
+"name": "stem space6",
+"group": "keys",
+"kind": "print",
+"bom": "keystem",
+"mat": "PETG",
+"note": "",
+"mov": "key44",
+"nv": 56
+},
+{
+"name": "cap shift",
+"group": "keys",
+"kind": "print",
+"bom": "keycap",
+"mat": "PETG",
+"note": "",
+"mov": "key-5",
+"nv": 36
+},
+{
+"name": "stem shift",
+"group": "keys",
+"kind": "print",
+"bom": "keystem",
+"mat": "PETG",
+"note": "",
+"mov": "key-5",
+"nv": 48
+},
+{
+"name": "cap bksp",
+"group": "keys",
+"kind": "print",
+"bom": "keycap",
+"mat": "PETG",
+"note": "",
+"mov": "key46",
+"nv": 52
+},
+{
+"name": "stem bksp",
+"group": "keys",
+"kind": "print",
+"bom": "keystem",
+"mat": "PETG",
+"note": "",
+"mov": "key46",
+"nv": 56
+},
+{
+"name": "cap back",
+"group": "keys",
+"kind": "print",
+"bom": "keycap",
+"mat": "PETG",
+"note": "",
+"mov": "key47",
+"nv": 1368
+},
+{
+"name": "stem back",
+"group": "keys",
+"kind": "print",
+"bom": "keystem",
+"mat": "PETG",
+"note": "",
+"mov": "key47",
+"nv": 59
+},
+{
+"name": "key comb",
+"group": "keys",
+"kind": "print",
+"bom": "comb",
+"mat": "PETG",
+"note": "печатается двумя частями, стыкуется на накладке",
+"mov": "fixed",
+"nv": 384
+},
+{
+"name": "space comb",
+"group": "keys",
+"kind": "print",
+"bom": "comb_space",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 24
+},
+{
+"name": "lever k00",
+"group": "levers",
+"kind": "print",
+"bom": "lever",
+"mat": "PETG",
+"note": "",
+"mov": "key0",
+"nv": 134
+},
+{
+"name": "lever k01",
+"group": "levers",
+"kind": "print",
+"bom": "lever",
+"mat": "PETG",
+"note": "",
+"mov": "key4",
+"nv": 134
+},
+{
+"name": "lever k02",
+"group": "levers",
+"kind": "print",
+"bom": "lever",
+"mat": "PETG",
+"note": "",
+"mov": "key8",
+"nv": 134
+},
+{
+"name": "lever k03",
+"group": "levers",
+"kind": "print",
+"bom": "lever",
+"mat": "PETG",
+"note": "",
+"mov": "key12",
+"nv": 134
+},
+{
+"name": "lever k04",
+"group": "levers",
+"kind": "print",
+"bom": "lever",
+"mat": "PETG",
+"note": "",
+"mov": "key16",
+"nv": 134
+},
+{
+"name": "lever k05",
+"group": "levers",
+"kind": "print",
+"bom": "lever",
+"mat": "PETG",
+"note": "",
+"mov": "key20",
+"nv": 134
+},
+{
+"name": "lever k06",
+"group": "levers",
+"kind": "print",
+"bom": "lever",
+"mat": "PETG",
+"note": "",
+"mov": "key24",
+"nv": 134
+},
+{
+"name": "lever k07",
+"group": "levers",
+"kind": "print",
+"bom": "lever",
+"mat": "PETG",
+"note": "",
+"mov": "key28",
+"nv": 134
+},
+{
+"name": "lever k08",
+"group": "levers",
+"kind": "print",
+"bom": "lever",
+"mat": "PETG",
+"note": "",
+"mov": "key32",
+"nv": 134
+},
+{
+"name": "lever k09",
+"group": "levers",
+"kind": "print",
+"bom": "lever",
+"mat": "PETG",
+"note": "",
+"mov": "key36",
+"nv": 134
+},
+{
+"name": "lever k010",
+"group": "levers",
+"kind": "print",
+"bom": "lever",
+"mat": "PETG",
+"note": "",
+"mov": "key40",
+"nv": 134
+},
+{
+"name": "lever k10",
+"group": "levers",
+"kind": "print",
+"bom": "lever",
+"mat": "PETG",
+"note": "",
+"mov": "key1",
+"nv": 126
+},
+{
+"name": "lever k11",
+"group": "levers",
+"kind": "print",
+"bom": "lever",
+"mat": "PETG",
+"note": "",
+"mov": "key5",
+"nv": 126
+},
+{
+"name": "lever k12",
+"group": "levers",
+"kind": "print",
+"bom": "lever",
+"mat": "PETG",
+"note": "",
+"mov": "key9",
+"nv": 126
+},
+{
+"name": "lever k13",
+"group": "levers",
+"kind": "print",
+"bom": "lever",
+"mat": "PETG",
+"note": "",
+"mov": "key13",
+"nv": 126
+},
+{
+"name": "lever k14",
+"group": "levers",
+"kind": "print",
+"bom": "lever",
+"mat": "PETG",
+"note": "",
+"mov": "key17",
+"nv": 126
+},
+{
+"name": "lever k15",
+"group": "levers",
+"kind": "print",
+"bom": "lever",
+"mat": "PETG",
+"note": "",
+"mov": "key21",
+"nv": 126
+},
+{
+"name": "lever k16",
+"group": "levers",
+"kind": "print",
+"bom": "lever",
+"mat": "PETG",
+"note": "",
+"mov": "key25",
+"nv": 126
+},
+{
+"name": "lever k17",
+"group": "levers",
+"kind": "print",
+"bom": "lever",
+"mat": "PETG",
+"note": "",
+"mov": "key29",
+"nv": 126
+},
+{
+"name": "lever k18",
+"group": "levers",
+"kind": "print",
+"bom": "lever",
+"mat": "PETG",
+"note": "",
+"mov": "key33",
+"nv": 126
+},
+{
+"name": "lever k19",
+"group": "levers",
+"kind": "print",
+"bom": "lever",
+"mat": "PETG",
+"note": "",
+"mov": "key37",
+"nv": 126
+},
+{
+"name": "lever k110",
+"group": "levers",
+"kind": "print",
+"bom": "lever",
+"mat": "PETG",
+"note": "",
+"mov": "key41",
+"nv": 126
+},
+{
+"name": "lever k20",
+"group": "levers",
+"kind": "print",
+"bom": "lever",
+"mat": "PETG",
+"note": "",
+"mov": "key2",
+"nv": 118
+},
+{
+"name": "lever k21",
+"group": "levers",
+"kind": "print",
+"bom": "lever",
+"mat": "PETG",
+"note": "",
+"mov": "key6",
+"nv": 118
+},
+{
+"name": "lever k22",
+"group": "levers",
+"kind": "print",
+"bom": "lever",
+"mat": "PETG",
+"note": "",
+"mov": "key10",
+"nv": 118
+},
+{
+"name": "lever k23",
+"group": "levers",
+"kind": "print",
+"bom": "lever",
+"mat": "PETG",
+"note": "",
+"mov": "key14",
+"nv": 118
+},
+{
+"name": "lever k24",
+"group": "levers",
+"kind": "print",
+"bom": "lever",
+"mat": "PETG",
+"note": "",
+"mov": "key18",
+"nv": 118
+},
+{
+"name": "lever k25",
+"group": "levers",
+"kind": "print",
+"bom": "lever",
+"mat": "PETG",
+"note": "",
+"mov": "key22",
+"nv": 118
+},
+{
+"name": "lever k26",
+"group": "levers",
+"kind": "print",
+"bom": "lever",
+"mat": "PETG",
+"note": "",
+"mov": "key26",
+"nv": 118
+},
+{
+"name": "lever k27",
+"group": "levers",
+"kind": "print",
+"bom": "lever",
+"mat": "PETG",
+"note": "",
+"mov": "key30",
+"nv": 118
+},
+{
+"name": "lever k28",
+"group": "levers",
+"kind": "print",
+"bom": "lever",
+"mat": "PETG",
+"note": "",
+"mov": "key34",
+"nv": 118
+},
+{
+"name": "lever k29",
+"group": "levers",
+"kind": "print",
+"bom": "lever",
+"mat": "PETG",
+"note": "",
+"mov": "key38",
+"nv": 118
+},
+{
+"name": "lever k210",
+"group": "levers",
+"kind": "print",
+"bom": "lever",
+"mat": "PETG",
+"note": "",
+"mov": "key42",
+"nv": 118
+},
+{
+"name": "lever k30",
+"group": "levers",
+"kind": "print",
+"bom": "lever",
+"mat": "PETG",
+"note": "",
+"mov": "key3",
+"nv": 126
+},
+{
+"name": "lever k31",
+"group": "levers",
+"kind": "print",
+"bom": "lever",
+"mat": "PETG",
+"note": "",
+"mov": "key7",
+"nv": 126
+},
+{
+"name": "lever k32",
+"group": "levers",
+"kind": "print",
+"bom": "lever",
+"mat": "PETG",
+"note": "",
+"mov": "key11",
+"nv": 126
+},
+{
+"name": "lever k33",
+"group": "levers",
+"kind": "print",
+"bom": "lever",
+"mat": "PETG",
+"note": "",
+"mov": "key15",
+"nv": 126
+},
+{
+"name": "lever k34",
+"group": "levers",
+"kind": "print",
+"bom": "lever",
+"mat": "PETG",
+"note": "",
+"mov": "key19",
+"nv": 126
+},
+{
+"name": "lever k35",
+"group": "levers",
+"kind": "print",
+"bom": "lever",
+"mat": "PETG",
+"note": "",
+"mov": "key23",
+"nv": 126
+},
+{
+"name": "lever k36",
+"group": "levers",
+"kind": "print",
+"bom": "lever",
+"mat": "PETG",
+"note": "",
+"mov": "key27",
+"nv": 126
+},
+{
+"name": "lever k37",
+"group": "levers",
+"kind": "print",
+"bom": "lever",
+"mat": "PETG",
+"note": "",
+"mov": "key31",
+"nv": 126
+},
+{
+"name": "lever k38",
+"group": "levers",
+"kind": "print",
+"bom": "lever",
+"mat": "PETG",
+"note": "",
+"mov": "key35",
+"nv": 126
+},
+{
+"name": "lever k39",
+"group": "levers",
+"kind": "print",
+"bom": "lever",
+"mat": "PETG",
+"note": "",
+"mov": "key39",
+"nv": 126
+},
+{
+"name": "lever k310",
+"group": "levers",
+"kind": "print",
+"bom": "lever",
+"mat": "PETG",
+"note": "",
+"mov": "key43",
+"nv": 126
+},
+{
+"name": "lever space4",
+"group": "levers",
+"kind": "print",
+"bom": "lever",
+"mat": "PETG",
+"note": "",
+"mov": "key-1",
+"nv": 118
+},
+{
+"name": "lever space6",
+"group": "levers",
+"kind": "print",
+"bom": "lever",
+"mat": "PETG",
+"note": "",
+"mov": "key44",
+"nv": 118
+},
+{
+"name": "lever shift",
+"group": "levers",
+"kind": "print",
+"bom": "lever",
+"mat": "PETG",
+"note": "",
+"mov": "key-5",
+"nv": 86
+},
+{
+"name": "lever bksp",
+"group": "levers",
+"kind": "print",
+"bom": "lever",
+"mat": "PETG",
+"note": "",
+"mov": "key46",
+"nv": 52
+},
+{
+"name": "lever back",
+"group": "levers",
+"kind": "print",
+"bom": "lever",
+"mat": "PETG",
+"note": "",
+"mov": "key47",
+"nv": 52
+},
+{
+"name": "lever pivot rod",
+"group": "levers",
+"kind": "buy",
+"bom": "rod4x315",
+"mat": "сталь",
+"note": "пруток 4 мм, 315 мм, с канавками под стопорные кольца",
+"mov": "fixed",
+"nv": 32
+},
+{
+"name": "lock bail",
+"group": "levers",
+"kind": "cut",
+"bom": "comb_plate",
+"mat": "сталь",
+"note": "запорная гребёнка 2 мм: прорези под рычаги, сдвиг на полшага на время цикла",
+"mov": "lock",
+"nv": 376
+},
+{
+"name": "lock bail guide -1",
+"group": "levers",
+"kind": "print",
+"bom": "lock_guide",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 16
+},
+{
+"name": "lock bail guide +1",
+"group": "levers",
+"kind": "print",
+"bom": "lock_guide",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 16
+},
+{
+"name": "lock link",
+"group": "levers",
+"kind": "cut",
+"bom": "strip3x2_5",
+"mat": "сталь",
+"note": "",
+"mov": "lock",
+"nv": 48
+},
+{
+"name": "cycle trip lever",
+"group": "levers",
+"kind": "print",
+"bom": "trip_lever",
+"mat": "PETG",
+"note": "спуск цикла: рамка R или O на 15,5 мм; храповая собачка полного хода на тех же рамках",
+"mov": "fixed",
+"nv": 18
+},
+{
+"name": "cycle trip link",
+"group": "levers",
+"kind": "cut",
+"bom": "strip2x2_5",
+"mat": "сталь",
+"note": "тяга спуска цикла к защёлке",
+"mov": "fixed",
+"nv": 41
+},
+{
+"name": "ball race",
+"group": "levers",
+"kind": "print",
+"bom": "ball_race",
+"mat": "PETG",
+"note": "шариковый замок: шарики 4,75 мм, свободный ход на одно перо 2 мм",
+"mov": "fixed",
+"nv": 46
+},
+{
+"name": "pivot bracket -148",
+"group": "levers",
+"kind": "print",
+"bom": "pivot_bracket",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 40
+},
+{
+"name": "pivot bracket +148",
+"group": "levers",
+"kind": "print",
+"bom": "pivot_bracket",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 40
+},
+{
+"name": "key return bar",
+"group": "levers",
+"kind": "cut",
+"bom": "bar4x6",
+"mat": "сталь",
+"note": "полоса 4×6 мм, 222 мм, с бобышками под пружины (запрессованные штифты)",
+"mov": "fixed",
+"nv": 1480
+},
+{
+"name": "key return bar post -1",
+"group": "levers",
+"kind": "print",
+"bom": "krs_post",
+"mat": "PETG",
+"note": "стойка на основании, два самореза",
+"mov": "fixed",
+"nv": 16
+},
+{
+"name": "key return bar post +1",
+"group": "levers",
+"kind": "print",
+"bom": "krs_post",
+"mat": "PETG",
+"note": "стойка на основании, два самореза",
+"mov": "fixed",
+"nv": 16
+},
+{
+"name": "key return spring k00",
+"group": "levers",
+"kind": "buy",
+"bom": "spring_key",
+"mat": "сталь",
+"note": "пружина сжатия 3,5×0,3 мм, 0,34 Н в покое, 0.01 Н/мм",
+"mov": "kspring0",
+"nv": 192
+},
+{
+"name": "key return spring k01",
+"group": "levers",
+"kind": "buy",
+"bom": "spring_key",
+"mat": "сталь",
+"note": "пружина сжатия 3,5×0,3 мм, 0,34 Н в покое, 0.01 Н/мм",
+"mov": "kspring4",
+"nv": 192
+},
+{
+"name": "key return spring k02",
+"group": "levers",
+"kind": "buy",
+"bom": "spring_key",
+"mat": "сталь",
+"note": "пружина сжатия 3,5×0,3 мм, 0,34 Н в покое, 0.01 Н/мм",
+"mov": "kspring8",
+"nv": 192
+},
+{
+"name": "key return spring k03",
+"group": "levers",
+"kind": "buy",
+"bom": "spring_key",
+"mat": "сталь",
+"note": "пружина сжатия 3,5×0,3 мм, 0,34 Н в покое, 0.01 Н/мм",
+"mov": "kspring12",
+"nv": 192
+},
+{
+"name": "key return spring k04",
+"group": "levers",
+"kind": "buy",
+"bom": "spring_key",
+"mat": "сталь",
+"note": "пружина сжатия 3,5×0,3 мм, 0,34 Н в покое, 0.01 Н/мм",
+"mov": "kspring16",
+"nv": 192
+},
+{
+"name": "key return spring k05",
+"group": "levers",
+"kind": "buy",
+"bom": "spring_key",
+"mat": "сталь",
+"note": "пружина сжатия 3,5×0,3 мм, 0,34 Н в покое, 0.01 Н/мм",
+"mov": "kspring20",
+"nv": 192
+},
+{
+"name": "key return spring k06",
+"group": "levers",
+"kind": "buy",
+"bom": "spring_key",
+"mat": "сталь",
+"note": "пружина сжатия 3,5×0,3 мм, 0,34 Н в покое, 0.01 Н/мм",
+"mov": "kspring24",
+"nv": 192
+},
+{
+"name": "key return spring k07",
+"group": "levers",
+"kind": "buy",
+"bom": "spring_key",
+"mat": "сталь",
+"note": "пружина сжатия 3,5×0,3 мм, 0,34 Н в покое, 0.01 Н/мм",
+"mov": "kspring28",
+"nv": 192
+},
+{
+"name": "key return spring k08",
+"group": "levers",
+"kind": "buy",
+"bom": "spring_key",
+"mat": "сталь",
+"note": "пружина сжатия 3,5×0,3 мм, 0,34 Н в покое, 0.01 Н/мм",
+"mov": "kspring32",
+"nv": 192
+},
+{
+"name": "key return spring k09",
+"group": "levers",
+"kind": "buy",
+"bom": "spring_key",
+"mat": "сталь",
+"note": "пружина сжатия 3,5×0,3 мм, 0,34 Н в покое, 0.01 Н/мм",
+"mov": "kspring36",
+"nv": 192
+},
+{
+"name": "key return spring k010",
+"group": "levers",
+"kind": "buy",
+"bom": "spring_key",
+"mat": "сталь",
+"note": "пружина сжатия 3,5×0,3 мм, 0,34 Н в покое, 0.01 Н/мм",
+"mov": "kspring40",
+"nv": 192
+},
+{
+"name": "key return spring k10",
+"group": "levers",
+"kind": "buy",
+"bom": "spring_key",
+"mat": "сталь",
+"note": "пружина сжатия 3,5×0,3 мм, 0,34 Н в покое, 0.01 Н/мм",
+"mov": "kspring1",
+"nv": 192
+},
+{
+"name": "key return spring k11",
+"group": "levers",
+"kind": "buy",
+"bom": "spring_key",
+"mat": "сталь",
+"note": "пружина сжатия 3,5×0,3 мм, 0,34 Н в покое, 0.01 Н/мм",
+"mov": "kspring5",
+"nv": 192
+},
+{
+"name": "key return spring k12",
+"group": "levers",
+"kind": "buy",
+"bom": "spring_key",
+"mat": "сталь",
+"note": "пружина сжатия 3,5×0,3 мм, 0,34 Н в покое, 0.01 Н/мм",
+"mov": "kspring9",
+"nv": 192
+},
+{
+"name": "key return spring k13",
+"group": "levers",
+"kind": "buy",
+"bom": "spring_key",
+"mat": "сталь",
+"note": "пружина сжатия 3,5×0,3 мм, 0,34 Н в покое, 0.01 Н/мм",
+"mov": "kspring13",
+"nv": 192
+},
+{
+"name": "key return spring k14",
+"group": "levers",
+"kind": "buy",
+"bom": "spring_key",
+"mat": "сталь",
+"note": "пружина сжатия 3,5×0,3 мм, 0,34 Н в покое, 0.01 Н/мм",
+"mov": "kspring17",
+"nv": 192
+},
+{
+"name": "key return spring k15",
+"group": "levers",
+"kind": "buy",
+"bom": "spring_key",
+"mat": "сталь",
+"note": "пружина сжатия 3,5×0,3 мм, 0,34 Н в покое, 0.01 Н/мм",
+"mov": "kspring21",
+"nv": 192
+},
+{
+"name": "key return spring k16",
+"group": "levers",
+"kind": "buy",
+"bom": "spring_key",
+"mat": "сталь",
+"note": "пружина сжатия 3,5×0,3 мм, 0,34 Н в покое, 0.01 Н/мм",
+"mov": "kspring25",
+"nv": 192
+},
+{
+"name": "key return spring k17",
+"group": "levers",
+"kind": "buy",
+"bom": "spring_key",
+"mat": "сталь",
+"note": "пружина сжатия 3,5×0,3 мм, 0,34 Н в покое, 0.01 Н/мм",
+"mov": "kspring29",
+"nv": 192
+},
+{
+"name": "key return spring k18",
+"group": "levers",
+"kind": "buy",
+"bom": "spring_key",
+"mat": "сталь",
+"note": "пружина сжатия 3,5×0,3 мм, 0,34 Н в покое, 0.01 Н/мм",
+"mov": "kspring33",
+"nv": 192
+},
+{
+"name": "key return spring k19",
+"group": "levers",
+"kind": "buy",
+"bom": "spring_key",
+"mat": "сталь",
+"note": "пружина сжатия 3,5×0,3 мм, 0,34 Н в покое, 0.01 Н/мм",
+"mov": "kspring37",
+"nv": 192
+},
+{
+"name": "key return spring k110",
+"group": "levers",
+"kind": "buy",
+"bom": "spring_key",
+"mat": "сталь",
+"note": "пружина сжатия 3,5×0,3 мм, 0,34 Н в покое, 0.01 Н/мм",
+"mov": "kspring41",
+"nv": 192
+},
+{
+"name": "key return spring k20",
+"group": "levers",
+"kind": "buy",
+"bom": "spring_key",
+"mat": "сталь",
+"note": "пружина сжатия 3,5×0,3 мм, 0,34 Н в покое, 0.01 Н/мм",
+"mov": "kspring2",
+"nv": 192
+},
+{
+"name": "key return spring k21",
+"group": "levers",
+"kind": "buy",
+"bom": "spring_key",
+"mat": "сталь",
+"note": "пружина сжатия 3,5×0,3 мм, 0,34 Н в покое, 0.01 Н/мм",
+"mov": "kspring6",
+"nv": 192
+},
+{
+"name": "key return spring k22",
+"group": "levers",
+"kind": "buy",
+"bom": "spring_key",
+"mat": "сталь",
+"note": "пружина сжатия 3,5×0,3 мм, 0,34 Н в покое, 0.01 Н/мм",
+"mov": "kspring10",
+"nv": 192
+},
+{
+"name": "key return spring k23",
+"group": "levers",
+"kind": "buy",
+"bom": "spring_key",
+"mat": "сталь",
+"note": "пружина сжатия 3,5×0,3 мм, 0,34 Н в покое, 0.01 Н/мм",
+"mov": "kspring14",
+"nv": 192
+},
+{
+"name": "key return spring k24",
+"group": "levers",
+"kind": "buy",
+"bom": "spring_key",
+"mat": "сталь",
+"note": "пружина сжатия 3,5×0,3 мм, 0,34 Н в покое, 0.01 Н/мм",
+"mov": "kspring18",
+"nv": 192
+},
+{
+"name": "key return spring k25",
+"group": "levers",
+"kind": "buy",
+"bom": "spring_key",
+"mat": "сталь",
+"note": "пружина сжатия 3,5×0,3 мм, 0,34 Н в покое, 0.01 Н/мм",
+"mov": "kspring22",
+"nv": 192
+},
+{
+"name": "key return spring k26",
+"group": "levers",
+"kind": "buy",
+"bom": "spring_key",
+"mat": "сталь",
+"note": "пружина сжатия 3,5×0,3 мм, 0,34 Н в покое, 0.01 Н/мм",
+"mov": "kspring26",
+"nv": 192
+},
+{
+"name": "key return spring k27",
+"group": "levers",
+"kind": "buy",
+"bom": "spring_key",
+"mat": "сталь",
+"note": "пружина сжатия 3,5×0,3 мм, 0,34 Н в покое, 0.01 Н/мм",
+"mov": "kspring30",
+"nv": 192
+},
+{
+"name": "key return spring k28",
+"group": "levers",
+"kind": "buy",
+"bom": "spring_key",
+"mat": "сталь",
+"note": "пружина сжатия 3,5×0,3 мм, 0,34 Н в покое, 0.01 Н/мм",
+"mov": "kspring34",
+"nv": 192
+},
+{
+"name": "key return spring k29",
+"group": "levers",
+"kind": "buy",
+"bom": "spring_key",
+"mat": "сталь",
+"note": "пружина сжатия 3,5×0,3 мм, 0,34 Н в покое, 0.01 Н/мм",
+"mov": "kspring38",
+"nv": 192
+},
+{
+"name": "key return spring k210",
+"group": "levers",
+"kind": "buy",
+"bom": "spring_key",
+"mat": "сталь",
+"note": "пружина сжатия 3,5×0,3 мм, 0,34 Н в покое, 0.01 Н/мм",
+"mov": "kspring42",
+"nv": 192
+},
+{
+"name": "key return spring k30",
+"group": "levers",
+"kind": "buy",
+"bom": "spring_key",
+"mat": "сталь",
+"note": "пружина сжатия 3,5×0,3 мм, 0,34 Н в покое, 0.01 Н/мм",
+"mov": "kspring3",
+"nv": 192
+},
+{
+"name": "key return spring k31",
+"group": "levers",
+"kind": "buy",
+"bom": "spring_key",
+"mat": "сталь",
+"note": "пружина сжатия 3,5×0,3 мм, 0,34 Н в покое, 0.01 Н/мм",
+"mov": "kspring7",
+"nv": 192
+},
+{
+"name": "key return spring k32",
+"group": "levers",
+"kind": "buy",
+"bom": "spring_key",
+"mat": "сталь",
+"note": "пружина сжатия 3,5×0,3 мм, 0,34 Н в покое, 0.01 Н/мм",
+"mov": "kspring11",
+"nv": 192
+},
+{
+"name": "key return spring k33",
+"group": "levers",
+"kind": "buy",
+"bom": "spring_key",
+"mat": "сталь",
+"note": "пружина сжатия 3,5×0,3 мм, 0,34 Н в покое, 0.01 Н/мм",
+"mov": "kspring15",
+"nv": 192
+},
+{
+"name": "key return spring k34",
+"group": "levers",
+"kind": "buy",
+"bom": "spring_key",
+"mat": "сталь",
+"note": "пружина сжатия 3,5×0,3 мм, 0,34 Н в покое, 0.01 Н/мм",
+"mov": "kspring19",
+"nv": 192
+},
+{
+"name": "key return spring k35",
+"group": "levers",
+"kind": "buy",
+"bom": "spring_key",
+"mat": "сталь",
+"note": "пружина сжатия 3,5×0,3 мм, 0,34 Н в покое, 0.01 Н/мм",
+"mov": "kspring23",
+"nv": 192
+},
+{
+"name": "key return spring k36",
+"group": "levers",
+"kind": "buy",
+"bom": "spring_key",
+"mat": "сталь",
+"note": "пружина сжатия 3,5×0,3 мм, 0,34 Н в покое, 0.01 Н/мм",
+"mov": "kspring27",
+"nv": 192
+},
+{
+"name": "key return spring k37",
+"group": "levers",
+"kind": "buy",
+"bom": "spring_key",
+"mat": "сталь",
+"note": "пружина сжатия 3,5×0,3 мм, 0,34 Н в покое, 0.01 Н/мм",
+"mov": "kspring31",
+"nv": 192
+},
+{
+"name": "key return spring k38",
+"group": "levers",
+"kind": "buy",
+"bom": "spring_key",
+"mat": "сталь",
+"note": "пружина сжатия 3,5×0,3 мм, 0,34 Н в покое, 0.01 Н/мм",
+"mov": "kspring35",
+"nv": 192
+},
+{
+"name": "key return spring k39",
+"group": "levers",
+"kind": "buy",
+"bom": "spring_key",
+"mat": "сталь",
+"note": "пружина сжатия 3,5×0,3 мм, 0,34 Н в покое, 0.01 Н/мм",
+"mov": "kspring39",
+"nv": 192
+},
+{
+"name": "key return spring k310",
+"group": "levers",
+"kind": "buy",
+"bom": "spring_key",
+"mat": "сталь",
+"note": "пружина сжатия 3,5×0,3 мм, 0,34 Н в покое, 0.01 Н/мм",
+"mov": "kspring43",
+"nv": 192
+},
+{
+"name": "key return spring space4",
+"group": "levers",
+"kind": "buy",
+"bom": "spring_key",
+"mat": "сталь",
+"note": "пружина сжатия 3,5×0,3 мм, 0,34 Н в покое, 0.01 Н/мм",
+"mov": "kspring-1",
+"nv": 192
+},
+{
+"name": "key return spring space6",
+"group": "levers",
+"kind": "buy",
+"bom": "spring_key",
+"mat": "сталь",
+"note": "пружина сжатия 3,5×0,3 мм, 0,34 Н в покое, 0.01 Н/мм",
+"mov": "kspring44",
+"nv": 192
+},
+{
+"name": "plate k00",
+"group": "plates",
+"kind": "print",
+"bom": "code_plate",
+"mat": "PETG",
+"note": "",
+"mov": "key0",
+"nv": 76
+},
+{
+"name": "grub k00 R0",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key0",
+"nv": 24
+},
+{
+"name": "grub k00 R1",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key0",
+"nv": 24
+},
+{
+"name": "plate k01",
+"group": "plates",
+"kind": "print",
+"bom": "code_plate",
+"mat": "PETG",
+"note": "",
+"mov": "key4",
+"nv": 76
+},
+{
+"name": "grub k01 R0",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key4",
+"nv": 24
+},
+{
+"name": "grub k01 R1",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key4",
+"nv": 24
+},
+{
+"name": "plate k02",
+"group": "plates",
+"kind": "print",
+"bom": "code_plate",
+"mat": "PETG",
+"note": "",
+"mov": "key8",
+"nv": 76
+},
+{
+"name": "grub k02 R0",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key8",
+"nv": 24
+},
+{
+"name": "grub k02 R1",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key8",
+"nv": 24
+},
+{
+"name": "plate k03",
+"group": "plates",
+"kind": "print",
+"bom": "code_plate",
+"mat": "PETG",
+"note": "",
+"mov": "key12",
+"nv": 76
+},
+{
+"name": "grub k03 R0",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key12",
+"nv": 24
+},
+{
+"name": "grub k03 R1",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key12",
+"nv": 24
+},
+{
+"name": "plate k04",
+"group": "plates",
+"kind": "print",
+"bom": "code_plate",
+"mat": "PETG",
+"note": "",
+"mov": "key16",
+"nv": 76
+},
+{
+"name": "grub k04 R0",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key16",
+"nv": 24
+},
+{
+"name": "grub k04 R1",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key16",
+"nv": 24
+},
+{
+"name": "plate k05",
+"group": "plates",
+"kind": "print",
+"bom": "code_plate",
+"mat": "PETG",
+"note": "",
+"mov": "key20",
+"nv": 76
+},
+{
+"name": "grub k05 R0",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key20",
+"nv": 24
+},
+{
+"name": "grub k05 R1",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key20",
+"nv": 24
+},
+{
+"name": "plate k06",
+"group": "plates",
+"kind": "print",
+"bom": "code_plate",
+"mat": "PETG",
+"note": "",
+"mov": "key24",
+"nv": 76
+},
+{
+"name": "grub k06 R0",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key24",
+"nv": 24
+},
+{
+"name": "grub k06 R1",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key24",
+"nv": 24
+},
+{
+"name": "plate k07",
+"group": "plates",
+"kind": "print",
+"bom": "code_plate",
+"mat": "PETG",
+"note": "",
+"mov": "key28",
+"nv": 76
+},
+{
+"name": "grub k07 R0",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key28",
+"nv": 24
+},
+{
+"name": "grub k07 R1",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key28",
+"nv": 24
+},
+{
+"name": "plate k08",
+"group": "plates",
+"kind": "print",
+"bom": "code_plate",
+"mat": "PETG",
+"note": "",
+"mov": "key32",
+"nv": 100
+},
+{
+"name": "grub k08 R0",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key32",
+"nv": 24
+},
+{
+"name": "grub k08 O1",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key32",
+"nv": 24
+},
+{
+"name": "grub k08 N1",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key32",
+"nv": 24
+},
+{
+"name": "plate k09",
+"group": "plates",
+"kind": "print",
+"bom": "code_plate",
+"mat": "PETG",
+"note": "",
+"mov": "key36",
+"nv": 100
+},
+{
+"name": "grub k09 R0",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key36",
+"nv": 24
+},
+{
+"name": "grub k09 O1",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key36",
+"nv": 24
+},
+{
+"name": "grub k09 N1",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key36",
+"nv": 24
+},
+{
+"name": "plate k010",
+"group": "plates",
+"kind": "print",
+"bom": "code_plate",
+"mat": "PETG",
+"note": "",
+"mov": "key40",
+"nv": 52
+},
+{
+"name": "grub k010 R0",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key40",
+"nv": 24
+},
+{
+"name": "plate k10",
+"group": "plates",
+"kind": "print",
+"bom": "code_plate",
+"mat": "PETG",
+"note": "",
+"mov": "key1",
+"nv": 86
+},
+{
+"name": "grub k10 R0",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key1",
+"nv": 24
+},
+{
+"name": "grub k10 R1",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key1",
+"nv": 24
+},
+{
+"name": "plate k11",
+"group": "plates",
+"kind": "print",
+"bom": "code_plate",
+"mat": "PETG",
+"note": "",
+"mov": "key5",
+"nv": 86
+},
+{
+"name": "grub k11 R0",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key5",
+"nv": 24
+},
+{
+"name": "grub k11 R1",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key5",
+"nv": 24
+},
+{
+"name": "plate k12",
+"group": "plates",
+"kind": "print",
+"bom": "code_plate",
+"mat": "PETG",
+"note": "",
+"mov": "key9",
+"nv": 86
+},
+{
+"name": "grub k12 R0",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key9",
+"nv": 24
+},
+{
+"name": "grub k12 R1",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key9",
+"nv": 24
+},
+{
+"name": "plate k13",
+"group": "plates",
+"kind": "print",
+"bom": "code_plate",
+"mat": "PETG",
+"note": "",
+"mov": "key13",
+"nv": 86
+},
+{
+"name": "grub k13 R0",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key13",
+"nv": 24
+},
+{
+"name": "grub k13 R1",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key13",
+"nv": 24
+},
+{
+"name": "plate k14",
+"group": "plates",
+"kind": "print",
+"bom": "code_plate",
+"mat": "PETG",
+"note": "",
+"mov": "key17",
+"nv": 86
+},
+{
+"name": "grub k14 R0",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key17",
+"nv": 24
+},
+{
+"name": "grub k14 R1",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key17",
+"nv": 24
+},
+{
+"name": "plate k15",
+"group": "plates",
+"kind": "print",
+"bom": "code_plate",
+"mat": "PETG",
+"note": "",
+"mov": "key21",
+"nv": 86
+},
+{
+"name": "grub k15 R0",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key21",
+"nv": 24
+},
+{
+"name": "grub k15 R1",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key21",
+"nv": 24
+},
+{
+"name": "plate k16",
+"group": "plates",
+"kind": "print",
+"bom": "code_plate",
+"mat": "PETG",
+"note": "",
+"mov": "key25",
+"nv": 86
+},
+{
+"name": "grub k16 R0",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key25",
+"nv": 24
+},
+{
+"name": "grub k16 R1",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key25",
+"nv": 24
+},
+{
+"name": "plate k17",
+"group": "plates",
+"kind": "print",
+"bom": "code_plate",
+"mat": "PETG",
+"note": "",
+"mov": "key29",
+"nv": 86
+},
+{
+"name": "grub k17 R0",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key29",
+"nv": 24
+},
+{
+"name": "grub k17 R1",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key29",
+"nv": 24
+},
+{
+"name": "plate k18",
+"group": "plates",
+"kind": "print",
+"bom": "code_plate",
+"mat": "PETG",
+"note": "",
+"mov": "key33",
+"nv": 86
+},
+{
+"name": "grub k18 R0",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key33",
+"nv": 24
+},
+{
+"name": "grub k18 R1",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key33",
+"nv": 24
+},
+{
+"name": "plate k19",
+"group": "plates",
+"kind": "print",
+"bom": "code_plate",
+"mat": "PETG",
+"note": "",
+"mov": "key37",
+"nv": 86
+},
+{
+"name": "grub k19 R0",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key37",
+"nv": 24
+},
+{
+"name": "grub k19 R1",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key37",
+"nv": 24
+},
+{
+"name": "plate k110",
+"group": "plates",
+"kind": "print",
+"bom": "code_plate",
+"mat": "PETG",
+"note": "",
+"mov": "key41",
+"nv": 86
+},
+{
+"name": "grub k110 R0",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key41",
+"nv": 24
+},
+{
+"name": "grub k110 R1",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key41",
+"nv": 24
+},
+{
+"name": "plate k20",
+"group": "plates",
+"kind": "print",
+"bom": "code_plate",
+"mat": "PETG",
+"note": "",
+"mov": "key2",
+"nv": 76
+},
+{
+"name": "grub k20 R0",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key2",
+"nv": 24
+},
+{
+"name": "grub k20 R1",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key2",
+"nv": 24
+},
+{
+"name": "plate k21",
+"group": "plates",
+"kind": "print",
+"bom": "code_plate",
+"mat": "PETG",
+"note": "",
+"mov": "key6",
+"nv": 76
+},
+{
+"name": "grub k21 R0",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key6",
+"nv": 24
+},
+{
+"name": "grub k21 R1",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key6",
+"nv": 24
+},
+{
+"name": "plate k22",
+"group": "plates",
+"kind": "print",
+"bom": "code_plate",
+"mat": "PETG",
+"note": "",
+"mov": "key10",
+"nv": 76
+},
+{
+"name": "grub k22 R0",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key10",
+"nv": 24
+},
+{
+"name": "grub k22 R1",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key10",
+"nv": 24
+},
+{
+"name": "plate k23",
+"group": "plates",
+"kind": "print",
+"bom": "code_plate",
+"mat": "PETG",
+"note": "",
+"mov": "key14",
+"nv": 76
+},
+{
+"name": "grub k23 R0",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key14",
+"nv": 24
+},
+{
+"name": "grub k23 R1",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key14",
+"nv": 24
+},
+{
+"name": "plate k24",
+"group": "plates",
+"kind": "print",
+"bom": "code_plate",
+"mat": "PETG",
+"note": "",
+"mov": "key18",
+"nv": 76
+},
+{
+"name": "grub k24 R0",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key18",
+"nv": 24
+},
+{
+"name": "grub k24 R1",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key18",
+"nv": 24
+},
+{
+"name": "plate k25",
+"group": "plates",
+"kind": "print",
+"bom": "code_plate",
+"mat": "PETG",
+"note": "",
+"mov": "key22",
+"nv": 76
+},
+{
+"name": "grub k25 O0",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key22",
+"nv": 24
+},
+{
+"name": "grub k25 R1",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key22",
+"nv": 24
+},
+{
+"name": "plate k26",
+"group": "plates",
+"kind": "print",
+"bom": "code_plate",
+"mat": "PETG",
+"note": "",
+"mov": "key26",
+"nv": 76
+},
+{
+"name": "grub k26 O0",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key26",
+"nv": 24
+},
+{
+"name": "grub k26 R1",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key26",
+"nv": 24
+},
+{
+"name": "plate k27",
+"group": "plates",
+"kind": "print",
+"bom": "code_plate",
+"mat": "PETG",
+"note": "",
+"mov": "key30",
+"nv": 76
+},
+{
+"name": "grub k27 O0",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key30",
+"nv": 24
+},
+{
+"name": "grub k27 R1",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key30",
+"nv": 24
+},
+{
+"name": "plate k28",
+"group": "plates",
+"kind": "print",
+"bom": "code_plate",
+"mat": "PETG",
+"note": "",
+"mov": "key34",
+"nv": 76
+},
+{
+"name": "grub k28 O0",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key34",
+"nv": 24
+},
+{
+"name": "grub k28 R1",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key34",
+"nv": 24
+},
+{
+"name": "plate k29",
+"group": "plates",
+"kind": "print",
+"bom": "code_plate",
+"mat": "PETG",
+"note": "",
+"mov": "key38",
+"nv": 76
+},
+{
+"name": "grub k29 O0",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key38",
+"nv": 24
+},
+{
+"name": "grub k29 R1",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key38",
+"nv": 24
+},
+{
+"name": "plate k210",
+"group": "plates",
+"kind": "print",
+"bom": "code_plate",
+"mat": "PETG",
+"note": "",
+"mov": "key42",
+"nv": 124
+},
+{
+"name": "grub k210 O0",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key42",
+"nv": 24
+},
+{
+"name": "grub k210 N0",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key42",
+"nv": 24
+},
+{
+"name": "grub k210 O1",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key42",
+"nv": 24
+},
+{
+"name": "grub k210 N1",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key42",
+"nv": 24
+},
+{
+"name": "plate k30",
+"group": "plates",
+"kind": "print",
+"bom": "code_plate",
+"mat": "PETG",
+"note": "",
+"mov": "key3",
+"nv": 86
+},
+{
+"name": "grub k30 R0",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key3",
+"nv": 24
+},
+{
+"name": "grub k30 R1",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key3",
+"nv": 24
+},
+{
+"name": "plate k31",
+"group": "plates",
+"kind": "print",
+"bom": "code_plate",
+"mat": "PETG",
+"note": "",
+"mov": "key7",
+"nv": 86
+},
+{
+"name": "grub k31 R0",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key7",
+"nv": 24
+},
+{
+"name": "grub k31 R1",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key7",
+"nv": 24
+},
+{
+"name": "plate k32",
+"group": "plates",
+"kind": "print",
+"bom": "code_plate",
+"mat": "PETG",
+"note": "",
+"mov": "key11",
+"nv": 86
+},
+{
+"name": "grub k32 R0",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key11",
+"nv": 24
+},
+{
+"name": "grub k32 R1",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key11",
+"nv": 24
+},
+{
+"name": "plate k33",
+"group": "plates",
+"kind": "print",
+"bom": "code_plate",
+"mat": "PETG",
+"note": "",
+"mov": "key15",
+"nv": 86
+},
+{
+"name": "grub k33 R0",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key15",
+"nv": 24
+},
+{
+"name": "grub k33 R1",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key15",
+"nv": 24
+},
+{
+"name": "plate k34",
+"group": "plates",
+"kind": "print",
+"bom": "code_plate",
+"mat": "PETG",
+"note": "",
+"mov": "key19",
+"nv": 86
+},
+{
+"name": "grub k34 R0",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key19",
+"nv": 24
+},
+{
+"name": "grub k34 R1",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key19",
+"nv": 24
+},
+{
+"name": "plate k35",
+"group": "plates",
+"kind": "print",
+"bom": "code_plate",
+"mat": "PETG",
+"note": "",
+"mov": "key23",
+"nv": 86
+},
+{
+"name": "grub k35 R0",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key23",
+"nv": 24
+},
+{
+"name": "grub k35 R1",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key23",
+"nv": 24
+},
+{
+"name": "plate k36",
+"group": "plates",
+"kind": "print",
+"bom": "code_plate",
+"mat": "PETG",
+"note": "",
+"mov": "key27",
+"nv": 86
+},
+{
+"name": "grub k36 R0",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key27",
+"nv": 24
+},
+{
+"name": "grub k36 R1",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key27",
+"nv": 24
+},
+{
+"name": "plate k37",
+"group": "plates",
+"kind": "print",
+"bom": "code_plate",
+"mat": "PETG",
+"note": "",
+"mov": "key31",
+"nv": 90
+},
+{
+"name": "grub k37 R0",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key31",
+"nv": 24
+},
+{
+"name": "grub k37 O1",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key31",
+"nv": 24
+},
+{
+"name": "plate k38",
+"group": "plates",
+"kind": "print",
+"bom": "code_plate",
+"mat": "PETG",
+"note": "",
+"mov": "key35",
+"nv": 118
+},
+{
+"name": "grub k38 R0",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key35",
+"nv": 24
+},
+{
+"name": "grub k38 O1",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key35",
+"nv": 24
+},
+{
+"name": "grub k38 N1",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key35",
+"nv": 24
+},
+{
+"name": "plate k39",
+"group": "plates",
+"kind": "print",
+"bom": "code_plate",
+"mat": "PETG",
+"note": "",
+"mov": "key39",
+"nv": 150
+},
+{
+"name": "grub k39 O0",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key39",
+"nv": 24
+},
+{
+"name": "grub k39 N0",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key39",
+"nv": 24
+},
+{
+"name": "grub k39 O1",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key39",
+"nv": 24
+},
+{
+"name": "grub k39 N1",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key39",
+"nv": 24
+},
+{
+"name": "plate k310",
+"group": "plates",
+"kind": "print",
+"bom": "code_plate",
+"mat": "PETG",
+"note": "",
+"mov": "key43",
+"nv": 94
+},
+{
+"name": "grub k310 O0",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key43",
+"nv": 24
+},
+{
+"name": "grub k310 O1",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key43",
+"nv": 24
+},
+{
+"name": "plate space4",
+"group": "plates",
+"kind": "print",
+"bom": "code_plate",
+"mat": "PETG",
+"note": "",
+"mov": "key-1",
+"nv": 124
+},
+{
+"name": "grub space4 R0",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key-1",
+"nv": 24
+},
+{
+"name": "grub space4 R1",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key-1",
+"nv": 24
+},
+{
+"name": "grub space4 W0",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x6",
+"mat": "сталь",
+"note": "установочный винт М3×6, плоский конец",
+"mov": "key-1",
+"nv": 24
+},
+{
+"name": "grub space4 W1",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x6",
+"mat": "сталь",
+"note": "установочный винт М3×6, плоский конец",
+"mov": "key-1",
+"nv": 24
+},
+{
+"name": "plate space6",
+"group": "plates",
+"kind": "print",
+"bom": "code_plate",
+"mat": "PETG",
+"note": "",
+"mov": "key44",
+"nv": 150
+},
+{
+"name": "grub space6 R0",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key44",
+"nv": 24
+},
+{
+"name": "grub space6 R1",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x25",
+"mat": "сталь",
+"note": "установочный винт М3×25, плоский конец",
+"mov": "key44",
+"nv": 24
+},
+{
+"name": "grub space6 W0",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x8",
+"mat": "сталь",
+"note": "установочный винт М3×8, плоский конец",
+"mov": "key44",
+"nv": 24
+},
+{
+"name": "grub space6 W1",
+"group": "plates",
+"kind": "buy",
+"bom": "grubM3x8",
+"mat": "сталь",
+"note": "установочный винт М3×8, плоский конец",
+"mov": "key44",
+"nv": 24
+},
+{
+"name": "bail R bar A",
+"group": "bails",
+"kind": "buy",
+"bom": "rod5x228",
+"mat": "сталь",
+"note": "пруток 5 мм, 228 мм",
+"mov": "bailR",
+"nv": 48
+},
+{
+"name": "bail R bar B",
+"group": "bails",
+"kind": "buy",
+"bom": "rod5x228",
+"mat": "сталь",
+"note": "пруток 5 мм, 228 мм",
+"mov": "bailR",
+"nv": 48
+},
+{
+"name": "bail R plate -1",
+"group": "bails",
+"kind": "print",
+"bom": "bail_plate_R",
+"mat": "PETG",
+"note": "боковина рамки с двумя гильзами на направляющих 3 мм",
+"mov": "bailR",
+"nv": 314
+},
+{
+"name": "bail R plate +1",
+"group": "bails",
+"kind": "print",
+"bom": "bail_plate_R",
+"mat": "PETG",
+"note": "боковина рамки с двумя гильзами на направляющих 3 мм",
+"mov": "bailR",
+"nv": 314
+},
+{
+"name": "bail R guides -1",
+"group": "bails",
+"kind": "buy",
+"bom": "rod3x30",
+"mat": "сталь",
+"note": "направляющие 3 мм",
+"mov": "tier",
+"nv": 64
+},
+{
+"name": "bail R guides +1",
+"group": "bails",
+"kind": "buy",
+"bom": "rod3x30",
+"mat": "сталь",
+"note": "направляющие 3 мм",
+"mov": "tier",
+"nv": 64
+},
+{
+"name": "bail W bar A",
+"group": "bails",
+"kind": "buy",
+"bom": "rod5x276",
+"mat": "сталь",
+"note": "пруток 5 мм, 276 мм",
+"mov": "bailW",
+"nv": 48
+},
+{
+"name": "bail W bar B",
+"group": "bails",
+"kind": "buy",
+"bom": "rod5x276",
+"mat": "сталь",
+"note": "пруток 5 мм, 276 мм",
+"mov": "bailW",
+"nv": 48
+},
+{
+"name": "bail W plate -1",
+"group": "bails",
+"kind": "print",
+"bom": "bail_plate_W",
+"mat": "PETG",
+"note": "боковина рамки с двумя гильзами на направляющих 3 мм",
+"mov": "bailW",
+"nv": 314
+},
+{
+"name": "bail W plate +1",
+"group": "bails",
+"kind": "print",
+"bom": "bail_plate_W",
+"mat": "PETG",
+"note": "боковина рамки с двумя гильзами на направляющих 3 мм",
+"mov": "bailW",
+"nv": 314
+},
+{
+"name": "bail W guides -1",
+"group": "bails",
+"kind": "buy",
+"bom": "rod3x30",
+"mat": "сталь",
+"note": "направляющие 3 мм",
+"mov": "tier",
+"nv": 64
+},
+{
+"name": "bail W guides +1",
+"group": "bails",
+"kind": "buy",
+"bom": "rod3x30",
+"mat": "сталь",
+"note": "направляющие 3 мм",
+"mov": "tier",
+"nv": 64
+},
+{
+"name": "bail O bar A",
+"group": "bails",
+"kind": "buy",
+"bom": "rod5x238",
+"mat": "сталь",
+"note": "пруток 5 мм, 238 мм",
+"mov": "bailO",
+"nv": 48
+},
+{
+"name": "bail O bar B",
+"group": "bails",
+"kind": "buy",
+"bom": "rod5x238",
+"mat": "сталь",
+"note": "пруток 5 мм, 238 мм",
+"mov": "bailO",
+"nv": 48
+},
+{
+"name": "bail O plate -1",
+"group": "bails",
+"kind": "print",
+"bom": "bail_plate_O",
+"mat": "PETG",
+"note": "боковина рамки с двумя гильзами на направляющих 3 мм",
+"mov": "bailO",
+"nv": 314
+},
+{
+"name": "bail O plate +1",
+"group": "bails",
+"kind": "print",
+"bom": "bail_plate_O",
+"mat": "PETG",
+"note": "боковина рамки с двумя гильзами на направляющих 3 мм",
+"mov": "bailO",
+"nv": 314
+},
+{
+"name": "bail O guides -1",
+"group": "bails",
+"kind": "buy",
+"bom": "rod3x30",
+"mat": "сталь",
+"note": "направляющие 3 мм",
+"mov": "tier",
+"nv": 64
+},
+{
+"name": "bail O guides +1",
+"group": "bails",
+"kind": "buy",
+"bom": "rod3x30",
+"mat": "сталь",
+"note": "направляющие 3 мм",
+"mov": "tier",
+"nv": 64
+},
+{
+"name": "bail N bar A",
+"group": "bails",
+"kind": "buy",
+"bom": "rod5x306",
+"mat": "сталь",
+"note": "пруток 5 мм, 306 мм",
+"mov": "bailN",
+"nv": 48
+},
+{
+"name": "bail N bar B",
+"group": "bails",
+"kind": "buy",
+"bom": "rod5x306",
+"mat": "сталь",
+"note": "пруток 5 мм, 306 мм",
+"mov": "bailN",
+"nv": 48
+},
+{
+"name": "bail N plate -1",
+"group": "bails",
+"kind": "print",
+"bom": "bail_plate_N",
+"mat": "PETG",
+"note": "боковина рамки с двумя гильзами на направляющих 3 мм",
+"mov": "bailN",
+"nv": 314
+},
+{
+"name": "bail N plate +1",
+"group": "bails",
+"kind": "print",
+"bom": "bail_plate_N",
+"mat": "PETG",
+"note": "боковина рамки с двумя гильзами на направляющих 3 мм",
+"mov": "bailN",
+"nv": 314
+},
+{
+"name": "bail N guides -1",
+"group": "bails",
+"kind": "buy",
+"bom": "rod3x30",
+"mat": "сталь",
+"note": "направляющие 3 мм",
+"mov": "tier",
+"nv": 64
+},
+{
+"name": "bail N guides +1",
+"group": "bails",
+"kind": "buy",
+"bom": "rod3x30",
+"mat": "сталь",
+"note": "направляющие 3 мм",
+"mov": "tier",
+"nv": 64
+},
+{
+"name": "tier carriage -1",
+"group": "bails",
+"kind": "print",
+"bom": "tier_carriage",
+"mat": "PETG",
+"note": "салазки регистра: несут направляющие рамок, ход 4,5 мм по Y",
+"mov": "tier",
+"nv": 52
+},
+{
+"name": "tier carriage +1",
+"group": "bails",
+"kind": "print",
+"bom": "tier_carriage",
+"mat": "PETG",
+"note": "салазки регистра: несут направляющие рамок, ход 4,5 мм по Y",
+"mov": "tier",
+"nv": 58
+},
+{
+"name": "bail R spring -1",
+"group": "bails",
+"kind": "buy",
+"bom": "spring_frame",
+"mat": "сталь",
+"note": "пружина сжатия 5,2×0,5 мм на направляющей",
+"mov": "springR",
+"nv": 192
+},
+{
+"name": "bail R spring +1",
+"group": "bails",
+"kind": "buy",
+"bom": "spring_frame",
+"mat": "сталь",
+"note": "пружина сжатия 5,2×0,5 мм на направляющей",
+"mov": "springR",
+"nv": 192
+},
+{
+"name": "bail W spring -1",
+"group": "bails",
+"kind": "buy",
+"bom": "spring_frame",
+"mat": "сталь",
+"note": "пружина сжатия 5,2×0,5 мм на направляющей",
+"mov": "springW",
+"nv": 192
+},
+{
+"name": "bail W spring +1",
+"group": "bails",
+"kind": "buy",
+"bom": "spring_frame",
+"mat": "сталь",
+"note": "пружина сжатия 5,2×0,5 мм на направляющей",
+"mov": "springW",
+"nv": 192
+},
+{
+"name": "bail O spring -1",
+"group": "bails",
+"kind": "buy",
+"bom": "spring_frame",
+"mat": "сталь",
+"note": "пружина сжатия 5,2×0,5 мм на направляющей",
+"mov": "springO",
+"nv": 192
+},
+{
+"name": "bail O spring +1",
+"group": "bails",
+"kind": "buy",
+"bom": "spring_frame",
+"mat": "сталь",
+"note": "пружина сжатия 5,2×0,5 мм на направляющей",
+"mov": "springO",
+"nv": 192
+},
+{
+"name": "bail N spring -1",
+"group": "bails",
+"kind": "buy",
+"bom": "spring_frame",
+"mat": "сталь",
+"note": "пружина сжатия 5,2×0,5 мм на направляющей",
+"mov": "springN",
+"nv": 192
+},
+{
+"name": "bail N spring +1",
+"group": "bails",
+"kind": "buy",
+"bom": "spring_frame",
+"mat": "сталь",
+"note": "пружина сжатия 5,2×0,5 мм на направляющей",
+"mov": "springN",
+"nv": 192
+},
+{
+"name": "sector axis",
+"group": "sectors",
+"kind": "buy",
+"bom": "rod4x70",
+"mat": "сталь",
+"note": "ось 4 мм, запрессована в правую щёку двигателя",
+"mov": "fixed",
+"nv": 32
+},
+{
+"name": "memory sleeve R",
+"group": "sectors",
+"kind": "print",
+"bom": "sleeve_R",
+"mat": "PETG",
+"note": "втулка R с повторителем и пальцем сброса",
+"mov": "followR",
+"nv": 212
+},
+{
+"name": "memory sleeve B",
+"group": "sectors",
+"kind": "print",
+"bom": "sleeve_B",
+"mat": "PETG",
+"note": "втулка-трубка с повторителем и сектором",
+"mov": "followB",
+"nv": 360
+},
+{
+"name": "memory sleeve C",
+"group": "sectors",
+"kind": "print",
+"bom": "sleeve_C",
+"mat": "PETG",
+"note": "втулка-трубка с повторителем и сектором",
+"mov": "followC",
+"nv": 369
+},
+{
+"name": "memory pawl shaft",
+"group": "sectors",
+"kind": "buy",
+"bom": "rod3x20",
+"mat": "сталь",
+"note": "ось собачек памяти",
+"mov": "fixed",
+"nv": 24
+},
+{
+"name": "memory pawl C",
+"group": "sectors",
+"kind": "print",
+"bom": "memory_pawl",
+"mat": "PETG",
+"note": "собачка храповика памяти, пружина 0,15 Н",
+"mov": "fixed",
+"nv": 74
+},
+{
+"name": "memory pawl B",
+"group": "sectors",
+"kind": "print",
+"bom": "memory_pawl",
+"mat": "PETG",
+"note": "собачка храповика памяти, пружина 0,15 Н",
+"mov": "fixed",
+"nv": 74
+},
+{
+"name": "memory pawl lifter",
+"group": "sectors",
+"kind": "print",
+"bom": "pawl_lifter",
+"mat": "PETG",
+"note": "подъёмник собачек: сброс памяти пальцем втулки R",
+"mov": "fixed",
+"nv": 80
+},
+{
+"name": "sector bracket",
+"group": "sectors",
+"kind": "print",
+"bom": "sector_bracket",
+"mat": "PETG",
+"note": "накладка на щёку двигателя: ось секторов и ось собачек",
+"mov": "fixed",
+"nv": 64
+},
+{
+"name": "W follower bracket",
+"group": "sectors",
+"kind": "print",
+"bom": "wfol_bracket",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 48
+},
+{
+"name": "W follower axis",
+"group": "sectors",
+"kind": "buy",
+"bom": "rod4x70",
+"mat": "сталь",
+"note": "ось 4 мм, 70 мм (повторители W и O слева)",
+"mov": "fixed",
+"nv": 32
+},
+{
+"name": "W follower",
+"group": "sectors",
+"kind": "print",
+"bom": "w_follower",
+"mat": "PETG",
+"note": "синусный рычаг 1:1: ролик на балке W, ролик на упоре тяги",
+"mov": "followW",
+"nv": 208
+},
+{
+"name": "escapement rod Y",
+"group": "sectors",
+"kind": "buy",
+"bom": "cfrod2x430",
+"mat": "углепластик",
+"note": "тяга 2 мм, 430 мм, углепластиковый пруток (работает на растяжение; ред. 0.14: вместо стали — щупу W вчетверо легче)",
+"mov": "followW",
+"nv": 32
+},
+{
+"name": "W wire clamp",
+"group": "sectors",
+"kind": "buy",
+"bom": "wire_clamp",
+"mat": "латунь",
+"note": "зажим троса W на площадке тяги Y (винт нуля)",
+"mov": "followW",
+"nv": 8
+},
+{
+"name": "W wire bracket",
+"group": "sectors",
+"kind": "print",
+"bom": "w_wire_bracket",
+"mat": "PETG",
+"note": "кронштейн оболочки троса W и собачки тяги Y на стойке повторителя W",
+"mov": "fixed",
+"nv": 40
+},
+{
+"name": "W latch rack",
+"group": "sectors",
+"kind": "print",
+"bom": "w_latch_rack",
+"mat": "PETG",
+"note": "храповая планка на площадке тяги Y, шаг 1 мм",
+"mov": "followW",
+"nv": 8
+},
+{
+"name": "W latch pawl",
+"group": "sectors",
+"kind": "print",
+"bom": "w_latch_pawl",
+"mat": "PETG",
+"note": "собачка тяги Y: держит считанную ширину до подачи",
+"mov": "fixed",
+"nv": 19
+},
+{
+"name": "escapement bellcrank",
+"group": "sectors",
+"kind": "print",
+"bom": "esc_bellcrank",
+"mat": "PETG",
+"note": "угловой рычаг 1:1 (кулисы) на эксцентрике ±u",
+"mov": "followW",
+"nv": 90
+},
+{
+"name": "pm-u eccentric",
+"group": "sectors",
+"kind": "print",
+"bom": "pmu_eccentric",
+"mat": "PETG",
+"note": "рычажок ±u: эксцентрик 1 мм под осью углового рычага, три положения (−u, 0, +u)",
+"mov": "pmu",
+"nv": 194
+},
+{
+"name": "pm-u detent",
+"group": "sectors",
+"kind": "print",
+"bom": "pmu_detent",
+"mat": "PETG",
+"note": "гребёнка рычажка ±u: три гнезда под шарик рычажка",
+"mov": "fixed",
+"nv": 84
+},
+{
+"name": "escapement rod X",
+"group": "sectors",
+"kind": "buy",
+"bom": "cfrod2x160",
+"mat": "углепластик",
+"note": "тяга 2 мм к упору спуска, углепластиковый пруток (ред. 0.14)",
+"mov": "followW",
+"nv": 24
+},
+{
+"name": "zero stop",
+"group": "frame",
+"kind": "print",
+"bom": "zero_stop",
+"mat": "PETG",
+"note": "нулевой упор узла: колодка на переднем брусе",
+"mov": "fixed",
+"nv": 38
+},
+{
+"name": "zero stop screw",
+"group": "frame",
+"kind": "buy",
+"bom": "grubM3x20",
+"mat": "сталь",
+"note": "",
+"mov": "fixed",
+"nv": 24
+},
+{
+"name": "slide return spring",
+"group": "frame",
+"kind": "buy",
+"bom": "spring_ret",
+"mat": "сталь",
+"note": "пружина растяжения возврата узла, около 1 Н",
+"mov": "fixed",
+"nv": 24
+},
+{
+"name": "stop feeler",
+"group": "uframe",
+"kind": "cut",
+"bom": "strip4x4",
+"mat": "сталь",
+"note": "щуп упоров: полоса 4×4 мм на плите узла",
+"mov": "uframe",
+"nv": 22
+},
+{
+"name": "stop bellcrank",
+"group": "sectors",
+"kind": "print",
+"bom": "stop_bc",
+"mat": "PETG",
+"note": "синусный угловой рычаг 1:1 с роликами",
+"mov": "stopbc",
+"nv": 138
+},
+{
+"name": "stop bellcrank bracket",
+"group": "sectors",
+"kind": "print",
+"bom": "stop_bc_br",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 19
+},
+{
+"name": "stop bellcrank pin",
+"group": "sectors",
+"kind": "buy",
+"bom": "rod3x20",
+"mat": "сталь",
+"note": "",
+"mov": "fixed",
+"nv": 24
+},
+{
+"name": "stop carrier",
+"group": "sectors",
+"kind": "print",
+"bom": "stop_carrier",
+"mat": "PETG",
+"note": "каретка щупа: ход до 9 мм по Y, пружина к ролику",
+"mov": "stopcar",
+"nv": 65
+},
+{
+"name": "stop carrier rod",
+"group": "sectors",
+"kind": "buy",
+"bom": "rod3x30",
+"mat": "сталь",
+"note": "направляющая каретки щупа",
+"mov": "fixed",
+"nv": 24
+},
+{
+"name": "stop carrier rod bracket",
+"group": "sectors",
+"kind": "print",
+"bom": "stop_rod_br",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 32
+},
+{
+"name": "stop finger",
+"group": "sectors",
+"kind": "print",
+"bom": "stop_finger",
+"mat": "PETG",
+"note": "щуп: торец 2 мм на высоте оси секторов; ступень памяти останавливает его",
+"mov": "stopfin",
+"nv": 22
+},
+{
+"name": "stop selector lever",
+"group": "sectors",
+"kind": "print",
+"bom": "nsel_lever",
+"mat": "PETG",
+"note": "рычаг N: ролик на балке N, ход щупа 5 мм за первые 1,5 мм рамки",
+"mov": "nsel",
+"nv": 120
+},
+{
+"name": "stop selector bracket",
+"group": "sectors",
+"kind": "print",
+"bom": "nsel_br",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 114
+},
+{
+"name": "stop selector pin",
+"group": "sectors",
+"kind": "buy",
+"bom": "rod3x20",
+"mat": "сталь",
+"note": "",
+"mov": "fixed",
+"nv": 24
+},
+{
+"name": "O follower",
+"group": "sectors",
+"kind": "print",
+"bom": "o_follower",
+"mat": "PETG",
+"note": "повторитель O: ролик на балке O, плечо 12 мм вниз к тяге A",
+"mov": "followO",
+"nv": 176
+},
+{
+"name": "O rod A rear",
+"group": "sectors",
+"kind": "buy",
+"bom": "strip3x4",
+"mat": "сталь",
+"note": "тяга A, задняя часть (паз под палец повторителя)",
+"mov": "orodA",
+"nv": 8
+},
+{
+"name": "O rod A spring",
+"group": "sectors",
+"kind": "buy",
+"bom": "spring_oA",
+"mat": "сталь",
+"note": "пружина сжатия: поджатие 1,5 Н, до 2,3 Н",
+"mov": "orodS",
+"nv": 24
+},
+{
+"name": "O rod A front",
+"group": "sectors",
+"kind": "buy",
+"bom": "strip3x4",
+"mat": "сталь",
+"note": "тяга A, передняя часть",
+"mov": "orodAf",
+"nv": 8
+},
+{
+"name": "O rocker",
+"group": "sectors",
+"kind": "print",
+"bom": "o_rocker",
+"mat": "PETG",
+"note": "качалка за клавишами: 33/34 мм",
+"mov": "orock",
+"nv": 126
+},
+{
+"name": "O rocker pin",
+"group": "sectors",
+"kind": "buy",
+"bom": "rod3x20",
+"mat": "сталь",
+"note": "ось качалки, в стойке запорной гребёнки",
+"mov": "fixed",
+"nv": 24
+},
+{
+"name": "O rod B",
+"group": "sectors",
+"kind": "buy",
+"bom": "strip3x4",
+"mat": "сталь",
+"note": "тяга B: работает на растяжение",
+"mov": "orodB",
+"nv": 8
+},
+{
+"name": "O bellcrank",
+"group": "sectors",
+"kind": "print",
+"bom": "o_bc",
+"mat": "PETG",
+"note": "угловой рычаг 12/12 мм с роликом",
+"mov": "obc",
+"nv": 107
+},
+{
+"name": "O bellcrank bracket",
+"group": "frame",
+"kind": "print",
+"bom": "o_bc_br",
+"mat": "PETG",
+"note": "кронштейн на переднем брусе",
+"mov": "fixed",
+"nv": 40
+},
+{
+"name": "O bellcrank pin",
+"group": "frame",
+"kind": "buy",
+"bom": "rod3x20",
+"mat": "сталь",
+"note": "",
+"mov": "fixed",
+"nv": 24
+},
+{
+"name": "O post",
+"group": "uframe",
+"kind": "print",
+"bom": "o_post",
+"mat": "PETG",
+"note": "упор на плите узла под рычагом отвода",
+"mov": "uframe",
+"nv": 15
+},
+{
+"name": "column pusher 0",
+"group": "select",
+"kind": "print",
+"bom": "col_pusher",
+"mat": "PETG",
+"note": "",
+"mov": "sel0",
+"nv": 22
+},
+{
+"name": "column pusher 1",
+"group": "select",
+"kind": "print",
+"bom": "col_pusher",
+"mat": "PETG",
+"note": "",
+"mov": "sel1",
+"nv": 32
+},
+{
+"name": "column pusher 2",
+"group": "select",
+"kind": "print",
+"bom": "col_pusher",
+"mat": "PETG",
+"note": "",
+"mov": "sel2",
+"nv": 30
+},
+{
+"name": "column pusher 3",
+"group": "select",
+"kind": "print",
+"bom": "col_pusher",
+"mat": "PETG",
+"note": "",
+"mov": "sel3",
+"nv": 40
+},
+{
+"name": "column pusher 4",
+"group": "select",
+"kind": "print",
+"bom": "col_pusher",
+"mat": "PETG",
+"note": "",
+"mov": "sel4",
+"nv": 30
+},
+{
+"name": "column pusher 5",
+"group": "select",
+"kind": "print",
+"bom": "col_pusher",
+"mat": "PETG",
+"note": "",
+"mov": "sel5",
+"nv": 40
+},
+{
+"name": "column pusher 6",
+"group": "select",
+"kind": "print",
+"bom": "col_pusher",
+"mat": "PETG",
+"note": "",
+"mov": "sel6",
+"nv": 38
+},
+{
+"name": "column pusher 7",
+"group": "select",
+"kind": "print",
+"bom": "col_pusher",
+"mat": "PETG",
+"note": "",
+"mov": "sel7",
+"nv": 48
+},
+{
+"name": "column pusher 8",
+"group": "select",
+"kind": "print",
+"bom": "col_pusher",
+"mat": "PETG",
+"note": "",
+"mov": "sel8",
+"nv": 30
+},
+{
+"name": "column pusher 9",
+"group": "select",
+"kind": "print",
+"bom": "col_pusher",
+"mat": "PETG",
+"note": "",
+"mov": "sel9",
+"nv": 40
+},
+{
+"name": "column pusher 10",
+"group": "select",
+"kind": "print",
+"bom": "col_pusher",
+"mat": "PETG",
+"note": "",
+"mov": "sel10",
+"nv": 38
+},
+{
+"name": "column pusher space4",
+"group": "select",
+"kind": "print",
+"bom": "col_pusher_sp",
+"mat": "PETG",
+"note": "",
+"mov": "selS-1",
+"nv": 40
+},
+{
+"name": "column pusher space6",
+"group": "select",
+"kind": "print",
+"bom": "col_pusher_sp",
+"mat": "PETG",
+"note": "",
+"mov": "selS44",
+"nv": 40
+},
+{
+"name": "pusher guide",
+"group": "select",
+"kind": "print",
+"bom": "pusher_guide",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 112
+},
+{
+"name": "selector post -1",
+"group": "select",
+"kind": "print",
+"bom": "sel_post",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "selector post +1",
+"group": "select",
+"kind": "print",
+"bom": "sel_post",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "selector bar l1",
+"group": "select",
+"kind": "print",
+"bom": "sel_bar_l",
+"mat": "PETG",
+"note": "планка выбора; печатается двумя частями",
+"mov": "bitl1",
+"nv": 8
+},
+{
+"name": "selector rod l1",
+"group": "select",
+"kind": "buy",
+"bom": "rod3x40",
+"mat": "сталь",
+"note": "пруток 3 мм",
+"mov": "bitl1",
+"nv": 141
+},
+{
+"name": "selector bar l2",
+"group": "select",
+"kind": "print",
+"bom": "sel_bar_l",
+"mat": "PETG",
+"note": "планка выбора; печатается двумя частями",
+"mov": "bitl2",
+"nv": 8
+},
+{
+"name": "selector rod l2",
+"group": "select",
+"kind": "buy",
+"bom": "rod3x40",
+"mat": "сталь",
+"note": "пруток 3 мм",
+"mov": "bitl2",
+"nv": 134
+},
+{
+"name": "selector bar l4",
+"group": "select",
+"kind": "print",
+"bom": "sel_bar_l",
+"mat": "PETG",
+"note": "планка выбора; печатается двумя частями",
+"mov": "bitl4",
+"nv": 8
+},
+{
+"name": "selector rod l4",
+"group": "select",
+"kind": "buy",
+"bom": "rod3x40",
+"mat": "сталь",
+"note": "пруток 3 мм",
+"mov": "bitl4",
+"nv": 134
+},
+{
+"name": "selector bar r1",
+"group": "select",
+"kind": "print",
+"bom": "sel_bar_r",
+"mat": "PETG",
+"note": "планка выбора; печатается двумя частями",
+"mov": "bitr1",
+"nv": 8
+},
+{
+"name": "selector rod r1",
+"group": "select",
+"kind": "buy",
+"bom": "rod3x40",
+"mat": "сталь",
+"note": "пруток 3 мм",
+"mov": "bitr1",
+"nv": 134
+},
+{
+"name": "selector bar r2",
+"group": "select",
+"kind": "print",
+"bom": "sel_bar_r",
+"mat": "PETG",
+"note": "планка выбора; печатается двумя частями",
+"mov": "bitr2",
+"nv": 8
+},
+{
+"name": "selector rod r2",
+"group": "select",
+"kind": "buy",
+"bom": "rod3x40",
+"mat": "сталь",
+"note": "пруток 3 мм",
+"mov": "bitr2",
+"nv": 134
+},
+{
+"name": "selector bar r4",
+"group": "select",
+"kind": "print",
+"bom": "sel_bar_r",
+"mat": "PETG",
+"note": "планка выбора; печатается двумя частями",
+"mov": "bitr4",
+"nv": 8
+},
+{
+"name": "selector rod r4",
+"group": "select",
+"kind": "buy",
+"bom": "rod3x40",
+"mat": "сталь",
+"note": "пруток 3 мм",
+"mov": "bitr4",
+"nv": 134
+},
+{
+"name": "selector bar r8",
+"group": "select",
+"kind": "print",
+"bom": "sel_bar_r",
+"mat": "PETG",
+"note": "планка выбора; печатается двумя частями",
+"mov": "bitr8",
+"nv": 8
+},
+{
+"name": "selector rod r8",
+"group": "select",
+"kind": "buy",
+"bom": "rod3x40",
+"mat": "сталь",
+"note": "пруток 3 мм",
+"mov": "bitr8",
+"nv": 134
+},
+{
+"name": "selector comb",
+"group": "select",
+"kind": "print",
+"bom": "sel_comb",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 219
+},
+{
+"name": "U-frame base",
+"group": "uframe",
+"kind": "cut",
+"bom": "uframe_plate",
+"mat": "Д16Т",
+"note": "плита 326×188×6 мм из алюминиевого сплава, сверловка по шаблону",
+"mov": "uframe",
+"nv": 190
+},
+{
+"name": "U-frame arm and hammer post",
+"group": "uframe",
+"kind": "print",
+"bom": "uframe_arm",
+"mat": "PETG",
+"note": "",
+"mov": "uframe",
+"nv": 95
+},
+{
+"name": "MGN12H block -150 -60",
+"group": "uframe",
+"kind": "buy",
+"bom": "MGN12H",
+"mat": "сталь",
+"note": "каретка MGN12H",
+"mov": "uframe",
+"nv": 8
+},
+{
+"name": "MGN12H block -150 +60",
+"group": "uframe",
+"kind": "buy",
+"bom": "MGN12H",
+"mat": "сталь",
+"note": "каретка MGN12H",
+"mov": "uframe",
+"nv": 8
+},
+{
+"name": "MGN12H block -20 -60",
+"group": "uframe",
+"kind": "buy",
+"bom": "MGN12H",
+"mat": "сталь",
+"note": "каретка MGN12H",
+"mov": "uframe",
+"nv": 8
+},
+{
+"name": "MGN12H block -20 +60",
+"group": "uframe",
+"kind": "buy",
+"bom": "MGN12H",
+"mat": "сталь",
+"note": "каретка MGN12H",
+"mov": "uframe",
+"nv": 8
+},
+{
+"name": "shaft tower",
+"group": "uframe",
+"kind": "print",
+"bom": "tower",
+"mat": "PETG",
+"note": "",
+"mov": "uframe",
+"nv": 259
+},
+{
+"name": "bearing 608 z80",
+"group": "uframe",
+"kind": "buy",
+"bom": "608",
+"mat": "сталь",
+"note": "подшипник 608 (8×22×7)",
+"mov": "uframe",
+"nv": 112
+},
+{
+"name": "bearing 608 z102",
+"group": "uframe",
+"kind": "buy",
+"bom": "608",
+"mat": "сталь",
+"note": "подшипник 608 (8×22×7)",
+"mov": "uframe",
+"nv": 112
+},
+{
+"name": "tape rail MGN7",
+"group": "uframe",
+"kind": "buy",
+"bom": "MGN7_75",
+"mat": "сталь",
+"note": "линейная направляющая MGN7, 75 мм",
+"mov": "uframe",
+"nv": 8
+},
+{
+"name": "tape slider MGN7H",
+"group": "uframe",
+"kind": "buy",
+"bom": "MGN7H",
+"mat": "сталь",
+"note": "каретка MGN7H",
+"mov": "tape",
+"nv": 8
+},
+{
+"name": "tape clamp",
+"group": "uframe",
+"kind": "print",
+"bom": "tape_clamp",
+"mat": "PETG",
+"note": "",
+"mov": "tape",
+"nv": 8
+},
+{
+"name": "rotate tape",
+"group": "uframe",
+"kind": "buy",
+"bom": "tape",
+"mat": "сталь",
+"note": "стальная лента 2,5×0,1 мм (прямая ветвь)",
+"mov": "tape",
+"nv": 8
+},
+{
+"name": "rotate tape return",
+"group": "uframe",
+"kind": "buy",
+"bom": "tape",
+"mat": "сталь",
+"note": "стальная лента 2,5×0,1 мм (обратная ветвь, ред. 0.14)",
+"mov": "tape",
+"nv": 384
+},
+{
+"name": "rotate tape idler",
+"group": "uframe",
+"kind": "buy",
+"bom": "idler8x3",
+"mat": "сталь",
+"note": "ролик обратной ветви ленты (ред. 0.14)",
+"mov": "uframe",
+"nv": 64
+},
+{
+"name": "rotate tape idler post",
+"group": "uframe",
+"kind": "buy",
+"bom": "pin3x12",
+"mat": "сталь",
+"note": "ось ролика (ред. 0.14)",
+"mov": "uframe",
+"nv": 32
+},
+{
+"name": "rotate tape tensioner",
+"group": "uframe",
+"kind": "print",
+"bom": "tape_tensioner",
+"mat": "PETG",
+"note": "натяжитель обратной ветви: пружина 16 Н в ползунке (ред. 0.14, ступень 2б)",
+"mov": "tape",
+"nv": 8
+},
+{
+"name": "rotate guide plate",
+"group": "uframe",
+"kind": "print",
+"bom": "guide_rotate",
+"mat": "PETG",
+"note": "",
+"mov": "uframe",
+"nv": 128
+},
+{
+"name": "rotate bit slider r1",
+"group": "uframe",
+"kind": "buy",
+"bom": "strip4x3x40",
+"mat": "сталь",
+"note": "ползун разряда: полоса 4×3 мм",
+"mov": "wtree",
+"nv": 8
+},
+{
+"name": "rotate latch pin r1",
+"group": "uframe",
+"kind": "buy",
+"bom": "pin3x17",
+"mat": "сталь",
+"note": "палец защёлки 3 мм с пружиной вниз",
+"mov": "wtree",
+"nv": 24
+},
+{
+"name": "rotate bit slider r2",
+"group": "uframe",
+"kind": "buy",
+"bom": "strip4x3x40",
+"mat": "сталь",
+"note": "ползун разряда: полоса 4×3 мм",
+"mov": "wtree",
+"nv": 8
+},
+{
+"name": "rotate latch pin r2",
+"group": "uframe",
+"kind": "buy",
+"bom": "pin3x17",
+"mat": "сталь",
+"note": "палец защёлки 3 мм с пружиной вниз",
+"mov": "wtree",
+"nv": 24
+},
+{
+"name": "rotate bit slider r4",
+"group": "uframe",
+"kind": "buy",
+"bom": "strip4x3x40",
+"mat": "сталь",
+"note": "ползун разряда: полоса 4×3 мм",
+"mov": "wtree",
+"nv": 8
+},
+{
+"name": "rotate latch pin r4",
+"group": "uframe",
+"kind": "buy",
+"bom": "pin3x17",
+"mat": "сталь",
+"note": "палец защёлки 3 мм с пружиной вниз",
+"mov": "wtree",
+"nv": 24
+},
+{
+"name": "rotate bit slider r8",
+"group": "uframe",
+"kind": "buy",
+"bom": "strip4x3x40",
+"mat": "сталь",
+"note": "ползун разряда: полоса 4×3 мм",
+"mov": "wtree",
+"nv": 8
+},
+{
+"name": "rotate latch pin r8",
+"group": "uframe",
+"kind": "buy",
+"bom": "pin3x17",
+"mat": "сталь",
+"note": "палец защёлки 3 мм с пружиной вниз",
+"mov": "wtree",
+"nv": 24
+},
+{
+"name": "rotate node slider 1",
+"group": "uframe",
+"kind": "buy",
+"bom": "strip4x3x30",
+"mat": "сталь",
+"note": "",
+"mov": "wtree",
+"nv": 8
+},
+{
+"name": "rotate node slider 2",
+"group": "uframe",
+"kind": "buy",
+"bom": "strip4x3x30",
+"mat": "сталь",
+"note": "",
+"mov": "wtree",
+"nv": 8
+},
+{
+"name": "rotate node slider 3",
+"group": "uframe",
+"kind": "buy",
+"bom": "strip4x3x30",
+"mat": "сталь",
+"note": "",
+"mov": "wtree",
+"nv": 8
+},
+{
+"name": "rotate summing lever 1",
+"group": "uframe",
+"kind": "print",
+"bom": "wlever_rotate_1",
+"mat": "PETG",
+"note": "рычаг с пазами под пальцы 2 мм",
+"mov": "wtree",
+"nv": 128
+},
+{
+"name": "rotate summing lever 2",
+"group": "uframe",
+"kind": "print",
+"bom": "wlever_rotate_2",
+"mat": "PETG",
+"note": "рычаг с пазами под пальцы 2 мм",
+"mov": "wtree",
+"nv": 128
+},
+{
+"name": "rotate summing lever 3",
+"group": "uframe",
+"kind": "print",
+"bom": "wlever_rotate_3",
+"mat": "PETG",
+"note": "рычаг с пазами под пальцы 2 мм",
+"mov": "wtree",
+"nv": 128
+},
+{
+"name": "rotate amplifier",
+"group": "uframe",
+"kind": "print",
+"bom": "amp_rotate",
+"mat": "PETG",
+"note": "усилитель 6.28: пальцы в пазах; винт нуля на опоре, винт передаточного числа на входе",
+"mov": "wtree",
+"nv": 88
+},
+{
+"name": "rotate fulcrum slide",
+"group": "uframe",
+"kind": "buy",
+"bom": "strip4x3x12",
+"mat": "сталь",
+"note": "ползун опоры: смещение нуля от ведущей планки",
+"mov": "wtree",
+"nv": 28
+},
+{
+"name": "rotate drive bail",
+"group": "uframe",
+"kind": "cut",
+"bom": "bail_plate",
+"mat": "сталь",
+"note": "ведущая планка 3 мм, ход 12 мм",
+"mov": "wtree",
+"nv": 8
+},
+{
+"name": "rotate drive bellcrank",
+"group": "uframe",
+"kind": "print",
+"bom": "bellcrank_rotate",
+"mat": "PETG",
+"note": "качалка с двумя радиальными пазами от толкателя кулачка к ведущей планке",
+"mov": "wtree",
+"nv": 116
+},
+{
+"name": "rotate drive link",
+"group": "uframe",
+"kind": "cut",
+"bom": "strip3x1_5",
+"mat": "сталь",
+"note": "тяга от качалки к ведущей планке, палец в пазу качалки",
+"mov": "wtree",
+"nv": 43
+},
+{
+"name": "lift guide plate",
+"group": "uframe",
+"kind": "print",
+"bom": "guide_lift",
+"mat": "PETG",
+"note": "",
+"mov": "uframe",
+"nv": 100
+},
+{
+"name": "lift bit slider l1",
+"group": "uframe",
+"kind": "buy",
+"bom": "strip4x3x40",
+"mat": "сталь",
+"note": "ползун разряда: полоса 4×3 мм",
+"mov": "wtree",
+"nv": 8
+},
+{
+"name": "lift latch pin l1",
+"group": "uframe",
+"kind": "buy",
+"bom": "pin3x17",
+"mat": "сталь",
+"note": "палец защёлки 3 мм с пружиной вниз",
+"mov": "wtree",
+"nv": 24
+},
+{
+"name": "lift bit slider l2",
+"group": "uframe",
+"kind": "buy",
+"bom": "strip4x3x40",
+"mat": "сталь",
+"note": "ползун разряда: полоса 4×3 мм",
+"mov": "wtree",
+"nv": 8
+},
+{
+"name": "lift latch pin l2",
+"group": "uframe",
+"kind": "buy",
+"bom": "pin3x17",
+"mat": "сталь",
+"note": "палец защёлки 3 мм с пружиной вниз",
+"mov": "wtree",
+"nv": 24
+},
+{
+"name": "lift bit slider l4",
+"group": "uframe",
+"kind": "buy",
+"bom": "strip4x3x40",
+"mat": "сталь",
+"note": "ползун разряда: полоса 4×3 мм",
+"mov": "wtree",
+"nv": 8
+},
+{
+"name": "lift latch pin l4",
+"group": "uframe",
+"kind": "buy",
+"bom": "pin3x17",
+"mat": "сталь",
+"note": "палец защёлки 3 мм с пружиной вниз",
+"mov": "wtree",
+"nv": 24
+},
+{
+"name": "lift node slider 1",
+"group": "uframe",
+"kind": "buy",
+"bom": "strip4x3x30",
+"mat": "сталь",
+"note": "",
+"mov": "wtree",
+"nv": 8
+},
+{
+"name": "lift node slider 2",
+"group": "uframe",
+"kind": "buy",
+"bom": "strip4x3x30",
+"mat": "сталь",
+"note": "",
+"mov": "wtree",
+"nv": 8
+},
+{
+"name": "lift summing lever 1",
+"group": "uframe",
+"kind": "print",
+"bom": "wlever_lift_1",
+"mat": "PETG",
+"note": "рычаг с пазами под пальцы 2 мм",
+"mov": "wtree",
+"nv": 128
+},
+{
+"name": "lift summing lever 2",
+"group": "uframe",
+"kind": "print",
+"bom": "wlever_lift_2",
+"mat": "PETG",
+"note": "рычаг с пазами под пальцы 2 мм",
+"mov": "wtree",
+"nv": 128
+},
+{
+"name": "lift amplifier",
+"group": "uframe",
+"kind": "print",
+"bom": "amp_lift",
+"mat": "PETG",
+"note": "усилитель 1.33: пальцы в пазах; винт нуля на опоре, винт передаточного числа на входе",
+"mov": "wtree",
+"nv": 88
+},
+{
+"name": "lift fulcrum slide",
+"group": "uframe",
+"kind": "buy",
+"bom": "strip4x3x12",
+"mat": "сталь",
+"note": "ползун опоры: смещение нуля от ведущей планки",
+"mov": "wtree",
+"nv": 28
+},
+{
+"name": "lift drive bail",
+"group": "uframe",
+"kind": "cut",
+"bom": "bail_plate",
+"mat": "сталь",
+"note": "ведущая планка 3 мм, ход 12 мм",
+"mov": "wtree",
+"nv": 40
+},
+{
+"name": "lift drive bellcrank",
+"group": "uframe",
+"kind": "print",
+"bom": "bellcrank_lift",
+"mat": "PETG",
+"note": "качалка с двумя радиальными пазами от толкателя кулачка к ведущей планке",
+"mov": "wtree",
+"nv": 116
+},
+{
+"name": "lift output slider",
+"group": "uframe",
+"kind": "buy",
+"bom": "strip4x3x12",
+"mat": "сталь",
+"note": "",
+"mov": "wtree",
+"nv": 8
+},
+{
+"name": "lift bellcrank",
+"group": "uframe",
+"kind": "print",
+"bom": "bellcrank_lift_out",
+"mat": "PETG",
+"note": "угловая качалка 1:1 с пазами от выходного ползуна к толкателю вилки",
+"mov": "wtree",
+"nv": 90
+},
+{
+"name": "lift output pin",
+"group": "uframe",
+"kind": "buy",
+"bom": "pin2x8",
+"mat": "сталь",
+"note": "палец выходного ползуна",
+"mov": "wtree",
+"nv": 24
+},
+{
+"name": "lift push rod",
+"group": "uframe",
+"kind": "buy",
+"bom": "rod4x40",
+"mat": "сталь",
+"note": "толкатель вилки с вилкой-серьгой и пальцем",
+"mov": "wtree",
+"nv": 138
+},
+{
+"name": "lift bellcrank bracket",
+"group": "uframe",
+"kind": "print",
+"bom": "bellcrank_bracket",
+"mat": "PETG",
+"note": "",
+"mov": "uframe",
+"nv": 32
+},
+{
+"name": "detent pawl",
+"group": "uframe",
+"kind": "print",
+"bom": "detent_pawl",
+"mat": "PETG",
+"note": "клин из стали 3 мм в печатном ползуне; наклон 2:1 под язык тяги",
+"mov": "detent",
+"nv": 37
+},
+{
+"name": "detent link",
+"group": "uframe",
+"kind": "print",
+"bom": "detent_link",
+"mat": "PETG",
+"note": "тяга фиксаторов: кулачок поднимает её на 3 мм",
+"mov": "detent",
+"nv": 49
+},
+{
+"name": "hammer trip link",
+"group": "uframe",
+"kind": "print",
+"bom": "hammer_link",
+"mat": "PETG",
+"note": "тяга взвода от кулачка молотка",
+"mov": "cock",
+"nv": 15
+},
+{
+"name": "hammer cocking rod",
+"group": "uframe",
+"kind": "buy",
+"bom": "rod3x80",
+"mat": "сталь",
+"note": "толкатель взвода; возвратная пружина 2,5 Н (ред. 0.14)",
+"mov": "cock",
+"nv": 44
+},
+{
+"name": "hammer cocking lever",
+"group": "uframe",
+"kind": "print",
+"bom": "cock_lever",
+"mat": "PETG",
+"note": "взводной рычаг на оси молотка: губа на упоре молотка, кулачок спуска шептала (ред. 0.14)",
+"mov": "cock",
+"nv": 227
+},
+{
+"name": "hammer spring",
+"group": "uframe",
+"kind": "buy",
+"bom": "torsion_spring",
+"mat": "сталь",
+"note": "пружина кручения между рычагом взвода и молотком (ред. 0.14)",
+"mov": "uframe",
+"nv": 80
+},
+{
+"name": "hammer sear",
+"group": "uframe",
+"kind": "print",
+"bom": "hammer_sear",
+"mat": "PETG",
+"note": "шептало: держит зуб втулки молотка; пружина 0,3 Н (ред. 0.14)",
+"mov": "cock",
+"nv": 159
+},
+{
+"name": "hammer sear pin",
+"group": "uframe",
+"kind": "buy",
+"bom": "pin2x6",
+"mat": "сталь",
+"note": "ось шептала (ред. 0.14)",
+"mov": "uframe",
+"nv": 24
+},
+{
+"name": "hammer sear bracket",
+"group": "uframe",
+"kind": "print",
+"bom": "sear_bracket",
+"mat": "PETG",
+"note": "кронштейн шептала на стойке молотка (ред. 0.14)",
+"mov": "uframe",
+"nv": 16
+},
+{
+"name": "lift fork",
+"group": "uframe",
+"kind": "print",
+"bom": "lift_fork",
+"mat": "PETG",
+"note": "",
+"mov": "lift",
+"nv": 685
+},
+{
+"name": "lift collar",
+"group": "uframe",
+"kind": "print",
+"bom": "lift_collar",
+"mat": "PETG",
+"note": "муфта подъёма на упорной шайбе; пальцы 2 мм в пазах вилки",
+"mov": "collar",
+"nv": 252
+},
+{
+"name": "row detent wedge",
+"group": "uframe",
+"kind": "cut",
+"bom": "row_wedge",
+"mat": "сталь",
+"note": "клин фиксатора ряда, 60°, ход 5 мм",
+"mov": "detent",
+"nv": 14
+},
+{
+"name": "row detent post",
+"group": "uframe",
+"kind": "print",
+"bom": "row_post",
+"mat": "PETG",
+"note": "стойка с направляющей клина",
+"mov": "uframe",
+"nv": 18
+},
+{
+"name": "row detent wedge spring",
+"group": "uframe",
+"kind": "buy",
+"bom": "spring_ext_0.5N",
+"mat": "сталь",
+"note": "пружина растяжения клина ряда, 0,5 Н (ред. 0.14)",
+"mov": "detent",
+"nv": 24
+},
+{
+"name": "row detent wedge lug",
+"group": "uframe",
+"kind": "print",
+"bom": "row_lug",
+"mat": "PETG",
+"note": "ушко пружины клина на стойке (ред. 0.14)",
+"mov": "uframe",
+"nv": 23
+},
+{
+"name": "row detent roller",
+"group": "uframe",
+"kind": "buy",
+"bom": "pin4x4",
+"mat": "сталь",
+"note": "ролик на клине ряда",
+"mov": "detent",
+"nv": 32
+},
+{
+"name": "row detent link",
+"group": "uframe",
+"kind": "print",
+"bom": "row_link",
+"mat": "PETG",
+"note": "тяга фиксатора ряда: на ползуне фиксатора позиции, наклонная площадка давит на ролик клина",
+"mov": "detent",
+"nv": 43
+},
+{
+"name": "lift fork bracket",
+"group": "uframe",
+"kind": "print",
+"bom": "fork_bracket",
+"mat": "PETG",
+"note": "",
+"mov": "uframe",
+"nv": 88
+},
+{
+"name": "lift fork pin",
+"group": "uframe",
+"kind": "buy",
+"bom": "rod4x24",
+"mat": "сталь",
+"note": "ось вилки подъёма",
+"mov": "uframe",
+"nv": 32
+},
+{
+"name": "hammer",
+"group": "hammer",
+"kind": "print",
+"bom": "hammer",
+"mat": "PETG",
+"note": "боёк с накладкой из резины 1 мм",
+"mov": "hammer",
+"nv": 234
+},
+{
+"name": "hammer axle",
+"group": "hammer",
+"kind": "buy",
+"bom": "rod4x25",
+"mat": "сталь",
+"note": "ось 4 мм, запрессована в молоток (ред. 0.14)",
+"mov": "uframe",
+"nv": 32
+},
+{
+"name": "hammer collar",
+"group": "hammer",
+"kind": "print",
+"bom": "hammer_collar",
+"mat": "PETG",
+"note": "втулка молотка на оси: зуб под шептало, упор под губу рычага (ред. 0.14)",
+"mov": "hammer",
+"nv": 184
+},
+{
+"name": "hammer lock pin",
+"group": "uframe",
+"kind": "buy",
+"bom": "pin3x18",
+"mat": "сталь",
+"note": "штырь запора удара Ø3×18 с головкой Ø7 и резиновой втулкой; входит на 6,2 мм перед плечом молотка",
+"mov": "hammerlock",
+"nv": 80
+},
+{
+"name": "hammer lock guide",
+"group": "uframe",
+"kind": "print",
+"bom": "hammer_lock_guide",
+"mat": "PETG",
+"note": "направляющая запора удара на стойке молотка",
+"mov": "uframe",
+"nv": 130
+},
+{
+"name": "hammer lock lever",
+"group": "uframe",
+"kind": "print",
+"bom": "lock_lever",
+"mat": "PETG",
+"note": "рычажок запора удара 9/9 мм: верхнее плечо на головке штыря, нижнее под трос W",
+"mov": "hammerlock",
+"nv": 60
+},
+{
+"name": "hammer lock axle",
+"group": "uframe",
+"kind": "buy",
+"bom": "rod2x10",
+"mat": "сталь",
+"note": "",
+"mov": "uframe",
+"nv": 24
+},
+{
+"name": "shuttle",
+"group": "shuttle",
+"kind": "print",
+"bom": "shuttle",
+"mat": "PETG",
+"note": "кольцо 106°, R 60, с окнами между рядами",
+"mov": "shuttle",
+"nv": 3593
+},
+{
+"name": "type block 0",
+"group": "shuttle",
+"kind": "print",
+"bom": "type_block_00",
+"mat": "PETG",
+"note": "литерный блок: 8 литер, лицом вверх, слой 0,1",
+"mov": "shuttle",
+"nv": 5163
+},
+{
+"name": "type block 1",
+"group": "shuttle",
+"kind": "print",
+"bom": "type_block_01",
+"mat": "PETG",
+"note": "литерный блок: 8 литер, лицом вверх, слой 0,1",
+"mov": "shuttle",
+"nv": 4533
+},
+{
+"name": "type block 2",
+"group": "shuttle",
+"kind": "print",
+"bom": "type_block_02",
+"mat": "PETG",
+"note": "литерный блок: 8 литер, лицом вверх, слой 0,1",
+"mov": "shuttle",
+"nv": 4568
+},
+{
+"name": "type block 3",
+"group": "shuttle",
+"kind": "print",
+"bom": "type_block_03",
+"mat": "PETG",
+"note": "литерный блок: 8 литер, лицом вверх, слой 0,1",
+"mov": "shuttle",
+"nv": 4450
+},
+{
+"name": "type block 4",
+"group": "shuttle",
+"kind": "print",
+"bom": "type_block_04",
+"mat": "PETG",
+"note": "литерный блок: 8 литер, лицом вверх, слой 0,1",
+"mov": "shuttle",
+"nv": 6209
+},
+{
+"name": "type block 5",
+"group": "shuttle",
+"kind": "print",
+"bom": "type_block_05",
+"mat": "PETG",
+"note": "литерный блок: 8 литер, лицом вверх, слой 0,1",
+"mov": "shuttle",
+"nv": 4462
+},
+{
+"name": "type block 6",
+"group": "shuttle",
+"kind": "print",
+"bom": "type_block_06",
+"mat": "PETG",
+"note": "литерный блок: 8 литер, лицом вверх, слой 0,1",
+"mov": "shuttle",
+"nv": 4479
+},
+{
+"name": "type block 7",
+"group": "shuttle",
+"kind": "print",
+"bom": "type_block_07",
+"mat": "PETG",
+"note": "литерный блок: 8 литер, лицом вверх, слой 0,1",
+"mov": "shuttle",
+"nv": 3688
+},
+{
+"name": "type block 8",
+"group": "shuttle",
+"kind": "print",
+"bom": "type_block_08",
+"mat": "PETG",
+"note": "литерный блок: 8 литер, лицом вверх, слой 0,1",
+"mov": "shuttle",
+"nv": 4129
+},
+{
+"name": "type block 9",
+"group": "shuttle",
+"kind": "print",
+"bom": "type_block_09",
+"mat": "PETG",
+"note": "литерный блок: 8 литер, лицом вверх, слой 0,1",
+"mov": "shuttle",
+"nv": 3348
+},
+{
+"name": "type block 10",
+"group": "shuttle",
+"kind": "print",
+"bom": "type_block_10",
+"mat": "PETG",
+"note": "литерный блок: 8 литер, лицом вверх, слой 0,1",
+"mov": "shuttle",
+"nv": 2974
+},
+{
+"name": "pulley and detent wheel",
+"group": "shuttle",
+"kind": "print",
+"bom": "shaft_hub",
+"mat": "PETG",
+"note": "шкив ленты R 30 и колесо фиксатора с 11 вырезами",
+"mov": "drum",
+"nv": 2120
+},
+{
+"name": "shaft",
+"group": "shuttle",
+"kind": "buy",
+"bom": "shaft8x160",
+"mat": "сталь",
+"note": "вал 8 мм, 160 мм",
+"mov": "drum",
+"nv": 48
+},
+{
+"name": "guide rod",
+"group": "shuttle",
+"kind": "buy",
+"bom": "rod6x120",
+"mat": "сталь",
+"note": "пруток 6 мм — поводок челнока",
+"mov": "drum",
+"nv": 32
+},
+{
+"name": "shuttle bushing",
+"group": "shuttle",
+"kind": "buy",
+"bom": "bushing6",
+"mat": "бронза",
+"note": "втулка 6×9×14 с поджимом",
+"mov": "shuttle",
+"nv": 80
+},
+{
+"name": "lift collar keeper",
+"group": "shuttle",
+"kind": "print",
+"bom": "collar_keeper",
+"mat": "PETG",
+"note": "держатель: две лапки под воротник подъёма (ред. 0.14)",
+"mov": "shuttle",
+"nv": 728
+},
+{
+"name": "code comb 0",
+"group": "shuttle",
+"kind": "print",
+"bom": "code_comb_00",
+"mat": "PETG",
+"note": "кодовая гребёнка позиции: 8 клеток по три зубца W, B, C; печатается на ребре",
+"mov": "shuttle",
+"nv": 940
+},
+{
+"name": "comb pin 0 0",
+"group": "shuttle",
+"kind": "buy",
+"bom": "pin2x5",
+"mat": "сталь",
+"note": "штифт 2×5 мм (гребёнка на кольце)",
+"mov": "shuttle",
+"nv": 24
+},
+{
+"name": "comb pin 0 1",
+"group": "shuttle",
+"kind": "buy",
+"bom": "pin2x5",
+"mat": "сталь",
+"note": "штифт 2×5 мм (гребёнка на кольце)",
+"mov": "shuttle",
+"nv": 24
+},
+{
+"name": "code comb 1",
+"group": "shuttle",
+"kind": "print",
+"bom": "code_comb_01",
+"mat": "PETG",
+"note": "кодовая гребёнка позиции: 8 клеток по три зубца W, B, C; печатается на ребре",
+"mov": "shuttle",
+"nv": 940
+},
+{
+"name": "comb pin 1 0",
+"group": "shuttle",
+"kind": "buy",
+"bom": "pin2x5",
+"mat": "сталь",
+"note": "штифт 2×5 мм (гребёнка на кольце)",
+"mov": "shuttle",
+"nv": 24
+},
+{
+"name": "comb pin 1 1",
+"group": "shuttle",
+"kind": "buy",
+"bom": "pin2x5",
+"mat": "сталь",
+"note": "штифт 2×5 мм (гребёнка на кольце)",
+"mov": "shuttle",
+"nv": 24
+},
+{
+"name": "code comb 2",
+"group": "shuttle",
+"kind": "print",
+"bom": "code_comb_02",
+"mat": "PETG",
+"note": "кодовая гребёнка позиции: 8 клеток по три зубца W, B, C; печатается на ребре",
+"mov": "shuttle",
+"nv": 940
+},
+{
+"name": "comb pin 2 0",
+"group": "shuttle",
+"kind": "buy",
+"bom": "pin2x5",
+"mat": "сталь",
+"note": "штифт 2×5 мм (гребёнка на кольце)",
+"mov": "shuttle",
+"nv": 24
+},
+{
+"name": "comb pin 2 1",
+"group": "shuttle",
+"kind": "buy",
+"bom": "pin2x5",
+"mat": "сталь",
+"note": "штифт 2×5 мм (гребёнка на кольце)",
+"mov": "shuttle",
+"nv": 24
+},
+{
+"name": "code comb 3",
+"group": "shuttle",
+"kind": "print",
+"bom": "code_comb_03",
+"mat": "PETG",
+"note": "кодовая гребёнка позиции: 8 клеток по три зубца W, B, C; печатается на ребре",
+"mov": "shuttle",
+"nv": 940
+},
+{
+"name": "comb pin 3 0",
+"group": "shuttle",
+"kind": "buy",
+"bom": "pin2x5",
+"mat": "сталь",
+"note": "штифт 2×5 мм (гребёнка на кольце)",
+"mov": "shuttle",
+"nv": 24
+},
+{
+"name": "comb pin 3 1",
+"group": "shuttle",
+"kind": "buy",
+"bom": "pin2x5",
+"mat": "сталь",
+"note": "штифт 2×5 мм (гребёнка на кольце)",
+"mov": "shuttle",
+"nv": 24
+},
+{
+"name": "code comb 4",
+"group": "shuttle",
+"kind": "print",
+"bom": "code_comb_04",
+"mat": "PETG",
+"note": "кодовая гребёнка позиции: 8 клеток по три зубца W, B, C; печатается на ребре",
+"mov": "shuttle",
+"nv": 940
+},
+{
+"name": "comb pin 4 0",
+"group": "shuttle",
+"kind": "buy",
+"bom": "pin2x5",
+"mat": "сталь",
+"note": "штифт 2×5 мм (гребёнка на кольце)",
+"mov": "shuttle",
+"nv": 24
+},
+{
+"name": "comb pin 4 1",
+"group": "shuttle",
+"kind": "buy",
+"bom": "pin2x5",
+"mat": "сталь",
+"note": "штифт 2×5 мм (гребёнка на кольце)",
+"mov": "shuttle",
+"nv": 24
+},
+{
+"name": "code comb 5",
+"group": "shuttle",
+"kind": "print",
+"bom": "code_comb_05",
+"mat": "PETG",
+"note": "кодовая гребёнка позиции: 8 клеток по три зубца W, B, C; печатается на ребре",
+"mov": "shuttle",
+"nv": 844
+},
+{
+"name": "comb pin 5 0",
+"group": "shuttle",
+"kind": "buy",
+"bom": "pin2x5",
+"mat": "сталь",
+"note": "штифт 2×5 мм (гребёнка на кольце)",
+"mov": "shuttle",
+"nv": 24
+},
+{
+"name": "comb pin 5 1",
+"group": "shuttle",
+"kind": "buy",
+"bom": "pin2x5",
+"mat": "сталь",
+"note": "штифт 2×5 мм (гребёнка на кольце)",
+"mov": "shuttle",
+"nv": 24
+},
+{
+"name": "code comb 6",
+"group": "shuttle",
+"kind": "print",
+"bom": "code_comb_06",
+"mat": "PETG",
+"note": "кодовая гребёнка позиции: 8 клеток по три зубца W, B, C; печатается на ребре",
+"mov": "shuttle",
+"nv": 844
+},
+{
+"name": "comb pin 6 0",
+"group": "shuttle",
+"kind": "buy",
+"bom": "pin2x5",
+"mat": "сталь",
+"note": "штифт 2×5 мм (гребёнка на кольце)",
+"mov": "shuttle",
+"nv": 24
+},
+{
+"name": "comb pin 6 1",
+"group": "shuttle",
+"kind": "buy",
+"bom": "pin2x5",
+"mat": "сталь",
+"note": "штифт 2×5 мм (гребёнка на кольце)",
+"mov": "shuttle",
+"nv": 24
+},
+{
+"name": "code comb 7",
+"group": "shuttle",
+"kind": "print",
+"bom": "code_comb_07",
+"mat": "PETG",
+"note": "кодовая гребёнка позиции: 8 клеток по три зубца W, B, C; печатается на ребре",
+"mov": "shuttle",
+"nv": 748
+},
+{
+"name": "comb pin 7 0",
+"group": "shuttle",
+"kind": "buy",
+"bom": "pin2x5",
+"mat": "сталь",
+"note": "штифт 2×5 мм (гребёнка на кольце)",
+"mov": "shuttle",
+"nv": 24
+},
+{
+"name": "comb pin 7 1",
+"group": "shuttle",
+"kind": "buy",
+"bom": "pin2x5",
+"mat": "сталь",
+"note": "штифт 2×5 мм (гребёнка на кольце)",
+"mov": "shuttle",
+"nv": 24
+},
+{
+"name": "code comb 8",
+"group": "shuttle",
+"kind": "print",
+"bom": "code_comb_08",
+"mat": "PETG",
+"note": "кодовая гребёнка позиции: 8 клеток по три зубца W, B, C; печатается на ребре",
+"mov": "shuttle",
+"nv": 652
+},
+{
+"name": "comb pin 8 0",
+"group": "shuttle",
+"kind": "buy",
+"bom": "pin2x5",
+"mat": "сталь",
+"note": "штифт 2×5 мм (гребёнка на кольце)",
+"mov": "shuttle",
+"nv": 24
+},
+{
+"name": "comb pin 8 1",
+"group": "shuttle",
+"kind": "buy",
+"bom": "pin2x5",
+"mat": "сталь",
+"note": "штифт 2×5 мм (гребёнка на кольце)",
+"mov": "shuttle",
+"nv": 24
+},
+{
+"name": "code comb 9",
+"group": "shuttle",
+"kind": "print",
+"bom": "code_comb_09",
+"mat": "PETG",
+"note": "кодовая гребёнка позиции: 8 клеток по три зубца W, B, C; печатается на ребре",
+"mov": "shuttle",
+"nv": 556
+},
+{
+"name": "comb pin 9 0",
+"group": "shuttle",
+"kind": "buy",
+"bom": "pin2x5",
+"mat": "сталь",
+"note": "штифт 2×5 мм (гребёнка на кольце)",
+"mov": "shuttle",
+"nv": 24
+},
+{
+"name": "comb pin 9 1",
+"group": "shuttle",
+"kind": "buy",
+"bom": "pin2x5",
+"mat": "сталь",
+"note": "штифт 2×5 мм (гребёнка на кольце)",
+"mov": "shuttle",
+"nv": 24
+},
+{
+"name": "code comb 10",
+"group": "shuttle",
+"kind": "print",
+"bom": "code_comb_10",
+"mat": "PETG",
+"note": "кодовая гребёнка позиции: 8 клеток по три зубца W, B, C; печатается на ребре",
+"mov": "shuttle",
+"nv": 460
+},
+{
+"name": "comb pin 10 0",
+"group": "shuttle",
+"kind": "buy",
+"bom": "pin2x5",
+"mat": "сталь",
+"note": "штифт 2×5 мм (гребёнка на кольце)",
+"mov": "shuttle",
+"nv": 24
+},
+{
+"name": "comb pin 10 1",
+"group": "shuttle",
+"kind": "buy",
+"bom": "pin2x5",
+"mat": "сталь",
+"note": "штифт 2×5 мм (гребёнка на кольце)",
+"mov": "shuttle",
+"nv": 24
+},
+{
+"name": "reading head",
+"group": "reader",
+"kind": "print",
+"bom": "read_head",
+"mat": "PETG",
+"note": "головка чтения: три паза щупов, пружины, тяга отвода",
+"mov": "uframe",
+"nv": 97
+},
+{
+"name": "feeler W",
+"group": "reader",
+"kind": "buy",
+"bom": "feeler_strip",
+"mat": "сталь",
+"note": "щуп: полоса 1,6×2×22 мм, лапка с зажимом троса; на носу эластомерный наконечник 0,5 мм (ред. 0.14, ступень 2б: отскок от зубца ≤ 0,3 мм)",
+"mov": "feelW",
+"nv": 16
+},
+{
+"name": "feeler B",
+"group": "reader",
+"kind": "buy",
+"bom": "feeler_strip",
+"mat": "сталь",
+"note": "щуп: полоса 1,6×2×22 мм, лапка с зажимом троса; на носу эластомерный наконечник 0,5 мм (ред. 0.14, ступень 2б: отскок от зубца ≤ 0,3 мм)",
+"mov": "feelB",
+"nv": 16
+},
+{
+"name": "feeler C",
+"group": "reader",
+"kind": "buy",
+"bom": "feeler_strip",
+"mat": "сталь",
+"note": "щуп: полоса 1,6×2×22 мм, лапка с зажимом троса; на носу эластомерный наконечник 0,5 мм (ред. 0.14, ступень 2б: отскок от зубца ≤ 0,3 мм)",
+"mov": "feelC",
+"nv": 16
+},
+{
+"name": "reading retract bar",
+"group": "reader",
+"kind": "buy",
+"bom": "strip_retract",
+"mat": "сталь",
+"note": "тяга отвода щупов (полоса 1,5 мм)",
+"mov": "feelbar",
+"nv": 8
+},
+{
+"name": "reading stem and arm",
+"group": "reader",
+"kind": "print",
+"bom": "read_stem",
+"mat": "PETG",
+"note": "стойка головки внутри кольца и кронштейн над челноком; внутри — четыре троса",
+"mov": "uframe",
+"nv": 216
+},
+{
+"name": "reading post",
+"group": "reader",
+"kind": "print",
+"bom": "read_post",
+"mat": "PETG",
+"note": "стойка на плите узла, справа от точки печати; внутри — оболочки тросов",
+"mov": "uframe",
+"nv": 32
+},
+{
+"name": "read slide B",
+"group": "reader",
+"kind": "print",
+"bom": "read_slide_B",
+"mat": "PETG",
+"note": "ползунок B: под роликом повторителя сектора B, тянется тросом",
+"mov": "slideB",
+"nv": 56
+},
+{
+"name": "read slide B guides",
+"group": "reader",
+"kind": "buy",
+"bom": "rod2x25",
+"mat": "сталь",
+"note": "направляющие ползунка 2 мм",
+"mov": "fixed",
+"nv": 48
+},
+{
+"name": "read slide B stop",
+"group": "reader",
+"kind": "print",
+"bom": "read_slide_stop",
+"mat": "PETG",
+"note": "колодка: упор оболочки троса и основания направляющих",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "read slide C",
+"group": "reader",
+"kind": "print",
+"bom": "read_slide_C",
+"mat": "PETG",
+"note": "ползунок C: под роликом повторителя сектора C, тянется тросом",
+"mov": "slideC",
+"nv": 56
+},
+{
+"name": "read slide C guides",
+"group": "reader",
+"kind": "buy",
+"bom": "rod2x25",
+"mat": "сталь",
+"note": "направляющие ползунка 2 мм",
+"mov": "fixed",
+"nv": 48
+},
+{
+"name": "read slide C stop",
+"group": "reader",
+"kind": "print",
+"bom": "read_slide_stop",
+"mat": "PETG",
+"note": "колодка: упор оболочки троса и основания направляющих",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "read cable end R",
+"group": "reader",
+"kind": "buy",
+"bom": "bowden_end",
+"mat": "сталь",
+"note": "наконечник оболочки троса Ø3,5",
+"mov": "uframe",
+"nv": 24
+},
+{
+"name": "read cable end W",
+"group": "reader",
+"kind": "buy",
+"bom": "bowden_end",
+"mat": "сталь",
+"note": "наконечник оболочки троса Ø3,5",
+"mov": "uframe",
+"nv": 24
+},
+{
+"name": "read cable end B",
+"group": "reader",
+"kind": "buy",
+"bom": "bowden_end",
+"mat": "сталь",
+"note": "наконечник оболочки троса Ø3,5",
+"mov": "uframe",
+"nv": 24
+},
+{
+"name": "read cable end C",
+"group": "reader",
+"kind": "buy",
+"bom": "bowden_end",
+"mat": "сталь",
+"note": "наконечник оболочки троса Ø3,5",
+"mov": "uframe",
+"nv": 24
+},
+{
+"name": "cam read",
+"group": "drive",
+"kind": "print",
+"bom": "cam_read",
+"mat": "PETG",
+"note": "",
+"mov": "cycle",
+"nv": 1566
+},
+{
+"name": "read rocker",
+"group": "drive",
+"kind": "print",
+"bom": "read_rocker",
+"mat": "PETG",
+"note": "коромысло чтения 11/33 мм: ролик на кулачке, нижнее плечо тянет трос отвода щупов",
+"mov": "readrocker",
+"nv": 158
+},
+{
+"name": "read rocker bracket",
+"group": "drive",
+"kind": "print",
+"bom": "read_rocker_bracket",
+"mat": "PETG",
+"note": "стойка коромысла чтения и упор оболочки троса отвода",
+"mov": "fixed",
+"nv": 85
+},
+{
+"name": "read rocker axle",
+"group": "drive",
+"kind": "buy",
+"bom": "rod2x10",
+"mat": "сталь",
+"note": "ось коромысла 2 мм",
+"mov": "fixed",
+"nv": 24
+},
+{
+"name": "read lock pin",
+"group": "drive",
+"kind": "buy",
+"bom": "pin3x14",
+"mat": "сталь",
+"note": "штырь запора чтения Ø3×14 с головкой Ø7; входит на 5 мм перед нижним плечом коромысла",
+"mov": "readlock",
+"nv": 80
+},
+{
+"name": "read lock guide",
+"group": "drive",
+"kind": "print",
+"bom": "read_lock_guide",
+"mat": "PETG",
+"note": "направляющая запора чтения на кронштейне коромысла",
+"mov": "fixed",
+"nv": 112
+},
+{
+"name": "read lock lever",
+"group": "drive",
+"kind": "print",
+"bom": "lock_lever",
+"mat": "PETG",
+"note": "рычажок запора 9/9 мм на вертикальной оси: плечо на головке штыря, плечо под тросы О и W",
+"mov": "readlock",
+"nv": 80
+},
+{
+"name": "read lock axle",
+"group": "drive",
+"kind": "buy",
+"bom": "rod2x10",
+"mat": "сталь",
+"note": "ось с канавкой под кольцо (ред. 0.14)",
+"mov": "fixed",
+"nv": 24
+},
+{
+"name": "print point indicator",
+"group": "reader",
+"kind": "buy",
+"bom": "pointer",
+"mat": "сталь",
+"note": "указатель точки печати: проволока 0,8 мм с красной бусиной 1,6 мм на головке чтения",
+"mov": "uframe",
+"nv": 93
+},
+{
+"name": "carriage end plate -1",
+"group": "carriage",
+"kind": "print",
+"bom": "car_end",
+"mat": "PETG",
+"note": "",
+"mov": "carriage",
+"nv": 114
+},
+{
+"name": "carriage bushing -1 92",
+"group": "carriage",
+"kind": "buy",
+"bom": "LM8UU",
+"mat": "сталь",
+"note": "линейный подшипник LM8UU",
+"mov": "carriage",
+"nv": 96
+},
+{
+"name": "carriage bushing -1 262",
+"group": "carriage",
+"kind": "buy",
+"bom": "LM8UU",
+"mat": "сталь",
+"note": "линейный подшипник LM8UU",
+"mov": "carriage",
+"nv": 96
+},
+{
+"name": "carriage end plate +1",
+"group": "carriage",
+"kind": "print",
+"bom": "car_end",
+"mat": "PETG",
+"note": "",
+"mov": "carriage",
+"nv": 114
+},
+{
+"name": "carriage bushing +1 92",
+"group": "carriage",
+"kind": "buy",
+"bom": "LM8UU",
+"mat": "сталь",
+"note": "линейный подшипник LM8UU",
+"mov": "carriage",
+"nv": 96
+},
+{
+"name": "carriage bushing +1 262",
+"group": "carriage",
+"kind": "buy",
+"bom": "LM8UU",
+"mat": "сталь",
+"note": "линейный подшипник LM8UU",
+"mov": "carriage",
+"nv": 96
+},
+{
+"name": "paper tube",
+"group": "carriage",
+"kind": "cut",
+"bom": "pipe32x230",
+"mat": "ПВХ",
+"note": "труба 30 мм (ПВХ или печать), 230 мм, с прорезью",
+"mov": "carriage",
+"nv": 224
+},
+{
+"name": "paper guide",
+"group": "carriage",
+"kind": "cut",
+"bom": "guide_sheet",
+"mat": "жесть",
+"note": "направляющая бумаги — полоса 0,5 мм",
+"mov": "carriage",
+"nv": 21
+},
+{
+"name": "paper guide cheek -1",
+"group": "carriage",
+"kind": "print",
+"bom": "guide_cheek",
+"mat": "PETG",
+"note": "щёчка направляющей бумаги на торцевой стенке, винт М3 (ред. 0.14)",
+"mov": "carriage",
+"nv": 38
+},
+{
+"name": "paper guide cheek +1",
+"group": "carriage",
+"kind": "print",
+"bom": "guide_cheek",
+"mat": "PETG",
+"note": "щёчка направляющей бумаги на торцевой стенке, винт М3 (ред. 0.14)",
+"mov": "carriage",
+"nv": 38
+},
+{
+"name": "feed roller",
+"group": "carriage",
+"kind": "buy",
+"bom": "roller14",
+"mat": "сталь+резина",
+"note": "вал 6 мм с резиновой трубкой 14 мм",
+"mov": "carriage",
+"nv": 64
+},
+{
+"name": "pinch roller -1",
+"group": "carriage",
+"kind": "buy",
+"bom": "pinch7",
+"mat": "резина",
+"note": "прижимной ролик 7 мм",
+"mov": "carriage",
+"nv": 48
+},
+{
+"name": "pinch roller +1",
+"group": "carriage",
+"kind": "buy",
+"bom": "pinch7",
+"mat": "резина",
+"note": "прижимной ролик 7 мм",
+"mov": "carriage",
+"nv": 48
+},
+{
+"name": "carriage rack",
+"group": "carriage",
+"kind": "print",
+"bom": "rack",
+"mat": "PETG",
+"note": "модуль 1,0106 мм; печатается двумя частями",
+"mov": "carriage",
+"nv": 670
+},
+{
+"name": "margin strip",
+"group": "carriage",
+"kind": "print",
+"bom": "margin_strip",
+"mat": "PETG",
+"note": "планка полей на рейке каретки, пазы через зуб рейки (6u)",
+"mov": "carriage",
+"nv": 8
+},
+{
+"name": "margin stop L",
+"group": "carriage",
+"kind": "print",
+"bom": "margin_stop",
+"mat": "PETG",
+"note": "упор поля: скоба на планке полей, язычок в пазу, шаг 6u",
+"mov": "carriage",
+"nv": 26
+},
+{
+"name": "margin stop R",
+"group": "carriage",
+"kind": "print",
+"bom": "margin_stop",
+"mat": "PETG",
+"note": "упор поля: скоба на планке полей, язычок в пазу, шаг 6u",
+"mov": "carriage",
+"nv": 26
+},
+{
+"name": "margin abutment",
+"group": "esc",
+"kind": "print",
+"bom": "margin_ab",
+"mat": "PETG",
+"note": "упор полей на кронштейне спуска, между упорами левого и правого поля; на обеих гранях накладки из полиуретана 1 мм (ред. 0.14, ступень 2б)",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "paper",
+"group": "paper",
+"kind": "ref",
+"bom": null,
+"mat": "",
+"note": "",
+"mov": "carriage",
+"nv": 28
+},
+{
+"name": "paper rest",
+"group": "carriage",
+"kind": "print",
+"bom": "paper_rest",
+"mat": "PETG",
+"note": "",
+"mov": "carriage",
+"nv": 8
+},
+{
+"name": "paper rest arm -1",
+"group": "carriage",
+"kind": "print",
+"bom": "rest_arm",
+"mat": "PETG",
+"note": "кронштейн подставки бумаги на торцевой стенке (ред. 0.14)",
+"mov": "carriage",
+"nv": 8
+},
+{
+"name": "paper rest arm +1",
+"group": "carriage",
+"kind": "print",
+"bom": "rest_arm",
+"mat": "PETG",
+"note": "кронштейн подставки бумаги на торцевой стенке (ред. 0.14)",
+"mov": "carriage",
+"nv": 8
+},
+{
+"name": "escapement wheel and pinion",
+"group": "esc",
+"kind": "print",
+"bom": "esc_wheel",
+"mat": "PETG",
+"note": "храповое колесо 60 зубьев толщиной 10 мм (два этажа) и шестерня z = 10 одной деталью",
+"mov": "esc",
+"nv": 460
+},
+{
+"name": "escapement shaft",
+"group": "esc",
+"kind": "buy",
+"bom": "rod4x80",
+"mat": "сталь",
+"note": "",
+"mov": "fixed",
+"nv": 32
+},
+{
+"name": "escapement bracket",
+"group": "esc",
+"kind": "print",
+"bom": "esc_bracket",
+"mat": "PETG",
+"note": "кронштейн спуска: передняя стойка слева, задняя стойка с направляющей собачки, плиты 50 и 98 мм",
+"mov": "fixed",
+"nv": 214
+},
+{
+"name": "escapement dog",
+"group": "esc",
+"kind": "print",
+"bom": "esc_dog",
+"mat": "PETG",
+"note": "держащая собачка: ползун в направляющей за колесом, пружина 0,3 Н",
+"mov": "escdog",
+"nv": 69
+},
+{
+"name": "dog release wire end",
+"group": "esc",
+"kind": "buy",
+"bom": "cable_end",
+"mat": "сталь",
+"note": "наконечник троса освобождения каретки на хвосте собачки",
+"mov": "escdog",
+"nv": 24
+},
+{
+"name": "dog release sheath stop",
+"group": "esc",
+"kind": "print",
+"bom": "release_stop",
+"mat": "PETG",
+"note": "упор оболочки троса освобождения на задней стойке кронштейна спуска",
+"mov": "fixed",
+"nv": 32
+},
+{
+"name": "escapement stop",
+"group": "esc",
+"kind": "print",
+"bom": "esc_stop",
+"mat": "PETG",
+"note": "переставной упор U: барабан R 9,55 мм под ленту от тяги W (6° на единицу), рычаг с пазом под палец",
+"mov": "followW",
+"nv": 308
+},
+{
+"name": "escapement stop finger",
+"group": "esc",
+"kind": "print",
+"bom": "esc_finger",
+"mat": "PETG",
+"note": "палец U: ползун в пазу рычага; в покое выведен из зубьев на 3 мм, входит перед спуском; на рабочей грани накладка из полиуретана 1 мм (ред. 0.14)",
+"mov": "followW",
+"nv": 77
+},
+{
+"name": "escapement tape",
+"group": "esc",
+"kind": "buy",
+"bom": "tape",
+"mat": "сталь",
+"note": "лента 0,1 мм от тяги X к барабану U",
+"mov": "followW",
+"nv": 280
+},
+{
+"name": "back lever B",
+"group": "esc",
+"kind": "print",
+"bom": "esc_back_lever",
+"mat": "PETG",
+"note": "рычаг B под колесом: собачка в нижнем этаже, шаровой палец R 10 мм",
+"mov": "backB",
+"nv": 416
+},
+{
+"name": "backspace arm K",
+"group": "esc",
+"kind": "print",
+"bom": "esc_bksp_arm",
+"mat": "PETG",
+"note": "рычаг забоя K на оси спуска: толкает B на 12,6°; шаровой палец R 19 мм",
+"mov": "backK",
+"nv": 575
+},
+{
+"name": "back pawl",
+"group": "esc",
+"kind": "print",
+"bom": "esc_back_pawl",
+"mat": "PETG",
+"note": "собачка B на пальце рычага, пружина 0,2 Н",
+"mov": "backB",
+"nv": 143
+},
+{
+"name": "back pawl guard",
+"group": "esc",
+"kind": "print",
+"bom": "esc_guard",
+"mat": "PETG",
+"note": "штифт-щиток 1,6 мм: в покое хвост собачки B лежит на нём, и она вне зубьев; стоит в средней плите",
+"mov": "fixed",
+"nv": 48
+},
+{
+"name": "memory lever M",
+"group": "esc",
+"kind": "print",
+"bom": "esc_memory",
+"mat": "PETG",
+"note": "рычаг памяти M: помнит ширину последней литеры (6w°)",
+"mov": "escM",
+"nv": 434
+},
+{
+"name": "memory coupling wedge",
+"group": "esc",
+"kind": "print",
+"bom": "esc_wedge",
+"mat": "PETG",
+"note": "клин сцепления M с колесом (люфт 1,2°) в пазу M",
+"mov": "escM",
+"nv": 60
+},
+{
+"name": "memory holding pawl",
+"group": "esc",
+"kind": "print",
+"bom": "esc_mpawl",
+"mat": "PETG",
+"note": "собачка удержания M в неподвижном храповом секторе",
+"mov": "escM",
+"nv": 56
+},
+{
+"name": "memory ratchet sector",
+"group": "esc",
+"kind": "print",
+"bom": "esc_msector",
+"mat": "PETG",
+"note": "неподвижный храповой сектор M (шаг 6°), подвешен к верхней плите",
+"mov": "fixed",
+"nv": 364
+},
+{
+"name": "memory zero stop",
+"group": "esc",
+"kind": "buy",
+"bom": "rod3x25",
+"mat": "сталь",
+"note": "упор нуля M: стальной штифт 3 мм в мостике над линейкой полей (ред. 0.14)",
+"mov": "fixed",
+"nv": 48
+},
+{
+"name": "bksp tail pin",
+"group": "levers",
+"kind": "buy",
+"bom": "pin2x8",
+"mat": "сталь",
+"note": "палец в торце хвоста рычага",
+"mov": "key46",
+"nv": 24
+},
+{
+"name": "bksp rocker",
+"group": "esc",
+"kind": "print",
+"bom": "rocker_bksp",
+"mat": "PETG",
+"note": "качалка забоя: плечи 8 и 9 мм",
+"mov": "rockbksp",
+"nv": 257
+},
+{
+"name": "bksp link",
+"group": "esc",
+"kind": "buy",
+"bom": "ball_link",
+"mat": "сталь",
+"note": "тяга 1,5 мм с шаровыми наконечниками и пружиной, упорная втулка",
+"mov": "rockbksp",
+"nv": 913
+},
+{
+"name": "back tail pin",
+"group": "levers",
+"kind": "buy",
+"bom": "pin2x8",
+"mat": "сталь",
+"note": "палец в торце хвоста рычага",
+"mov": "key47",
+"nv": 24
+},
+{
+"name": "back rocker",
+"group": "esc",
+"kind": "print",
+"bom": "rocker_back",
+"mat": "PETG",
+"note": "качалка «назад на литеру»: плечи 5 и 30 мм",
+"mov": "rockback",
+"nv": 257
+},
+{
+"name": "back link",
+"group": "esc",
+"kind": "buy",
+"bom": "ball_link",
+"mat": "сталь",
+"note": "тяга 1,5 мм с шаровыми наконечниками и пружиной",
+"mov": "rockback",
+"nv": 914
+},
+{
+"name": "bksp rocker axle",
+"group": "esc",
+"kind": "buy",
+"bom": "rod3x12",
+"mat": "сталь",
+"note": "",
+"mov": "fixed",
+"nv": 24
+},
+{
+"name": "back rocker axle",
+"group": "esc",
+"kind": "buy",
+"bom": "rod3x12",
+"mat": "сталь",
+"note": "",
+"mov": "fixed",
+"nv": 24
+},
+{
+"name": "rocker bracket",
+"group": "esc",
+"kind": "print",
+"bom": "rocker_bracket",
+"mat": "PETG",
+"note": "стенка качалок забоя и «назад на литеру» (оси вдоль Y)",
+"mov": "fixed",
+"nv": 64
+},
+{
+"name": "carriage release bracket",
+"group": "frame",
+"kind": "print",
+"bom": "release_bracket",
+"mat": "PETG",
+"note": "кронштейн клавиши освобождения каретки на передней раме, с упором оболочки троса",
+"mov": "fixed",
+"nv": 106
+},
+{
+"name": "carriage release key",
+"group": "frame",
+"kind": "print",
+"bom": "release_key",
+"mat": "PETG",
+"note": "клавиша освобождения каретки: рычажок 14/14 мм, нажим 3 мм выводит собачку спуска",
+"mov": "release",
+"nv": 94
+},
+{
+"name": "carriage release axle",
+"group": "frame",
+"kind": "buy",
+"bom": "rod2x20",
+"mat": "сталь",
+"note": "",
+"mov": "fixed",
+"nv": 24
+},
+{
+"name": "ribbon spool -1",
+"group": "ribbon",
+"kind": "buy",
+"bom": "spool",
+"mat": "пластик",
+"note": "катушка ленты 13 мм",
+"mov": "fixed",
+"nv": 96
+},
+{
+"name": "ribbon spool +1",
+"group": "ribbon",
+"kind": "buy",
+"bom": "spool",
+"mat": "пластик",
+"note": "катушка ленты 13 мм",
+"mov": "fixed",
+"nv": 96
+},
+{
+"name": "ribbon",
+"group": "ribbon",
+"kind": "ref",
+"bom": null,
+"mat": "",
+"note": "",
+"mov": "ribbon",
+"nv": 24
+},
+{
+"name": "ribbon guide -1",
+"group": "ribbon",
+"kind": "print",
+"bom": "ribbon_guide",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 17
+},
+{
+"name": "ribbon guide +1",
+"group": "ribbon",
+"kind": "print",
+"bom": "ribbon_guide",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 17
+},
+{
+"name": "ribbon link",
+"group": "ribbon",
+"kind": "cut",
+"bom": "strip3x3",
+"mat": "сталь",
+"note": "тяга вибратора: кулачок ленты поднимает её на 10 мм",
+"mov": "ribbon",
+"nv": 8
+},
+{
+"name": "ribbon vibrator",
+"group": "ribbon",
+"kind": "cut",
+"bom": "vibrator",
+"mat": "жесть",
+"note": "вибратор ленты: вилка из жести 0,5 мм на ползуне; ход 10 мм",
+"mov": "ribbon",
+"nv": 66
+},
+{
+"name": "spring barrel",
+"group": "drive",
+"kind": "print",
+"bom": "barrel",
+"mat": "PETG",
+"note": "барабан Ø120×38 мм: стакан с дном; крышка отдельно, на винтах",
+"mov": "fixed",
+"nv": 448
+},
+{
+"name": "spring barrel lid",
+"group": "drive",
+"kind": "print",
+"bom": "barrel_lid",
+"mat": "PETG",
+"note": "крышка барабана, на шести винтах М3",
+"mov": "fixed",
+"nv": 256
+},
+{
+"name": "mainspring",
+"group": "drive",
+"kind": "buy",
+"bom": "mainspring",
+"mat": "сталь",
+"note": "заводная пружина 32×0,8 мм, около 6 м",
+"mov": "fixed",
+"nv": 192
+},
+{
+"name": "barrel arbor",
+"group": "drive",
+"kind": "buy",
+"bom": "rod10x100",
+"mat": "сталь",
+"note": "вал 10 мм — ось барабана",
+"mov": "fixed",
+"nv": 48
+},
+{
+"name": "winding gear",
+"group": "drive",
+"kind": "print",
+"bom": "wind_gear",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 648
+},
+{
+"name": "winding pinion",
+"group": "drive",
+"kind": "print",
+"bom": "wind_pinion",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 216
+},
+{
+"name": "winding crank",
+"group": "drive",
+"kind": "print",
+"bom": "crank",
+"mat": "PETG",
+"note": "ручка завода R 85 мм; храповик с собачкой на оси барабана",
+"mov": "fixed",
+"nv": 158
+},
+{
+"name": "barrel gear",
+"group": "drive",
+"kind": "print",
+"bom": "gear_barrel",
+"mat": "PETG",
+"note": "m = 1,5; ширина 8 мм",
+"mov": "fixed",
+"nv": 960
+},
+{
+"name": "int1 shaft",
+"group": "drive",
+"kind": "buy",
+"bom": "rod6x60",
+"mat": "сталь",
+"note": "",
+"mov": "fixed",
+"nv": 32
+},
+{
+"name": "int1 pinion",
+"group": "drive",
+"kind": "print",
+"bom": "pinion12_m15",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 144
+},
+{
+"name": "int1 gear",
+"group": "drive",
+"kind": "print",
+"bom": "gear_int1",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 576
+},
+{
+"name": "int2 shaft",
+"group": "drive",
+"kind": "buy",
+"bom": "rod4x60",
+"mat": "сталь",
+"note": "",
+"mov": "fixed",
+"nv": 32
+},
+{
+"name": "int2 pinion",
+"group": "drive",
+"kind": "print",
+"bom": "pinion12",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 144
+},
+{
+"name": "bevel gear 24",
+"group": "drive",
+"kind": "print",
+"bom": "bevel24",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 96
+},
+{
+"name": "bevel pinion 12",
+"group": "drive",
+"kind": "print",
+"bom": "bevel12",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 96
+},
+{
+"name": "lay shaft",
+"group": "drive",
+"kind": "buy",
+"bom": "rod4x200",
+"mat": "сталь",
+"note": "пруток 4 мм, около 200 мм",
+"mov": "fixed",
+"nv": 32
+},
+{
+"name": "bevel lay 1:1",
+"group": "drive",
+"kind": "print",
+"bom": "bevel20",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 96
+},
+{
+"name": "bevel cycle 1:1",
+"group": "drive",
+"kind": "print",
+"bom": "bevel20",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 96
+},
+{
+"name": "governor gear",
+"group": "drive",
+"kind": "print",
+"bom": "gear_gov",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 384
+},
+{
+"name": "governor pinion",
+"group": "drive",
+"kind": "print",
+"bom": "pinion8",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 96
+},
+{
+"name": "governor fan",
+"group": "drive",
+"kind": "print",
+"bom": "governor",
+"mat": "PETG",
+"note": "воздушный регулятор: 4 лопасти 30 мм, раствор подгоняется",
+"mov": "fixed",
+"nv": 72
+},
+{
+"name": "governor arbor",
+"group": "drive",
+"kind": "buy",
+"bom": "rod3x30",
+"mat": "сталь",
+"note": "ось регулятора 3 мм, 30 мм (ред. 0.14, ступень 2б: левым концом — в тормозной шайбе)",
+"mov": "fixed",
+"nv": 32
+},
+{
+"name": "governor brake plate",
+"group": "drive",
+"kind": "print",
+"bom": "gov_brake_plate",
+"mat": "PETG",
+"note": "тормозная шайба регулятора на стойке (два самореза в основание); левая опора оси; винт уставки скорости",
+"mov": "fixed",
+"nv": 146
+},
+{
+"name": "governor brake pad",
+"group": "drive",
+"kind": "buy",
+"bom": "felt13",
+"mat": "войлок",
+"note": "войлочное кольцо 13×5×0,6 мм, наклеено на шайбу",
+"mov": "fixed",
+"nv": 128
+},
+{
+"name": "governor sliding collar",
+"group": "drive",
+"kind": "buy",
+"bom": "gov_collar",
+"mat": "латунь",
+"note": "скользящая муфта: латунь, торец по войлоку",
+"mov": "fixed",
+"nv": 128
+},
+{
+"name": "governor fixed collar",
+"group": "drive",
+"kind": "buy",
+"bom": "gov_collar_fix",
+"mat": "латунь",
+"note": "неподвижная муфта: латунь, штифт 1 мм в оси",
+"mov": "fixed",
+"nv": 96
+},
+{
+"name": "governor leaf spring 1",
+"group": "drive",
+"kind": "buy",
+"bom": "gov_leaf",
+"mat": "сталь",
+"note": "плоская пружина 0,1×2 мм между муфтами",
+"mov": "fixed",
+"nv": 27
+},
+{
+"name": "governor weight 1",
+"group": "drive",
+"kind": "buy",
+"bom": "gov_weight",
+"mat": "латунь",
+"note": "грузик регулятора: латунный шарик Ø4 мм на пружине",
+"mov": "fixed",
+"nv": 125
+},
+{
+"name": "governor leaf spring 2",
+"group": "drive",
+"kind": "buy",
+"bom": "gov_leaf",
+"mat": "сталь",
+"note": "плоская пружина 0,1×2 мм между муфтами",
+"mov": "fixed",
+"nv": 40
+},
+{
+"name": "governor weight 2",
+"group": "drive",
+"kind": "buy",
+"bom": "gov_weight",
+"mat": "латунь",
+"note": "грузик регулятора: латунный шарик Ø4 мм на пружине",
+"mov": "fixed",
+"nv": 124
+},
+{
+"name": "governor leaf spring 3",
+"group": "drive",
+"kind": "buy",
+"bom": "gov_leaf",
+"mat": "сталь",
+"note": "плоская пружина 0,1×2 мм между муфтами",
+"mov": "fixed",
+"nv": 40
+},
+{
+"name": "governor weight 3",
+"group": "drive",
+"kind": "buy",
+"bom": "gov_weight",
+"mat": "латунь",
+"note": "грузик регулятора: латунный шарик Ø4 мм на пружине",
+"mov": "fixed",
+"nv": 124
+},
+{
+"name": "governor flywheel",
+"group": "drive",
+"kind": "buy",
+"bom": "disc31x3",
+"mat": "сталь",
+"note": "маховик регулятора: стальной диск 31×3,2 мм на оси регулятора (ред. 0.14)",
+"mov": "fixed",
+"nv": 128
+},
+{
+"name": "cycle shaft",
+"group": "drive",
+"kind": "buy",
+"bom": "rod8x380",
+"mat": "сталь",
+"note": "вал 8 мм, 380 мм — цикловой вал",
+"mov": "fixed",
+"nv": 48
+},
+{
+"name": "cam lift",
+"group": "drive",
+"kind": "cut",
+"bom": "cam_lift",
+"mat": "сталь",
+"note": "кулачок: сталь 45 5 мм, закалка; ролик закалённый (ред. 0.14)",
+"mov": "cycle",
+"nv": 1628
+},
+{
+"name": "cam rotate",
+"group": "drive",
+"kind": "cut",
+"bom": "cam_rotate",
+"mat": "сталь",
+"note": "кулачок: сталь 45 5 мм, закалка; ролик закалённый (ред. 0.14)",
+"mov": "cycle",
+"nv": 1628
+},
+{
+"name": "cam detent",
+"group": "drive",
+"kind": "print",
+"bom": "cam_detent",
+"mat": "PETG",
+"note": "",
+"mov": "cycle",
+"nv": 1580
+},
+{
+"name": "cam hammer",
+"group": "drive",
+"kind": "print",
+"bom": "cam_hammer",
+"mat": "PETG",
+"note": "",
+"mov": "cycle",
+"nv": 1528
+},
+{
+"name": "cam ribbon",
+"group": "drive",
+"kind": "print",
+"bom": "cam_ribbon",
+"mat": "PETG",
+"note": "",
+"mov": "cycle",
+"nv": 1644
+},
+{
+"name": "cam rotate return",
+"group": "drive",
+"kind": "cut",
+"bom": "cam_rotate_return",
+"mat": "сталь",
+"note": "обратный кулачок: сталь 45 5 мм, закалка; профиль — основной через коромысло, в выстое отступ 0,5 мм (ред. 0.14)",
+"mov": "cycle",
+"nv": 1454
+},
+{
+"name": "cam lift return",
+"group": "drive",
+"kind": "cut",
+"bom": "cam_lift_return",
+"mat": "сталь",
+"note": "обратный кулачок: сталь 45 5 мм, закалка; профиль — основной через коромысло, в выстое отступ 0,5 мм (ред. 0.14)",
+"mov": "cycle",
+"nv": 1472
+},
+{
+"name": "cycle stop arm",
+"group": "drive",
+"kind": "print",
+"bom": "stop_arm",
+"mat": "PETG",
+"note": "",
+"mov": "cycle",
+"nv": 8
+},
+{
+"name": "cycle stop latch",
+"group": "drive",
+"kind": "print",
+"bom": "stop_latch",
+"mat": "PETG",
+"note": "защёлка цикла; спускается последней точкой хода клавиши; упорная грань с накладкой из полиуретана 2 мм (ред. 0.14)",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "cam rod lift",
+"group": "drive",
+"kind": "buy",
+"bom": "rod3x80",
+"mat": "сталь",
+"note": "толкатель с роликом",
+"mov": "cycle",
+"nv": 182
+},
+{
+"name": "cam rod rotate",
+"group": "drive",
+"kind": "buy",
+"bom": "rod3x80",
+"mat": "сталь",
+"note": "толкатель с роликом",
+"mov": "cycle",
+"nv": 180
+},
+{
+"name": "cam rod detent",
+"group": "drive",
+"kind": "buy",
+"bom": "rod3x80",
+"mat": "сталь",
+"note": "толкатель с роликом",
+"mov": "cycle",
+"nv": 92
+},
+{
+"name": "cam rod hammer",
+"group": "drive",
+"kind": "buy",
+"bom": "rod3x80",
+"mat": "сталь",
+"note": "толкатель с роликом",
+"mov": "cycle",
+"nv": 92
+},
+{
+"name": "cam rod ribbon",
+"group": "drive",
+"kind": "buy",
+"bom": "rod3x80",
+"mat": "сталь",
+"note": "толкатель с роликом",
+"mov": "cycle",
+"nv": 92
+},
+{
+"name": "return rocker rotate",
+"group": "drive",
+"kind": "print",
+"bom": "ret_rocker_rotate",
+"mat": "PETG",
+"note": "коромысло-коромысло: пальцы основного и обратного толкателей в пазах (ред. 0.14)",
+"mov": "cycle",
+"nv": 84
+},
+{
+"name": "return rod rotate",
+"group": "drive",
+"kind": "buy",
+"bom": "rod3x30",
+"mat": "сталь",
+"note": "обратный толкатель с роликом (ред. 0.14)",
+"mov": "cycle",
+"nv": 100
+},
+{
+"name": "return rocker post rotate",
+"group": "drive",
+"kind": "print",
+"bom": "ret_post",
+"mat": "PETG",
+"note": "стойка коромысла с направляющей обратного толкателя, на основании (ред. 0.14)",
+"mov": "fixed",
+"nv": 53
+},
+{
+"name": "return rocker pin rotate",
+"group": "drive",
+"kind": "buy",
+"bom": "pin3x12",
+"mat": "сталь",
+"note": "ось коромысла (ред. 0.14)",
+"mov": "fixed",
+"nv": 24
+},
+{
+"name": "return rocker lift",
+"group": "drive",
+"kind": "print",
+"bom": "ret_rocker_lift",
+"mat": "PETG",
+"note": "коромысло-коромысло: пальцы основного и обратного толкателей в пазах (ред. 0.14)",
+"mov": "cycle",
+"nv": 84
+},
+{
+"name": "return rod lift",
+"group": "drive",
+"kind": "buy",
+"bom": "rod3x30",
+"mat": "сталь",
+"note": "обратный толкатель с роликом (ред. 0.14)",
+"mov": "cycle",
+"nv": 100
+},
+{
+"name": "return rocker post lift",
+"group": "drive",
+"kind": "print",
+"bom": "ret_post",
+"mat": "PETG",
+"note": "стойка коромысла с направляющей обратного толкателя, на основании (ред. 0.14)",
+"mov": "fixed",
+"nv": 50
+},
+{
+"name": "return rocker pin lift",
+"group": "drive",
+"kind": "buy",
+"bom": "pin3x12",
+"mat": "сталь",
+"note": "ось коромысла (ред. 0.14)",
+"mov": "fixed",
+"nv": 24
+},
+{
+"name": "cycle bearing block -153",
+"group": "drive",
+"kind": "print",
+"bom": "cycle_bearing",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 56
+},
+{
+"name": "cycle bearing block 120",
+"group": "drive",
+"kind": "print",
+"bom": "cycle_bearing",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 56
+},
+{
+"name": "cycle bearing block 171",
+"group": "drive",
+"kind": "print",
+"bom": "cycle_bearing",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 56
+},
+{
+"name": "motor cheek 175",
+"group": "drive",
+"kind": "print",
+"bom": "motor_cheek",
+"mat": "PETG",
+"note": "щёки двигателя; печатаются плашмя, двумя частями",
+"mov": "fixed",
+"nv": 120
+},
+{
+"name": "motor cheek 228",
+"group": "drive",
+"kind": "print",
+"bom": "motor_cheek",
+"mat": "PETG",
+"note": "щёки двигателя; печатаются плашмя, двумя частями",
+"mov": "fixed",
+"nv": 120
+},
+{
+"name": "lay shaft bearing",
+"group": "drive",
+"kind": "print",
+"bom": "lay_bearing",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 40
+},
+{
+"name": "base plate",
+"group": "frame",
+"kind": "cut",
+"bom": "plywood4_500x525",
+"mat": "фанера",
+"note": "основание: фанера 4 мм под рамой, на винтах М5 с Т-гайками в нижние пазы профиля; детали, стоящие на основании, привёрнуты снизу винтами М3 во вставки (ред. 0.14)",
+"mov": "fixed",
+"nv": 40
+},
+{
+"name": "comb bridge",
+"group": "keys",
+"kind": "cut",
+"bom": "bar6x6x413",
+"mat": "Д16Т",
+"note": "брус гребёнок: квадрат 6×6 мм, на двух стойках; гребёнки клавиш и пробела на лапках, на винтах М3 (ред. 0.14)",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "comb post -1",
+"group": "keys",
+"kind": "print",
+"bom": "comb_post",
+"mat": "PETG",
+"note": "стойка бруса гребёнок на основании (ред. 0.14)",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "comb post +1",
+"group": "keys",
+"kind": "print",
+"bom": "comb_post",
+"mat": "PETG",
+"note": "стойка бруса гребёнок на основании (ред. 0.14)",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "key comb tab -1",
+"group": "keys",
+"kind": "print",
+"bom": "comb_tab_key",
+"mat": "PETG",
+"note": "лапка гребёнки клавиш от бруса (ред. 0.14)",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "key comb tab +1",
+"group": "keys",
+"kind": "print",
+"bom": "comb_tab_key",
+"mat": "PETG",
+"note": "лапка гребёнки клавиш от бруса (ред. 0.14)",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "space comb tab -1",
+"group": "keys",
+"kind": "print",
+"bom": "comb_tab_space",
+"mat": "PETG",
+"note": "лапка гребёнки пробела от бруса (ред. 0.14)",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "space comb tab +1",
+"group": "keys",
+"kind": "print",
+"bom": "comb_tab_space",
+"mat": "PETG",
+"note": "лапка гребёнки пробела от бруса (ред. 0.14)",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "lever pivot clip -1",
+"group": "levers",
+"kind": "buy",
+"bom": "eclip3_2",
+"mat": "сталь",
+"note": "стопорное кольцо DIN 6799 3,2 на оси рычагов (ред. 0.14)",
+"mov": "fixed",
+"nv": 80
+},
+{
+"name": "lever pivot clip +1",
+"group": "levers",
+"kind": "buy",
+"bom": "eclip3_2",
+"mat": "сталь",
+"note": "стопорное кольцо DIN 6799 3,2 на оси рычагов (ред. 0.14)",
+"mov": "fixed",
+"nv": 80
+},
+{
+"name": "cycle trip post",
+"group": "levers",
+"kind": "print",
+"bom": "trip_post",
+"mat": "PETG",
+"note": "стойка качалки спуска цикла с осью (ред. 0.14)",
+"mov": "fixed",
+"nv": 19
+},
+{
+"name": "cycle trip pin",
+"group": "levers",
+"kind": "buy",
+"bom": "pin2x8",
+"mat": "сталь",
+"note": "ось качалки спуска (ред. 0.14)",
+"mov": "fixed",
+"nv": 24
+},
+{
+"name": "cycle stop latch post",
+"group": "drive",
+"kind": "print",
+"bom": "latch_post",
+"mat": "PETG",
+"note": "стойка защёлки цикла на основании (ред. 0.14)",
+"mov": "fixed",
+"nv": 18
+},
+{
+"name": "cycle stop latch pin",
+"group": "drive",
+"kind": "buy",
+"bom": "pin2x12",
+"mat": "сталь",
+"note": "ось защёлки цикла (ред. 0.14)",
+"mov": "fixed",
+"nv": 24
+},
+{
+"name": "zero stop M bridge",
+"group": "esc",
+"kind": "print",
+"bom": "zero_m_bridge",
+"mat": "PETG",
+"note": "мостик упора нуля M над линейкой полей: на верхней плите кронштейна спуска (ред. 0.14)",
+"mov": "fixed",
+"nv": 62
+},
+{
+"name": "pusher guide hanger -1",
+"group": "select",
+"kind": "print",
+"bom": "pusher_hanger",
+"mat": "PETG",
+"note": "подвес направляющей толкателей к гребёнке выбора (ред. 0.14)",
+"mov": "fixed",
+"nv": 14
+},
+{
+"name": "pusher guide hanger +1",
+"group": "select",
+"kind": "print",
+"bom": "pusher_hanger",
+"mat": "PETG",
+"note": "подвес направляющей толкателей к гребёнке выбора (ред. 0.14)",
+"mov": "fixed",
+"nv": 14
+},
+{
+"name": "stop carrier rod clip 0",
+"group": "sectors",
+"kind": "buy",
+"bom": "eclip2_3",
+"mat": "сталь",
+"note": "стопорное кольцо на прутке каретки щупа (ред. 0.14)",
+"mov": "fixed",
+"nv": 64
+},
+{
+"name": "read lock axle clip",
+"group": "drive",
+"kind": "buy",
+"bom": "eclip1_5",
+"mat": "сталь",
+"note": "стопорное кольцо на оси запора чтения (ред. 0.14)",
+"mov": "fixed",
+"nv": 80
+},
+{
+"name": "case front wall 1",
+"group": "case",
+"kind": "print",
+"bom": "case_front",
+"mat": "PETG",
+"note": "стенка корпуса; орнамент — серебром, сменой прутка на высоте лица",
+"mov": "fixed",
+"nv": 610
+},
+{
+"name": "case front wall 1 inlay",
+"group": "case",
+"kind": "inlay",
+"bom": null,
+"mat": "PETG серебристый",
+"note": "",
+"mov": "fixed",
+"nv": 4225
+},
+{
+"name": "case front wall 2",
+"group": "case",
+"kind": "print",
+"bom": "case_front",
+"mat": "PETG",
+"note": "стенка корпуса; орнамент — серебром, сменой прутка на высоте лица",
+"mov": "fixed",
+"nv": 998
+},
+{
+"name": "case front wall 2 inlay",
+"group": "case",
+"kind": "inlay",
+"bom": null,
+"mat": "PETG серебристый",
+"note": "",
+"mov": "fixed",
+"nv": 7096
+},
+{
+"name": "case front wall 3",
+"group": "case",
+"kind": "print",
+"bom": "case_front",
+"mat": "PETG",
+"note": "стенка корпуса; орнамент — серебром, сменой прутка на высоте лица",
+"mov": "fixed",
+"nv": 602
+},
+{
+"name": "case front wall 3 inlay",
+"group": "case",
+"kind": "inlay",
+"bom": null,
+"mat": "PETG серебристый",
+"note": "",
+"mov": "fixed",
+"nv": 4264
+},
+{
+"name": "case right wall 1",
+"group": "case",
+"kind": "print",
+"bom": "case_side",
+"mat": "PETG",
+"note": "стенка корпуса; орнамент — серебром, сменой прутка на высоте лица",
+"mov": "fixed",
+"nv": 868
+},
+{
+"name": "case right wall 1 inlay",
+"group": "case",
+"kind": "inlay",
+"bom": null,
+"mat": "PETG серебристый",
+"note": "",
+"mov": "fixed",
+"nv": 2859
+},
+{
+"name": "case right wall 2",
+"group": "case",
+"kind": "print",
+"bom": "case_side",
+"mat": "PETG",
+"note": "стенка корпуса; орнамент — серебром, сменой прутка на высоте лица",
+"mov": "fixed",
+"nv": 800
+},
+{
+"name": "case right wall 2 inlay",
+"group": "case",
+"kind": "inlay",
+"bom": null,
+"mat": "PETG серебристый",
+"note": "",
+"mov": "fixed",
+"nv": 5680
+},
+{
+"name": "case right wall 3",
+"group": "case",
+"kind": "print",
+"bom": "case_side",
+"mat": "PETG",
+"note": "стенка корпуса; орнамент — серебром, сменой прутка на высоте лица",
+"mov": "fixed",
+"nv": 602
+},
+{
+"name": "case right wall 3 inlay",
+"group": "case",
+"kind": "inlay",
+"bom": null,
+"mat": "PETG серебристый",
+"note": "",
+"mov": "fixed",
+"nv": 4264
+},
+{
+"name": "case left wall 1",
+"group": "case",
+"kind": "print",
+"bom": "case_side",
+"mat": "PETG",
+"note": "стенка корпуса; орнамент — серебром, сменой прутка на высоте лица",
+"mov": "fixed",
+"nv": 602
+},
+{
+"name": "case left wall 1 inlay",
+"group": "case",
+"kind": "inlay",
+"bom": null,
+"mat": "PETG серебристый",
+"note": "",
+"mov": "fixed",
+"nv": 4264
+},
+{
+"name": "case left wall 2",
+"group": "case",
+"kind": "print",
+"bom": "case_side",
+"mat": "PETG",
+"note": "стенка корпуса; орнамент — серебром, сменой прутка на высоте лица",
+"mov": "fixed",
+"nv": 800
+},
+{
+"name": "case left wall 2 inlay",
+"group": "case",
+"kind": "inlay",
+"bom": null,
+"mat": "PETG серебристый",
+"note": "",
+"mov": "fixed",
+"nv": 5680
+},
+{
+"name": "case left wall 3",
+"group": "case",
+"kind": "print",
+"bom": "case_side",
+"mat": "PETG",
+"note": "стенка корпуса; орнамент — серебром, сменой прутка на высоте лица",
+"mov": "fixed",
+"nv": 410
+},
+{
+"name": "case left wall 3 inlay",
+"group": "case",
+"kind": "inlay",
+"bom": null,
+"mat": "PETG серебристый",
+"note": "",
+"mov": "fixed",
+"nv": 2922
+},
+{
+"name": "case back wall 1",
+"group": "case",
+"kind": "print",
+"bom": "case_back",
+"mat": "PETG",
+"note": "стенка корпуса; орнамент — серебром, сменой прутка на высоте лица",
+"mov": "fixed",
+"nv": 404
+},
+{
+"name": "case back wall 1 inlay",
+"group": "case",
+"kind": "inlay",
+"bom": null,
+"mat": "PETG серебристый",
+"note": "",
+"mov": "fixed",
+"nv": 2848
+},
+{
+"name": "case back wall 2",
+"group": "case",
+"kind": "print",
+"bom": "case_back",
+"mat": "PETG",
+"note": "стенка корпуса; орнамент — серебром, сменой прутка на высоте лица",
+"mov": "fixed",
+"nv": 404
+},
+{
+"name": "case back wall 2 inlay",
+"group": "case",
+"kind": "inlay",
+"bom": null,
+"mat": "PETG серебристый",
+"note": "",
+"mov": "fixed",
+"nv": 2848
+},
+{
+"name": "case back wall 4",
+"group": "case",
+"kind": "print",
+"bom": "case_back",
+"mat": "PETG",
+"note": "стенка корпуса; орнамент — серебром, сменой прутка на высоте лица",
+"mov": "fixed",
+"nv": 404
+},
+{
+"name": "case back wall 4 inlay",
+"group": "case",
+"kind": "inlay",
+"bom": null,
+"mat": "PETG серебристый",
+"note": "",
+"mov": "fixed",
+"nv": 2848
+},
+{
+"name": "case back wall 5",
+"group": "case",
+"kind": "print",
+"bom": "case_back",
+"mat": "PETG",
+"note": "стенка корпуса; орнамент — серебром, сменой прутка на высоте лица",
+"mov": "fixed",
+"nv": 404
+},
+{
+"name": "case back wall 5 inlay",
+"group": "case",
+"kind": "inlay",
+"bom": null,
+"mat": "PETG серебристый",
+"note": "",
+"mov": "fixed",
+"nv": 2848
+},
+{
+"name": "case bay back",
+"group": "case",
+"kind": "print",
+"bom": "case_bay",
+"mat": "PETG",
+"note": "ниша над спуском: спуск выходит за раму назад до 151 мм",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "case bay back inlay",
+"group": "case",
+"kind": "inlay",
+"bom": null,
+"mat": "PETG серебристый",
+"note": "",
+"mov": "fixed",
+"nv": 1616
+},
+{
+"name": "case bay cheek -1",
+"group": "case",
+"kind": "print",
+"bom": "case_bay_cheek",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "case bay cheek +1",
+"group": "case",
+"kind": "print",
+"bom": "case_bay_cheek",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "case bay roof",
+"group": "case",
+"kind": "print",
+"bom": "case_bay_roof",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "case standoff side -1 -330",
+"group": "case",
+"kind": "print",
+"bom": "case_standoff",
+"mat": "PETG",
+"note": "упор стенки на раму: винт М5 в паз профиля",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "case standoff side +1 -330",
+"group": "case",
+"kind": "print",
+"bom": "case_standoff",
+"mat": "PETG",
+"note": "упор стенки на раму: винт М5 в паз профиля",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "case standoff side -1 -150",
+"group": "case",
+"kind": "print",
+"bom": "case_standoff",
+"mat": "PETG",
+"note": "упор стенки на раму: винт М5 в паз профиля",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "case standoff side +1 -150",
+"group": "case",
+"kind": "print",
+"bom": "case_standoff",
+"mat": "PETG",
+"note": "упор стенки на раму: винт М5 в паз профиля",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "case standoff side -1 40",
+"group": "case",
+"kind": "print",
+"bom": "case_standoff",
+"mat": "PETG",
+"note": "упор стенки на раму: винт М5 в паз профиля",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "case standoff side +1 40",
+"group": "case",
+"kind": "print",
+"bom": "case_standoff",
+"mat": "PETG",
+"note": "упор стенки на раму: винт М5 в паз профиля",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "case standoff front -160",
+"group": "case",
+"kind": "print",
+"bom": "case_standoff",
+"mat": "PETG",
+"note": "упор стенки на раму: винт М5 в паз профиля",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "case standoff front 0",
+"group": "case",
+"kind": "print",
+"bom": "case_standoff",
+"mat": "PETG",
+"note": "упор стенки на раму: винт М5 в паз профиля",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "case standoff front 160",
+"group": "case",
+"kind": "print",
+"bom": "case_standoff",
+"mat": "PETG",
+"note": "упор стенки на раму: винт М5 в паз профиля",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "case standoff back -200",
+"group": "case",
+"kind": "print",
+"bom": "case_standoff",
+"mat": "PETG",
+"note": "упор стенки на раму: винт М5 в паз профиля",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "case standoff back -100",
+"group": "case",
+"kind": "print",
+"bom": "case_standoff",
+"mat": "PETG",
+"note": "упор стенки на раму: винт М5 в паз профиля",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "case standoff back 100",
+"group": "case",
+"kind": "print",
+"bom": "case_standoff",
+"mat": "PETG",
+"note": "упор стенки на раму: винт М5 в паз профиля",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "case standoff back 200",
+"group": "case",
+"kind": "print",
+"bom": "case_standoff",
+"mat": "PETG",
+"note": "упор стенки на раму: винт М5 в паз профиля",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "case keyboard strip 1",
+"group": "case",
+"kind": "print",
+"bom": "case_kbd_strip",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 10
+},
+{
+"name": "case keyboard strip 1 inlay",
+"group": "case",
+"kind": "inlay",
+"bom": null,
+"mat": "PETG серебристый",
+"note": "",
+"mov": "fixed",
+"nv": 1036
+},
+{
+"name": "case keyboard strip 2",
+"group": "case",
+"kind": "print",
+"bom": "case_kbd_strip",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "case keyboard strip 2 inlay",
+"group": "case",
+"kind": "inlay",
+"bom": null,
+"mat": "PETG серебристый",
+"note": "",
+"mov": "fixed",
+"nv": 1164
+},
+{
+"name": "case keyboard strip 3",
+"group": "case",
+"kind": "print",
+"bom": "case_kbd_strip",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 10
+},
+{
+"name": "case keyboard strip 3 inlay",
+"group": "case",
+"kind": "inlay",
+"bom": null,
+"mat": "PETG серебристый",
+"note": "",
+"mov": "fixed",
+"nv": 1036
+},
+{
+"name": "case keyboard deck 1",
+"group": "case",
+"kind": "print",
+"bom": "case_kbd_deck",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 92
+},
+{
+"name": "case keyboard deck 1 inlay",
+"group": "case",
+"kind": "inlay",
+"bom": null,
+"mat": "PETG серебристый",
+"note": "",
+"mov": "fixed",
+"nv": 88
+},
+{
+"name": "case keyboard deck 2",
+"group": "case",
+"kind": "print",
+"bom": "case_kbd_deck",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 100
+},
+{
+"name": "case keyboard deck 2 inlay",
+"group": "case",
+"kind": "inlay",
+"bom": null,
+"mat": "PETG серебристый",
+"note": "",
+"mov": "fixed",
+"nv": 88
+},
+{
+"name": "case tower front -1",
+"group": "case",
+"kind": "print",
+"bom": "case_tower_front",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "case tower front -1 inlay",
+"group": "case",
+"kind": "inlay",
+"bom": null,
+"mat": "PETG серебристый",
+"note": "",
+"mov": "fixed",
+"nv": 1398
+},
+{
+"name": "case tower wall -1",
+"group": "case",
+"kind": "print",
+"bom": "case_tower_wall",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "case tower front +1",
+"group": "case",
+"kind": "print",
+"bom": "case_tower_front",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "case tower front +1 inlay",
+"group": "case",
+"kind": "inlay",
+"bom": null,
+"mat": "PETG серебристый",
+"note": "",
+"mov": "fixed",
+"nv": 1398
+},
+{
+"name": "case tower wall +1",
+"group": "case",
+"kind": "print",
+"bom": "case_tower_wall",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "case fascia 1",
+"group": "case",
+"kind": "print",
+"bom": "case_fascia",
+"mat": "PETG",
+"note": "лицо за клавишами: надпись «si na níretequa: tecuvalye, málonya, aima i níralye!»",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "case fascia 1 inlay",
+"group": "case",
+"kind": "inlay",
+"bom": null,
+"mat": "PETG серебристый",
+"note": "",
+"mov": "fixed",
+"nv": 13186
+},
+{
+"name": "case fascia 2",
+"group": "case",
+"kind": "print",
+"bom": "case_fascia",
+"mat": "PETG",
+"note": "лицо за клавишами: надпись «si na níretequa: tecuvalye, málonya, aima i níralye!»",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "case fascia 2 inlay",
+"group": "case",
+"kind": "inlay",
+"bom": null,
+"mat": "PETG серебристый",
+"note": "",
+"mov": "fixed",
+"nv": 14860
+},
+{
+"name": "case top tower -1",
+"group": "case",
+"kind": "print",
+"bom": "case_top",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "case top tower -1 inlay",
+"group": "case",
+"kind": "inlay",
+"bom": null,
+"mat": "PETG серебристый",
+"note": "",
+"mov": "fixed",
+"nv": 144
+},
+{
+"name": "case device plaque",
+"group": "case",
+"kind": "inlay",
+"bom": null,
+"mat": "",
+"note": "щит с гербом Mírë Nolmeo: часть деки левой башни; рисунок — наклейка из data/device/*.svg (112 мм) или цветная печать верхних слоёв",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "case top tower +1",
+"group": "case",
+"kind": "print",
+"bom": "case_top",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 840
+},
+{
+"name": "case top tower +1 inlay",
+"group": "case",
+"kind": "inlay",
+"bom": null,
+"mat": "PETG серебристый",
+"note": "",
+"mov": "fixed",
+"nv": 1600
+},
+{
+"name": "case top band -1",
+"group": "case",
+"kind": "print",
+"bom": "case_top",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 10
+},
+{
+"name": "case top band -1 inlay",
+"group": "case",
+"kind": "inlay",
+"bom": null,
+"mat": "PETG серебристый",
+"note": "",
+"mov": "fixed",
+"nv": 1272
+},
+{
+"name": "case top band +1",
+"group": "case",
+"kind": "print",
+"bom": "case_top",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 10
+},
+{
+"name": "case top band +1 inlay",
+"group": "case",
+"kind": "inlay",
+"bom": null,
+"mat": "PETG серебристый",
+"note": "",
+"mov": "fixed",
+"nv": 1272
+},
+{
+"name": "case top side -1 a",
+"group": "case",
+"kind": "print",
+"bom": "case_top",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 10
+},
+{
+"name": "case top side +1 a",
+"group": "case",
+"kind": "print",
+"bom": "case_top",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 10
+},
+{
+"name": "case top side -1 b",
+"group": "case",
+"kind": "print",
+"bom": "case_top",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 10
+},
+{
+"name": "case top side +1 b",
+"group": "case",
+"kind": "print",
+"bom": "case_top",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 10
+},
+{
+"name": "case top pit -1",
+"group": "case",
+"kind": "print",
+"bom": "case_top",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 16
+},
+{
+"name": "case top pit +1",
+"group": "case",
+"kind": "print",
+"bom": "case_top",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 16
+},
+{
+"name": "case top back -1",
+"group": "case",
+"kind": "print",
+"bom": "case_top",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 10
+},
+{
+"name": "case top back 0",
+"group": "case",
+"kind": "print",
+"bom": "case_top",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "case top back +1",
+"group": "case",
+"kind": "print",
+"bom": "case_top",
+"mat": "PETG",
+"note": "",
+"mov": "fixed",
+"nv": 10
+},
+{
+"name": "case lip 1",
+"group": "case",
+"kind": "print",
+"bom": "case_lip",
+"mat": "PETG",
+"note": "ребро под свободным краем деки",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "case lip 2",
+"group": "case",
+"kind": "print",
+"bom": "case_lip",
+"mat": "PETG",
+"note": "ребро под свободным краем деки",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "case lip 3",
+"group": "case",
+"kind": "print",
+"bom": "case_lip",
+"mat": "PETG",
+"note": "ребро под свободным краем деки",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "case lip 4",
+"group": "case",
+"kind": "print",
+"bom": "case_lip",
+"mat": "PETG",
+"note": "ребро под свободным краем деки",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "case lip 5",
+"group": "case",
+"kind": "print",
+"bom": "case_lip",
+"mat": "PETG",
+"note": "ребро под свободным краем деки",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "case lip 6",
+"group": "case",
+"kind": "print",
+"bom": "case_lip",
+"mat": "PETG",
+"note": "ребро под свободным краем деки",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "case lip 7",
+"group": "case",
+"kind": "print",
+"bom": "case_lip",
+"mat": "PETG",
+"note": "ребро под свободным краем деки",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "case lip 8",
+"group": "case",
+"kind": "print",
+"bom": "case_lip",
+"mat": "PETG",
+"note": "ребро под свободным краем деки",
+"mov": "fixed",
+"nv": 8
+},
+{
+"name": "case pillar -1",
+"group": "case",
+"kind": "print",
+"bom": "case_pillar",
+"mat": "PETG",
+"note": "пилястра над стойкой каретки с базой, капителью и навершием-звездой: одна деталь, печатается стоя, серебро — сменой прутка на высоте 10 мм (база) и 132 мм (капитель)",
+"mov": "fixed",
+"nv": 128
+},
+{
+"name": "case pillar base -1",
+"group": "case",
+"kind": "inlay",
+"bom": null,
+"mat": "PETG серебристый",
+"note": "",
+"mov": "fixed",
+"nv": 16
+},
+{
+"name": "case pillar capital -1",
+"group": "case",
+"kind": "inlay",
+"bom": null,
+"mat": "PETG серебристый",
+"note": "",
+"mov": "fixed",
+"nv": 16
+},
+{
+"name": "case finial -1",
+"group": "case",
+"kind": "inlay",
+"bom": null,
+"mat": "PETG серебристый",
+"note": "",
+"mov": "fixed",
+"nv": 74
+},
+{
+"name": "case pillar +1",
+"group": "case",
+"kind": "print",
+"bom": "case_pillar",
+"mat": "PETG",
+"note": "пилястра над стойкой каретки с базой, капителью и навершием-звездой: одна деталь, печатается стоя, серебро — сменой прутка на высоте 10 мм (база) и 132 мм (капитель)",
+"mov": "fixed",
+"nv": 128
+},
+{
+"name": "case pillar base +1",
+"group": "case",
+"kind": "inlay",
+"bom": null,
+"mat": "PETG серебристый",
+"note": "",
+"mov": "fixed",
+"nv": 16
+},
+{
+"name": "case pillar capital +1",
+"group": "case",
+"kind": "inlay",
+"bom": null,
+"mat": "PETG серебристый",
+"note": "",
+"mov": "fixed",
+"nv": 16
+},
+{
+"name": "case finial +1",
+"group": "case",
+"kind": "inlay",
+"bom": null,
+"mat": "PETG серебристый",
+"note": "",
+"mov": "fixed",
+"nv": 74
+}
+]

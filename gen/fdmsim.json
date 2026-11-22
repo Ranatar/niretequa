@@ -6,11 +6,11 @@
   "loss_med": 1.0,
   "loss_max": 1.0,
   "loss_worst": "tinco",
-  "fill_med": 0.024774701843747367,
+  "fill_med": 0.024820241492247,
   "fill_max": 0.3707648827163679,
   "fill_worst": "кавычка закрыв.",
-  "n_loss5": 81,
-  "n_fill5": 10
+  "n_loss5": 82,
+  "n_fill5": 11
  },
  {
   "nozzle": "0.4",

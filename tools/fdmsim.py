@@ -7,8 +7,9 @@ from glyphgeom import glyph_geom
 
 font, data_dir, out = sys.argv[1:4]
 os.makedirs(out, exist_ok=True)
-F = TTFont(font); GS = F.getGlyphSet()
 D = json.load(open(os.path.join(data_dir, 'codes.json')))
+import glyphvar
+F = TTFont(font); GS = glyphvar.VarGlyphSet(F.getGlyphSet(), D.get('synth'))
 INCH = 25.4
 EMS = [('1/6', INCH / 6), ('1/4', INCH / 4), ('1/3', INCH / 3), ('1/2', INCH / 2)]
 NOZZLES = {'0.4': dict(pos=0.45, gap=0.35), '0.25': dict(pos=0.30, gap=0.25)}   # mm, assumptions

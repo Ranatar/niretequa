@@ -1374,5 +1374,21 @@
   "outside": 0.0,
   "foreign": 0.0,
   "ok": true
+ },
+ {
+  "item": "mark:ddotbL",
+  "label": "две точки в lambe/alda — y",
+  "srow": 8,
+  "m": 9,
+  "gap_hp": 0.0,
+  "gap_pr": 0.0,
+  "gap_rt": 0.0,
+  "ovl": 0.0,
+  "area": 1.17,
+  "miss": 0.0,
+  "extra": 0.0,
+  "outside": -0.0,
+  "foreign": 0.0,
+  "ok": true
  }
 ]
